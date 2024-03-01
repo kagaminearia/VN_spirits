@@ -1,193 +1,228 @@
-﻿## 此文件包含有可自定义您游戏的设置。
+﻿## This file contains options that can be changed to customize your game.
 ##
-## 以“##”开头的语句是注释，您不应该对其取消注释。以“#”开头的语句是注释掉的代码，
-## 在适用的时候您可能需要对其取消注释。
+## Lines beginning with two '#' marks are comments, and you shouldn't uncomment
+## them. Lines beginning with a single '#' mark are commented-out code, and you
+## may want to uncomment them when appropriate.
 
+## TODO: Change these top three values (config.name, build.name,
+## and config.save_directory) to something unique for your project!
 
-## 基础 ##########################################################################
+## Basics ######################################################################
 
-## 用户可读的游戏名称。此命令用来设置默认窗口标题，并且会在界面和错误报告中出
-## 现。
+## A human-readable name of the game. This is used to set the default window
+## title, and shows up in the interface and error reports.
 ##
-## 带有 _() 的字符串表示其可被翻译。
+## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("spirits")
+define config.name = _("")
+
+## A short name for the game used for executables and directories in the built
+## distribution. This must be ASCII-only, and must not contain spaces, colons,
+## or semicolons.
+
+define build.name = ""
+
+## Save directory ##############################################################
+##
+## Controls the platform-specific place Ren'Py will place the save files for
+## this game. The save files will be placed in:
+##
+## Windows: %APPDATA\RenPy\<config.save_directory>
+##
+## Macintosh: $HOME/Library/RenPy/<config.save_directory>
+##
+## Linux: $HOME/.renpy/<config.save_directory>
+##
+## This generally should not be changed, and if it is, should always be a
+## literal string, not an expression.
+
+## Note: a typical save_directory value looks like "FreshProject-1671818013"
+define config.save_directory = None
 
 
-## 决定上面给出的标题是否显示在标题界面屏幕。设置为 False 来隐藏标题。
-
-define gui.show_name = False
-
-
-## 游戏版本号。
+## The version of the game.
 
 define config.version = "1.0"
 
 
-## 放置在游戏内“关于”屏幕上的文本。将文本放在三个引号之间，并在段落之间留出空
-## 行。
+## Sounds and music ############################################################
 
-define gui.about = _p("""
-""")
-
-
-## 在构建的发布版中，可执行文件和目录所使用的短名称。此处仅限使用 ASCII 字符，并
-## 且不能包含空格、冒号或分号。
-
-define build.name = "spirits"
-
-
-## 音效和音乐 #######################################################################
-
-## 这三个变量控制哪些内置的混音器会默认显示给用户。将其中一个设置为 False 将隐藏
-## 对应的混音器。
+## These three variables control, among other things, which mixers are shown
+## to the player by default. Setting one of these to False will hide the
+## appropriate mixer.
 
 define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
 
-## 为了让用户在音效或语音轨道上播放测试音频，请取消对下面一行的注释并设置播放的
-## 样本声音。
+## To allow the user to play a test sound on the sound or voice channel,
+## uncomment a line below and use it to set a sample sound to play.
 
 # define config.sample_sound = "sample-sound.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
 
-## 将以下语句取消注释就可以设置标题界面播放的背景音乐文件。此文件将在整个游戏中
-## 持续播放，直至音乐停止或其他文件开始播放。
+## Uncomment the following line to set an audio file that will be played while
+## the player is at the main menu. This file will continue playing into the
+## game, until it is stopped or another file is played.
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
 
-## 转场 ##########################################################################
+## Transitions #################################################################
 ##
-## 这些变量用来控制某些事件发生时的转场。每一个变量都应设置成一个转场，或者是
-## None 来表示无转场。
+## These variables set transitions that are used when certain events occur.
+## Each variable should be set to a transition, or None to indicate that no
+## transition should be used.
 
-## 进入或退出游戏菜单。
+## Entering or exiting the game menu.
 
 define config.enter_transition = dissolve
 define config.exit_transition = dissolve
 
 
-## 各个游戏菜单之间的转场。
+## Between screens of the game menu.
 
 define config.intra_transition = dissolve
 
 
-## 载入游戏后使用的转场。
+## A transition that is used after a game has been loaded.
 
 define config.after_load_transition = None
 
 
-## 在游戏结束之后进入主菜单时使用的转场。
+## Used when entering the main menu after the game has ended.
 
 define config.end_game_transition = None
 
-
-## 用于控制在游戏开始标签不存在时转场的变量。作为替代，在显示初始化场景后使用
-## with 语句。
-
-
-## 窗口管理 ########################################################################
+## Window management ###########################################################
 ##
-## 此命令控制对话框窗口何时显示。若为 show，对话框将总是显示。若为 hide，对话框
-## 仅在对话出现时显示。若为 auto，对话框会在 scene 语句前隐藏，并在有新对话时重
-## 新显示。
+## This controls when the dialogue window is displayed. If "show", it is always
+## displayed. If "hide", it is only displayed when dialogue is present. If
+## "auto", the window is hidden before scene statements and shown again once
+## dialogue is displayed.
 ##
-## 在游戏开始后，可以用 window show、window hide 和 window auto 语句来改变其状
-## 态。
+## After the game has started, this can be changed with the "window show",
+## "window hide", and "window auto" statements.
 
 define config.window = "auto"
 
 
-## 用于显示和隐藏对话框窗口的转场
+## Transitions used to show and hide the dialogue window
 
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
 
-## 默认设置 ########################################################################
+## Preference defaults #########################################################
 
-## 控制默认的文字显示速度。默认的 0 为瞬间，而其他数字则是每秒显示出的字符数。
+## Controls the default text speed. The default, 0, is infinite, while any other
+## number is the number of characters per second to type out.
 
 default preferences.text_cps = 0
 
 
-## 默认的自动前进延迟。数字越大，等待时间越长，有效范围为 0 - 30。
+## The default auto-forward delay. Larger numbers lead to longer waits, with 0
+## to 30 being the valid range.
 
 default preferences.afm_time = 15
 
-
-## 存档目录 ########################################################################
+## Icon ########################################################################
 ##
-## 控制 Ren'Py 放置游戏存档的特定操作系统目录。存档文件将放置在：
-##
-## Windows：%APPDATA\RenPy\<config.save_directory>
-##
-## Macintosh：$HOME/Library/RenPy/<config.save_directory>
-##
-## Linux：$HOME/.renpy/<config.save_directory>
-##
-## 该语句通常不应变更，若要变更，应为有效字符串而不是表达式。
-
-define config.save_directory = "spirits-1708397280"
-
-
-## 图标 ##########################################################################
-##
-## 在任务栏或 Dock 上显示的图标。
+## The icon displayed on the taskbar or dock.
 
 define config.window_icon = "gui/window_icon.png"
 
-
-## 构建配置 ########################################################################
+## Custom Options ##############################################################
 ##
-## 此部分控制 Ren'Py 如何将您的项目转变为发行版文件。
+## Config variables that I like to have set up.
+
+## Convenience for not crashing on grids without enough items
+## https://www.renpy.org/doc/html/config.html#var-config.allow_underfull_grids
+## In modern Ren'Py, this is already the default.
+define config.allow_underfull_grids = True
+
+## Default volume % for the various volume sliders
+## https://www.renpy.org/doc/html/preferences.html#audio-channel-defaults
+define config.default_music_volume = 0.5
+define config.default_sfx_volume = 0.5
+define config.default_voice_volume = 0.5
+
+## Optional; this reverts the behaviour of the volume sliders back to
+## pre-8.1, so muting the game shows the volume sliders all at 0
+# define config.preserve_volume_when_muted = False
+
+## The number of auto save slots Ren'Py will save to before it
+## starts overwriting the first one
+define config.autosave_slots = 6
+## Same thing, but for quick save
+define config.quicksave_slots = 6
+
+## Build configuration #########################################################
+##
+## This section controls how Ren'Py turns your project into distribution files.
 
 init python:
 
-    ## 以下函数接受文件模式。文件模式不区分大小写，并与基础目录的相对路径相匹配，
-    ## 包括或不包括 /。如果多个模式匹配，则使用第一个模式。
+    ## The following functions take file patterns. File patterns are case-
+    ## insensitive, and matched against the path relative to the base directory,
+    ## with and without a leading /. If multiple patterns match, the first is
+    ## used.
     ##
-    ## 在一个模式中：
+    ## In a pattern:
     ##
-    ## / 是目录分隔符。
+    ## / is the directory separator.
     ##
-    ## * 匹配所有字符，目录分隔符除外。
+    ## * matches all characters, except the directory separator.
     ##
-    ## ** 匹配所有字符，包括目录分隔符。
+    ## ** matches all characters, including the directory separator.
     ##
-    ## 例如，“*.txt”匹配基础目录中的 txt 文件，“game/**.ogg”匹配游戏目录或任何子
-    ## 目录中的 ogg 文件，“**.psd”匹配项目中任何位置的 psd 文件。
+    ## For example, "*.txt" matches txt files in the base directory, "game/
+    ## **.ogg" matches ogg files in the game directory or any of its
+    ## subdirectories, and "**.psd" matches psd files anywhere in the project.
 
-    ## 将文件列为 None 来使其从构建的发行版中排除。
+    ## Classify files as None to exclude them from the built distributions.
 
     build.classify('**~', None)
     build.classify('**.bak', None)
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('**.psd', None)
+    build.classify('game/cache/**', None)
+    ## NOTE: This excludes markdown and txt files. If you use these formats
+    ## for README or instructions, you may want to remove these lines.
+    build.classify('**.txt', None)
+    build.classify('**.md', None)
 
-    ## 若要封装文件，需将其列为“archive”。
+    ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+    build.classify("game/**.rpy", "archive")
+    build.classify("game/**.rpym", "archive")
 
-    ## 匹配为文档模式的文件会在 Mac 应用程序构建中被复制，因此它们同时出现在 APP
-    ## 和 ZIP 文件中。
+    build.classify("game/**.webp", "archive")
+    build.classify("game/**.webm", "archive")
+    build.classify("game/**.mp4", "archive")
+    build.classify("game/**.png", "archive")
+    build.classify("game/**.jpg", "archive")
+    build.classify("game/**.ttf", "archive")
+    build.classify("game/**.otf", "archive")
+    build.classify("game/**.mp3", "archive")
+    build.classify("game/**.wav", "archive")
+    build.classify("game/**.ogg", "archive")
+    build.classify("game/**.opus", "archive")
+    build.classify("game/**.rpyc", "archive")
+    build.classify("game/**.rpymc", "archive")
 
-    build.documentation('*.html')
-    build.documentation('*.txt')
-
-
-## 执行应用内购需要一个 Google Play 许可密钥。许可密钥可以在 Google Play 开发者
-## 控制台的“Monetize” > “Monetization Setup” > “Licensing”页面找到。
+## A Google Play license key is required to perform in-app purchases. It can be
+## found in the Google Play developer console, under "Monetize" > "Monetization
+## Setup" > "Licensing".
 
 # define build.google_play_key = "..."
 
 
-## 与 itch.io 项目相关的用户名和项目名，以 / 分隔。
+## The username and project name associated with an itch.io project, separated
+## by a slash.
 
 # define build.itch_project = "renpytom/test-project"
