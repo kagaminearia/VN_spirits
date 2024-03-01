@@ -13,48 +13,37 @@ screen game_menu(title):
 
     style_prefix "game_menu"
 
-    vbox:
-        xpos 60 yalign 0.5
-        spacing 6
+    hbox:
+        xalign 0.5
+        yalign 0.0
+        yoffset 70
+        spacing 50
 
-        if main_menu:
+        # if main_menu:
+        #     textbutton _("Start") action Start()
 
-            textbutton _("Start") action Start()
+        if not main_menu:
+            textbutton _("HISTORY") action ShowMenu("history")
+            textbutton _("SAVE") action ShowMenu("save")
 
-        else:
+        textbutton _("LOAD") action ShowMenu("load")
+        textbutton _("CONFIG") action ShowMenu("preferences")
 
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Preferences") action ShowMenu("preferences")
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            textbutton _("HELP") action ShowMenu("help")
 
         if _in_replay:
-
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
+            textbutton _("TITLE") action MainMenu()
 
-            textbutton _("Main Menu") action MainMenu()
+        # if renpy.variant("pc"):
+        #     textbutton _("Quit") action Quit(confirm=not main_menu)
 
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and
-            ## unnecessary on Android and Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
-
-    textbutton _("Return"):
-        style "return_button"
-        action Return()
+    # textbutton _("Return"):
+    #     style "return_button"
+    #     action Return()
 
     ## Remove this line if you don't want to show the screen
     ## title text as a label (for example, if it's baked into
@@ -85,3 +74,7 @@ style game_menu_label:
     padding (10, 10)
 style game_menu_label_text:
     size 45
+
+style game_menu_button_text:
+    font gui.main_menu_font 
+    size 50

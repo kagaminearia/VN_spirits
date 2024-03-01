@@ -13,6 +13,8 @@
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
 screen say(who, what):
+    key "mousedown_4" action ShowMenu("history")
+
     style_prefix "say"
 
     window:

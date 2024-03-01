@@ -48,14 +48,15 @@ screen file_slots(title):
         ## The page name, which can be edited by clicking on it.
         ## This can be pretty easily removed if you want.
         ## Don't forget to also remove the `default` at the top if so.
-        button:
-            style "page_label"
-            key_events True
-            action page_name_value.Toggle()
+        
+        # button:
+        #     style "page_label"
+        #     key_events True
+        #     action page_name_value.Toggle()
 
-            input:
-                style "page_label_text"
-                value page_name_value
+        #     input:
+        #         style "page_label_text"
+        #         value page_name_value
 
         ## The grid of file slots.
         grid 3 2:

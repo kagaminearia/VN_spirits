@@ -36,7 +36,8 @@ screen confirm(message, yes_action, no_action=None):
         key "game_menu" action yes_action
 
 style confirm_frame:
-    background Frame("gui/frame.png", 60, 60, 60, 60, tile=False)
+    # background Frame("gui/frame.jpg", 60, 60, 60, 60, tile=False)
+    background Frame("gui/frame.jpg")
     padding (60, 60, 60, 60)
     xalign 0.5
     yalign 0.5

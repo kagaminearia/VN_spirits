@@ -18,7 +18,7 @@ screen about():
 
     tag menu
 
-    add "#21212db2" # The background; can be whatever
+    add "#8d8d8db2" # The background; can be whatever
 
     use game_menu(_("About"))
 

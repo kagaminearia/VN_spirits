@@ -42,5 +42,6 @@ style main_navigation_button_text:
     size 55
     xalign 0
     hover_color "#868686"
+    outlines [(2, "#868686", 3, 3)]
 
 style main_navigation_button is gui_button
