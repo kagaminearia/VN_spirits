@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 345: 'xalign' is not a keyword argument or valid child of the screen statement.
-    xalign 0.5
-          ^
+File "game/screens/main_menu.rpy", line 47: style property alpha is not known.
+    alpha 0.8
+         ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Mon Feb 19 21:37:17 2024
+Fri Mar  1 16:25:45 2024
