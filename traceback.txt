@@ -1,54 +1,75 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('gui/cursur.png') at 0x000000000541efd0>:
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 388, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 317, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 340, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
-OSError: Couldn't find file 'gui/cursur.png'.
+While running game code:
+  File "game/screens/save_load.rpy", line 30, in execute
+    screen load():
+  File "game/screens/save_load.rpy", line 30, in execute
+    screen load():
+  File "game/screens/save_load.rpy", line 36, in execute
+    use file_slots(_("Load"))
+  File "game/screens/save_load.rpy", line 39, in execute
+    screen file_slots(title):
+  File "game/screens/save_load.rpy", line 39, in execute
+    screen file_slots(title):
+  File "game/screens/save_load.rpy", line 47, in execute
+    fixed:
+  File "game/screens/save_load.rpy", line 57, in execute
+    side "c":
+Exception: Side has been given too many arguments.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 211, in script call
-    call _gl_test
-  File "renpy/common/00gltest.rpy", line 388, in script
-    $ __gl_test()
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\ast.py", line 823, in execute
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/ast.py", line 823, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00gltest.rpy", line 388, in <module>
-    $ __gl_test()
-  File "renpy/common/00gltest.rpy", line 317, in _m1_00gltest__gl_test
-    _gl_performance_test()
-  File "renpy/common/00gltest.rpy", line 340, in _gl_performance_test
-    ui.interact(suppress_underlay=True, suppress_overlay=True)
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\core.py", line 2122, in interact
-    self.start()
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\core.py", line 1036, in start
-    surf = renpy.display.im.load_surface(fn)
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\im.py", line 2055, in load_surface
-    return cache.get(image(im))
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\im.py", line 309, in get
-    surf = image.load()
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\im.py", line 761, in load
-    raise e
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\display\im.py", line 711, in load
-    filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\coding\renpy-8.2.0-sdk.7z\renpy-8.2.0-sdk\renpy\loader.py", line 672, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'gui/cursur.png'.
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/core.py", line 2165, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/core.py", line 2683, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/displayable.py", line 431, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/screen.py", line 480, in visit_all
+    callback(self)
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/core.py", line 2683, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/screen.py", line 491, in per_interact
+    self.update()
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/screens/save_load.rpy", line 30, in execute
+    screen load():
+  File "game/screens/save_load.rpy", line 30, in execute
+    screen load():
+  File "game/screens/save_load.rpy", line 36, in execute
+    use file_slots(_("Load"))
+  File "game/screens/save_load.rpy", line 39, in execute
+    screen file_slots(title):
+  File "game/screens/save_load.rpy", line 39, in execute
+    screen file_slots(title):
+  File "game/screens/save_load.rpy", line 47, in execute
+    fixed:
+  File "game/screens/save_load.rpy", line 57, in execute
+    side "c":
+  File "/home/shadowlo/git/renpy/renpy-8.2.0-sdk/renpy/display/layout.py", line 1813, in add
+    raise Exception("Side has been given too many arguments.")
+Exception: Side has been given too many arguments.
 
-Windows-10-10.0.22621 AMD64
+Linux-6.5.0-18-generic-x86_64-with-glibc2.35 x86_64
 Ren'Py 8.2.0.24012702
- 1.0
-Fri Mar  1 15:18:25 2024
+交织的印记 1.0
+Sun Mar  3 02:12:46 2024

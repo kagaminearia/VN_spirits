@@ -9,15 +9,20 @@
 
 
 ## The width and height of thumbnails used by the save slots.
-define config.thumbnail_width = 384
-define config.thumbnail_height = 216
+define config.thumbnail_width = 400
+define config.thumbnail_height = 300
+define gui.file_slot_cols = 1
+define gui.file_slot_rows = 3
+define slot_verticle_spacing = 120
+define slot_x_size = 600
+define slot_y_size = 160
 
 
 screen save():
 
     tag menu
 
-    add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
+    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
 
     use file_slots(_("Save"))
 
@@ -26,7 +31,7 @@ screen load():
 
     tag menu
 
-    add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
+    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
 
     use file_slots(_("Load"))
 
@@ -40,7 +45,7 @@ screen file_slots(title):
     use game_menu(title)
 
     fixed:
-        xsize 1500 xalign 1.0
+        xsize 1500 xalign 0.5
         ## This ensures the input will get the enter event before any of the
         ## buttons do.
         order_reverse True
@@ -48,40 +53,95 @@ screen file_slots(title):
         ## The page name, which can be edited by clicking on it.
         ## This can be pretty easily removed if you want.
         ## Don't forget to also remove the `default` at the top if so.
-        
-        # button:
-        #     style "page_label"
-        #     key_events True
-        #     action page_name_value.Toggle()
 
-        #     input:
-        #         style "page_label_text"
-        #         value page_name_value
+        side "c":
+            area (150, 180, 2000, 2000)
+            viewport id "slot":
+                grid gui.file_slot_cols gui.file_slot_rows:
+                    xalign 1.0 yalign 0.5 spacing slot_verticle_spacing
+                    for i in range(gui.file_slot_rows):
+                        grid 2 1:
+                            style_prefix "slot"
+                            spacing 50
 
-        ## The grid of file slots.
-        grid 3 2:
-            style_prefix "slot"
+                            python:
+                                slot = i * 2 + 1
+                                name_to_save = ""
+                                strip = lambda string : string \
+                                    if len(string) <= 25 \
+                                    else string[: 25] + "……"
 
-            for i in range(3*2):
-                $ slot = i + 1
+                                if len(_history_list) != 0:
+                                    if type(_history_list[-1].who) is NoneType:
+                                        name_to_save = strip(_history_list[-1].what)
+                                    else: 
+                                        name_to_save = (
+                                            "【" + _history_list[-1].who + "】 "
+                                            + strip(_history_list[-1].what)
+                                        )
+                            
+                            button:
+                                action [
+                                    SetVariable("save_name", name_to_save),
+                                    FileAction(slot)
+                                ]
 
-                button:
-                    action FileAction(slot)
-                    has vbox
+                                hbox:
+                                    spacing 10
+                                    if FileTime(slot):
+                                        add FileScreenshot(slot) align(0.1, 0.1) zoom 0.6
+                                        vbox:
+                                            xalign 0.1 yalign 0.1 spacing 10
+                                            text "{color=#000000}%s{/color}" % FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
+                                                style "slot_time_text"
+                                            text FileSaveName(slot):
+                                                style "slot_name_text"
+                                    else:
+                                        image "gui/button/slot_idle_background.png" zoom 0.6
+                                        hbox:
+                                            text "{color=#000000}%s{/color}" % "尚无记录":
+                                                style "slot_name_text"
+                            
+                            python:
+                                slot = slot + 1
+                                name_to_save = ""
+                                strip = lambda string : string \
+                                    if len(string) <= 25 \
+                                    else string[: 25] + "……"
+                                    
+                                if len(_history_list) != 0:
+                                    if type(_history_list[-1].who) is NoneType:
+                                        name_to_save = strip(_history_list[-1].what)
+                                    else: 
+                                        name_to_save = (
+                                            "【" + _history_list[-1].who + "】 "
+                                            + strip(_history_list[-1].what)
+                                        )
+                                        
+                            button:
+                                action [
+                                    SetVariable("save_name", name_to_save),
+                                    FileAction(slot)
+                                ]
 
-                    add FileScreenshot(slot) xalign 0.5
+                                hbox:
+                                    spacing 10
+                                    if FileTime(slot):
+                                        add FileScreenshot(slot) align(0.1, 0.1) zoom 0.6
+                                        vbox:
+                                            xalign 0.1 yalign 0.1 spacing 10
+                                            text "{color=#000000}%s{/color}" % FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
+                                                style "slot_time_text"
+                                            
+                                            text FileSaveName(slot):
+                                                style "slot_name_text"
+                                    else:
+                                        image "gui/button/slot_idle_background.png" zoom 0.6
+                                        vbox:
+                                            text "{color=#000000}%s{/color}" % "尚无记录":
+                                                style "slot_name_text"
 
-                    ## https://www.fabriziomusacchio.com/blog/2021-08-15-strftime_Cheat_Sheet/
-                    text FileTime(slot,
-                            format=_("{#file_time}%A, %B %d %Y, %H:%M"),
-                            empty=_("empty slot")):
-                        style "slot_time_text"
-
-                    text FileSaveName(slot) style "slot_name_text"
-
-                    # This means the player can hover this save
-                    # slot and hit delete to delete it
-                    key "save_delete" action FileDelete(slot)
+                                key "save_delete" action FileDelete(slot) 
 
         ## Buttons to access other pages.
         vbox:
@@ -126,16 +186,20 @@ style slot_grid:
     spacing 15
 
 style slot_time_text:
-    size 25
+    size 21
+    xalign 0.5
+
+style slot_name_text:
+    size 21
     xalign 0.5
 
 style slot_vbox:
     spacing 12
 
 style slot_button:
-    xysize (414, 309)
+    xysize (slot_x_size, slot_y_size)
     padding (15, 15, 15, 15)
-    background "gui/button/slot_[prefix_]background.png"
+    # background "gui/button/slot_[prefix_]background.png"
 
 style slot_button_text:
     size 21
