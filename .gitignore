@@ -2,4 +2,5 @@
 *.txt
 game/cache/*
 *.rpyc
+*.rpyb
 game/saves/*
