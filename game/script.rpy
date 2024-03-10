@@ -17,7 +17,7 @@ label start:
     # 显示角色立绘。此处使用了占位图，但您也可以在图片目录添加命名为
     # eileen happy.png 的文件来将其替换掉。
 
-    show eileen happy
+    show xiangimg at char_mid
 
     # 此处显示各行对话。
     e "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
@@ -29,3 +29,5 @@ label start:
     # 此处为游戏结尾。
 
     return
+
+
