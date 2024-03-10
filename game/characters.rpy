@@ -17,14 +17,14 @@ init:
                 "images/char/xiang/fist.png"
 
         group eyes:
-            attribute eye1 default:
-                "images/char/xiang/eye1.png"
-            attribute eye2:
-                "images/char/xiang/eye2.png"
-            attribute eye3:
-                "images/char/xiang/eye3.png"
-            attribute eye4:
-                "images/char/xiang/eye4.png"
+            attribute eye_def default:
+                "images/char/xiang/eye_def.png"
+            attribute eye_close:
+                "images/char/xiang/eye_close.png"
+            attribute eye_squint:
+                "images/char/xiang/eye_squint.png"
+            attribute eye_still:
+                "images/char/xiang/eye_still.png"
 
         group mouse:
             attribute def default:
