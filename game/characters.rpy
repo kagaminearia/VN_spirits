@@ -105,3 +105,27 @@ init:
                 "images/char/mei/flower.png"
             attribute shell:
                 "images/char/mei/shell.png"
+
+    
+    layeredimage yeimg:
+        group body:
+            attribute ye default:
+                "images/char/other/ye.png"
+
+        group face:
+            attribute laugh default:
+                "images/char/other/ye_laugh.png"
+            attribute smile:
+                "images/char/other/ye_smile.png"
+
+    
+    layeredimage luimg:
+        group body:
+            attribute lu default:
+                "images/char/other/lu.png"
+
+        group face:
+            attribute laugh default:
+                "images/char/other/lu_laugh.png"
+            attribute smile:
+                "images/char/other/lu_smile.png"
