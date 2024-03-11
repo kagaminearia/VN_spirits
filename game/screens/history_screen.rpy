@@ -75,10 +75,11 @@ style history_name:
 style history_name_text:
     textalign 1.0
     align (1.0, 0.0)
-    color '#f93c3e'
+    color "#fff"
 
 style history_text:
     textalign 0.0
+    color "#fff"
 
 style history_label:
     xfill True

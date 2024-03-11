@@ -38,6 +38,8 @@ define gui.main_menu_font = "fonts/Aboreto-Regular.ttf"
 
 define gui.dark_grey = '#4b4b4b'
 
+define gui.light_grey = '#909090'
+
 ## Localization ################################################################
 
 ## This controls where a line break is permitted. The default is suitable
@@ -83,7 +85,7 @@ style button_text:
     yalign 0.5
     xalign 0.0
     ## The color used for a text button when it is neither selected nor hovered.
-    idle_color '#888888'
+    idle_color gui.dark_grey
     ## The color that is used for buttons and bars that are hovered.
     hover_color '#70bfae'
     ## The color used for a text button when it is selected but not focused. A
