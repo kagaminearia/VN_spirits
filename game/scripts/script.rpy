@@ -1,7 +1,5 @@
-﻿# 游戏的脚本可置于此文件中。
-
-# 游戏在此开始。
-
+﻿
+define chap_index = 0
 label start:
 
     # 显示一个背景。此处默认显示占位图，但您也可以在图片目录添加一个文件
@@ -9,9 +7,8 @@ label start:
 
     scene bg room
 
-
     call prologue
-
+    $ chap_index = 1
 
     return
 

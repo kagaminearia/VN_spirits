@@ -12,15 +12,13 @@ define config.history_length = 250
 screen history():
 
     tag menu
-
     ## Avoid predicting this screen, as it can be very large.
     predict False
-
-    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
 
     use game_menu(_("History"))
 
     viewport:
+        ysize 900
         xalign 0.5
         yalign 0.5
         style_prefix 'game_menu'
@@ -66,16 +64,17 @@ style history_frame:
     background None
 
 style history_hbox:
-    spacing 20
+    spacing 30
 
 style history_vbox:
+    ysize 900
     spacing 20
 
 style history_name:
     xalign 1.0
 
 style history_name_text:
-    textalign 1.0
+    textalign 0.0
     align (1.0, 0.0)
     color gui.dark_grey
 

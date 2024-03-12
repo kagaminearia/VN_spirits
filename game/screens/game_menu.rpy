@@ -56,14 +56,18 @@ screen game_menu(title):
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
+
+define gui.game_menu_frame_x = 1700
+define gui.game_menu_frame_y = 850
+
 style return_button:
     xpos 60
     yalign 1.0
     yoffset -45
 
 style game_menu_viewport:
-    xsize config.screen_width
-    ysize config.screen_height
+    xsize gui.game_menu_frame_x
+    ysize gui.game_menu_frame_y
     align (0.5, 0.5)
 
 style game_menu_side:

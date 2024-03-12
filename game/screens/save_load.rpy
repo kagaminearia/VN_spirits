@@ -45,7 +45,8 @@ screen file_slots(title):
     use game_menu(title)
 
     fixed:
-        xsize 1500 xalign 0.5
+        xalign 0.5 
+        yalign 0.5
         ## This ensures the input will get the enter event before any of the
         ## buttons do.
         order_reverse True
