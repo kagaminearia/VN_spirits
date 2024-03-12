@@ -11,12 +11,14 @@
 
 screen game_menu(title):
 
+    add "#ffffffb8"
+    add "gui/border.png"
     style_prefix "game_menu"
 
     hbox:
         xalign 0.5
         yalign 0.0
-        yoffset 70
+        yoffset 15
         spacing 50
 
         # if main_menu:
@@ -48,7 +50,7 @@ screen game_menu(title):
     ## Remove this line if you don't want to show the screen
     ## title text as a label (for example, if it's baked into
     ## the background image.)
-    label title
+    # label title
 
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
@@ -59,8 +61,8 @@ style return_button:
     yoffset -45
 
 style game_menu_viewport:
-    xsize config.screen_width-420
-    ysize config.screen_height-200
+    xsize config.screen_width
+    ysize config.screen_height
     align (0.5, 0.5)
 
 style game_menu_side:
@@ -72,9 +74,16 @@ style game_menu_vscrollbar:
 
 style game_menu_label:
     padding (10, 10)
+
 style game_menu_label_text:
+    xalign 0.5 
+    yalign 0.0
     size 45
 
 style game_menu_button_text:
     font gui.main_menu_font 
-    size 50
+    size 60
+    color gui.light_blue
+    hover_color "#fff"
+    selected_color "#fff"
+    outlines [(2,"#fff")]

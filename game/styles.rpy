@@ -40,6 +40,8 @@ define gui.dark_grey = '#4b4b4b'
 
 define gui.light_grey = '#909090'
 
+define gui.light_blue = '#b5dcf7'
+
 ## Localization ################################################################
 
 ## This controls where a line break is permitted. The default is suitable
@@ -69,10 +71,10 @@ style input:
 
 style hyperlink_text:
     hover_underline True
-    color "#f93c3e"
+    color gui.dark_grey
 
 style gui_text:
-    color '#4b4b4b'
+    color gui.dark_grey
     size gui.text_size
     font gui.interface_text_font
 
@@ -87,7 +89,7 @@ style button_text:
     ## The color used for a text button when it is neither selected nor hovered.
     idle_color gui.dark_grey
     ## The color that is used for buttons and bars that are hovered.
-    hover_color '#70bfae'
+    hover_color gui.light_blue
     ## The color used for a text button when it is selected but not focused. A
     ## button is selected if it is the current screen or preference value.
     selected_color '#ffffff'
@@ -97,7 +99,7 @@ style button_text:
 style label_text:
     is gui_text
     size 36
-    color '#f93c3e'
+    color gui.light_blue
 
 
 style bar:

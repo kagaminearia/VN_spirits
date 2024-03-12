@@ -24,22 +24,24 @@ screen main_menu():
         spacing 1300
         vbox:
             xalign 0
-            spacing 50
+            spacing 45
             textbutton _("START") action Start()
+            textbutton _("CONTINUE") action Continue()
             textbutton _("LOAD") action ShowMenu("load")
             textbutton _("CONFIG") action ShowMenu("preferences")
 
         vbox:
             xalign 0
-            spacing 50
+            spacing 45
             textbutton _("ABOUT") action ShowMenu("about")
             textbutton _("HELP") action ShowMenu("help")
+            textbutton _("EXTRA") action ShowMenu("gallery")
             textbutton _("EXIT") action Quit(confirm=not main_menu)
 
 style main_navigation_button_text:
     font gui.main_menu_font
     color "#fff"
-    size 55
+    size 48
     xalign 0
     hover_color "#a4a4a4"
     # outlines [(2, "#a4a4a4", 3, 3)]

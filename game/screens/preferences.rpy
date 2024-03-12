@@ -10,16 +10,12 @@ screen preferences():
 
     tag menu
 
-    add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
+    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
 
     use game_menu(_("Preferences"))
 
-    viewport:
-        style_prefix 'game_menu'
-        mousewheel True draggable True pagekeys True
-        scrollbars "vertical"
-        has vbox
-
+    vbox:
+        spacing 50
         hbox:
             box_wrap True
 
@@ -50,7 +46,6 @@ screen preferences():
             ## Additional vboxes of type "radio_pref" or "check_pref" can be
             ## added here, to add additional creator-defined preferences.
 
-        null height 60
 
         hbox:
             style_prefix "slider"
