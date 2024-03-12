@@ -52,16 +52,27 @@ label prologue_1:
     mei_speaking "……"
     scene bg_meiroom with pixellate
     mei_speaking "……"
+    show yeimg at char_right with moveinright
     ye_speaking "现在有什么感觉吗？饿不饿？"
+    show meiimg shirt eye_still at char_left with easeinleft
     mei_speaking "不，没事……谢谢。"
     ye_speaking "行，那你……自己待一会？需要什么不？"
     mei_speaking "好。"
     mei "我刚醒来没多久，因而说话也是有气无力。好在叶成华真的没有继续说下去，只是点点头从床边站起身，揉了揉我的脑袋。"
     mei_speaking "……抱歉……给你添麻烦了。"
-    ye_speaking "总之，这事你也别想太多，是我要把你带过来，还擅自帮你约了饭局，是我该给你道歉，不好意思啊。\n不过，彭江丽那边，我没说你的事，如果可以跟人家解释一下就好了哦。"
+    hide yeimg
+    show yeimg smile at char_right
+    ye_speaking "说啥呢。这事你也别想太多，是我要把你带过来，还擅自帮你约了饭局。是我该给你道歉，不好意思啊。\n不过，彭江丽那边，我没说你的事，如果可以跟人家解释一下就好了哦。"
     mei_speaking "嗯……好。"
+    hide meiimg
+    show meiimg shirt eye_close at char_left
     mei "我的头更低了些，想道歉，却什么别的话也说不出。"
+    hide yeimg
+    show yeimg laugh at char_right
     ye_speaking "嗨，放轻松点，彭江丽又不会吃了你，没什么大不了的。我也不打扰你了，要是有事用楼下电话打给我就行。"
+    hide yeimg with moveoutright
+
+    show bg_meiroom with fade
     mei "直到关门的声音彻底消失，我才抬起头，怔怔地看着陌生的房间。明亮的日光透过没遮盖严实的窗帘渗入屋内，却完全没有让我变暖。"
     mei "现在是早上七点，也就是说，我完全搞砸了昨天的晚饭，自顾自地完全睡到现在。\n而且，我又……"
     mei "太糟糕了，绝对是最糟糕的重逢……"

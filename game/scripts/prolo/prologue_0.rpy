@@ -19,11 +19,12 @@ label prologue_0:
     show meiimg at char_left with easeinright
     mei_speaking "……"
     mei "我无言移动视线，看向扶着我的女人。叶成华，我那不太熟悉却又过分自来熟的表姐，正夸张地冲着我叹气。"
-    ye_speaking "有说错嘛？你不就是这样，坐车而已，才坐了不到一个小时。"
+    ye_speaking "有说错嘛？你不就是这样，坐车而已，才坐了一会。"
     hide meiimg
     show meiimg eye_still at char_left
     mei_speaking "……"
     mei "视线再次移动，落在旁边的那辆……三轮车上。\n老旧，破烂，生锈，歪七扭八，横杠成了斜杠。她所声称的，就是这样的……车。"
+    mei "不久前，我才刚从几个小时的大巴上下来，现在又上了她这不靠谱的三轮车，没有当场晕倒简直已经是奇迹。"
     mei "虽然以前也搬家过，但这么长时间，又辗转这么多次，条件还不好的还是第一次。"
     hide meiimg
     show meiimg o at char_left
@@ -32,11 +33,12 @@ label prologue_0:
     show meiimg eye_still at char_left
     mei "我太久没说过话，又是好不容易说这么长，更是累得要命，说一段就得缓一会。"
     ye_speaking "得了，这下又怪到我头上。"
+    ye_speaking "我在大巴站的时候不是问过你的吗，你自己说不用休息的，我哪知道你不行啊。"
     hide meiimg
     show meiimg at char_left
     mei_speaking "……"
-    mei "实在有气无力，说不过她。经过几句反驳的时间，我终于缓过来——在夏初的中午，太阳还剩不少活力，再加上一路的颠簸弯折，坐在这平板三轮车上的我没彻底晕倒真是奇迹。"
-    mei "不过，等不舒服的感觉褪去后，我能感觉到舒适而流动的空气扑上脸颊。的确比沉闷的房间好很多……我也能理解叶成华的想法。只是，对我来说……"
+    mei "她说的有道理，当时……的确是我不知天高地厚，想要硬撑，结果变成这样。\n经过几句反驳的时间，我终于缓过来——在夏初的中午，太阳还剩不少活力，毫无保留地洒落在我身上。"
+    mei "等不舒服的感觉褪去后，我能感觉到舒适而流动的空气扑上脸颊。的确比沉闷的房间好很多……我也能理解叶成华的想法。只是，对我来说……"
     ye_speaking "还是不行吗？要不要我背你走？不用担心，虽然我平时只对女朋友这么做，但偶尔也是可以关照下我妹妹的哦、"
     hide meiimg
     show meiimg o at char_left
