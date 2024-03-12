@@ -4,4 +4,17 @@ transform char_mid:
     yalign 0.1
     yoffset 80
 
+transform char_right:
+    zoom 0.5
+    xalign 1.0
+    yalign 0.1
+    yoffset 80
+    xoffset 100
+
+transform char_left:
+    zoom 0.5
+    xalign 0.0
+    yalign 0.1
+    yoffset 80
+    xoffset -100
     

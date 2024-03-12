@@ -123,9 +123,10 @@ style quick_button:
 
 style quick_button_text:
     size 21
-    selected_color '#767676'
+    selected_color gui.dark_grey
     idle_color "#ffffff"
-    hover_color "#9f9f9f"
+    hover_color gui.dark_grey
+    outlines[(1.5,"#cacaca")]
     font gui.main_menu_font
 
 ## NVL screen ##################################################################

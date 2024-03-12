@@ -27,7 +27,7 @@ define gui.text_font = "fonts/LXGWWenKaiMono-Light.ttf"
 # The text font for buttons
 define gui.interface_text_font = "fonts/猫啃网秀雅圆.ttf"
 # The default size of in-game text
-define gui.text_size = 33
+define gui.text_size = 38
 # The font for character names
 define gui.name_text_font = "fonts/LXGWWenKaiMono-Bold.ttf"
 # The size for character names
