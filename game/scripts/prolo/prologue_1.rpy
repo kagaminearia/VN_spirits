@@ -32,8 +32,7 @@ label prologue_1:
     peng_speaking "其实我……"
     mei "……快啊！！想点别的！！别再紧张了！！"
     hide pengimg
-    show pengimg o at char_right with dissolve:
-        function WaveShader(period = 1, amp=1.0, repeat='repeat', double="both")
+    show pengimg o at char_right
     peng_speaking "你……"
     mei "不行……这样下去，又要像之前一样了……又是，什么都……"
     hide pengimg
@@ -72,7 +71,7 @@ label prologue_1:
     ye_speaking "嗨，放轻松点，彭江丽又不会吃了你，没什么大不了的。我也不打扰你了，要是有事用楼下电话打给我就行。"
     hide yeimg with moveoutright
 
-    show bg_meiroom with fade
+    scene bg_meiroom with fade
     mei "直到关门的声音彻底消失，我才抬起头，怔怔地看着陌生的房间。明亮的日光透过没遮盖严实的窗帘渗入屋内，却完全没有让我变暖。"
     mei "现在是早上七点，也就是说，我完全搞砸了昨天的晚饭，自顾自地完全睡到现在。\n而且，我又……"
     mei "太糟糕了，绝对是最糟糕的重逢……"

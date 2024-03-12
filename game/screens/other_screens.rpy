@@ -1,3 +1,18 @@
+screen chap_interval(index):
+    add "#fff"
+    style_prefix 'chap_interval'
+    hbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 10
+        text "Chapter"
+        text "[index]"
+
+
+style chap_interval_text:
+    font "fonts/瑞美加张清平硬笔楷书.ttf"
+    size 40
+    color gui.light_blue
 
 ## About screen ################################################################
 ##
@@ -73,8 +88,8 @@ screen help():
             textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
             textbutton _("Mouse") action SetScreenVariable("device", "mouse")
 
-            if GamepadExists():
-                textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+            # if GamepadExists():
+            #     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
 
         if device == "keyboard":
             use keyboard_help
