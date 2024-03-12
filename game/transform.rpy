@@ -17,4 +17,9 @@ transform char_left:
     yalign 0.1
     yoffset 80
     xoffset -100
-    
+
+
+transform cg_0:
+    zoom 0.5
+    xalign 0.5
+    yalign 0.5

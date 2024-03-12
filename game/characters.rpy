@@ -82,7 +82,7 @@ init:
             attribute coat default:
                 "images/char/mei/coat.png"
             attribute shirt:
-                "images/char/mei/coat.png"
+                "images/char/mei/shirt.png"
 
         group eyes:
             attribute eye_def default:
