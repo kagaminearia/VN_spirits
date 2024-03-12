@@ -35,7 +35,7 @@ screen main_menu():
             spacing 45
             textbutton _("ABOUT") action ShowMenu("about")
             textbutton _("HELP") action ShowMenu("help")
-            textbutton _("EXTRA") action ShowMenu("gallery")
+            textbutton _("EXTRA") action ShowMenu("gallery_menu")
             textbutton _("EXIT") action Quit(confirm=not main_menu)
 
 style main_navigation_button_text:

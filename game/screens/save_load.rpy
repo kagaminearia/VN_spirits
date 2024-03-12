@@ -162,13 +162,13 @@ screen file_slots(title):
 
                 textbutton _(">") action FilePageNext()
 
-            if config.has_sync:
-                if CurrentScreenName() == "save":
-                    textbutton _("Upload Sync"):
-                        action UploadSync()
-                else:
-                    textbutton _("Download Sync"):
-                        action DownloadSync()
+            # if config.has_sync:
+            #     if CurrentScreenName() == "save":
+            #         textbutton _("Upload Sync"):
+            #             action UploadSync()
+            #     else:
+            #         textbutton _("Download Sync"):
+            #             action DownloadSync()
 
 
 style page_label:

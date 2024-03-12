@@ -32,31 +32,43 @@ EasyRenPyGui is made by {a=https://github.com/shawna-p}Feniks{/a} {a=https://fen
 screen about():
 
     tag menu
-
-    add "#8d8d8db2" # The background; can be whatever
-
     use game_menu(_("About"))
+    style_prefix 'about'
+    vbox:
+        xalign 0.25
+        yalign 0.25
+        spacing 45
+        vbox:
+            spacing 18
+            vbox:
+                text _("剧本·美术·程序") size 40
+                text _("可食用蓝墨水") 
+            vbox:
+                text _("音乐·音效·技术帮助") size 40
+                text _("akagi") 
+            # vbox:
+            #     text _("测试") size 40
+            #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
 
-    viewport:
-        style_prefix 'game_menu'
-        mousewheel True draggable True pagekeys True
-        scrollbars "vertical"
-
-        has vbox
-        style_prefix "about"
-
-        label "[config.name!t]"
-        text _("Version [config.version!t]\n")
-
-        if gui.about:
-            text "[gui.about!t]\n"
-
-        text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
-
+        vbox:
+            spacing 13
+            text _("Reference") size 40
+            text _("游戏引擎：{a=https://www.renpy.org/}Ren'Py{/a}")
+            text _("音乐：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，{a=https://amachamusic.chagasi.com}Amachamusic{/a}，{a=https://pixabay.com}Pixabay{/a}") 
+            text _("音效：{a=https://pixabay.com}Pixabay{/a}") 
+            text _("场景图片：{a=https://unsplash.com/}Unsplash{/a}") 
+            text _("图形素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI{/a} by Siyokoy")
+            text _("代码·水波效果：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader{/a} by Wattson")
+            text _("代码·立绘强调：{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight{/a} by Wattson")
+            text _("代码·界面模板：{a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI{/a} by Feniks")
+            
 style about_label_text:
     size 36
 
+style about_text:
+    font gui.interface_text_font
+    size 25
+    color gui.dark_grey
 
 ## Help screen #################################################################
 ##
@@ -67,11 +79,8 @@ style about_label_text:
 screen help():
 
     tag menu
-
     default device = "keyboard"
-
-    add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
-
+    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
     use game_menu(_("Help"))
 
     viewport:
