@@ -1,16 +1,17 @@
 # main characters
 define na = Character(None, what_color=gui.light_grey)
 define mei = Character("梅雨",what_color=gui.light_grey,who_color=gui.light_grey)
-define mei_speaking = Character("梅雨",what_prefix="“",what_suffix="”")
-define xiang_speaking = Character("向夏",what_prefix="“",what_suffix="”")
-define peng_speaking = Character("彭江丽",what_prefix="“",what_suffix="”")
-define ye_speaking = Character("叶成华",what_prefix="“",what_suffix="”")
-define lu_speaking = Character("路花",what_prefix="“",what_suffix="”")
+define mei_speaking = Character("梅雨",what_prefix="“",what_suffix="”",image='meiimg',callback=name_callback,cb_name="mei")
+define xiang_speaking = Character("向夏",what_prefix="“",what_suffix="”",image='xiangimg',callback=name_callback,cb_name="xiang")
+define peng_speaking = Character("彭江丽",what_prefix="“",what_suffix="”",image='pengimg',callback=name_callback,cb_name="peng")
+define ye_speaking = Character("叶成华",what_prefix="“",what_suffix="”",image='yeimg',callback=name_callback,cb_name="ye")
+define lu_speaking = Character("路花",what_prefix="“",what_suffix="”",image='luimg',callback=name_callback,cb_name="lu")
 define unknown_speaking = Character("？？？",what_prefix="“",what_suffix="”")
 
 
 init:
     layeredimage xiangimg:
+        at sprite_highlight('xiang')
         group body:
             attribute hand default:
                 "images/char/xiang/hand.png"
@@ -43,6 +44,7 @@ init:
 
 
     layeredimage pengimg:
+        at sprite_highlight('peng')
         group body:
             attribute coat default:
                 "images/char/peng/coat.png"
@@ -75,6 +77,7 @@ init:
 
 
     layeredimage meiimg:
+        at sprite_highlight('mei')
         group body:
             attribute coat default:
                 "images/char/mei/coat.png"
@@ -109,6 +112,7 @@ init:
 
     
     layeredimage yeimg:
+        at sprite_highlight('ye')
         group body:
             attribute ye default:
                 "images/char/other/ye.png"
@@ -121,6 +125,7 @@ init:
 
     
     layeredimage luimg:
+        at sprite_highlight('lu')
         group body:
             attribute lu default:
                 "images/char/other/lu.png"

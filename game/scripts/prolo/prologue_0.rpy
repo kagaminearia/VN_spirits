@@ -7,7 +7,7 @@ label prologue_0:
         function WaveShader(period = 4, amp=6.0, repeat='mirrored', double="both")
     mei_speaking "咳咳，呼……哈啊……"
 
-    scene bg_vil4 with dissolve:
+    scene bg_vil4 with fade:
         function WaveShader(period = 2, amp=1.0, repeat='mirrored', double="both")
     mei "突然起身让大脑有一瞬间的缺氧，我长长地吐出一口气，终于从晕车里缓了过来。"
     scene bg_vil4 with dissolve
