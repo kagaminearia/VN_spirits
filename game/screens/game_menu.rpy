@@ -11,7 +11,8 @@
 
 screen game_menu(title):
 
-    add "#ffffffb8"
+    add "#ffffffdb"
+    add "gui/starlight_1.png"
     add "gui/border.png"
     style_prefix "game_menu"
 

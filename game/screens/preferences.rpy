@@ -15,6 +15,8 @@ screen preferences():
     use game_menu(_("Preferences"))
 
     vbox:
+        xalign 0.5
+        yalign 0.5
         spacing 50
         hbox:
             box_wrap True
