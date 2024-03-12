@@ -10,7 +10,7 @@
 
 ## The width and height of thumbnails used by the save slots.
 define config.thumbnail_width = 400
-define config.thumbnail_height = 300
+define config.thumbnail_height = 400 / 16 * 9
 define gui.file_slot_cols = 1
 define gui.file_slot_rows = 3
 define slot_verticle_spacing = 120
