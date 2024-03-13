@@ -24,10 +24,10 @@ screen confirm(message, yes_action, no_action=None):
 
         hbox:
 
-            textbutton _("Confirm") action yes_action
+            textbutton _("确定") action yes_action
             # Modified so you can just have a confirmation prompt
             if no_action is not None:
-                textbutton _("Cancel") action no_action
+                textbutton _("取消") action no_action
 
     ## Right-click and escape answer "no".
     if no_action is not None:
