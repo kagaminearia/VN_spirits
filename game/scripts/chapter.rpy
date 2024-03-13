@@ -13,14 +13,21 @@ label prologue:
             $ x_point += 1  
     call prologue_1
 
+define c1_x1 = 0
+define c1_p1 = 0
 label chapter1:
     call chap1_1
     menu:
         "提醒她多穿衣服":
             call chap1_x1
-            $ x_point += 1  
+            $ x_point += 1
+            $ c1_x1 = 1
         "继续忽略":
             call chap1_p1
-            $ p_point += 1  
+            $ p_point += 1 
+            $ c1_p1 = 1 
     call chap1_2
-    
+    if c1_p1 == 1:
+        call chap1_p2
+    else:
+        call chap1_x2

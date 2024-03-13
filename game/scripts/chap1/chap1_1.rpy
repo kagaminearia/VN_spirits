@@ -126,6 +126,10 @@ label chap1_1:
     unknown_speaking "哈……阿嚏！！"
     show meiimg shirt o at char_left with dissolve
     mei_speaking "咿？！"
+    hide xiangimg
+    show xiangimg fist at char_right
     mei "到楼下，我又和一头卷发的女人撞见。本想就此忽略，但她忽然打出的巨大喷嚏让我愣了愣，下意识地转头看她。"
+    hide meiimg
+    show meiimg shirt at char_left
     mei "……是之前洗澡的时候着凉了吧……\n虽然现在已经是夏天的开始，但这里的早晚温差大，温度最低的时候一点也不像夏天。"
     mei "说起来，她这件衣服可能也不够厚……"
