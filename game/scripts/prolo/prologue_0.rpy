@@ -1,16 +1,20 @@
 label prologue_0:
+    $ renpy.sound.play(sound.cough, channel="sound")
     scene bg_vil1 with dissolve:
         function WaveShader(period = 3, amp=2.0, repeat='mirrored', double="both")
     mei_speaking "呕……咳，咳咳……！"
     mei "我摇摇晃晃地跌下车，立马弓起腰开始干呕。如果不是手臂被旁边的人抓住，双腿简直要支撑不住身体。但没办法，先让我吐完再说……"
     show bg_vil1 with dissolve:
         function WaveShader(period = 4, amp=6.0, repeat='mirrored', double="both")
+    $ renpy.sound.play(sound.cough, channel="sound", loop=True)
     mei_speaking "咳咳，呼……哈啊……"
 
     scene bg_vil4 with fade:
         function WaveShader(period = 2, amp=1.0, repeat='mirrored', double="both")
+    stop sound
     mei "突然起身让大脑有一瞬间的缺氧，我长长地吐出一口气，终于从晕车里缓了过来。"
     scene bg_vil4 with dissolve
+    $ renpy.music.play(music.sonata_a_major_three, channel="music", loop=True, fadein=0.5)
     mei "眼前是空旷的浅蓝色天空，云层稀疏，明朗的日光照耀着低矮的建筑群……{p}照理来说，我应该觉得很熟悉，但此刻更多的却是陌生的感觉。"
     mei "不过，同样是这时候的大晴天，也许是因为这里更北，没有我之前住的地方那般炎热，让人舒服不少。"
     
@@ -56,6 +60,7 @@ label prologue_0:
     mei "以前我在这里生活过一段时间，但那时候太小，只剩下很模糊的记忆。{p}与其说是回到老家，不如说像是到一个新地方重新开始。"
     mei "嗯……重新开始，吗……总感觉是个很糟的比喻。"
     mei "我强硬地止住了更深入的想法，避免自己总是旧事重提。"
+    stop music fadeout 1.0
 
     scene bg_meiliv with dissolve
     show yeimg smile at char_right with easeinright
@@ -64,6 +69,7 @@ label prologue_0:
     mei_speaking "哦……好。"
 
     scene bg_meiroom with dissolve
+    $ renpy.sound.play(sound.cicada, channel="sound", loop=True)
     mei "房间只有必要的大件家具，显得空间更为开阔。我跟着叶成华从楼梯上到二楼，进到这个风格一样的卧室。"
     mei "同色系的双人床，竖柜，一大一小两张桌子，简约到甚至有些简陋。\n不过我不是那种太注重精致环境的人，因而至少从宽敞程度来说，这里给我一种挺舒适的感觉。"
     show meiimg eye_still o at char_left with easeinleft
@@ -83,6 +89,7 @@ label prologue_0:
     hide yeimg
     show yeimg at char_right
     ye_speaking "你还记得彭江丽吗？"
+    stop sound
     hide meiimg
     show meiimg eye_still at char_left
     mei_speaking "……"
@@ -109,6 +116,7 @@ label prologue_0:
     hide meiimg
     show meiimg eye_still at char_left
     hide yeimg with easeoutright
+    $ renpy.music.play(music.rainy_day, channel="music", loop=True, fadein=0.5)
     mei "我终于抬起头，看到她离开的背影，风风火火，一点也不拖泥带水，显得我这突然涌起的情绪是如此没必要。{p}……随便吧，我已经无所谓了……"
     hide meiimg with dissolve
     mei "十一岁之前，我一直在这里生活。我妈很忙，总是把我留在彭江丽家。她是那时我唯一的朋友。虽然记忆已经模糊，但的确是我少有的单纯快乐时间。"
@@ -116,6 +124,7 @@ label prologue_0:
     mei "我以为她讨厌我，或者早就忘记我了……所以，她也还记得我吗，现在又是怎么想我的？如果答应吃饭的话……是不是不排斥见到我的意思？"
     mei "我的思绪许久没有这么活络，却尽是些不着边际的想法。不，或许是一种说不上原因的害怕吧……以至于我不确定要不要去提前和她见面。"
     mei "既然如此……还是先睡一觉吧——我果断选择了逃避。"
+    stop music fadeout 1.0
 
     scene bg_meiroom with fade
     mei_speaking "好晕……啊，这里是……"
