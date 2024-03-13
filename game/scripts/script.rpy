@@ -1,5 +1,8 @@
 ﻿
 define chap_index = 0
+define p_point = 0
+define x_point = 0
+
 label start:
 
     call prologue

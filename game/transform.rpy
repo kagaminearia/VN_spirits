@@ -23,3 +23,8 @@ transform cg_0:
     zoom 0.5
     xalign 0.5
     yalign 0.5
+
+transform cg_s:
+    zoom 0.4
+    xalign 0.5
+    yalign 0.35
