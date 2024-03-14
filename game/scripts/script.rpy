@@ -9,8 +9,8 @@ label start:
     $ chap_index = 1
     # waiting for opening video
     window hide
-    show screen chap_interval(chap_index) with Fade(0.5,0.5,0.5)
-    pause 3
+    show screen chap_interval(chap_index) with Fade(1.5,1,0.5)
+    pause 4
 
     return
 

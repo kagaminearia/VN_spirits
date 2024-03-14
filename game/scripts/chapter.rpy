@@ -20,12 +20,12 @@ label chapter1:
     menu:
         "提醒她多穿衣服":
             call chap1_x1
-            $ x_point += 1
             $ c1_x1 = 1
+            $ x_point += 1
         "继续忽略":
             call chap1_p1
-            $ p_point += 1 
             $ c1_p1 = 1 
+            $ p_point += 1 
     call chap1_2
     if c1_p1 == 1:
         call chap1_p2

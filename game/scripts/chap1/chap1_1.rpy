@@ -105,7 +105,7 @@ label chap1_1:
     scene bg_meicorridor with pixellate
     mei_speaking "嗯……？！"
     mei "我没想到，刚刚吃饭时才在心里吐槽过两个人，马上又遇到其中之一。{p}——这一回，我惊得连声音也发不出，只是赶紧转过头去，一眼也不想多看。"
-    show cg_x21 at cg_s with irisin 
+    show q_x10 at cg_s with irisin 
     unknown_speaking "啊，我还以为房子里是我室友呢，还没习惯过来，不好意思啊。"
     mei "方才轻瞟一眼，我看到一个全身赤裸的女人从角落的洗手间里走出来，只有手里的拿着的浴巾堪堪遮挡住胸口。所以，她可以说是一丝不挂地站在我面前。"
     mei_speaking "你衣服呢？"

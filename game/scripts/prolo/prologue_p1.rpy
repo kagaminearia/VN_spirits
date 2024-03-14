@@ -33,7 +33,7 @@ label prologue_p1:
     mei_speaking "……嗨……啊，好久不见……"
     mei "我打开门，和门口的人忽然四目相对。彭江丽愣了愣，随后很快露出温柔的笑容。{p}我没想过这份冲击是如此直接，十分生涩地接上打招呼的话语。"
 
-    scene bg_vil5 with pixellate 
+    scene bg_vil6 with pixellate 
     show pengimg smile at char_right with moveinright 
     peng_speaking "真的好久不见了……"
     show meiimg shirt eye_still smile at char_left with moveinleft 
