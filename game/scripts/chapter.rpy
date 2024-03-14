@@ -12,6 +12,7 @@ label prologue:
             $ c0_x1 = 1
             $ x_point += 1  
     call prologue_1
+    return
 
 define c1_x1 = 0
 define c1_p1 = 0
@@ -31,3 +32,6 @@ label chapter1:
         call chap1_p2
     else:
         call chap1_x2
+    call chap1_3
+
+    return
