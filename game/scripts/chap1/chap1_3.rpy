@@ -46,7 +46,7 @@ label chap1_3:
     xiang_speaking "……"
     peng_speaking "……"
     mei "我站在餐桌旁，和旁边的另外两个人面面相觑，一种比以往更加诡异而尴尬的气氛笼罩在房间里。{p}到底为什么会变成这样……完全难以招架啊……"
-    show pengimg o at char_mid with moveinleft
+    show pengimg shirt o at char_mid with moveinleft
     peng_speaking "你，啊……你们还是先吃点东西吧。"
     show meiimg shirt eye_wacky at char_left with moveinleft
     mei_speaking "嗯……"
@@ -65,4 +65,9 @@ label chap1_3:
     mei "她很快帮我们处理了麻烦，还顺便做了一餐饭。\n于是……"
 
     scene bg_meiliv with pixellate
-    
+    show pengimg o at char_right with moveinright
+    peng_speaking "……那，我先回去啦？你趁热吃哦。"
+    show meiimg shirt o at char_left with moveinleft
+    mei_speaking "嗯……啊？"
+    mei "彭江丽犹豫的声音打断了我的思考，抬头一看，向夏正专心吃饭，而彭江丽也已经穿好外套，只有我还呆呆地站在原地。"
+    return

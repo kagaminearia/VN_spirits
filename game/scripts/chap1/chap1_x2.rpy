@@ -66,3 +66,4 @@ label chap1_x2:
     hide meiimg
     show meiimg eye_close at char_left
     mei "……真是的，我心虚什么啊。"
+    return

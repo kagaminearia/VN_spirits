@@ -133,3 +133,4 @@ label chap1_1:
     show meiimg shirt at char_left
     mei "……是之前洗澡的时候着凉了吧……\n虽然现在已经是夏天的开始，但这里的早晚温差大，温度最低的时候一点也不像夏天。"
     mei "说起来，她这件衣服可能也不够厚……"
+    return

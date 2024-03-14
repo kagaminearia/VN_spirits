@@ -33,5 +33,9 @@ label chapter1:
     else:
         call chap1_x2
     call chap1_3
-
+    menu:
+        "送彭江丽回家":
+            "."
+        "和彭江丽说再见":
+            "."
     return
