@@ -1,20 +1,17 @@
 label prologue_0:
-    $ renpy.sound.play(sound.cough, channel="sound")
     scene bg_vil1 with dissolve:
         function WaveShader(period = 3, amp=2.0, repeat='mirrored', double="both")
     mei_speaking "呕……咳，咳咳……！"
     mei "我摇摇晃晃地跌下车，立马弓起腰开始干呕。如果不是手臂被旁边的人抓住，双腿简直要支撑不住身体。但没办法，先让我吐完再说……"
     show bg_vil1 with dissolve:
         function WaveShader(period = 4, amp=6.0, repeat='mirrored', double="both")
-    $ renpy.sound.play(sound.cough, channel="sound", loop=True)
     mei_speaking "咳咳，呼……哈啊……"
 
     scene bg_vil4 with fade:
         function WaveShader(period = 2, amp=1.0, repeat='mirrored', double="both")
-    stop sound
     mei "突然起身让大脑有一瞬间的缺氧，我长长地吐出一口气，终于从晕车里缓了过来。"
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True)
     scene bg_vil4 with dissolve
-    $ renpy.music.play(music.sonata_a_major_three, channel="music", loop=True, fadein=0.5)
     mei "眼前是空旷的浅蓝色天空，云层稀疏，明朗的日光照耀着低矮的建筑群……{p}照理来说，我应该觉得很熟悉，但此刻更多的却是陌生的感觉。"
     mei "不过，同样是这时候的大晴天，也许是因为这里更北，没有我之前住的地方那般炎热，让人舒服不少。"
     
@@ -89,12 +86,14 @@ label prologue_0:
     hide yeimg
     show yeimg at char_right
     ye_speaking "你还记得彭江丽吗？"
+    stop music
     stop sound
     hide meiimg
     show meiimg eye_still at char_left
     mei_speaking "……"
     hide meiimg
     show meiimg eye_still o at char_left
+    $ renpy.music.play(music.remember_me_peng, channel="music", loop=True, fadein=0.5)
     mei_speaking "啊，嗯。"
     hide yeimg
     show yeimg smile at char_right
@@ -116,7 +115,6 @@ label prologue_0:
     hide meiimg
     show meiimg eye_still at char_left
     hide yeimg with easeoutright
-    $ renpy.music.play(music.rainy_day, channel="music", loop=True, fadein=0.5)
     mei "我终于抬起头，看到她离开的背影，风风火火，一点也不拖泥带水，显得我这突然涌起的情绪是如此没必要。{p}……随便吧，我已经无所谓了……"
     hide meiimg with dissolve
     mei "十一岁之前，我一直在这里生活。我妈很忙，总是把我留在彭江丽家。她是那时我唯一的朋友。虽然记忆已经模糊，但的确是我少有的单纯快乐时间。"

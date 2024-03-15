@@ -5,6 +5,7 @@ label prologue_x1:
     mei "距离晚饭还有一段时间，我已经睡饱，至少现在没有太累的感觉……要不，出门看看吧——十一岁之后，我就再没来过这里了，不知道现在变了多少。"
 
     scene bg_vil1 with pixellate
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True, fadein=0.5)
     mei "早就过了中午，阳光却依然不显颓势，热烈地展现自己的存在感。{p}我缓慢地在砂石路上踱步，没碰到几个人，也没人在意我，实在令人安心许多。"
     mei "说不定，叶成华的方法真的有效，她硬是把我拉回这个地方……我不由得再次展开幻想。{p}……明知道，不切实际。"
 
@@ -20,9 +21,11 @@ label prologue_x1:
     mei "以至于我看得愣了神，直到对方明显察觉到我的目光，转过头来。\n……感觉我这样有些没礼貌，我赶紧瞥开视线，避免产生多余的交流。"
     show cg_x10 at cg_0
     mei "——然而还是太晚了。"
+    stop music fadeout 0.5
 
     scene bg_station with pixellate
     show xiangimg laugh at char_right with moveinright
+    $ renpy.music.play(music.xiang_first_meet, channel="music", fadein=0.5, loop=True)
     unknown_speaking "打扰一下，你知道这个地方怎么走吗？"
     show meiimg o at char_left with moveinleft
     mei_speaking "……呃，抱歉，不知道。"
@@ -48,6 +51,7 @@ label prologue_x1:
     hide meiimg
     show meiimg at char_left 
     mei_speaking "没事……"
+    stop music fadeout 0.5
 
     scene bg_station with pixellate
     mei "好累……结束莫名其妙的对话后，我开始感到疲乏，不知道是说话太累还是走路太累了。\n也许今天不适合出门，还是先回去吧。"
@@ -55,6 +59,7 @@ label prologue_x1:
 
     scene bg_vil1 with pixellate
     show pengimg o at char_right with moveinright
+    $ renpy.music.play(music.summer_wind, channel="music", loop=True, fadein=0.5)
     unknown_speaking "梅雨……吗？！你，你是……？"
     show meiimg at char_left with easeinleft
     mei_speaking "……啊。"
