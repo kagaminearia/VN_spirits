@@ -50,8 +50,12 @@ label prologue_1:
     show bg_vil3 with dissolve:
         function WaveShader(period = 3, amp=2.0, repeat='mirrored', double="both")
     mei "然后……"
+    window hide
     stop music
-    scene bg_black with fade
+    show cg_p20 at cg_0, blink
+    pause(2)
+    scene bg_black with dissolve
+    window show
     na "……"
 
     mei_speaking "……"
@@ -80,7 +84,8 @@ label prologue_1:
 
     scene bg_meiroom with fade
     mei "直到关门的声音彻底消失，我才抬起头，怔怔地看着陌生的房间。明亮的日光透过没遮盖严实的窗帘渗入屋内，却完全没有让我变暖。"
-    mei "现在是早上七点，也就是说，我完全搞砸了昨天的晚饭，自顾自地完全睡到现在。\n而且，我又……"
+    mei "现在是早上七点，也就是说，我完全搞砸了昨天的晚饭，自顾自地完全睡到现在。{p}而且，我又……"
+    mei "……{p}此时此刻，我甚至开始庆幸，至少现在不用直接面对彭江丽——当然，这也是我唯一还能庆幸的事。"
     mei "太糟糕了，绝对是最糟糕的重逢……"
     stop music fadeout 1.0
     return

@@ -45,3 +45,8 @@ transform shaking:
     linear 0.1 xoffset -3 yoffset 3
     linear 0.1 xoffset 0 yoffset 0
     repeat
+
+transform blink:
+    linear 1.0 alpha 0.2
+    linear 1.0 alpha 1.0
+    repeat

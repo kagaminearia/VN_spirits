@@ -27,6 +27,8 @@ init:
                 "images/char/xiang/eye_squint.png"
             attribute eye_still:
                 "images/char/xiang/eye_still.png"
+            attribute eye_shock:
+                "images/char/xiang/eye_shock.png"
 
         group mouse:
             attribute def default:
@@ -60,6 +62,8 @@ init:
                 "images/char/peng/eye_angry.png"
             attribute eye_still:
                 "images/char/peng/eye_still.png"
+            attribute eye_care:
+                "images/char/peng/eye_care.png"
 
         group mouse:
             attribute def default:
@@ -93,6 +97,10 @@ init:
                 "images/char/mei/eye_wacky.png"
             attribute eye_still:
                 "images/char/mei/eye_still.png"
+            attribute eye_shock:
+                "images/char/mei/eye_shock.png"
+            attribute eye_squint:
+                "images/char/mei/eye_squint.png"
 
         group mouse:
             attribute def default:
