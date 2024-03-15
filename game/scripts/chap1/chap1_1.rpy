@@ -1,13 +1,3 @@
-image glitches:
-    im.MatrixColor("images/glitch0.jpg",im.matrix.brightness(-0.3))
-    pause 0.2
-    im.MatrixColor("images/glitch1.jpg",im.matrix.brightness(-0.3))
-    pause 0.2
-    im.MatrixColor("images/glitch2.jpg",im.matrix.brightness(-0.3))
-    pause 0.2
-
-    repeat
-
 label chap1_1:
     scene bg_meiliv with pixellate
     mei "吃过药后，我犹豫万分，还是到楼下打通了那个电话号码。"
@@ -15,16 +5,21 @@ label chap1_1:
     mei_speaking "啊，啊，嗯……没事，抱歉，影响你了。"
     peng_speaking "怎么会！是我不好，非要当时拉着你走，明明之后再去也可以的……你现在还有没有不舒服？"
     mei_speaking "真的没事啦……"
-    peng_speaking "那就好……那你，你要是以后有什么事，都可以跟我说……"
+    mei "也许是电话的信号不好，传来的声音竟然让我觉得有些刺耳。我无意识地掐紧手指，还好，至少不用让她看到我现在的样子……"
+    peng_speaking "那就好……我真的好担心，真的，担心死了……"
+    mei_speaking "嗯，对不起……"
+    peng_speaking "不是！你别对不起，都怪我，怪我没有看好你。"
+    peng_speaking "那你，你要是以后有什么事，都可以跟我说……"
     mei_speaking "嗯，好。"
     peng_speaking "……"
     mei_speaking "……"
     peng_speaking "那，那就这样……你，啊，不……那我不打扰你啦。"
     mei_speaking "好。"
-    mei "挂掉的电话声音像宣判我死刑的钟声，终于缓缓降下来。但在那一刻，我真的松了口气。\n绷紧的神经放松下来后，新的疲惫感涌上心头，但这次不是身体上的。"
-    mei "真的，感觉糟透了……我不禁开始在心里埋怨起叶成华：如果不是她，如果不是她硬要把我带回来……"
+    mei "挂掉的电话声音像宣判我死刑的钟声，终于缓缓降下来。这样想是不对的，但是，在那一刻，我真的松了口气。"
+    mei "绷紧的神经放松下来后，新的疲惫感涌上心头，但这次不是身体上的。{p}真的，感觉糟透了……我不禁开始在心里埋怨起叶成华：如果不是她，如果不是她硬要把我带回来……"
     mei "……\n……只是，我也知道这根本只是在给自己找借口而已。"
     mei "是我自己糟透了才对……"
+    mei "是我自己……"
 
     scene bg_meiroom with pixellate
     na "咕噜……"
@@ -56,10 +51,10 @@ label chap1_1:
     mei_speaking "去，哪……"
     ye_speaking "回立涧村啊，你搬出来之后好像还没回去过吧，刚好也可以看看现在啥样了。"
     mei_speaking "呃……"
-    ye_speaking "反正你现在也是待在家，我把我那的旧房子借你，你一个人住段时间没问题吧。"
+    ye_speaking "反正你现在也是待在家，待在哪不都没区别嘛。我把我那的旧房子借你，你去那边住段时间没问题吧？"
     ye_speaking "你呢也别想太多，我也不会打扰你，想干嘛干嘛，就是换了个地儿，其他一样的。"
     mei_speaking "我……"
-    ye_speaking "那就这么说定了啊！别担心，要是你真不习惯了，我再送你回来就是了，没事的，啊。"
+    ye_speaking "那就这么说定了啊！别担心，要是你真住得不习惯，我再送你回来就是了，没事的，啊。"
     mei_speaking "……"
     
     scene bg_meicorridor with Fade(1,1,1)
@@ -67,7 +62,7 @@ label chap1_1:
     mei "这么想起来，当时我真的是完全被她带着走，简直是连哄带骗。\n回过神后，我也能明白她的良苦用心就是了……"
     mei "不过，昨天发生的事是不是完全辜负了她的心意啊。她大概会对我很失望吧……"
     mei "我怎么又开始了……嗯，别想了别想了，至少先下楼搞点东西——"
-    mei_speaking "吃？！"
+    mei_speaking "吃……？"
 
     show xiangimg o at char_right with moveinright
     unknown_speaking "……吃？你要吃东西？冰箱里有你姐姐给你留的菜，还有速冻饺子。"
@@ -89,8 +84,8 @@ label chap1_1:
     mei_speaking "一楼……？这么突然？之前……"
     ye_speaking "哦那个啊，昨天碰巧看到她需要帮忙，就聊了一下。她在找房子，我觉得刚好可以让她短租，就让她搬进来咯。"
     mei_speaking "刚认识的人，搬进家里？"
-    ye_speaking "没事没事啦，我有跟她说，她是住备用储藏室的，房间里有监控相机。况且，你房间又有锁，我每天也会过去看一次嘛。哦，要不要给你配个手机？"
-    mei_speaking "不……等等，你说，房间里装相机？你——"
+    ye_speaking "应该没事的，她把证件放在我这里了。而且我有跟她说，她是住备用储藏室的，房间里有监控相机。况且，你房间又有锁，我每天也会过去看一次嘛。哦，要不要给你配个手机？"
+    mei_speaking "不……等等，证件？房间里装相机？你——"
     ye_speaking "啊啊那个只是说着吓唬她的，我哪有钱装真的啊。不过她也答应了，而且，说不定人家真的有什么苦衷呢。还是个小孩，估计会守规矩的啦。"
     ye_speaking "你没其他事了吧？那我先挂了，晚上见哈。"
     mei_speaking "呃，好……"
