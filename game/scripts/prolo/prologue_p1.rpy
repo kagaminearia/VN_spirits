@@ -2,15 +2,21 @@ label prologue_p1:
     mei "其实我并没有不想和彭江丽见面。但叶成华说出那句话时我的下意识反应确实是抗拒……这也是没办法的事情。"
     mei "一起经过的时间不是假的，即使记忆模糊，现在我也能回想起那种朦胧的快乐。\n但……我们分开的时间也太久了，久到我几乎忘了她是什么样子。"
     mei "反正晚上也要一起吃饭，就当事情提前了吧……我慢吞吞地下楼，找到电话和旁边写着号码的便签条。"
+    $ renpy.sound.play(sound.ringtone, channel="sound", loop=True, fadein=0.5)
     na "嘟，嘟，嘟……"
+    stop sound
+    $ renpy.sound.play(sound.phone_pick_up, channel="sound")
+    pause
     peng_speaking "你好？哪位？"
     show meiimg shirt o at char_mid with dissolve
     mei_speaking "……\n我是梅雨。"
     peng_speaking "……"
+    show meiimg shirt o at char_mid with hpunch
     peng_speaking "梅雨？！\n最，最近还好吗？怎么会想到打电话给我……"
     hide meiimg
     show meiimg shirt eye_still smile at char_mid 
     mei "短暂的沉默后，声音从听筒里传来，有些惊讶，但也带着令人安心的熟悉感，令我的嘴角不自觉从绷紧的状态放下一些。"
+    $ renpy.music.play(music.summer_wind, channel="music", loop=True, fadein=0.5)
     mei_speaking "嗯，是啊……那个，是叶成华硬拉着我回来的。她说这里更适合我，可以待一阵子，然后……嗯……"
     mei "我没能想到合适的词——毕竟，像我这样的人，还有什么好……"
     peng_speaking "……噢对！我把这事都给忘了，成华姐之前跟我提过来着，今晚要一起吃饭的嘛。\n……啊，你现在是不是特别无聊？要不我去找你玩吧？"
@@ -33,7 +39,8 @@ label prologue_p1:
     mei_speaking "……嗨……啊，好久不见……"
     mei "我打开门，和门口的人忽然四目相对。彭江丽愣了愣，随后很快露出温柔的笑容。{p}我没想过这份冲击是如此直接，十分生涩地接上打招呼的话语。"
 
-    scene bg_vil6 with pixellate 
+    scene bg_vil6 with pixellate
+    stop music fadeout 1.0
     show pengimg smile at char_right with moveinright 
     peng_speaking "真的好久不见了……"
     show meiimg shirt eye_still smile at char_left with moveinleft 
@@ -56,6 +63,7 @@ label prologue_p1:
     hide meiimg
     show meiimg shirt at char_left
     peng_speaking "……"
+    $ renpy.music.play(music.peng_first_talk, channel="music", loop=True, fadein=0.5)
     mei "我们一边走路一边寒暄，来回都在讲关于我回镇上的客气话，热情的笑容在断断续续的节奏中逐渐变得有些无奈。"
     mei "现实中的重逢并不总是像小说里那样充满美好或是戏剧性，也没有自然而然激烈火花。对于我和彭江丽，这数十年的间隔足以将我们之间的所有故事抹平。没有什么爱与恨，什么都没有。"
     mei "但不约而同地保持着这时表面的欣喜，或许也是我们之间的默契。{p}不过……我这应该算是，在自我安慰吧……"
