@@ -221,4 +221,8 @@ style page_vbox:
 style page_button:
     padding (15, 6, 15, 6)
     xalign 0.5
+    color gui.dark_grey
+    hover_color gui.light_grey
+    selected_color "#fff"
+    font "fonts/Aboreto-Regular.ttf"
 

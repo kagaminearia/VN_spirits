@@ -42,3 +42,9 @@ label chapter1:
             call chap1_x3
     call chap1_4
     return
+
+
+label chapter2:
+    call chap2_1
+
+    return

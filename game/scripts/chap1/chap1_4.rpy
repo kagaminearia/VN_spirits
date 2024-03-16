@@ -7,7 +7,7 @@ label chap1_4:
     mei "向夏坐在客厅的沙发上休息——自从我们逐渐熟悉起来之后，她在这就更自在了——却突然对着我开口。"
     hide meiimg
     show meiimg shirt at char_left
-    mei "我实在摸不着头脑，连手上的动作都停了停。但她只是说这一句，并没有马上继续。"
+    mei "我实在摸不着头脑，连手上的动作都停了停。但她只是突兀地说这一句，并没有马上继续。"
     hide xiangimg
     show xiangimg fist at char_right
     xiang_speaking "嗯……让我想想怎么说。"

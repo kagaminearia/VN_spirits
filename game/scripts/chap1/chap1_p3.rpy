@@ -80,7 +80,7 @@ label chap1_p3:
     mei_speaking "嗯……啊？"
     hide pengimg
     show pengimg smile at char_right
-    peng_speaking "就是，我怕你会……嫌弃我。但是你没有，你真好……"
+    peng_speaking "就是，我怕你会……嫌弃我。但是你没有，你真的很温柔……"
     hide meiimg
     show meiimg at char_left
     mei_speaking "不，我……"

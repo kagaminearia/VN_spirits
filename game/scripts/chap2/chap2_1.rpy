@@ -1,5 +1,5 @@
 label chap2_1:
-    scene bg_meiliv with fade
+    scene bg_meiliv with Fade(1.5,0.5,1)
     mei "客厅的顶灯也许是年代太久了，在晚上显得有些昏暗，竟然将向夏的脸庞盖上一层诡秘的阴影。{p}不，那只是我自己产生的错觉……"
     show meiimg shirt at char_left with dissolve
     mei_speaking "那是什么意思？"
@@ -63,49 +63,148 @@ label chap2_1:
     show meiimg shirt at char_left 
     mei_speaking "算是。"
     mei "虽然认识她不久，但我不觉得她像是会有什么信仰的人……"
+    hide xiangimg
+    show xiangimg fist eye_close laugh at char_right
     xiang_speaking "那我才不告诉你呢。"
+    hide meiimg
+    show meiimg shirt eye_wacky o at char_left 
     mei_speaking "……哈？"
-    xiang_speaking "要是直接跟你说了，你不就不会再有兴趣了吗，那你还怎么帮我呀。等你帮我之后我再告诉你，这样很合理吧？"
-    mei "我竟然无法反驳……\n不是吧，至于吗……我无奈地叹了口气，感觉自己被她说服了。"
-    mei_speaking "我试试吧，但不能保证。"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "要是我现在就直接跟你说了，你不就不会再有兴趣了吗。那你还怎么帮我呀。等你帮我之后我再告诉你，这样也可以吧？"
+    hide meiimg
+    show meiimg shirt eye_wacky at char_left 
+    mei "我听着她侃侃而谈，只觉得竟然无法反驳……\n不是吧，至于吗……"
+    hide meiimg
+    show meiimg shirt eye_close o at char_left 
+    mei "她真是如此执着，为了这样的目的特地到这里来……\n我无奈地叹了口气，总感觉不忍心说什么，又觉得是自己被她说服了。"
+    hide meiimg
+    show meiimg shirt at char_left 
+    mei_speaking "我，试试吧，但不能保证。"
+    hide xiangimg
+    show xiangimg fist eye_squint laugh at char_right
     xiang_speaking "真的吗？太好了！那——"
     mei_speaking "之后说，我现在累了。"
-    xiang_speaking "噢……好吧。\n那，晚安！"
+    hide xiangimg
+    show xiangimg fist eye_squint smile at char_right
+    xiang_speaking "噢……好吧好吧。没事，我不逼你的。\n那，晚安！"
     mei_speaking "嗯。"
 
+    scene bg_meihome with Fade(1.5,1,1.5)
+    show pengimg o at char_right with moveinright
     peng_speaking "……"
+    show meiimg at char_left with moveinleft
     mei_speaking "……"
-    mei "虽然答应了向夏，但真正开口还是难以启齿——我和彭江丽的关系才刚刚和缓一些，我可不想又回归原点。\n但话都说了，我也只好磕磕绊绊说完。"
+    hide pengimg
+    show pengimg at char_right
+    mei "虽然答应了向夏，但真正开口还是难以启齿——我和彭江丽的关系才刚刚和缓一些，我可不想又回归原点。{p}但话都答应了，我也只好磕磕绊绊说完。"
     mei "于是……现在我在令人不安的沉默中，等着彭江丽的回答。"
+    hide pengimg
+    show pengimg o at char_right 
     peng_speaking "原来这就是她来这里的原因啊……"
-    mei_speaking "是，是啊。"
-    mei "我摸不准她的语气，知道的也很少，只好含糊其辞。"
-    peng_speaking "这还真是……\n就算我说……我觉得应该很难满足她的愿望吧，她……"
+    mei_speaking "嗯，应该是。"
+    hide pengimg
+    show pengimg at char_right
+    peng_speaking "所以，你们已经这么熟悉了吗？"
+    hide meiimg
+    show meiimg o at char_left 
+    mei_speaking "诶？有吗……"
+    mei "我不知道她为什么问这个，也摸不准她的语气，只好含糊其辞。"
+    hide pengimg
+    show pengimg eye_still at char_right
+    peng_speaking "她都把这件事跟你说了，怎么不去跟别人说啊。"
+    mei_speaking "呃，可能，她不认识别人……"
+    hide pengimg
+    show pengimg eye_still o at char_right 
+    peng_speaking "那她之前不也不认识你吗，你们也才刚认识而已。"
+    hide meiimg
+    show meiimg at char_left 
+    mei_speaking "嗯……"
+    hide pengimg
+    show pengimg eye_care o at char_right 
+    peng_speaking "啊，对不起，就是，我不是怪你的意思……我就是，有些担心你，被人利用之类的……你也不知道她到底是什么人，又住那么近……"
+    hide pengimg
+    show pengimg eye_care at char_right 
+    peng_speaking "对不起，我不是想让你生气的。"
+    hide meiimg
+    show meiimg smile at char_left
+    mei_speaking "我知道的，不会生气。"
+    mei "我知道彭江丽是关心我才会这么激动，也不会像她想的那样生气。只是，我当然也不希望她为了这些气到自己。"
+    mei_speaking "之前是想，可以试一下。如果你不想说，或者，没问到她想要的，我也不会让她强迫我，或者你的。"
+    hide pengimg
+    show pengimg eye_care o at char_right
+    peng_speaking "嗯，那，那就好……"
+    hide meiimg
+    show meiimg at char_left 
+    mei_speaking "那……这件事，你怎么……？"
+    hide pengimg
+    show pengimg at char_right 
+    peng_speaking "这个啊，这还真是……\n就算我说了……我觉得应该很难满足她的愿望吧，她……"
+    hide meiimg
+    show meiimg o at char_left 
     mei_speaking "没事的，她只是让我问你，也没说一定要回答。"
+    hide pengimg
+    show pengimg o at char_right
     peng_speaking "如果能帮到忙的话也可以试试，我不说的话，她还会继续纠缠你的吧。"
+    hide meiimg
+    show meiimg at char_left 
     mei_speaking "……啊。"
-    mei "我刚想说“应该不会”，但想了想，又觉得是向夏能做出来的事。"
+    mei "我刚想说“应该不会”，但想了想，又觉得可能是向夏能做出来的事，于是只好硬生生止住话头。"
+    hide meiimg
+    show meiimg smile at char_left
     mei_speaking "你真好。"
-    mei "我脱口而出，彭江丽的表情顿时变得不太自然，搞得我也有些尴尬。\不过，我夸她，应该不会让她不开心……"
-    peng_speaking "呃，嗯，但是我要补课，也有别的事情，平时的时间不太确定，所以没办法很快答应……之后我找到机会再跟你说。应该没关系吧？"
-    mei_speaking "当然。我现在打扰你了吗？"
+    hide pengimg
+    show pengimg red at char_right
+    mei "我脱口而出，彭江丽的表情顿时变得不太自然，搞得我也有些尴尬。不过，我夸她，应该不会让她不开心……"
+    hide pengimg
+    show pengimg o at char_right
+    peng_speaking "呃，嗯，但是我要补课，也有别的事情，平时的时间不太确定。所以，没办法很快答应……之后我找到机会再跟你说。应该没关系吧？"
+    hide meiimg
+    show meiimg o at char_left 
+    mei_speaking "当然。不过，我现在是，有打扰你吗？"
+    hide pengimg
+    show pengimg smile at char_right
     peng_speaking "没事没事，我这不是马上就要走了嘛，就是路过来找你一下。\n那我先走啦，下次见。"
     mei_speaking "好。下次见。"
 
-
-    xiang_speaking "你们家也好大啊，村里的房子真好。我能坐这儿吗？"
+    scene bg_pengliv with fade
+    show xiangimg smile at char_right with moveinright
+    xiang_speaking "你们家也好大啊，村里的房子真是不错。\n啊，我能坐这儿吗？"
+    show pengimg shirt at char_left with moveinleft
     peng_speaking "……\n坐这边就行。"
+    show meiimg shirt o at char_mid with moveinleft
     mei_speaking "那个，你自己没关系吗？"
+    hide pengimg
+    show pengimg shirt smile at char_left 
     peng_speaking "没事，是我请你们过来玩，怎么能让你们做事。"
-    mei "向夏已经很自然地坐下，我有点担心彭江丽，总觉得她看上去兴致不高。但她这么说了，也只好点点头。\n之前，她说她和向夏也不熟，与其干坐着谈话，不如一起吃顿饭。"
-    mei "至于为什么是把我们请到她家来……自然是她不相信我和向夏的做饭水平。\n唉，的确有理有据……"
-    xiang_speaking "我们不用帮忙吗，一个人做饭应该很久吧。"
+    hide pengimg with moveoutleft
+    hide meiimg
+    show meiimg shirt at char_mid
+    mei_speaking "嗯，好……"
+    hide xiangimg with moveoutright
+    mei "向夏已经很自然地坐下，这倒也没什么。只是我有点担心彭江丽，总觉得她看上去兴致不高。但她这么说了，也只好点点头。"
+    mei "之前，她说她和向夏也不熟，与其干坐着谈话，不如一起吃顿饭。{p}至于为什么是把我们请到她家来……自然是她不相信我和向夏的做饭水平。"
+    hide meiimg
+    show meiimg shirt eye_still at char_mid
+    mei "唉，这的确是有理有据……虽然只有那一次意外，但总归还是更稳妥些好。"
+    show xiangimg o at char_right with moveinright
+    xiang_speaking "对了，我们真的不用帮忙吗，一个人做饭应该很久吧。"
+    hide meiimg
+    show meiimg shirt o at char_mid
     mei_speaking "你能做吗。"
-    xiang_speaking "哎呀，不试试怎么知道。"
+    hide xiangimg
+    show xiangimg at char_right 
+    xiang_speaking "当然可以了，而且你不也可以吗，最近都是轮流做的饭啊。\n{size=30}虽然可能味道上不是那么好……{/size}"
+    hide meiimg
+    show meiimg shirt at char_mid
     mei_speaking "……\n等等就好了。"
-    mei "恐怕我们两个加起来也没有彭江丽的效率高……等的时间不久，很快她就把餐桌布置完。一张圆桌，我坐在彭江丽和向夏的中间。"
-    mei "毕竟她们不熟……"
-    mei "我在人群中向来存在感很低，这个座位实在令我坐立难安。"
+    mei "恐怕我们两个加起来也没有彭江丽的效率高……"
+
+    scene bg_pengliv with pixellate
+    show q_m10 at cg_s with dissolve
+    mei "等的时间不久，很快她就把餐桌布置完。一张圆桌，我坐在彭江丽和向夏的中间。{p}毕竟她们不熟……"
+    mei "只是，我在人群中向来存在感很低，这个座位实在令我有些坐立难安。"
+
 
     xiang_speaking "我们可以开始讲这边的传说了吗？"
     peng_speaking "嗯，好。不过我知道的不多，也可能跟你想的不一样，总之……希望你别失望。"
@@ -114,7 +213,7 @@ label chap2_1:
     peng_speaking "这些是我以前在一个姐姐那里听来的事。以前，立涧村的确有对于灵的信仰。"
     xiang_speaking "谁？这是人名吗？"
     peng_speaking "立涧村，是这个地方的名字。"
-    xiang_speaking "噢，我说呢，抱歉啊，我们有些发音好像不一样，我刚没听清。"
+    xiang_speaking "噢，我说呢，抱歉啊，我们说话的有些发音好像不一样，我刚没听清。"
     peng_speaking "……没事。"
     peng_speaking "以前这里有对于灵的信仰，其实现在也有，只不过因为很多因素，不会像以前那样普及了。"
     xiang_speaking "就是说，现在也没什么人信这个了吗？"

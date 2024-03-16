@@ -15,7 +15,7 @@ label start:
     pause 4
     hide screen chap_interval with fade
     window auto
-    
+
     call chapter1
 
     $ chap_index = 2
@@ -26,7 +26,9 @@ label start:
     hide screen chap_interval with fade
     window auto
     
+    call chapter2
 
+    
     return
 
 

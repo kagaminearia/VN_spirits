@@ -25,21 +25,21 @@ screen about():
         vbox:
             spacing 18
             vbox:
-                text _("剧本·美术·程序") size 40
+                text _("剧本·美术·程序") size 35
                 text _("可食用蓝墨水") 
             vbox:
-                text _("音乐·音效") size 40
+                text _("音乐·音效") size 35
                 text _("akagi · 可食用蓝墨水") 
             # vbox:
             #     text _("测试") size 40
             #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
             vbox:
-                text _("特别感谢") size 40
+                text _("特别感谢") size 35
                 text _("akagi") 
 
         vbox:
             spacing 13
-            text _("参考·素材·资源") size 40
+            text _("参考·素材·资源") size 35
             text _("游戏引擎：{a=https://www.renpy.org/}Ren'Py{/a}")
             text _("音乐：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，{a=https://amachamusic.chagasi.com}Amachamusic{/a}，{a=https://pixabay.com}Pixabay{/a}") 
             text _("音效：{a=https://pixabay.com}Pixabay{/a}") 
@@ -50,7 +50,7 @@ screen about():
             text _("代码·界面模板：{a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI{/a} by Feniks")
             
 style about_label_text:
-    size 36
+    size 35
 
 style about_text:
     font gui.interface_text_font
