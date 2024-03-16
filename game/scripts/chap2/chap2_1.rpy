@@ -205,43 +205,107 @@ label chap2_1:
     mei "等的时间不久，很快她就把餐桌布置完。一张圆桌，我坐在彭江丽和向夏的中间。{p}毕竟她们不熟……"
     mei "只是，我在人群中向来存在感很低，这个座位实在令我有些坐立难安。"
 
-
-    xiang_speaking "我们可以开始讲这边的传说了吗？"
-    peng_speaking "嗯，好。不过我知道的不多，也可能跟你想的不一样，总之……希望你别失望。"
-    xiang_speaking "不会不会！你能告诉我就很好了。"
+    scene bg_pengliv with pixellate
+    show xiangimg fist smile at char_right with moveinright
+    xiang_speaking "现在我们要讲这边的传说了吗？"
+    show pengimg shirt at char_left with moveinleft
+    peng_speaking "嗯，好。不过我知道的不多，也可能跟你想的不一样，总之……你别抱有太大期望。"
+    hide xiangimg
+    show xiangimg fist laugh at char_right
+    xiang_speaking "不会不会！你能告诉我就很好了，我不挑的。"
     mei "好直接的开场啊……我还以为她们会先说些闲话。"
-    peng_speaking "这些是我以前在一个姐姐那里听来的事。以前，立涧村的确有对于灵的信仰。"
-    xiang_speaking "谁？这是人名吗？"
+    hide pengimg
+    show pengimg shirt o at char_left
+    peng_speaking "这些是我以前在一个姐姐那里听来的事。以前，立涧村的确有深厚的，对于灵的信仰。"
+    hide xiangimg
+    show xiangimg fist o at char_right 
+    xiang_speaking "啊，抱歉，谁？这是人名吗？"
+    hide pengimg
+    show pengimg shirt at char_left
     peng_speaking "立涧村，是这个地方的名字。"
+    hide xiangimg
+    show xiangimg fist smile at char_right 
     xiang_speaking "噢，我说呢，抱歉啊，我们说话的有些发音好像不一样，我刚没听清。"
+    hide pengimg
+    show pengimg shirt eye_still at char_left
     peng_speaking "……没事。"
+    hide pengimg
+    show pengimg shirt o at char_left
     peng_speaking "以前这里有对于灵的信仰，其实现在也有，只不过因为很多因素，不会像以前那样普及了。"
+    hide xiangimg
+    show xiangimg fist o at char_right 
     xiang_speaking "就是说，现在也没什么人信这个了吗？"
     peng_speaking "也不是，要说不信也没有，只是，可能在很多时候显得没有那么重要了吧。"
     peng_speaking "就像在其他地方，其实好像根本没有这些说法……以前的故事在他们看来都过时了，也没什么稀奇的，我们这里，当然也会被影响。"
-    xiang_speaking "唔，好像是这样，即使是最偏僻的地方，还有联系就会有影响吧。"
+    hide xiangimg
+    show xiangimg fist at char_right 
+    xiang_speaking "唔，好像是这样，即使是最偏僻的地方，只要和别的地方还有联系就会有影响吧。"
+    hide pengimg
+    show pengimg shirt at char_left
     peng_speaking "嗯……"
+    hide xiangimg
+    show xiangimg fist o at char_right 
     xiang_speaking "所以我找得可辛苦了，真的太感谢你了，我需要给你付钱吗？可以麻烦你把知道的都告诉我吗？"
+    hide pengimg
+    show pengimg shirt o at char_left
     peng_speaking "不用不用，我也没帮到什么，这些东西你去问其他人也是一样的。"
+    hide xiangimg
+    show xiangimg fist smile at char_right 
     xiang_speaking "她们都不跟我说，还用很奇怪的眼神看我，我以为不太合适呢，所以后来才找梅雨问的。"
-    mei "是你看上去太吓人了吧……我差点一个顺嘴直接说出声音。\n还是听着就好，现在让她俩说话吧。"
+    mei "是你看上去太吓人了吧……我差点一个顺嘴直接说出声音。{p}还是听着就好，现在就让她俩说话吧。"
     peng_speaking "可能她们有点忙，也不习惯跟陌生人说话。对了，说了这么久，你不吃点东西吗？"
+    hide xiangimg
+    show xiangimg fist o at char_right 
     xiang_speaking "噢噢我感觉这个味道有点重，不太适应。而且我吃饭很快，不方便说话，我待会晚点吃吧，我想先问点别的，比如……"
-    peng_speaking "算了吧。\n不吃饭多不好啊，这都几点了，嗯……你们都回去吃吧。"
-    xiang_speaking "啊？不不不，那我一边吃一边问你……"
+    hide pengimg
+    show pengimg shirt eye_angry at char_left
+    peng_speaking "算了吧。"
+    hide xiangimg
+    show xiangimg fist eye_squint o at char_right 
+    xiang_speaking "啊？"
+    hide pengimg
+    show pengimg shirt eye_still o at char_left
+    peng_speaking "不吃饭多不好啊，这都几点了，嗯……我这的东西不好吃，抱歉啊，你们都回去吃吧。"
+    hide xiangimg
+    show xiangimg fist o at char_right 
+    xiang_speaking "啊？不不不，我可以的，那我一边吃一边问你……"
+    hide pengimg
+    show pengimg shirt eye_still at char_left
     peng_speaking "抱歉，我待会还有事呢，所以可能，呃，可能不太方便。"
     mei "糟了……"
+    show meiimg shirt eye_shock at char_mid with moveinleft
     mei_speaking "那我们回去了，今天打扰你了，不好意思。"
+    hide pengimg
+    show pengimg shirt eye_angry at char_left
     mei "彭江丽的语气和表情让我心下瞬间一沉。我来不及想太多，赶紧抢在向夏开口之前说话。"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right 
     xiang_speaking "诶？啊……"
+    hide meiimg
+    show meiimg shirt at char_mid
     mei_speaking "那个，下次再找你玩，拜拜。"
+    hide pengimg
+    show pengimg shirt eye_still at char_left
     peng_speaking "好，拜拜。"
 
+
+    scene bg_vil5 with fade
+    show meiimg shirt at char_left with moveinleft
     mei_speaking "……"
+    show xiangimg fist eye_still o at char_right with moveinright
     xiang_speaking "我是不是说错话了？"
-    mei "我看着向夏，竟然不知道该有什么反应。\n说生气，我好像没有生气的资格，说难过，可能也不至于。但，心里确实莫名有种堵着的感觉。"
+    mei "我看着向夏，竟然不知道该有什么反应。{p}说生气，我好像没有生气的资格，说难过，可能也不至于。但，心里确实莫名有种堵着的感觉。"
+    hide meiimg
+    show meiimg shirt eye_still at char_left
     mei_speaking "应该是。"
+    hide xiangimg
+    show xiangimg fist eye_still at char_right
     xiang_speaking "对不起……可，为什么呀？"
     mei "我摇摇头，刚才的应对只是条件反射，但说实话，我之前连跟人说话的次数都很少，更不知道该怎么处理这种情况。"
+    hide meiimg
+    show meiimg shirt eye_squint o at char_left
     mei "唉……"
-    xiang_speaking "这可怎么办……我让她生气了，那我的问题岂不是问不了了？我能挽回一下吗？"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
+    xiang_speaking "这可怎么办……我让她这么生气，那我的问题岂不是问不了了？我还能挽回一下吗，找点什么办法？"
+    return

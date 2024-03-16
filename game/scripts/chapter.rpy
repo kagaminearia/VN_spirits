@@ -46,5 +46,11 @@ label chapter1:
 
 label chapter2:
     call chap2_1
-
+    menu:
+        "“你只在意这个？”":
+            $ p_point += 1 
+            
+        "“想办法道歉吧”":
+            $ x_point += 1
+            
     return
