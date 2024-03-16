@@ -40,4 +40,5 @@ label chapter1:
         "和彭江丽说再见":
             $ x_point += 1
             call chap1_x3
+    call chap1_4
     return
