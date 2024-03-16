@@ -26,23 +26,23 @@ screen preferences():
 
                 vbox:
                     style_prefix "radio"
-                    label _("Display")
-                    textbutton _("Window"):
+                    label _("屏幕显示")
+                    textbutton _("窗口"):
                         # Ensures this button is selected when
                         # not in fullscreen.
                         selected not preferences.fullscreen
                         action Preference("display", "window")
-                    textbutton _("Fullscreen"):
+                    textbutton _("全屏"):
                         action Preference("display", "fullscreen")
 
             vbox:
                 style_prefix "check"
-                label _("Skip")
-                textbutton _("Unseen Text"):
+                label _("跳过")
+                textbutton _("未读文本"):
                     action Preference("skip", "toggle")
-                textbutton _("After Choices"):
+                textbutton _("在选项后继续"):
                     action Preference("after choices", "toggle")
-                textbutton _("Transitions"):
+                textbutton _("转场"):
                     action InvertSelected(Preference("transitions", "toggle"))
 
             ## Additional vboxes of type "radio_pref" or "check_pref" can be
@@ -55,21 +55,21 @@ screen preferences():
 
             vbox:
 
-                label _("Text Speed")
+                label _("文字速度")
                 bar value Preference("text speed")
 
-                label _("Auto-Forward Time")
+                label _("自动文字速度")
                 bar value Preference("auto-forward time")
 
             vbox:
 
                 if config.has_music:
-                    label _("Music Volume")
+                    label _("音乐音量")
                     hbox:
                         bar value Preference("music volume")
 
                 if config.has_sound:
-                    label _("Sound Volume")
+                    label _("音效音量")
                     hbox:
                         bar value Preference("sound volume")
                         if config.sample_sound:
@@ -77,7 +77,7 @@ screen preferences():
 
 
                 if config.has_voice:
-                    label _("Voice Volume")
+                    label _("声音音量")
                     hbox:
                         bar value Preference("voice volume")
                         if config.sample_voice:
@@ -85,7 +85,7 @@ screen preferences():
 
                 if config.has_music or config.has_sound or config.has_voice:
                     null height 15
-                    textbutton _("Mute All"):
+                    textbutton _("全部静音"):
                         style_prefix "check"
                         action Preference("all mute", "toggle")
 
@@ -105,7 +105,8 @@ style radio_label:
     is pref_label
 
 style radio_label_text:
-    is pref_label_text
+    color gui.dark_grey
+    hover_color gui.light_grey
 
 style radio_vbox:
     is pref_vbox
@@ -119,7 +120,8 @@ style radio_button:
 style check_label:
     is pref_label
 style check_label_text:
-    is pref_label_text
+    # is pref_label_text
+    color gui.dark_grey
 
 style check_vbox:
     is pref_vbox
@@ -132,8 +134,10 @@ style check_button:
 ## SLIDER
 style slider_label:
     is pref_label
+
 style slider_label_text:
-    is pref_label_text
+    # is pref_label_text
+    color gui.dark_grey
 
 style slider_slider:
     xsize 525

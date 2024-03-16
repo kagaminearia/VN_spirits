@@ -28,15 +28,18 @@ screen about():
                 text _("剧本·美术·程序") size 40
                 text _("可食用蓝墨水") 
             vbox:
-                text _("音乐·音效·技术帮助") size 40
-                text _("akagi") 
+                text _("音乐·音效") size 40
+                text _("akagi · 可食用蓝墨水") 
             # vbox:
             #     text _("测试") size 40
             #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
+            vbox:
+                text _("特别感谢") size 40
+                text _("akagi") 
 
         vbox:
             spacing 13
-            text _("Reference") size 40
+            text _("参考·素材·资源") size 40
             text _("游戏引擎：{a=https://www.renpy.org/}Ren'Py{/a}")
             text _("音乐：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，{a=https://amachamusic.chagasi.com}Amachamusic{/a}，{a=https://pixabay.com}Pixabay{/a}") 
             text _("音效：{a=https://pixabay.com}Pixabay{/a}") 
