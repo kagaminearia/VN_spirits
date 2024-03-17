@@ -35,6 +35,8 @@ label start:
     pause 4
     hide screen chap_interval with fade
     window auto
+
+    
     return
 
 
