@@ -1,3 +1,7 @@
+define sound.heartbeat_3 = 'sfx/sound/heartbeat_3.mp3'
+define sound.heartbeat_2 = 'sfx/sound/heartbeat_2.mp3'
+define sound.heartbeat_1 = 'sfx/sound/heartbeat_1.mp3'
+define sound.tinnitus = 'sfx/sound/tinnitus.mp3'
 define music.xiang_first_meet = 'sfx/music/xiang_first_meet.mp3'
 define music.prologue_ending = 'sfx/music/prologue_ending.mp3'
 define music.peng_talk_nervous_2_3 = 'sfx/music/peng_talk_nervous_2_3.mp3'

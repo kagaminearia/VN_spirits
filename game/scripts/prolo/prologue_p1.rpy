@@ -40,7 +40,6 @@ label prologue_p1:
     mei "我打开门，和门口的人忽然四目相对。彭江丽愣了愣，随后很快露出温柔的笑容。{p}我没想过这份冲击是如此直接，十分生涩地接上打招呼的话语。"
 
     scene bg_vil6 with pixellate
-    stop music fadeout 1.0
     show pengimg smile at char_right with moveinright 
     peng_speaking "真的好久不见了……"
     show meiimg shirt eye_still smile at char_left with moveinleft 
@@ -63,7 +62,6 @@ label prologue_p1:
     hide meiimg
     show meiimg shirt at char_left
     peng_speaking "……"
-    $ renpy.music.play(music.peng_first_talk, channel="music", loop=True, fadein=0.5)
     mei "我们一边走路一边寒暄，来回都在讲关于我回镇上的客气话，热情的笑容在断断续续的节奏中逐渐变得有些无奈。"
     mei "现实中的重逢并不总是像小说里那样充满美好或是戏剧性，也没有自然而然激烈火花。对于我和彭江丽，这数十年的间隔足以将我们之间的所有故事抹平。没有什么爱与恨，什么都没有。"
     mei "但不约而同地保持着这时表面的欣喜，或许也是我们之间的默契。{p}不过……我这应该算是，在自我安慰吧……"
@@ -85,6 +83,7 @@ label prologue_p1:
     hide pengimg
     show pengimg o at char_right
     peng_speaking "噢，对哦，那个……那你的身体还是……？"
+    $ renpy.music.set_volume(0.5, 0.5, channel="music")
     mei "谈到这方面，她的声音骤然放低不少，带着明显的小心翼翼。"
     hide meiimg
     show meiimg shirt at char_left
