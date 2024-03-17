@@ -41,11 +41,9 @@ screen about():
             spacing 13
             text _("参考·素材·资源") size 35
             text _("游戏引擎：{a=https://www.renpy.org/}Ren'Py{/a}")
-            text _("音乐：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，{a=https://amachamusic.chagasi.com}Amachamusic{/a}，{a=https://pixabay.com}Pixabay{/a}") 
-            text _("音效：{a=https://pixabay.com}Pixabay{/a}") 
-            text _("场景图片：{a=https://unsplash.com/}Unsplash{/a}") 
-            text _("图形素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI{/a} by Siyokoy")
-            text _("视频素材：{a=https://www.videvo.net/#rs=videvo-logo}Videvo{/a}")
+            text _("音乐/音效：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，{a=https://amachamusic.chagasi.com}Amachamusic{/a}，{a=https://pixabay.com}Pixabay{/a}") 
+            text _("场景素材：{a=https://unsplash.com/}Unsplash{/a}，{a=https://www.videvo.net/#rs=videvo-logo}Videvo{/a}") 
+            text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI{/a} by Siyokoy")
             text _("代码·水波效果：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader{/a} by Wattson")
             text _("代码·立绘强调：{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight{/a} by Wattson")
             text _("代码·界面模板：{a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI{/a} by Feniks")

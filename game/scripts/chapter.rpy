@@ -43,7 +43,6 @@ label chapter1:
     call chap1_4
     return
 
-
 label chapter2:
     call chap2_1
     menu:
@@ -54,4 +53,17 @@ label chapter2:
             $ x_point += 1
             call chap2_x1
     call chap2_2
+    return
+
+label chapter3:
+    call chap3_1
+    menu:
+        "转头看彭江丽":
+            $ p_point += 1
+            call chap3_p1
+        "转头看向夏":
+            $ x_point += 1
+            call chap3_x1
+    call chap3_2
+
     return
