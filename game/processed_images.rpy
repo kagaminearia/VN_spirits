@@ -27,3 +27,6 @@ style chap_interval_text:
     font "fonts/瑞美加张清平硬笔楷书.ttf"
     size 45
     color gui.light_blue
+
+
+image video_1 = Movie(play="videos/v1.webm")

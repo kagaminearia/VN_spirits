@@ -45,6 +45,7 @@ screen about():
             text _("音效：{a=https://pixabay.com}Pixabay{/a}") 
             text _("场景图片：{a=https://unsplash.com/}Unsplash{/a}") 
             text _("图形素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI{/a} by Siyokoy")
+            text _("视频素材：{a=https://www.videvo.net/#rs=videvo-logo}Videvo{/a}")
             text _("代码·水波效果：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader{/a} by Wattson")
             text _("代码·立绘强调：{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight{/a} by Wattson")
             text _("代码·界面模板：{a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI{/a} by Feniks")

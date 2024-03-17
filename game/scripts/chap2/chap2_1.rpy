@@ -303,7 +303,7 @@ label chap2_1:
     xiang_speaking "对不起……可，为什么呀？"
     mei "我摇摇头，刚才的应对只是条件反射，但说实话，我之前连跟人说话的次数都很少，更不知道该怎么处理这种情况。"
     hide meiimg
-    show meiimg shirt eye_squint o at char_left
+    show meiimg shirt eye_still at char_left
     mei "唉……"
     hide xiangimg
     show xiangimg fist eye_still o at char_right
