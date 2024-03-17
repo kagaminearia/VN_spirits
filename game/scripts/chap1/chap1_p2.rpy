@@ -1,5 +1,6 @@
 label chap1_p2:
     show pengimg o at char_right with moveinright
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     peng_speaking "怎么了？说起来，你要买些什么啊，要我帮你看看吗？"
     show meiimg at char_left with moveinleft
     mei_speaking "嗯……叶成华那个房子缺东西，都得买一些。\n不过，我没怎么自己买过，所以，不太清楚……"
@@ -70,3 +71,5 @@ label chap1_p2:
     hide meiimg
     show meiimg eye_close at char_left
     mei "我看着她离开的背影，这才意识到，她的笑容令我的心绪变得轻松不少。{p}也许……她没有像我想的那样讨厌我。那就……太好了。"
+    pause
+    stop music fadeout 1.0

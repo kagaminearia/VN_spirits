@@ -5,6 +5,7 @@ label chap1_3:
     mei "但……"
 
     scene glitches with fade
+    $ renpy.music.play(music.glitch_xiang_cooking, channel="music", loop=True, fadein=0.5)
     ye_speaking "既然你现在也不是一个人住，干脆之后和向夏一起做饭吧，哦，对了，我是不是才跟你说她的名字来着？"
     mei_speaking "……是啊。"
     mei "她才发现吗……"
@@ -27,21 +28,29 @@ label chap1_3:
     show meiimg shirt at char_left
     mei_speaking "哦，没事。"
     mei "只是突然想起造成我现在这个境地的罪魁祸首，实在忍不住想叹息而已……"
+    stop music fadeout 0.5
+
     hide meiimg with dissolve
     hide xiangimg with dissolve
     mei "因为我没尝试过，这又是我们第一次一起做饭，所以我们一致认为简单就好。\n尽管冰箱里食材不少，我们只打算把面条和青菜煮在一起。"
+    $ renpy.sound.play(sound.cutting_board, channel="sound", loop=True)
     mei "向夏烧水煮面，而我在旁边的桌子上笨拙地拿刀，把青菜切成一段一段的小块。{p}嗯，至少这种事我做起来还是没什么问题——"
+    stop sound
     
     show q_x30 at cg_s, shaking
+    $ renpy.sound.play(sound.pot_dropping_1, channel="sound", relative_volume=0.8)
 
     xiang_speaking "——哇啊！！"
     mei_speaking "哈啊？？！！"
+    $ renpy.sound.play(sound.pot_dropping_2, channel="sound", relative_volume=0.8)
     na "呼——！啪——！咚——！"
     mei_speaking "喂！"
     xiang_speaking "啊！"
+    stop sound
 
     window auto
     scene bg_meiliv with Fade(1.5,1,1)
+    $ renpy.music.play(music.awkward, channel="music", loop=True, fadein=0.5)
     mei_speaking "……"
     xiang_speaking "……"
     peng_speaking "……"
@@ -63,6 +72,7 @@ label chap1_3:
     mei "口口声声说做过饭的向夏，一声尖叫后成功让我手滑切到自己的手，以及看到灶台上冒出的大火。"
     mei "一片混乱中，我冲到客厅打电话，等到打通才发现我下意识拨的是彭江丽的号码。"
     mei "她很快帮我们处理了麻烦，还顺便做了一餐饭。\n于是……"
+    stop music
 
     scene bg_meiliv with pixellate
     show pengimg o at char_right with moveinright

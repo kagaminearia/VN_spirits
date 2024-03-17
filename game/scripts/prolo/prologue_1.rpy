@@ -9,6 +9,7 @@ label prologue_1:
     peng_speaking "……梅雨？"
     show meiimg shirt o at char_left with moveinleft
     stop music
+    $ renpy.music.set_volume(1.0, 0, channel="music")
     mei_speaking "……啊！怎，怎么了？"
     mei "我沉浸在混乱的思绪中，一时间竟然没有注意到彭江丽在叫我。"
     peng_speaking "那个，你真的还好吧？"
