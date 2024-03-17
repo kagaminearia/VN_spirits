@@ -8,7 +8,8 @@ label prologue_1:
     show pengimg o at char_right with moveinright
     peng_speaking "……梅雨？"
     show meiimg shirt o at char_left with moveinleft
-    stop music fadeout 1.0
+    stop music
+    $ renpy.music.set_volume(1.0, 0, channel="music")
     mei_speaking "……啊！怎，怎么了？"
     mei "我沉浸在混乱的思绪中，一时间竟然没有注意到彭江丽在叫我。"
     peng_speaking "那个，你真的还好吧？"
@@ -23,26 +24,25 @@ label prologue_1:
     mei_speaking "是，是吗……"
     mei "……是我现在的表情很吓人吗？\n还是她终于忍不住了？"
     mei "尽管说着什么“不是重要的事”，可她的语气和神情看起来都完全像是正经的气氛，实在难以不让我联想到不好的预感。"
-    $ renpy.music.play(music.peng_talk_nervous, channel="music", loop=True, fadein=0.5)
+    $ renpy.sound.play(sound.heartbeat_1, channel="sound", loop=True)
     mei "我似乎开始紧张了……我在害怕，害怕这时隔多年的关系并不似我想的那样……"
     hide pengimg
     show pengimg smile at char_right
     peng_speaking "就是，嗯……关于我跟你——"
     hide pengimg
     show pengimg smile at char_right
-    $ renpy.music.play(music.peng_talk_nervous_2_1, channel="music", loop=True)
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True)
     mei "不对，不行。\n不能紧张，绝对不能紧张……想点别的，想点别的，控制呼吸……"
     peng_speaking "其实我……"
     mei "……快啊！！想点别的！！别再紧张了！！"
     hide pengimg
     show pengimg o at char_right
     peng_speaking "你……"
-    $ renpy.music.play(music.peng_talk_nervous_2_2, channel="music", loop=True)
+    $ renpy.sound.play(sound.heartbeat_3, channel="sound", loop=True)
     mei "不行……这样下去，又要像之前一样了……又是，什么都……"
     hide pengimg
     hide meiimg
     peng_speaking "{wave}{color=4b4b4b}啊——{/wave}" 
-    $ renpy.music.play(music.peng_talk_nervous_2_3, channel="music", loop=True)
     mei "不，不行了……我逐渐什么声音也听不见。\n周围的空气好像被不断压缩，把我压得越来越紧，呼吸变得十分困难。"
     show bg_vil3 with dissolve:
         function WaveShader(period = 1, amp=1.0, repeat='mirrored', double="both")
@@ -51,11 +51,11 @@ label prologue_1:
         function WaveShader(period = 3, amp=2.0, repeat='mirrored', double="both")
     mei "然后……"
     window hide
-    stop music
     show cg_p20 at cg_0, blink
     pause(2)
     scene bg_black with dissolve
     window show
+    stop sound
     na "……"
 
     mei_speaking "……"

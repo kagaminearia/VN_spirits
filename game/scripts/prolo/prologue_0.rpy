@@ -1,11 +1,13 @@
 label prologue_0:
     scene bg_vil1 with dissolve:
         function WaveShader(period = 3, amp=2.0, repeat='mirrored', double="both")
+    $ renpy.sound.play(sound.tinnitus, channel="sound", loop=True, relative_volume=0.5, fadein=0.5)
     mei_speaking "呕……咳，咳咳……！"
     mei "我摇摇晃晃地跌下车，立马弓起腰开始干呕。如果不是手臂被旁边的人抓住，双腿简直要支撑不住身体。但没办法，先让我吐完再说……"
     show bg_vil1 with dissolve:
         function WaveShader(period = 4, amp=6.0, repeat='mirrored', double="both")
     mei_speaking "咳咳，呼……哈啊……"
+    stop sound fadeout 0.5
 
     scene bg_vil4 with fade:
         function WaveShader(period = 2, amp=1.0, repeat='mirrored', double="both")
