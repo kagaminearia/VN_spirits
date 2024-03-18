@@ -205,7 +205,7 @@ style slot_button:
 style slot_button_text:
     size 21
     xalign 0.5
-    idle_color '#aaaaaa'
+    idle_color gui.dark_grey
     hover_color '#ff8335'
     selected_idle_color '#ffffff'
 
@@ -221,6 +221,8 @@ style page_vbox:
 style page_button:
     padding (15, 6, 15, 6)
     xalign 0.5
+
+style page_button_text:
     color gui.dark_grey
     hover_color gui.light_grey
     selected_color "#fff"

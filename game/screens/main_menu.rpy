@@ -29,6 +29,7 @@ screen main_menu():
             textbutton _("CONTINUE") action Continue()
             textbutton _("LOAD") action ShowMenu("load")
             textbutton _("CONFIG") action ShowMenu("preferences")
+            textbutton _("TEST") action ShowMenu("testchapter")
 
         vbox:
             xalign 0
@@ -49,3 +50,17 @@ style main_navigation_button_text:
     
 
 style main_navigation_button is gui_button
+
+screen testchapter():
+    tag menu
+    key "mouseup_3" action Return()
+    add "#ffffffff"
+    add "gui/border.png"
+    vbox:
+        xalign 0.25
+        yalign 0.25
+        spacing 10
+        textbutton ("prolo") action Start("prologue")
+        textbutton ("chap1") action Start("chapter1")
+        textbutton ("chap2") action Start("chapter2")
+        textbutton ("chap3") action Start("chapter3")

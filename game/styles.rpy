@@ -35,6 +35,8 @@ define gui.name_text_size = 45
 
 define gui.main_menu_font = "fonts/Aboreto-Regular.ttf"
 
+define gui.eng_font = "fonts/Aboreto-Regular.ttf"
+
 
 define gui.dark_grey = '#4b4b4b'
 
@@ -91,10 +93,10 @@ style button_text:
     ## The color used for a text button when it is neither selected nor hovered.
     idle_color gui.dark_grey
     ## The color that is used for buttons and bars that are hovered.
-    hover_color gui.light_grey
+    hover_color gui.light_blue
     ## The color used for a text button when it is selected but not focused. A
     ## button is selected if it is the current screen or preference value.
-    selected_color '#ffffff'
+    selected_color gui.light_grey
     ## The color used for a text button when it cannot be selected.
     insensitive_color '#8888887f'
 

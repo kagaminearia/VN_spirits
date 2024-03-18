@@ -30,3 +30,16 @@ style chap_interval_text:
 
 
 image video_1 = Movie(play="videos/v1.webm")
+
+image raindrop:
+    "images/rain1.webp"
+    pause 0.2
+    "images/rain2.webp"
+    pause 0.2
+    "images/rain3.webp"
+    pause 0.2
+    "images/rain4.webp"
+    pause 0.2
+    "images/rain5.webp"
+    pause 0.2
+    repeat

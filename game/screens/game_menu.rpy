@@ -10,7 +10,8 @@
 ##
 
 screen game_menu(title):
-
+    if main_menu:
+        add "#ffffffdb"
     add "#ffffffdb"
     add "gui/starlight_1.png"
     add "gui/border.png"
