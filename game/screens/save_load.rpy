@@ -56,10 +56,10 @@ screen file_slots(title):
         ## Don't forget to also remove the `default` at the top if so.
 
         side "c":
-            area (150, 180, 2000, 2000)
+            area (350, 180, 2000, 2000)
             viewport id "slot":
                 grid gui.file_slot_cols gui.file_slot_rows:
-                    xalign 1.0 yalign 0.5 spacing slot_verticle_spacing
+                    xalign 0.5 yalign 0.0 spacing slot_verticle_spacing
                     for i in range(gui.file_slot_rows):
                         grid 2 1:
                             style_prefix "slot"
