@@ -208,56 +208,126 @@ label chap3_1:
     show xiangimg fist behind halfdarkblue at char_right
     xiang_speaking "这才不是呢，我——"
 
-
+    scene cg_m10 at cg_0 with vpunchm
     mei_speaking "烦死了！！！"
     xiang_speaking "噫。"
     peng_speaking "……梅，雨？"
+    show cg_m10 at cg_0 with vpunchm
     mei_speaking "别吵了！先回去！一起走！"
     peng_speaking "啊，噢，噢……"
     xiang_speaking "好啊，走喽。"
 
+    scene bg_vil5 with fade
+    show halfdarkblue
+    show raindrop
     mei_speaking "……"
     mei "我刚刚……说了什么？"
-    mei "这两人安静下来后，其他声音便愈加明显。\n湍急的水声已经到了膝盖，带着疼痛的心跳声也更加激烈。"
+    mei "这两人安静下来后，其他声音便愈加明显。{p}湍急的水声已经到了膝盖，带着疼痛的心跳声也更加激烈。"
     mei "好难受……但是，在这里晕过去就完了……"
     mei_speaking "……呜……！"
-    "哗啦——"
-
-    mei "暴风吹过，雨势也变得猛烈，汹涌的水波高高扬起。\n本就模糊的视线……什么都看不到了。"
+    
+    show bg_vil5 behind halfdarkblue with dissolve:
+        function WaveShader(period = 1, amp=3.0, repeat='mirrored', double="both")
+    na "哗啦——"
+    show bg_vil5 behind halfdarkblue with dissolve:
+        function WaveShader(period = 1, amp=4.0, repeat='mirrored', double="both")
+    mei "暴风吹过，雨势也变得猛烈，汹涌的水波高高扬起。{p}本就模糊的视线……什么都看不到了。"
+    scene bg_black with dissolve
     peng_speaking "梅雨小心！"
+    scene bg_black with vpunchm
     xiang_speaking "喂！"
+
+    show movie_side
+    show video_3 behind movie_side with dissolve
     mei_speaking "哈……呜……咕啊……"
-    mei "双腿难以在地面站稳，我彻底失去重心。看不见，听不清，不断有水花拍在我的身上，连周围的空气都快要被液体灌满，还在不断吞噬。\n我在哪，现在怎么办……"
+    mei "双腿难以在地面站稳，我彻底失去重心。看不见，听不清……"
+    mei "不断有水花拍在我的身上，连周围的空气都快要被液体灌满，还在不断吞噬。{p}我，在哪，现在，怎么办……"
     mei "痛……"
     mei "腿完全不听使唤……"
     mei "好累……我要累死了……或者是痛死……"
     mei "天旋地转……"
-
-    mei_speaking "咳，啊……咳咳……！！\n哈啊——！哈……哈……啊……"
-    mei_speaking "诶……？"
-    mei "感觉到四周的空隙变大，终于有可供喘息的空间，我猛地抬起头，大口呼吸失而复得的空气。\n缓过来我才发现，自己正坐在家里，二楼的走廊上。"
-    mei "正对着楼梯口，能够轻易看到一楼被灌入的雨水，所以刚刚的事不是错觉……那我是怎么回来的？"
+    scene bg_black with dissolve
+    na "……"
+    show bg_black with vpunchm
+    mei_speaking "咳，啊……咳咳……！！"
+    scene bg_meicorridor with dissolve: 
+        blur 20
+    show halfdarkblue
+    mei_speaking "哈啊——！哈……哈……啊……"
+    mei_speaking "……诶……？"
+    show bg_meicorridor behind halfdarkblue
+    mei "感觉到四周的空隙变大，终于有可供喘息的空间，我猛地抬起头，大口呼吸失而复得的空气。{p}缓过来我才发现，自己正坐在家里，二楼的走廊上。"
+    mei "这里正对着楼梯口，能够轻易看到一楼被灌入的雨水。{p}所以，刚刚的事不是错觉……那我是怎么回来的？"
+    
+    scene bg_meicorridor with dissolve
+    show halfdarkblue
+    show pengimg eye_care o behind halfdarkblue at char_mid with moveinright
     peng_speaking "你还好吗？听得见吗，有没有哪里不舒服？"
-    mei_speaking "啊，没事……你，向夏，没事吧？"
-    peng_speaking "没，你真的没关系吧？"
+    show meiimg behind halfdarkblue at char_left with moveinleft
+    mei_speaking "啊？没，没事……"
+    mei_speaking "你呢？还有，向夏……没事吧？"
+    hide pengimg
+    show pengimg eye_care behind halfdarkblue at char_mid
+    peng_speaking "没。你真的，没关系吧？"
+    hide meiimg
+    show meiimg o behind halfdarkblue at char_left
     mei_speaking "嗯。对了，刚刚……"
+    peng_speaking "啊，那是……"
+    show xiangimg o behind halfdarkblue at char_right with moveinright
     xiang_speaking "哇，刚刚你没感觉到吗？好可惜。"
+    hide meiimg
+    show meiimg behind halfdarkblue at char_left
+    mei_speaking "啊？"
     xiang_speaking "那个时候不是突然雨变大了吗……我们本来想快点扶着你回去的，但是水太快了，实在很难走。但是，之后水流竟然换了方向。"
     xiang_speaking "当时真的吓死我了，因为水太高了，我们抓着你也走不动。结果发现水竟然直接把我们推回来了，然后我们把你拉上二楼的。"
+    hide pengimg
+    show pengimg behind halfdarkblue at char_mid
     peng_speaking "嗯……"
+    hide meiimg
+    show meiimg o behind halfdarkblue at char_left
     mei_speaking "诶……"
-    mei "听完她的话，我还是有些摸不着头脑——没办法，这种事情不管怎么解释，都可以说是离奇吧？"
+    hide xiangimg
+    show xiangimg behind halfdarkblue at char_right
+    mei "听完她的话，我还是有些摸不着头脑。{p}没办法，这种事情不管怎么解释，都可以说是离奇吧？"
+    hide pengimg
+    show pengimg eye_still o behind halfdarkblue at char_mid
     peng_speaking "是真的。其实……就是这样。"
-    peng_speaking "这里的生灵，互相祝愿，互相保佑。"
+    peng_speaking "按照传说……这里的生灵，互相祝愿，互相保佑。"
+    hide xiangimg
+    show xiangimg fist o behind halfdarkblue at char_right
     xiang_speaking "如果是真的，那也太神奇了……\n不过，我并没有对这种东西的信仰啊？为什么……"
     mei "其实我也没有，不过，这是能直接说的么……"
-    peng_speaking "嗯。可能你的想法没有那么坚定，只是不信，或者不喜欢，但并没有强烈的排斥。\n就像……我们没有紧抓着什么，就会被水推着走一样。单独的想法没到一定程度的话，在这里……没有那么庞大的力量。"
-    xiang_speaking "个人的意志吗……"
-    mei "向夏开始自己嘀咕起来，我听不清，也没打算再听了。\n彭江丽没事，我们也都顺利回来，我实在不能再维持精力了。我太累了，就让我在这休息会吧……"
+    hide pengimg
+    show pengimg behind halfdarkblue at char_mid
+    peng_speaking "嗯。这个，说不定只是巧合呢，毕竟，是传说嘛……"
+    hide xiangimg
+    show xiangimg fist behind halfdarkblue at char_right
+    xiang_speaking "诶——这样也是巧合吗——"
+    hide pengimg
+    show pengimg o behind halfdarkblue at char_mid
+    peng_speaking "或者，可能……你的想法没有那么坚定，只是不信，或者不喜欢，但并没有强烈的排斥。"
+    hide pengimg
+    show pengimg eye_still o behind halfdarkblue at char_mid
+    peng_speaking "就像……如果我们没有紧抓着什么，就会被水推着走一样。"
+    hide pengimg
+    show pengimg o behind halfdarkblue at char_mid
+    peng_speaking "单独的想法，没到一定程度的话，在这里……没有那么庞大的力量。"
+    hide xiangimg
+    show xiangimg fist eye_still behind halfdarkblue at char_right
+    xiang_speaking "{size=30}喔……个人的意志吗……{/size}"
+    hide meiimg
+    show meiimg eye_close behind halfdarkblue at char_left
+    mei "向夏开始自己嘀咕起来，我听不清，也没打算再听了。{p}反正……"
+    mei "彭江丽没事，我们也都顺利回来，我实在不能再维持精力了。{p}我太累了，就让我在这休息会吧……"
+    show bg_black with dissolve
+    na "……"
 
-
+    scene bg_meicorridor with fade
+    show halfdarkblue
     mei "嗯，好热……嗯？"
-    mei "我迷迷糊糊地醒来，发现自己靠在走廊的角落坐着，一左一右还都挤着人。\n难怪这么热……"
-    mei "淅淅沥沥的水滴声和狂风的呼啸声不断传来，只是止于窗户，无法穿透玻璃。此时此刻，无比令人安心。"
-    mei "彭江丽和向夏都睡在这里，她们应该也累了吧，不知道现在怎么样……"
+    show cg_m20 at cg_0 with fade
+    mei "我迷迷糊糊地醒来，发现自己靠在走廊的角落坐着，一左一右还都挤着人。{p}难怪这么热……"
+    mei "淅淅沥沥的水滴声和狂风的呼啸声不断传来，只是止于窗户，无法穿透玻璃。\n此时此刻，无比令人安心。"
+    mei "不知道为什么，彭江丽和向夏都睡在这里。{p}估计……她们也是累了吧，不知道，现在怎么样……"
+
     return
