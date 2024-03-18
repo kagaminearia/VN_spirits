@@ -42,7 +42,7 @@ screen about():
             text _("参考·素材·资源") size 35
             text _("游戏引擎：{a=https://www.renpy.org/}{font=fonts/Aboreto-Regular.ttf}Ren'Py{/font}{/a}")
             text _("音乐/音效：{a=https://www.FesliyanStudios.com}{font=fonts/Aboreto-Regular.ttf}FesliyanStudios{/font}{/a}，{a=https://amachamusic.chagasi.com}{font=fonts/Aboreto-Regular.ttf}Amachamusic{/font}{/a}，{a=https://pixabay.com}{font=fonts/Aboreto-Regular.ttf}Pixabay{/font}{/a}") 
-            text _("场景素材：{a=https://unsplash.com/}{font=fonts/Aboreto-Regular.ttf}Unsplash{/font}{/a}，{a=https://www.videvo.net/#rs=videvo-logo}{font=fonts/Aboreto-Regular.ttf}Videvo{/font}{/a}，{a=https://www.videezy.com/abstract/42744-raindrops-falling-background}{font=fonts/Aboreto-Regular.ttf}Videezy{/font}{/a}") 
+            text _("场景素材：{a=https://unsplash.com/}{font=fonts/Aboreto-Regular.ttf}Unsplash{/font}{/a}，{a=https://www.videvo.net/#rs=videvo-logo}{font=fonts/Aboreto-Regular.ttf}Videvo{/font}{/a}，{a=https://www.videezy.com/abstract/42744-raindrops-falling-background}{font=fonts/Aboreto-Regular.ttf}Videezy{/font}{/a}，Freepik") 
             text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}{font=fonts/Aboreto-Regular.ttf}Astrology Ren'Py GUI by Siyokoy{/font}{/a}")
             text _("代码·水波效果：{a=https://wattson.itch.io/renpy-wave-shader}{font=fonts/Aboreto-Regular.ttf}Ren'py Wave Shader by Wattson{/font}{/a}")
             text _("代码·立绘强调：{a=https://wattson.itch.io/renpy-auto-highlight}{font=fonts/Aboreto-Regular.ttf}Renpy Auto Highlight by Wattson{/font}{/a}")
