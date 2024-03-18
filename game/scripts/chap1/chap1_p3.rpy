@@ -17,6 +17,7 @@ label chap1_p3:
     
     scene bg_vil6 with fade
     show halfyellow
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei "这个季节的太阳还没有早早落山，此时此刻仍然有浅浅的日光落在树叶上、道路上、以及身旁的彭江丽身上。\n只是，刚才的冲动和勇气已经结束，我现在又不知道该怎么面对她了。"
     show pengimg eye_care o at char_right with dissolve
     peng_speaking "梅雨……你真的不饿吗？是不是我做得太难吃了？"
@@ -45,6 +46,7 @@ label chap1_p3:
     show meiimg eye_wacky o at char_left
     mei_speaking "我说了不是！"
     mei_speaking "我只是想找机会跟你说话！"
+    stop music
     hide meiimg
     show meiimg eye_shock at char_left
     hide pengimg
@@ -67,6 +69,7 @@ label chap1_p3:
     mei_speaking "嗯？"
     hide pengimg
     show pengimg eye_care o at char_right
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     peng_speaking "啊，就是……你刚刚说的……是真的吗？"
     hide meiimg
     show meiimg o at char_left
@@ -153,4 +156,5 @@ label chap1_p3:
     scene bg_vil5 with pixellate
     show halfblack
     mei "我朝她挥挥手，转过头之前看到的最后一个画面，是彭江丽怔愣后在脸上炸开的笑容。"
+    stop music fadeout 0.5
     return

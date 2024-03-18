@@ -11,6 +11,7 @@ label chap1_x3:
 
     scene bg_meiliv with pixellate
     show xiangimg o at char_right with moveinright
+    $ renpy.music.play(music.slow_laugh, channel="music", loop=True, fadein=0.5)
     xiang_speaking "哇，你真的不吃吗？浪费食物很过分欸。"
     show meiimg shirt o at char_left with dissolve
     mei_speaking "啊？才没有。"
@@ -65,6 +66,7 @@ label chap1_x3:
     show meiimg shirt eye_still at char_left
     mei "唉，我这忽上忽下的情绪到底是怎么回事啊……{p}我挠挠头，总觉得莫名有些别扭，但也不打算再继续细想什么。"
     mei "心情好，总归不算坏事吧……"
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     xiang_speaking "梅雨，过来一下！"
@@ -76,6 +78,7 @@ label chap1_x3:
     mei_speaking "嗯？"
 
     scene bg_sunset1 with Fade(0.5,1,1)
+    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=0.5)
     mei "帘子被打开的窗户外侧，大片的橘黄色奢侈地在空旷的天际铺开。稀疏的云仿佛也被烧红，半是遮挡半是衬托着已经隐约可见的星点光芒。"
     xiang_speaking "怎么样？感觉不错吧，果然只要面积够大看起来就好看，我以前可没机会见到这种场景。"
     mei_speaking "是吗。"
@@ -88,4 +91,5 @@ label chap1_x3:
     mei "其实我也没见过这样的场景。\n只是，在她提到之前，哪怕看到了，我大概也不会在意吧。"
     mei "所以此时此刻，我能够感受到眼前燃烧般的的天色带来的畅意，也能够看到她被夕阳染红的快活表情。"
     mei "嗯……说实话……{p}我不得不承认，如果仅仅体会当下，感觉还不错。"
+    stop music fadeout 0.5
     return

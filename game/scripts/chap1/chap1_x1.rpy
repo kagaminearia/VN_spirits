@@ -24,4 +24,6 @@ label chap1_x1:
     hide xiangimg
     show xiangimg eye_squint laugh at char_right
     xiang_speaking "我叫向夏，方向的向，夏天的夏。\n这也算是认识了，之后多多指教啰。"
+    stop sound fadeout 0.5
+    $ renpy.sound.set_volume(1.0, 0, channel="sound")
     return

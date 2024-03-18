@@ -1,5 +1,6 @@
 label chap1_x2:
     show xiangimg o at char_right with moveinright
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "你——"
     show meiimg eye_still at char_left with moveinleft
     mei_speaking "嗯……"
@@ -35,8 +36,10 @@ label chap1_x2:
     mei_speaking "嗯……也没冷到那程度。"
     xiang_speaking "我知道啦，但是现在买这种才便宜，反正凑合着穿穿呗。"
     mei "……\n这实在落在我的知识盲区，于是我明智地没有接话，只是和向夏一起提着购物篮朝门口走去。"
+    stop music fadeout 0.5
     
     scene bg_meiliv with pixellate
+    $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True)
     mei "成功说上话之后，现在看到向夏的时候好像也没有那么尴尬了。我的神经稍微放松一些，回到家也有些懒得上楼，干脆陷进宽大的沙发一角。"
     show xiangimg o at char_right with moveinright
     xiang_speaking "对了，刚的小票呢？"
@@ -66,4 +69,5 @@ label chap1_x2:
     hide meiimg
     show meiimg eye_close at char_left
     mei "……真是的，我心虚什么啊。"
+    stop sound fadeout 0.5
     return

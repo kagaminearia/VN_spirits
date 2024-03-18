@@ -1,3 +1,7 @@
+define music.xiang_handing_out = 'sfx/music/xiang_handing_out.mp3'
+define music.slow_laugh = 'sfx/music/slow_laugh.mp3'
+define music.sunset = 'sfx/music/sunset.mp3'
+define sound.wave = 'sfx/sound/wave.mp3'
 define music.awkward = 'sfx/music/awkward.mp3'
 define sound.pot_dropping_2 = 'sfx/sound/pot_dropping_2.mp3'
 define sound.pot_dropping_1 = 'sfx/sound/pot_drop.mp3'
