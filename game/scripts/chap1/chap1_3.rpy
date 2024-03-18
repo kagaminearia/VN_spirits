@@ -72,7 +72,7 @@ label chap1_3:
     mei "口口声声说做过饭的向夏，一声尖叫后成功让我手滑切到自己的手，以及看到灶台上冒出的大火。"
     mei "一片混乱中，我冲到客厅打电话，等到打通才发现我下意识拨的是彭江丽的号码。"
     mei "她很快帮我们处理了麻烦，还顺便做了一餐饭。\n于是……"
-    stop music
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     show pengimg o at char_right with moveinright

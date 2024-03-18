@@ -1,6 +1,7 @@
 label chap1_4:
     scene bg_meiliv with Fade(1,2,2)
     show xiangimg fist smile at char_right with dissolve
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     xiang_speaking "其实我觉得你人还不错。"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "啊？"
@@ -39,7 +40,10 @@ label chap1_4:
     mei_speaking "诶？"
     mei "虽然多少已经习惯她那跳脱的思维，但我还是没想到她顶着突然亮闪闪的表情，说出的话是这个。{p}……我这种人能帮什么忙？"
     mei "然而，她接下来说的一句话，却直接令我愣在了原地。"
+    stop music fadeout 0.5
     scene cg_x20 at cg_0 with Fade(0.5,0.5,1.5)
     xiang_speaking "我啊……"
     xiang_speaking "我想寻找这里的传说。"
+    $ renpy.sound.play(sound.wave, channel="sound")
+    pause
     return

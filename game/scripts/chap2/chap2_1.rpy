@@ -1,6 +1,7 @@
 label chap2_1:
     scene bg_meiliv with Fade(1.5,0.5,1)
     mei "客厅的顶灯也许是年代太久了，在晚上显得有些昏暗，竟然将向夏的脸庞盖上一层诡秘的阴影。{p}不，那只是我自己产生的错觉……"
+    stop sound
     show meiimg shirt at char_left with dissolve
     mei_speaking "那是什么意思？"
     show xiangimg o at char_right with dissolve
