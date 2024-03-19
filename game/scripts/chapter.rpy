@@ -65,5 +65,12 @@ label chapter3:
             $ x_point += 1
             call chap3_x1
     call chap3_2
+    menu:
+        "投给彭江丽":
+            $ x_point += 1
+            call chap3_x2
+        "投给向夏":
+            $ p_point += 1
+            call chap3_p2
 
     return
