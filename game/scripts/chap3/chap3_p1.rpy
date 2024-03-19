@@ -32,7 +32,10 @@ label chap3_p1:
     mei_speaking "向夏她……你不喜欢，别理她就行。"
     hide pengimg
     show pengimg eye_care behind halfdarkblue at char_right 
-    peng_speaking "不会的，我没……\n嗯，我不喜欢她，但也不会去做什么的。"
+    peng_speaking "不会的，我没……\n嗯，我没有不喜欢她啦，就是，我只是怕她让你为难……"
+    mei_speaking "嗯，那……那就好。"
+    mei "果然……我有些无奈地笑了笑。{p}彭江丽的话，即使是讨厌什么也不会明面说出来。"
+    mei "就只是，我也在“不能说实话”的范围内吧。"
     hide pengimg
     show pengimg eye_care smile behind halfdarkblue at char_right 
     peng_speaking "况且，我也不想看到你生气……"

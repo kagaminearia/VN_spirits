@@ -1,6 +1,7 @@
 image halfblack = "#00000088" 
 image halfyellow = "#45342e74" 
 image halfdarkblue = "#23243e79" 
+image halfwhite = "#ffffff88" 
 
 image glitches:
     im.MatrixColor("images/glitch0.jpg",im.matrix.brightness(-0.3))
@@ -33,6 +34,8 @@ style chap_interval_text:
 image video_1 = Movie(play="videos/v1.webm")
 image video_2 = Movie(play="videos/v2.webm")
 image video_3 = Movie(play="videos/v3.webm")
+image video_4 = Movie(play="videos/v4.webm",loop=False)
+image video_5 = Movie(play="videos/v5.webm")
 
 image raindrop:
     "images/rain1.webp"
