@@ -75,56 +75,110 @@ label chap3_2:
     mei "本来想着跟向夏解释一下，但彭江丽做了个“嘘”的动作，好像并没有这个意图，我也只好作罢。"
 
     scene bg_emptyroom with fade
+    show halfblack
     mei "我靠坐在房间的角落，只是低着头来回摆弄床垫。{p}如果抬头，就得面对向夏和彭江丽……但现在实在是无事可做，无话可说。"
     mei "室内只剩一盏小夜灯还在工作，平稳的光线将暗下来的房间点亮一角，也像拢起一层薄薄的膜，将纷乱嘈杂的因素全部挡在外侧。"
     mei "因而，即使窗户噼啪作响，暴风和骤雨肆意敲打玻璃和边框，此时此刻，却并未再像先前一样使人感到惊慌。"
     mei "在这片不知何时停止的暴雨中，我感到十分久违的宁静，甚至一瞬间希望就如此持续下去。"
     mei "可惜自然不行。"
 
+    scene bg_emptyroom with fade
+    show halfblack
+    show xiangimg smile behind halfblack at char_right with moveinright
     xiang_speaking "一起来玩游戏吧！"
+    show pengimg shirt o behind halfblack at char_left with moveinleft
     peng_speaking "这不好吧。"
     mei "向夏“啪”的一声拍掌，兴奋提议。{p}我还没来得及反应过来，就听到彭江丽委婉的拒绝。"
+    show meiimg shirt behind halfblack at char_mid with moveinleft
     mei_speaking "……"
-    xiang_speaking "啊？为什么？"
+    hide xiangimg
+    show xiangimg o behind halfblack at char_right
+    xiang_speaking "啊？为什么不好？"
     peng_speaking "为什么要玩？"
+    hide xiangimg
+    show xiangimg fist behind halfblack at char_right
     xiang_speaking "嗯，就是无聊啊。那不然，现在这么早，你要直接睡觉吗？"
+    hide pengimg
+    show pengimg shirt behind halfblack at char_left
     peng_speaking "是啊，我想睡了。"
     mei "……总觉得，这样的彭江丽很少见。{p}虽然语气很平和，但对她来说也许算是咄咄逼人了。"
     mei "不过，这样直接说出来，总比她自己憋着好……{p}反正，估计向夏也不会在意。"
+    hide xiangimg
+    show xiangimg fist o behind halfblack at char_right
     xiang_speaking "好吧，那你睡吧。我睡不着，只能继续坐这了，抱歉啊。"
+    hide pengimg
+    show pengimg shirt eye_still behind halfblack at char_left
     peng_speaking "……"
     mei "彭江丽并没有动，只是继续沉默地坐着。{p}也是，有两个人坐在旁边，谁能这样睡着……更不要说，现在她其实不困吧。"
     mei "其实，我大概能理解向夏的想法，毕竟，在这样的距离，面对面待着的确很尴尬……"
+    hide meiimg
+    show meiimg shirt o behind halfblack at char_mid 
     mei_speaking "要不……做点别的？"
-    peng_speaking "啊？你想做什么……？"
+    hide pengimg
+    show pengimg shirt o behind halfblack at char_left
+    peng_speaking "啊？梅雨你想做什么？"
+    hide meiimg
+    show meiimg shirt behind halfblack at char_mid 
     mei_speaking "……"
+    hide meiimg
+    show meiimg shirt o behind halfblack at char_mid 
     mei_speaking "一般……小说里，这种时候，都是讲鬼故事。"
+    hide xiangimg
+    show xiangimg fist eye_still o behind halfblack at char_right
     xiang_speaking "哇，不要啊——我很怕鬼的。"
     mei_speaking "不是无聊吗。"
     xiang_speaking "那，这也……"
     mei_speaking "讲完的话，还会有鬼陪着，马上就不无聊了。"
+    hide xiangimg
+    show xiangimg fist eye_shock o behind halfblack at char_right
     xiang_speaking "{size=50}哇你怎么现在就开始讲了犯规！{/size}"
+    hide meiimg
+    show meiimg shirt eye_wacky o behind halfblack at char_mid 
     mei_speaking "……呃，抱歉。"
+    hide xiangimg
+    show xiangimg fist behind halfblack at char_right
+    hide meiimg
+    show meiimg shirt behind halfblack at char_mid 
     mei "虽然很抱歉……但我却莫名有点想笑。{p}她好像也知道自己刚才的反应大了，说完后就马上收了声音。"
+    hide xiangimg
+    show xiangimg fist o behind halfblack at char_right
     xiang_speaking "好吧……我投降了。那，讲鬼故事也行吧，你们要讲吗？"
+    hide pengimg
+    show pengimg shirt eye_care behind halfblack at char_left
     peng_speaking "……"
-    peng_speaking "要吗？"
-    mei "转变还真快啊……我实在佩服她的能伸能屈。我看向彭江丽，她虽然没拒绝，但似乎有些担心。{p}……是在担心向夏吗？"
-    xiang_speaking "刚刚不都说了嘛，而且，不玩游戏，讲讲故事也没什么的吧。"
+    hide pengimg
+    show pengimg shirt eye_care o behind halfblack at char_left
+    peng_speaking "要吗？你确定？"
+    mei "转变还真快啊……我实在佩服向夏的能伸能屈。我看向彭江丽，她虽然没拒绝，但似乎有些担心。{p}……她是还在担心向夏吗？"
+    xiang_speaking "不玩游戏，讲讲故事也没什么的吧。"
+    hide meiimg
+    show meiimg shirt o behind halfblack at char_mid 
     mei_speaking "你不是怕吗。"
+    hide xiangimg
+    show xiangimg fist smile behind halfblack at char_right
     xiang_speaking "反正你刚刚也讲过了，而且，现在也这么多人呢。"
-    peng_speaking "我不会讲。"
-    xiang_speaking "没事的，主要是，在这干坐着不是更尴尬吗？好歹找个话题，随便讲讲就行了嘛，如果不想的话，随便讲点别的也行啊。"
+    hide pengimg
+    show pengimg shirt o behind halfblack at char_left
+    peng_speaking "……我不会讲。"
+    xiang_speaking "没事的，主要是为了气氛，在这干坐着不是更尴尬吗？好歹找个话题，随便讲讲就行了嘛，如果不想的话，随便讲点别的也行啊。"
+    hide xiangimg
+    show xiangimg fist laugh behind halfblack at char_right
     xiang_speaking "对了，讲完之后，还可以投票，选出讲得最好的，然后来点奖励。"
+    hide meiimg
+    show meiimg shirt behind halfblack at char_mid 
     mei_speaking "……"
     mei "怎么反倒是她劝起来了……{p}不知道是不是因为顾虑到我，虽然彭江丽看起来兴致不高，但最终也点了点头。"
-    mei "果然……我不知道该庆幸还是该不安。{p}是她的话，即使不喜欢，基本上也不会让人为难。"
+    mei "果然……我不知道该庆幸还是该不安。{p}是她的话，即使自己有顾虑，基本上也不会让人为难。"
 
-    
+    scene bg_emptyroom with fade
+    show halfblack
     mei "向夏把放在一旁的小夜灯摆到中央，微弱的光线只能大概照亮我们三个人的下半张脸。\n配合窗外的阴沉天气，暴风骤雨，还真的是很像小说里写的鬼故事场景……"
+    show xiangimg fist smile at char_right with dissolve
     xiang_speaking "那，我先开始说啰。"
     peng_speaking "嗯。"
     mei "我跟着点点头。{p}这事谁开头都无所谓，我们没人非得争这个，自然没什么意见。"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
     xiang_speaking "我想想该怎么说啊，嗯，讲个……主角是小女孩的故事吧。"
     xiang_speaking "有一天，小女孩的家里人带回一个布袋，说那是可以给带来好运的宝藏。"
     xiang_speaking "女孩的家庭不富裕，但生活上也没有太多不便。然而自从有了宝藏，他们像着了魔一样整天围着放着宝藏的房间，把家里有的东西全部投入进去，也不再关注女孩。"
@@ -137,18 +191,34 @@ label chap3_2:
     xiang_speaking "那个声音说……"
     xiang_speaking "你是不是，看到了？"
     
+    scene bg_black with dissolve
     "啪。"
     mei_speaking "嘶……"
     mei "话音刚落，向夏按掉了小夜灯，房间里瞬间变黑，令我不自觉感叹一声。"
+    scene bg_emptyroom with fade
+    show halfblack
     mei "等了一会，我重新开灯，看到向夏嘿嘿一笑，彭江丽则是双眉微皱，一副思考的样子。"
+    show xiangimg fist smile at char_right with moveinright
     xiang_speaking "好了，我讲完了。"
+    show pengimg shirt eye_still at char_left with moveinleft
     peng_speaking "所以最后是什么意思？主角怎么样了？"
     xiang_speaking "你猜？"
+    show meiimg shirt o at char_mid with dissolve
     mei_speaking "所谓的方子，和主角有关？"
+    hide pengimg
+    show pengimg shirt eye_care at char_left
     peng_speaking "哇，真恶心。"
+    hide xiangimg
+    show xiangimg fist o at char_right 
     xiang_speaking "你怎么能这么说呢，这叫艺术创作，都是虚构的好嘛。"
+    hide meiimg
+    show meiimg shirt at char_mid
     mei_speaking "……"
+    hide xiangimg
+    show xiangimg fist smile at char_right 
     xiang_speaking "好吧，别在意这个了，下一个谁讲？"
+    hide pengimg
+    show pengimg shirt o at char_left
     peng_speaking "我来吧。"
     peng_speaking "对了，这个并不算跟村子有关的故事，就像我之前说的，这里的信仰本质上并不是鬼神一类的东西……"
 
@@ -158,23 +228,54 @@ label chap3_2:
     peng_speaking "她拼命想逃，可是无论怎么跑都看不到走廊的尽头。"
     peng_speaking "最后，她还是没有逃出去，被不断压缩的空间压死了。"
 
+    scene bg_emptyroom with fade
+    show halfblack
+    show xiangimg fist o at char_right with moveinright
     xiang_speaking "……"
+    show meiimg shirt at char_mid with moveinright
     mei_speaking "……"
+    hide xiangimg
+    show xiangimg fist o at char_right 
     xiang_speaking "就没了？"
+    show pengimg shirt at char_left with moveinleft
     peng_speaking "是啊。"
+    hide xiangimg
+    show xiangimg fist at char_right
+    hide meiimg
+    show meiimg shirt o at char_mid
     mei_speaking "我还以为，你会讲以前，我们上山的故事。"
+    hide pengimg
+    show pengimg shirt o at char_left 
     peng_speaking "那个啊……从结尾来看，不算鬼故事吧？"
+    hide meiimg
+    show meiimg shirt at char_mid
     mei_speaking "也是……"
-    mei "可能是那时候还小，所以才吓得不轻。现在想来，确实没什么特别的……"
+    mei "可能是那时候还小，所以才吓得不轻。现在想来，确实没什么特别的……{p}况且，最后……"
+    hide xiangimg
+    show xiangimg fist eye_squint o at char_right
     xiang_speaking "什么啊什么啊，你们怎么还偷偷交流的。"
-    xiang_speaking "还有，这根本不算恐怖故事吧，而且你还说我，这个明明更变态好不好！人都被压死了哎。"
+    hide xiangimg
+    show xiangimg fist o at char_right
+    xiang_speaking "还有，这根本不算恐怖故事吧。而且你还说我，这个明明更变态好不好！人都被压死了哎。"
+    hide pengimg
+    show pengimg shirt at char_left 
     peng_speaking "我都说过了，我不会讲恐怖故事。"
+    hide meiimg
+    show meiimg shirt o at char_mid
     mei_speaking "其实，还行啦……\n到我吗？"
     mei "我生怕她们又吵起来，试探地询问道。{p}不过，她们似乎也没有真的要吵架的打算，只是单纯性格不合，动不动就互呛几句而已。"
-    xiang_speaking "行啊，你继续，完了我们再一起讲，可以投票玩。"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "行啊，你继续，讲完了我们再一起投票玩。"
+    hide meiimg
+    show meiimg shirt at char_mid
     mei_speaking "好。"
+    hide meiimg
+    show meiimg shirt eye_still at char_mid
     mei_speaking "嗯，我也不会讲，所以只是，随便试试……"
 
+    scene bg_emptyroom with fade
+    show halfdarkblue
     mei_speaking "住院部的晚上是很安静的，但这一天却不太一样。"
     mei_speaking "少女在换药之前就醒了，她觉得有些奇怪，因为，她是被病床下的摩擦声吵醒的。"
     mei_speaking "刺啦，刺啦……像是撕扯衣服的声音从床下传来，在她愣神的时候，声音还在继续，没有停止的迹象。"
@@ -197,36 +298,78 @@ label chap3_2:
     mei_speaking "——密密麻麻的尖牙占据了她的全部视野。"
     mei_speaking "又一声惊叫传来，但这之后，走廊上再也没有任何声响。"
 
+    scene bg_emptyroom with fade
+    show halfdarkblue
+    show meiimg shirt at char_mid with dissolve
     mei_speaking "……完。"
     mei "虽然我已经说得很慢，虽然我全程语气平淡，没用任何多余的力气，但这可以说是我第一次说这么多话。"
     mei "因而，我还是觉得有些累，还有些发晕，到结束语的时候就只剩下短短一个字。"
+    show xiangimg fist at char_right with dissolve
+    show pengimg shirt at char_right with dissolve
     mei "我抬起头，出乎意料的，竟然觉得有些紧张。{p}她们好像都没什么表情，看得我心里一紧。"
+    hide meiimg
+    show meiimg shirt o at char_mid 
     mei_speaking "呃……"
+    hide xiangimg
+    show xiangimg fist smile at char_right
     xiang_speaking "哇哦，你这个故事还挺有意思的，不过我还期待后续呢就结束了。"
-    peng_speaking "是啊，真的好厉害。"
+    hide pengimg
+    show pengimg shirt laugh at char_right 
+    peng_speaking "是啊，你真的好厉害。"
+    hide xiangimg
+    show xiangimg fist laugh at char_right
     xiang_speaking "感觉我还是第一次听你说这——么多话，没看出来啊，你平时不说话，还能编出这么好的故事。有一瞬间真的吓到我了诶。"
     mei "向夏还维持捂着胸口的动作，有些夸张地点评道。"
+    hide pengimg
+    show pengimg shirt at char_right
     peng_speaking "喂，哪有你这样说……"
     mei_speaking "因为，不是我编的。"
+    hide xiangimg
+    show xiangimg fist eye_shock o at char_right
     xiang_speaking "……哈？"
+    hide meiimg
+    show meiimg shirt at char_mid 
     mei "抱歉，彭江丽，明明你帮我说话……\n不过这是事实……"
     mei "而且，看到向夏这个反应，真的很有意思……"
+    hide xiangimg
+    show xiangimg fist at char_right
+    hide meiimg
+    show meiimg shirt o at char_mid 
     mei_speaking "呃，就是，这是，小说里的。"
-    mei "我只是把内容大概背下来而已……不然怎么可能这么顺畅地说这么长的话。"
-    xiang_speaking "哇，你也太过分了吧，竟然讲别人写好的故事。"
+    mei "我只是把内容大概背下来而已……不然，怎么可能这么顺畅地说这么长的话。"
+    hide xiangimg
+    show xiangimg fist o at char_right
+    xiang_speaking "哇，你也太过分了吧，竟然讲别人写好的故事，都不是你自己想的。"
+    hide meiimg
+    show meiimg shirt at char_mid 
     mei_speaking "不行吗？"
     xiang_speaking "好像，也没有……好吧，早知道我一开始就说一下了！但这个谁能想到啊！"
     mei "我耸耸肩，并不在意她的控诉。反正，要我编的话，我确实编不出来，这能怎么办啊。"
-    peng_speaking "能背下来也是一种本事啊，让你背你就能背吗？"
+    hide pengimg
+    show pengimg shirt o at char_right
+    peng_speaking "能背下来也是一种本事啊，如果让你背你就能背吗？"
+    hide xiangimg
+    show xiangimg fist eye_close o at char_right
     xiang_speaking "那我不能，那，她这个确实厉害好吧！"
+    hide meiimg
+    show meiimg shirt eye_still at char_mid 
+    mei_speaking "……"
     mei "虽然不知道她们把这事想成了什么，不过，真实的事情大概率跟她们想象的不同……"
     mei "身体状态最不好的时候，我总是过分疲惫，很难长时间醒着。但我不服气，就想了个读恐怖故事把自己吓醒的办法。"
-    mei "现在想来真是很蠢……不过，虽然效果一般，但唯一一本有恐怖故事的小说已经被读了许多遍，以至于这一段我已经能够背下来了。"
+    mei "现在想来真是很蠢的行为……"
+    mei "不过，虽然效果一般，但唯一一本有恐怖故事的小说已经被读了许多遍，以至于这一段我已经能够背下来了。"
 
-
+    hide xiangimg
+    show xiangimg o at char_right
     xiang_speaking "那我们来投票吧，写自己想投的人，待会一起翻出来。"
+    hide meiimg
+    show meiimg shirt o at char_mid 
     mei_speaking "然后呢？"
+    hide xiangimg
+    show xiangimg smile at char_right
     xiang_speaking "也不搞什么太过分的，票数最低的人要回答其他人的问题或者听一个小要求，怎么样？"
+    hide pengimg
+    show pengimg shirt at char_right
     peng_speaking "行啊。"
     mei "向夏从她那不知道装了多少东西的包里掏出便签纸和圆珠笔，我点点头，把东西接过来。"
     mei "虽然很无聊，不过现在本来也没别的事做……投给谁呢？"

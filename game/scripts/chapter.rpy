@@ -72,5 +72,5 @@ label chapter3:
         "投给向夏":
             $ p_point += 1
             call chap3_p2
-
+    call chap3_3
     return

@@ -37,6 +37,14 @@ label start:
     window auto
 
     call chapter3
+
+    $ chap_index = 4
+    window hide
+    show bg_black with dissolve
+    show screen chap_interval(chap_index) with Fade(0.5,1,0.5)
+    pause 4
+    hide screen chap_interval with fade
+    window auto
     
     return
 
