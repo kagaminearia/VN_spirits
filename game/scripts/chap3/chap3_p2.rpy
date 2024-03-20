@@ -4,38 +4,39 @@ label chap3_p2:
     mei "就投给向夏吧。"
 
     scene bg_emptyroom with fade
+    show halfdarkblue
     mei "三张纸写好后放在一起，随后同时被翻开。{p}向夏两票，我一票。"
     hide pengimg
-    show pengimg shirt o at char_right
+    show pengimg shirt o at char_left
     peng_speaking "……你给自己投票？"
     hide xiangimg
     show xiangimg o at char_right
     xiang_speaking "是啊。"
     hide pengimg
-    show pengimg shirt eye_angry at char_right
+    show pengimg shirt eye_angry at char_left
     peng_speaking "哪有这样的？"
     hide xiangimg
     show xiangimg at char_right
     xiang_speaking "之前也没说不能啊。"
     hide pengimg
-    show pengimg shirt eye_angry o at char_right
+    show pengimg shirt eye_angry o at char_left
     peng_speaking "你之前不还说梅雨的故事很好吗？"
     hide xiangimg
     show xiangimg o at char_right
-    xiang_speaking "那我要投票肯定还是投自己呀。"
+    xiang_speaking "那我要投票的话，肯定还是投自己呀。"
     hide pengimg
-    show pengimg shirt eye_angry at char_right
+    show pengimg shirt eye_angry at char_left
     peng_speaking "你这人根本不讲道理。"
     hide xiangimg
     show xiangimg fist eye_still o at char_right
     xiang_speaking "哎呀，那你说怎么办？"
     peng_speaking "……"
     hide pengimg
-    show pengimg shirt eye_still at char_right
+    show pengimg shirt eye_still at char_left
     peng_speaking "算了，就这样吧，反正也只是随便玩玩。"
     xiang_speaking "就是嘛，你看我都说过了，别太在意。"
     hide pengimg
-    show pengimg shirt eye_angry at char_right
+    show pengimg shirt eye_angry at char_left
     peng_speaking "这话可不是跟你说的，我只是觉得既然梅雨也投给你，那也行吧。"
     hide meiimg
     show meiimg shirt o at char_mid 
@@ -43,7 +44,7 @@ label chap3_p2:
     mei "没想到会突然听到自己的名字，我一激灵，张了张嘴，却不知道该说什么。"
     mei_speaking "就……这样吗？"
     hide pengimg
-    show pengimg shirt at char_right
+    show pengimg shirt at char_left
     peng_speaking "是啊，既然之前都说了，我可不赖账。\n你们要我干什么？或者。问问题呗，都行。"
     hide meiimg
     show meiimg shirt at char_mid 
@@ -58,10 +59,10 @@ label chap3_p2:
     show meiimg shirt o at char_mid 
     mei_speaking "……你，不喜欢吃什么？"
     hide pengimg
-    show pengimg shirt eye_still at char_right
+    show pengimg shirt eye_still at char_left
     peng_speaking "……"
     hide pengimg
-    show pengimg shirt o at char_right
+    show pengimg shirt o at char_left
     peng_speaking "鱼。"
     hide pengimg
     show pengimg shirt eye_still at char_right
@@ -72,11 +73,11 @@ label chap3_p2:
     show xiangimg fist o at char_right
     xiang_speaking "你不是经常吃吗，原来不喜欢？"
     hide pengimg
-    show pengimg shirt at char_right
+    show pengimg shirt at char_left
     peng_speaking "这算你问的的问题吗？"
     xiang_speaking "嗯，那就算吧！"
     hide pengimg
-    show pengimg shirt o at char_right
+    show pengimg shirt o at char_left
     peng_speaking "就是因为吃太多了，所以腻了，就变得不喜欢了啊。"
 
     mei "她的回答合情合理，但我总觉得有种微妙的，不合时宜的滞涩感。{p}也许是因为我注意到，在问完问题的瞬间，她的表情似乎有些错愕。"

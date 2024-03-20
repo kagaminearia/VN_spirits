@@ -7,7 +7,7 @@ define peng_speaking = Character("彭江丽",what_prefix="“",what_suffix="”"
 define ye_speaking = Character("叶成华",what_prefix="“",what_suffix="”",image='yeimg',callback=name_callback,cb_name="ye")
 define lu_speaking = Character("路花",what_prefix="“",what_suffix="”",image='luimg',callback=name_callback,cb_name="lu")
 define unknown_speaking = Character("？？？",what_prefix="“",what_suffix="”")
-
+define old_speaking = Character("老人",what_prefix="“",what_suffix="”")
 
 init:
     layeredimage xiangimg:

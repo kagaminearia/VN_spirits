@@ -77,5 +77,20 @@ label chapter3:
 
 label chapter4:
     call chap4_1
-
+    menu:
+        "劝彭江丽睡觉":
+            $ x_point += 1
+            call chap4_x1
+        "和彭江丽聊天":
+            $ p_point += 1
+            call chap4_p1
+    call chap4_2
+    menu:
+        "答应":
+            $ x_point += 1
+            call chap4_x2
+        "拒绝":
+            $ p_point += 1
+            call chap4_p2
+    call chap4_3
     return

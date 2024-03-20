@@ -229,7 +229,7 @@ label chap3_2:
     peng_speaking "最后，她还是没有逃出去，被不断压缩的空间压死了。"
 
     scene bg_emptyroom with fade
-    show halfblack
+    show halfdarkblue
     show xiangimg fist o at char_right with moveinright
     xiang_speaking "……"
     show meiimg shirt at char_mid with moveinright
@@ -305,7 +305,7 @@ label chap3_2:
     mei "虽然我已经说得很慢，虽然我全程语气平淡，没用任何多余的力气，但这可以说是我第一次说这么多话。"
     mei "因而，我还是觉得有些累，还有些发晕，到结束语的时候就只剩下短短一个字。"
     show xiangimg fist at char_right with dissolve
-    show pengimg shirt at char_right with dissolve
+    show pengimg shirt at char_left with dissolve
     mei "我抬起头，出乎意料的，竟然觉得有些紧张。{p}她们好像都没什么表情，看得我心里一紧。"
     hide meiimg
     show meiimg shirt o at char_mid 
@@ -314,14 +314,14 @@ label chap3_2:
     show xiangimg fist smile at char_right
     xiang_speaking "哇哦，你这个故事还挺有意思的，不过我还期待后续呢就结束了。"
     hide pengimg
-    show pengimg shirt laugh at char_right 
+    show pengimg shirt laugh at char_left 
     peng_speaking "是啊，你真的好厉害。"
     hide xiangimg
     show xiangimg fist laugh at char_right
     xiang_speaking "感觉我还是第一次听你说这——么多话，没看出来啊，你平时不说话，还能编出这么好的故事。有一瞬间真的吓到我了诶。"
     mei "向夏还维持捂着胸口的动作，有些夸张地点评道。"
     hide pengimg
-    show pengimg shirt at char_right
+    show pengimg shirt at char_left
     peng_speaking "喂，哪有你这样说……"
     mei_speaking "因为，不是我编的。"
     hide xiangimg
@@ -346,7 +346,7 @@ label chap3_2:
     xiang_speaking "好像，也没有……好吧，早知道我一开始就说一下了！但这个谁能想到啊！"
     mei "我耸耸肩，并不在意她的控诉。反正，要我编的话，我确实编不出来，这能怎么办啊。"
     hide pengimg
-    show pengimg shirt o at char_right
+    show pengimg shirt o at char_left
     peng_speaking "能背下来也是一种本事啊，如果让你背你就能背吗？"
     hide xiangimg
     show xiangimg fist eye_close o at char_right
@@ -369,7 +369,7 @@ label chap3_2:
     show xiangimg smile at char_right
     xiang_speaking "也不搞什么太过分的，票数最低的人要回答其他人的问题或者听一个小要求，怎么样？"
     hide pengimg
-    show pengimg shirt at char_right
+    show pengimg shirt at char_left
     peng_speaking "行啊。"
     mei "向夏从她那不知道装了多少东西的包里掏出便签纸和圆珠笔，我点点头，把东西接过来。"
     mei "虽然很无聊，不过现在本来也没别的事做……投给谁呢？"
