@@ -14,10 +14,18 @@ label chap4_1:
     peng_speaking "你醒了？"
     show meiimg shirt eye_shock o behind halfblack at char_left with dissolve
     mei_speaking "诶？！"
+    hide meiimg
+    show meiimg shirt behind halfblack at char_left
     mei "我揉揉眼睛，重新适应黑暗后才发现彭江丽醒着。她已经坐起来，正定定地看着我。{p}而另一边，原本是向夏睡的地方却空了出来。"
+    hide meiimg
+    show meiimg shirt o behind halfblack at char_left
     mei_speaking "……她呢？"
+    hide pengimg
+    show pengimg shirt eye_care o behind halfblack at char_right 
     peng_speaking "什么？哦，你说……向夏？她好像之前出去了。\n你怎么醒了，是不是有哪里不舒服？"
-    mei_speaking "没，自然醒。几点了？"
+    mei_speaking "没，我是自然醒。几点了？"
+    hide pengimg
+    show pengimg shirt o behind halfblack at char_right 
     peng_speaking "不知道，之前问是四点，现在可能四点半吧。"
     mei "果然还很早，难怪会感觉有点头晕……{p}不过，她们这是都没睡吗……"
     

@@ -208,10 +208,12 @@ label chap3_1:
     show xiangimg fist behind halfdarkblue at char_right
     xiang_speaking "这才不是呢，我——"
 
-    scene cg_m10 at cg_0 with vpunchm
+    scene cg_m10 at cg_l1 with vpunchm
     mei_speaking "烦死了！！！"
+    show cg_m10 at cg_0 with dissolve
     xiang_speaking "噫。"
     peng_speaking "……梅，雨？"
+    hide cg_m10
     show cg_m10 at cg_0 with vpunchm
     mei_speaking "别吵了！先回去！一起走！"
     peng_speaking "啊，噢，噢……"

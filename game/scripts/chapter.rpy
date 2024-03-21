@@ -3,6 +3,7 @@ define c0_p1 = 0
 label prologue:
     call prologue_0
     menu:
+        mei "窗外的日光晃了晃眼，我回想起先前叶成华的话。距离晚上还有一段时间，我现在应该……？"
         "联系彭江丽":
             $ c0_p1 = 1
             $ p_point += 1
@@ -19,6 +20,7 @@ define c1_p1 = 0
 label chapter1:
     call chap1_1
     menu:
+        mei "说起来，她这件衣服可能也不够厚……"
         "提醒她多穿衣服":
             $ c1_x1 = 1
             $ x_point += 1
@@ -34,6 +36,7 @@ label chapter1:
         call chap1_x2
     call chap1_3
     menu:
+        mei "彭江丽犹豫的声音打断了我的思考，抬头一看，向夏正专心吃饭，而彭江丽也已经穿好外套，只有我还呆呆地站在原地。"
         "送彭江丽回家":
             $ p_point += 1 
             call chap1_p3
@@ -46,6 +49,7 @@ label chapter1:
 label chapter2:
     call chap2_1
     menu:
+        xiang_speaking "这可怎么办……我让她这么生气，那我的问题岂不是问不了了？我还能挽回一下吗，找点什么办法？"
         "“你只在意这个？”":
             $ p_point += 1 
             call chap2_p1     
@@ -58,6 +62,7 @@ label chapter2:
 label chapter3:
     call chap3_1
     menu:
+        mei "不知道为什么，彭江丽和向夏都睡在这里。{p}估计……她们也是累了吧，不知道，现在怎么样……"
         "转头看彭江丽":
             $ p_point += 1
             call chap3_p1
@@ -66,6 +71,7 @@ label chapter3:
             call chap3_x1
     call chap3_2
     menu:
+        mei "虽然很无聊，不过现在本来也没别的事做……投给谁呢？"
         "投给彭江丽":
             $ x_point += 1
             call chap3_x2
@@ -78,6 +84,7 @@ label chapter3:
 label chapter4:
     call chap4_1
     menu:
+        mei "果然还很早，难怪会感觉有点头晕……{p}不过，她们这是都没睡吗……"
         "劝彭江丽睡觉":
             $ x_point += 1
             call chap4_x1
@@ -86,6 +93,7 @@ label chapter4:
             call chap4_p1
     call chap4_2
     menu:
+        xiang_speaking "你要打电话吗？给你姐姐说一声，不然她肯定担心。"
         "答应":
             $ x_point += 1
             call chap4_x2

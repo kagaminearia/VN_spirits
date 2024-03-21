@@ -71,5 +71,7 @@ label chap1_p2:
     hide meiimg
     show meiimg eye_close at char_left
     mei "我看着她离开的背影，这才意识到，她的笑容令我的心绪变得轻松不少。{p}也许……她没有像我想的那样讨厌我。那就……太好了。"
+    window hide
     pause
     stop music fadeout 1.0
+    window auto

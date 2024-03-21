@@ -29,11 +29,19 @@ transform cg_s:
     xalign 0.5
     yalign 0.35
 
+transform cg_l1:
+    xalign 0.5
+    yalign 0.1
+
+transform cg_l2:
+    xalign 0.5
+    yalign 0.2
+
 init python:
     # change punch variable
     hpunch = Move((30, 0), (-30, 0), .50, bounce=True, repeat=True, delay=.275)
     vpunchs = Move((0, 10), (0, -10), 0.5, bounce=True, repeat=True, delay=.275)
-    vpunchm = Move((0, 40), (0, -40), 1.5, bounce=True, repeat=True, delay=.275)
+    vpunchm = Move((0, 40), (0, -40), 2.5, bounce=True, repeat=True, delay=.275)
     shake = Move((70, 70), (-70, -70), 3, bounce=True, repeat=True, delay=.275)
 
 

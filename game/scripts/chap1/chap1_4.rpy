@@ -43,7 +43,10 @@ label chap1_4:
     stop music fadeout 0.5
     scene cg_x20 at cg_0 with Fade(0.5,0.5,1.5)
     xiang_speaking "我啊……"
+    show cg_x21 at cg_0
     xiang_speaking "我想寻找这里的传说。"
+    window hide
     $ renpy.sound.play(sound.wave, channel="sound")
     pause
+    window auto
     return
