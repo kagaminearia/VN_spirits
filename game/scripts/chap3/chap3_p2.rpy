@@ -65,7 +65,7 @@ label chap3_p2:
     show pengimg shirt o at char_left
     peng_speaking "鱼。"
     hide pengimg
-    show pengimg shirt eye_still at char_right
+    show pengimg shirt eye_still at char_left
     mei_speaking "……咦？"
     mei "我原本只是走个过场，想着这个问题好回答，要是知道了忌口也没坏处。{p}但我没想到她会迟疑，更没想到她的的回答是这个。"
     mei "印象中，我和她吃过的每顿饭，基本都有鱼啊……{p}我一直以为，她很喜欢……"

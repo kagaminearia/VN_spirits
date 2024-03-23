@@ -168,7 +168,7 @@ label chap2_2:
     xiang_speaking "不过，为什么我每次想找梅雨问话，你都要岔开话题？"
     mei "……咦。"
     show pengimg shirt o at char_left with moveinleft
-    peng_speaking "你在说什么？只是巧合吧。"
+    peng_speaking "……{p}你在说什么？只是巧合吧。"
     hide xiangimg
     show xiangimg fist at char_right
     xiang_speaking "是这样吗？在我看来……可能你自己没感觉，但真的很明显。"
@@ -185,7 +185,11 @@ label chap2_2:
     hide xiangimg
     show xiangimg fist eye_still o at char_right
     xiang_speaking "可能你觉得我很烦，但我也有良知。住在一起，我当然担心会不会无意影响梅雨。不是要问隐私，只是怕无意识做坏事。"
-    xiang_speaking "况且再怎么说，我问的是梅雨，她不是没有自理能力的小孩，她不想回答的话她自己会说。"
+    peng_speaking "有什么良知？不想招惹麻烦才是真的吧。"
+    hide xiangimg
+    show xiangimg fist o at char_right
+    xiang_speaking "好，就算是那样，那至少明面上绝不会要害她，结果不是一样的吗？"
+    xiang_speaking "况且再怎么说，我问的是梅雨。她又不是没有自理能力的小孩，她不想回答，或是想拒绝我的话她自己会说。"
     hide pengimg
     show pengimg shirt eye_angry at char_left
     peng_speaking "你……"
