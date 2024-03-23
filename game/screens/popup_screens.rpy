@@ -155,6 +155,7 @@ style notify_frame:
 
 style notify_text:
     size 24
+    color gui.dark_grey
 
 
 
