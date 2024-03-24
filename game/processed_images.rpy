@@ -2,6 +2,7 @@ image halfblack = "#00000088"
 image halfyellow = "#45342e74" 
 image halfdarkblue = "#23243e79" 
 image halfwhite = "#ffffff88" 
+image bg_white = "#fff"
 
 image glitches:
     im.MatrixColor("images/glitch0.jpg",im.matrix.brightness(-0.3))

@@ -81,15 +81,19 @@ label chapter3:
     call chap3_3
     return
 
+define c4_x1 = 0
+define c4_p1 = 0
 label chapter4:
     call chap4_1
     menu:
         mei "果然还很早，难怪会感觉有点头晕……{p}不过，她们这是都没睡吗……"
         "劝彭江丽睡觉":
             $ x_point += 1
+            $ c4_x1 = 1
             call chap4_x1
         "和彭江丽聊天":
             $ p_point += 1
+            $ c4_p1 = 1
             call chap4_p1
     call chap4_2
     menu:
@@ -102,3 +106,23 @@ label chapter4:
             call chap4_p2
     call chap4_3
     return
+
+define route = "n"
+label chapter5:
+    call chap5_0
+    if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
+        $ route = "x"
+    elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
+        $ route = "p"
+    
+    if route == "n":
+        call NE
+        return
+    call chap5_1
+    if route == "x":
+        call chap5_x1
+    else:
+        call chap5_p1
+    call chap5_2
+    return
+    
