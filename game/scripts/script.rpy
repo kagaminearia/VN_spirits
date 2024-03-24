@@ -56,7 +56,7 @@ label start:
     hide screen chap_interval with fade
     window auto
     
-    
+    call chapter5
     
     return
 
