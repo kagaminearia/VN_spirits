@@ -1,3 +1,7 @@
+define ch5_title = "其实是我的问题……"
+
+
+
 define c0_x1 = 0
 define c0_p1 = 0
 label prologue:
