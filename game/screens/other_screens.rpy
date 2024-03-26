@@ -33,9 +33,9 @@ screen about():
             # vbox:
             #     text _("测试") size 40
             #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
-            vbox:
-                text _("特别感谢") size 35
-                text _("{font=fonts/Aboreto-Regular.ttf}akagi{/font}") 
+            # vbox:
+            #     text _("特别感谢") size 35
+            #     text _("{font=fonts/Aboreto-Regular.ttf}akagi{/font}") 
 
         vbox:
             spacing 13
@@ -68,36 +68,74 @@ style about_text:
 ## screens (keyboard_help, mouse_help, and gamepad_help) to display the actual
 ## help.
 
+
 screen help():
-
     tag menu
-    default device = "keyboard"
-    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
     use game_menu(_("Help"))
-
-    viewport:
-        style_prefix 'game_menu'
-        mousewheel True draggable True pagekeys True
-        scrollbars "vertical"
-
-        has vbox
-        style_prefix "help"
-        spacing 23
-
+    style_prefix 'help'
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        spacing 20
         hbox:
+            text _("剧情前进：")
+            text _("鼠标左键/鼠标滚轮下/回车/空格/PgDn")
+        hbox:
+            text _("剧情回退：")
+            text _("PgUp")
+        hbox:
+            text _("游戏菜单：")
+            text _("鼠标右键/Esc")
+        hbox:
+            text _("返回上页：")
+            text _("鼠标右键")
+        hbox:
+            text _("历史记录：")
+            text _("鼠标滚轮上")
+        hbox:
+            text _("跳过：")
+            text _("Ctrl")
+        hbox:
+            text _("截图：")
+            text _("键盘S")
+        hbox:
+            text _("隐藏界面：")
+            text _("键盘H/鼠标中键")
 
-            textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
-            textbutton _("Mouse") action SetScreenVariable("device", "mouse")
 
-            # if GamepadExists():
-            #     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+style help_text:
+    color gui.dark_grey
 
-        if device == "keyboard":
-            use keyboard_help
-        elif device == "mouse":
-            use mouse_help
-        # elif device == "gamepad":
-        #     use gamepad_help
+# screen help():
+
+#     tag menu
+#     default device = "keyboard"
+#     # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
+#     use game_menu(_("Help"))
+
+#     viewport:
+#         style_prefix 'game_menu'
+#         mousewheel True draggable True pagekeys True
+#         scrollbars "vertical"
+
+#         has vbox
+#         style_prefix "help"
+#         spacing 23
+
+#         hbox:
+
+#             textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
+#             textbutton _("Mouse") action SetScreenVariable("device", "mouse")
+
+#             # if GamepadExists():
+#             #     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
+
+#         if device == "keyboard":
+#             use keyboard_help
+#         elif device == "mouse":
+#             use mouse_help
+#         # elif device == "gamepad":
+#         #     use gamepad_help
 
 
 screen keyboard_help():
