@@ -1,6 +1,6 @@
 label prologue_p1:
     mei "其实我并没有不想和彭江丽见面。但叶成华说出那句话时我的下意识反应确实是抗拒……这也是没办法的事情。"
-    mei "一起经过的时间不是假的，即使记忆模糊，现在我也能回想起那种朦胧的快乐。\n但……我们分开的时间也太久了，久到我几乎忘了她是什么样子。"
+    mei "一起经过的时间不是假的，即使记忆模糊，现在我也能回想起那种朦胧的快乐。{p}但……我们分开的时间也太久了，久到我几乎忘了她是什么样子。"
     mei "反正晚上也要一起吃饭，就当事情提前了吧……我慢吞吞地下楼，找到电话和旁边写着号码的便签条。"
     $ renpy.sound.play(sound.ringtone, channel="sound", loop=True, fadein=0.5)
     na "嘟，嘟，嘟……"
@@ -46,7 +46,7 @@ label prologue_p1:
     mei_speaking "是啊……有多少年了？"
     hide pengimg
     show pengimg laugh at char_right
-    peng_speaking "嗯，好像是快八年了吧，没想到……\n对了，你回来有多长时间了？怎么突然想着回来？"
+    peng_speaking "嗯，好像是快八年了吧，没想到，没想到……\n对了，你回来有多长时间了？怎么突然想着回来？"
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "是今天刚到……"
@@ -63,7 +63,8 @@ label prologue_p1:
     show meiimg shirt at char_left
     peng_speaking "……"
     mei "我们一边走路一边寒暄，来回都在讲关于我回镇上的客气话，热情的笑容在断断续续的节奏中逐渐变得有些无奈。"
-    mei "现实中的重逢并不总是像小说里那样充满美好或是戏剧性，也没有自然而然激烈火花。对于我和彭江丽，这数十年的间隔足以将我们之间的所有故事抹平。没有什么爱与恨，什么都没有。"
+    mei "我终于明白，现实中的重逢并不总是像小说里那样充满美好或是戏剧性，也没有自然而然的激烈火花。"
+    mei "对于我和彭江丽，这数十年的间隔足以将我们之间的所有故事抹平。\n没有什么爱与恨，甜或苦，什么都没有。"
     mei "但不约而同地保持着这时表面的欣喜，或许也是我们之间的默契。{p}不过……我这应该算是，在自我安慰吧……"
     
     hide meiimg
@@ -71,15 +72,15 @@ label prologue_p1:
     mei_speaking "对了，叶成华没跟你说过吗？"
     hide pengimg
     show pengimg o at char_right
-    peng_speaking "什么？没有啊，成华姐只是提到你回来了，约我今晚吃饭，没说别的。"
+    peng_speaking "说什么？她没说什么啊。成华姐只是提到你回来了，约我今晚吃饭，没说别的。"
     hide meiimg
     show meiimg shirt eye_still o at char_left
     mei_speaking "哦……"
-    mei "这样，的确也不奇怪……我一直以为叶成华只是粗暴地带我走而已，但她也许比我考虑得更多，包括这些不太能注意到的细节……"
-    mei "既然是彭江丽，没什么不能说的，尽管有些丢脸……不过，她估计也知道一些……"
+    mei "这样，的确也不奇怪……我一直以为叶成华只是粗暴地把我拎回来而已，但她也许比我考虑得更多，包括一些不太能注意到的细节……"
+    mei "既然是彭江丽，没什么不能说的，尽管有些丢脸……\n不过，她估计也知道一些……"
     hide meiimg
     show meiimg shirt o at char_left
-    mei_speaking "其实就是……叶成华拉我回来的。她是说，觉得我的身体适合在这里休养一段时间，吧……"
+    mei_speaking "其实就是……叶成华拉我回来的。{p}她是说，觉得我的身体适合在这里休养一段时间，吧……"
     hide pengimg
     show pengimg o at char_right
     peng_speaking "噢，对哦，那个……那你的身体还是……？"
@@ -98,7 +99,7 @@ label prologue_p1:
     show pengimg eye_still at char_right
     mei_speaking "……"
     peng_speaking "……"
-    mei "一时间，本就开始降温的气氛更加僵硬，我不由得开始唾弃自己。{p}为什么非要多嘴呢？明明和彭江丽好久不见，为什么非得说些让人不高兴的话？"
+    mei "一时间，本就开始降温的气氛更加僵硬，我也不由得开始唾弃自己。{p}为什么非要多嘴呢？明明和彭江丽好久不见，为什么非得说些让人不高兴的话？"
     hide pengimg
     show pengimg o at char_right
     peng_speaking "那要回去吗……？去海边的话，之后去也一样的，你现在有没有不舒服？"
@@ -115,4 +116,5 @@ label prologue_p1:
     hide meiimg
     show meiimg shirt eye_still at char_left
     mei_speaking "……"
-    mei "我的语气不可控地变得生硬，阻断了重新开启的话头。不该是这样的……\n只是，那样慎小谨微的语气……实在令我难以忍受，不自觉就……"
+    mei "我的语气不可控地变得生硬，阻断了重新开启的话头。\n不该是这样的……"
+    mei "只是，那样小心翼翼的语气，从她的嘴里说出来……实在令我难以忍受，不自觉就……"

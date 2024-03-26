@@ -2,6 +2,7 @@ label chap1_p3:
     hide meiimg
     show meiimg shirt eye_wacky o at char_left
     mei_speaking "不，等等，我……送你回去吧？"
+    mei "我根本没来得及想什么，话语已经脱口而出。"
     hide meiimg
     show meiimg shirt at char_left
     hide pengimg
@@ -10,7 +11,7 @@ label chap1_p3:
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "没关系的……我还没那么饿。"
-    mei "我似乎隐约能感觉到向夏在一旁注视着我们，又或是觉得这拉扯的气氛令人难受，干脆猛地站起来，跟着彭江丽往外走。"
+    mei "我似乎隐约能感觉到向夏在一旁注视着我们，又或是觉得这拉扯的气氛实在令人难受，干脆猛地站起来，跟着彭江丽往外走。"
     mei_speaking "走吧！"
     hide meiimg with moveoutright
     hide pengimg with moveoutright
@@ -35,13 +36,13 @@ label chap1_p3:
     mei "实话说，之前和向夏折腾了那么久还没吃到饭，我的确是很饿……但是……"
     hide pengimg
     show pengimg eye_care at char_right
-    peng_speaking "好吧，真的是因为太难吃啊……要不你说下，我下次改改？"
+    peng_speaking "好吧，原来真的是因为太难吃啊……要不你说下，我下次改改？"
     hide meiimg
     show meiimg eye_wacky at char_left
     mei_speaking "没有，不是这样……"
     hide pengimg
     show pengimg eye_care smile at char_right
-    peng_speaking "别担心，我不会在意的。我本来就不是很擅长做饭，就是，你不喜欢的话，我之后就……"
+    peng_speaking "别担心，我不会在意的。\n我本来就不是很擅长做饭，就是，你不喜欢的话，我之后就……"
     hide meiimg
     show meiimg eye_wacky o at char_left
     mei_speaking "我说了不是！"
@@ -70,7 +71,7 @@ label chap1_p3:
     hide pengimg
     show pengimg eye_care o at char_right
     $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
-    peng_speaking "啊，就是……你刚刚说的……是真的吗？"
+    peng_speaking "就，就是……你刚刚说的……是真的吗？"
     hide meiimg
     show meiimg o at char_left
     mei_speaking "是，是啊……"
@@ -88,7 +89,7 @@ label chap1_p3:
     show meiimg at char_left
     mei_speaking "不，我……"
     mei "我有些紧张，但并不像之前那样感到将要窒息的程度。也许，是因为看到了她温柔的表情……"
-    mei "我从未从这样的角度看过她，因而，不知道为什么，被她看着，我竟然有些害羞。\n实在是太奇怪了……我顿了顿，努力不让自己的话语变得磕磕巴巴。"
+    mei "我从未从这样的角度看过她，因而，不知道为什么，被她看着，我竟然有些害羞。{p}实在是太奇怪了……我顿了顿，努力不让自己的话语变得磕磕巴巴。"
     hide meiimg
     show meiimg o at char_left
     mei_speaking "我怎么会那样想……"
@@ -103,11 +104,12 @@ label chap1_p3:
     peng_speaking "那个……我开玩笑的。"
     hide meiimg
     show meiimg o at char_left
-    mei_speaking "没，我知道……\n嗯……今天，真的很谢谢你。"
+    mei_speaking "没，我知道……{p}嗯……今天，真的很谢谢你。"
     hide pengimg
     show pengimg smile at char_right
     peng_speaking "那个，没事啦……"
-    mei "她连开玩笑都小心翼翼，我有些无奈，不过，总比一开始的气氛好多了。{p}说不定，真的能回到以前的关系呢……"
+    mei "她连开玩笑都小心翼翼，我有些无奈，却又重新浮起淡淡的期望。{p}至少，现在比一开始的气氛好多了。"
+    mei "说不定，真的能回到以前的关系呢……"
 
     scene bg_vil2 with pixellate
     show halfyellow
@@ -122,7 +124,7 @@ label chap1_p3:
     show meiimg o at char_left
     mei_speaking "诶……？不用……"
     mei "有那么一瞬间，我的确有些心动这个提议。但，仔细想想的话，还是不合适，也只能拒绝了。"
-    mei_speaking "我又不是只住两天，总不能一直打扰你……反正，房间有锁，跟她互不干涉，也无所谓。"
+    mei_speaking "我又不是只住两天，总不能一直打扰你……\n反正，房间有锁，跟她互不干涉，也无所谓。"
     hide pengimg
     show pengimg eye_care at char_right
     peng_speaking "这样啊，那，你觉得没关系就好……我没别的意思，就是有点担心，因为，也不知道那个人到底是来干嘛的。"
@@ -132,13 +134,13 @@ label chap1_p3:
     hide pengimg
     show pengimg eye_care smile at char_right
     peng_speaking "嗯……也是。"
-    mei "尽管这么说，她的表情仍然是有些纠结。\n要不，我之后还是去问一问向夏好了……"
+    mei "尽管这么说，她的表情仍然是有些纠结。{p}要不，我之后还是去问一问向夏好了……"
 
     scene bg_vil5 with pixellate
     show halfblack
-    mei "天色还没有完全昏暗，但已经能够清晰看到空旷天际线附近的星星了。\n光芒的颜色由温暖变得清冷，温度也自然下降许多，我不由得拢了拢外套。"
+    mei "天色还没有完全昏暗，但已经能够清晰看到空旷天际线附近的星星了。{p}光芒的颜色由温暖变得清冷，温度也自然下降许多，我不由得拢了拢外套。"
     show pengimg smile at char_right with dissolve
-    peng_speaking "那我就回家啦。\n啊……谢谢你，送我回来。"
+    peng_speaking "那我就回家啦。{p}啊……谢谢你，送我回来。"
     show meiimg at char_left with dissolve
     mei_speaking "嗯。"
     peng_speaking "别着凉了，你快回去吧，还有事可以之后找我。或，或者，我们可以打电话。"

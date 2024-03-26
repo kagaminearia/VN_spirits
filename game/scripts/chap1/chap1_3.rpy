@@ -1,18 +1,19 @@
 label chap1_3:
     scene bg_meikitc with fade
     mei_speaking "……"
-    mei "虽然据叶成华所说，她最近换了工作，但她还是很忙。况且立涧村东西侧距离不近，路况也很差，每天来回确实不方便。"
+    mei "虽然据叶成华所说，她最近换了工作，但她还是很忙。况且立涧村和最近的镇上距离也没多近，路况还很差，每天来回确实不方便。"
     mei "但……"
 
     scene glitches with fade
     $ renpy.music.play(music.glitch_xiang_cooking, channel="music", loop=True, fadein=0.5)
-    ye_speaking "既然你现在也不是一个人住，干脆之后和向夏一起做饭吧，哦，对了，我是不是才跟你说她的名字来着？"
+    ye_speaking "既然你现在也不是一个人住，干脆之后和向夏一起做饭吧，哦，对了，我是不是才跟你说她的名字来着？向夏，方向的向，夏天的夏。"
     mei_speaking "……是啊。"
     mei "她才发现吗……"
-    ye_speaking "哎呀，这个，我之前忙忘了，现在跟你说了嘛。\n噢，不跟向夏一起也行，你要是愿意自己做饭，我也不用一天过来好几次了。"
+    ye_speaking "哈哈，这个，这不是我之前忙忘了嘛，现在跟你说了。\n噢，不跟向夏一起也行，你要是愿意自己做饭，我也不用一天过来好几次了。"
     mei_speaking "……啊。"
     ye_speaking "这么想，学学做饭对你自己也有好处啊，以后一个人也不怕饿死了。"
     mei_speaking "……"
+    mei_speaking "好。"
     mei "我就知道。\n她根本就知道我不会做饭，所以除了和向夏一起以外别无选择。"
     mei "不过，就算她没说，我也没打算让她每天过来给我做饭。已经住在这里了，怎么能给她添更多麻烦。"
     mei "反正向夏也不是熟人，不耗费精力在她身上，随便相处一下也无所谓。"
@@ -46,6 +47,9 @@ label chap1_3:
     na "呼——！啪——！咚——！"
     mei_speaking "喂！"
     xiang_speaking "啊！"
+    mei_speaking "你叫什么！"
+    xiang_speaking "我就叫！！！"
+    mei_speaking "别——"
     stop sound
 
     window auto
@@ -54,7 +58,9 @@ label chap1_3:
     mei_speaking "……"
     xiang_speaking "……"
     peng_speaking "……"
-    mei "我站在餐桌旁，和旁边的另外两个人面面相觑，一种比以往更加诡异而尴尬的气氛笼罩在房间里。{p}到底为什么会变成这样……完全难以招架啊……"
+    mei "我站在餐桌旁，和旁边的另外两个人面面相觑，一种比以往更加诡异而尴尬的气氛笼罩在房间里。"
+    mei "刚才闹完一通，我感觉我的背后都出汗了，喉咙也有些发干——当然，也可能是被尴尬到了。"
+    mei "到底为什么会变成这样……完全难以招架啊……"
     show pengimg shirt o at char_mid with moveinleft
     peng_speaking "你，啊……你们还是先吃点东西吧。"
     show meiimg shirt eye_wacky at char_left with moveinleft
@@ -71,7 +77,7 @@ label chap1_3:
     show halfblack
     mei "口口声声说做过饭的向夏，一声尖叫后成功让我手滑切到自己的手，以及看到灶台上冒出的大火。"
     mei "一片混乱中，我冲到客厅打电话，等到打通才发现我下意识拨的是彭江丽的号码。"
-    mei "她很快帮我们处理了麻烦，还顺便做了一餐饭。\n于是……"
+    mei "她很快帮我们处理了麻烦，还顺便做了一餐饭。{p}于是……"
     stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
@@ -79,5 +85,5 @@ label chap1_3:
     peng_speaking "……那，我先回去啦？你趁热吃哦。"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "嗯……啊？"
-    mei "彭江丽犹豫的声音打断了我的思考，抬头一看，向夏正专心吃饭，而彭江丽也已经穿好外套，只有我还呆呆地站在原地。"
+    mei "彭江丽犹豫的声音打断了我的思考。\n抬头一看，向夏已经开始专心吃饭，而彭江丽也已经穿好外套，只有我还呆呆地站在原地。"
     return

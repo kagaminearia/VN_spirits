@@ -3,8 +3,8 @@ label chap1_p2:
     $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     peng_speaking "怎么了？说起来，你要买些什么啊，要我帮你看看吗？"
     show meiimg at char_left with moveinleft
-    mei_speaking "嗯……叶成华那个房子缺东西，都得买一些。\n不过，我没怎么自己买过，所以，不太清楚……"
-    mei "我的声音越说越小，不由得缺乏底气。毕竟我这样没有生活经验，实在容易给别人添麻烦。"
+    mei_speaking "嗯……叶成华那个房子缺东西，都得买一些。{p}呃，不过，我没怎么自己买过，所以，不太清楚……"
+    mei "我的声音越说越小，刚刚升起的勇气也不由得逐渐消散了。毕竟我这样没有生活经验，实在容易给别人添麻烦。"
     hide pengimg 
     show pengimg smile at char_right 
     peng_speaking "没事，我不就是过来跟你一起看的吗，我自己现在也没什么要买的，跟你一起刚刚好。"
@@ -35,8 +35,8 @@ label chap1_p2:
     show q_p20 at cg_s with dissolve
     peng_speaking "啊……！这个，洗发水你喜欢哪种？"
     mei_speaking "不知道，我都没用过。\n你帮我选行吗？会不会，太麻烦了。"
-    mei "我眨了眨眼，重新聚集起注意力。\n看得出来，彭江丽在活跃气氛。于是我也想极力配合彭江丽，但语速也因为思绪卡壳变得有些凝滞。"
-    mei "好在，她似乎并不在意我的反应。"
+    mei "我眨了眨眼，重新聚集起注意力。{p}看得出来，彭江丽在活跃气氛。于是我也想极力配合彭江丽，但语速也因为思绪卡壳变得有些凝滞。"
+    mei "好在，她似乎并不在意我的反应，仍然“敬业”地帮我挑选。"
 
     hide q_p20 with pixellate
     show pengimg smile at char_right with dissolve
@@ -45,15 +45,15 @@ label chap1_p2:
     mei_speaking "不，怎么会。"
     hide pengimg
     show pengimg o at char_right
-    peng_speaking "就是，我也不知道你现在的习惯……你头发比较软的话，这几个都可以试试。唔，这个比较好，不过会贵很多。"
-    mei_speaking "就这个吧，价格，无所谓。"
+    peng_speaking "就是，我也不知道你现在的习惯……你头发容易翘的话，这几个都可以试试。{p}唔，这个比较好，不过会贵很多。"
+    mei_speaking "那，就这个吧，价格都无所谓。"
     hide pengimg
     show pengimg at char_right
     peng_speaking "……那，那好，走吧。"
     hide meiimg
     show meiimg at char_left
     mei_speaking "啊……嗯。"
-    mei "为什么，总觉得气氛似乎又冷下来了……是我说错什么了吗……？\n我是想着积极支持彭江丽做的选择，但……"
+    mei "为什么，总觉得气氛似乎又冷下来了……是我说错什么了吗……？\n我是想着积极支持彭江丽做的选择，但……做得不对吗？"
     mei "不过，也许是我又想多了也不一定，还是先不要乱想了吧……"
 
     scene bg_vil5 with pixellate

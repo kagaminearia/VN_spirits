@@ -20,13 +20,14 @@ label chap1_4:
     mei "我正好在吃药，听到她的话，差点没被呛死，好一会才把药片安然吞下。"
     hide meiimg
     show meiimg shirt eye_wacky o at char_left
-    mei_speaking "……你在夸我？"
+    mei_speaking "……你该不会，在夸我？"
     hide xiangimg
     show xiangimg fist o at char_right
     xiang_speaking "嗯，应该可以算是吧？我是真心觉得你不错才说实话的。"
     hide meiimg
     show meiimg shirt eye_wacky at char_left
-    mei "……\n她表情如此认真笃定，简直让我无法生起愤怒的情绪，甚至以为是自己的理解能力有问题。"
+    mei "……{p}我跟她之间绝对有个人出了问题。"
+    mei "她表情如此认真笃定，简直让我无法生起愤怒的情绪，甚至开始怀疑自己的理解能力。"
     mei_speaking "那，然后？"
     mei "就算姑且认为她真的是在夸我……以她的作风，绝对不会只是想说这些话。{p}虽然刚认识，但我莫名就能确信这点。"
     hide meiimg
@@ -47,6 +48,6 @@ label chap1_4:
     xiang_speaking "我想寻找这里的传说。"
     window hide
     $ renpy.sound.play(sound.wave, channel="sound")
-    pause
+    pause 1
     window auto
     return

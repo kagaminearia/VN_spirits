@@ -7,11 +7,11 @@ label prologue_x1:
     scene bg_vil1 with pixellate
     $ renpy.music.play(music.calming_guitar, channel="music", loop=True, fadein=0.5)
     mei "早就过了中午，阳光却依然不显颓势，热烈地展现自己的存在感。{p}我缓慢地在砂石路上踱步，没碰到几个人，也没人在意我，实在令人安心许多。"
-    mei "说不定，叶成华的方法真的有效，她硬是把我拉回这个地方……我不由得再次展开幻想。{p}……明知道，不切实际。"
+    mei "说不定，叶成华的方法真的有效，她硬是把我拉回这个地方……我不由得再次展开幻想。{p}……即使明知道，不切实际。"
 
     scene bg_station with pixellate
     mei_speaking "……嗯？"
-    mei "竟然走回这里了……大概是下意识顺着熟悉的路。就在上午，我才和叶成华在这里下了大巴，换成她的破三轮。"
+    mei "竟然走回这里了……大概是下意识顺着熟悉的路走了。\n就在上午，我才和叶成华在这里下了大巴，然后换成她的破三轮。"
     mei "被生锈的栏杆歪歪斜斜地围住，车站门口褪色的“欢迎光临”也显得并不那么欢迎。比起这个年代久远的招牌，边缘的一抹亮色更加吸引我的视线。"
     
     scene cg_x10 with wiperight
@@ -35,8 +35,8 @@ label prologue_x1:
     mei_speaking "我也是刚来这里，所以真的不清楚。"
     hide meiimg
     show meiimg at char_left 
-    mei "虽然感到抱歉，但我的确什么都不知道，只好直接打断了她的话。然而她只是停住一瞬间，却仍然有要继续说话的迹象。"
-    mei "在这种时候，我也只能佩服自己的直觉……本能地觉得应付不来这个人，只可惜还是没能躲掉。"
+    mei "虽然感到抱歉，但我的确什么都不知道，只好直接打断了她的话。\n然而她只是停住一瞬间，却仍然有要继续说话的迹象。"
+    mei "在这种时候，我也只能佩服自己的直觉……本能地觉得应付不来这个人，只可惜就算意识到了也还是没能躲掉。"
     hide xiangimg
     show xiangimg laugh at char_right 
     unknown_speaking "那你是认识这里其他人的吧，有没有知道的人可以帮忙问一下呀？"
@@ -88,7 +88,8 @@ label prologue_x1:
     peng_speaking "噢，这样……那，那要不要一起走走，去海边看看？或者，我们就一起回去？"
     hide meiimg
     show meiimg eye_still at char_left
-    mei "她在努力维持话题，即使我如此失礼。只是不知为何，她的笑容——那样礼貌而标准——并没有宽慰到我。\n我真是个糟糕的人……"
+    mei "她在努力维持话题，即使我如此失礼。只是不知为何，她的笑容——那样礼貌而标准——并没有宽慰到我。"
+    mei "或许，我真是个糟糕的人……"
     hide meiimg
     show meiimg at char_left
     mei_speaking "都可以。\n就，走走吧。"

@@ -1,7 +1,7 @@
 label chap1_x3:
     hide meiimg
     show meiimg shirt at char_left
-    mei_speaking "噢，噢……好。\n麻烦你特地跑过来……就不继续浪费你的时间了。"
+    mei_speaking "噢，噢……好。\n麻烦你特地跑过来……就，不继续浪费你的时间了。"
     hide pengimg
     show pengimg at char_right
     peng_speaking "……嗯。"
@@ -23,7 +23,7 @@ label chap1_x3:
     mei "我不知道该如何回话，只是叹了口气，无奈地拿起筷子，用行动证明我要吃饭了。"
     hide xiangimg
     show xiangimg smile at char_right
-    xiang_speaking "喔，好吧，那你吃完之后叫我哦，我来洗碗。\n{size=30}啊，本来还想着能再吃一点……{/size}"
+    xiang_speaking "喔，好吧，那你吃完之后叫我哦，我来洗碗。{p}{size=30}啊，本来还想着能再吃一点……{/size}"
     mei_speaking "……\n你想吃，自己再做呗。"
     mei "总觉得她说话总是有一茬没一茬的，实在令人费解……"
     hide xiangimg
@@ -39,9 +39,10 @@ label chap1_x3:
     hide xiangimg
     show xiangimg eye_squint o at char_right
     xiang_speaking "哎呀，不是！这是意外啊。这个灶和我以前用的完全不同！你不做饭肯定不知道，这边的灶太容易炸了，那个火……完全不好把控火候。"
+    xiang_speaking "下次，下次绝对不会出事！"
     hide xiangimg
     show xiangimg o at char_right
-    xiang_speaking "不过你的手指没事吧，是不是要买点药之类的。"
+    xiang_speaking "对了，不过你的手指没事吧，是不是要买点药之类的。"
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "没事，只是蹭到。"
@@ -61,7 +62,7 @@ label chap1_x3:
     mei "我有点傻眼。坦白讲，我以为一般人在这时候都会客气一下，至少推拉两三句，然而她完全没有这样的意识。"
     hide meiimg
     show meiimg shirt eye_still smile at char_left
-    mei "不过，这样感觉也不错……我无奈地笑了笑，突然意识到自己的心情似乎轻松了不少。\n明明之前还不是这样的……"
+    mei "不过，这样感觉也不错……我无奈地笑了笑，突然意识到自己的心情似乎轻松了不少。{p}明明之前还不是这样的……"
     hide meiimg
     show meiimg shirt eye_still at char_left
     mei "唉，我这忽上忽下的情绪到底是怎么回事啊……{p}我挠挠头，总觉得莫名有些别扭，但也不打算再继续细想什么。"
@@ -89,6 +90,7 @@ label chap1_x3:
     xiang_speaking "你说什么？"
     mei_speaking "我说，是很好看。"
     mei "其实我也没见过这样的场景。\n只是，在她提到之前，哪怕看到了，我大概也不会在意吧。"
+    mei "我并不像她，能够注意到这些事情……"
     mei "所以此时此刻，我能够感受到眼前燃烧般的的天色带来的畅意，也能够看到她被夕阳染红的快活表情。"
     mei "嗯……说实话……{p}我不得不承认，如果仅仅体会当下，感觉还不错。"
     stop music fadeout 0.5

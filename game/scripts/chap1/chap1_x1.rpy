@@ -8,7 +8,7 @@ label chap1_x1:
     unknown_speaking "噢，谢谢，还真是。\n不过，这可是我最厚的衣服了。嗯……"
     hide meiimg
     show meiimg shirt at char_left
-    mei "也许我们对厚的定义不同……我看着她的贴身长袖，一时间不知道该接什么话。"
+    mei "也许我们对厚的定义不同……我看着她的贴身薄长袖，一时间不知道该接什么话。"
     hide xiangimg
     show xiangimg o at char_right
     unknown_speaking "要不你借——哦，不，你知道哪里有超市么？"
@@ -23,7 +23,7 @@ label chap1_x1:
     mei_speaking "呃，你呢？"
     hide xiangimg
     show xiangimg eye_squint laugh at char_right
-    xiang_speaking "我叫向夏，方向的向，夏天的夏。\n这也算是认识了，之后多多指教啰。"
+    xiang_speaking "我叫向夏，方向的向，夏天的夏。{p}现在也算是认识了，之后多多指教啰。"
     stop sound fadeout 0.5
     $ renpy.sound.set_volume(1.0, 0, channel="sound")
     return

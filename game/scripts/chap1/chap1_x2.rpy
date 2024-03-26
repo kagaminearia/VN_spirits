@@ -7,7 +7,7 @@ label chap1_x2:
     xiang_speaking "喂，梅雨！听得见嘛？"
     hide meiimg
     show meiimg o at char_left
-    mei_speaking "嗯……啊？！呃，怎么了？"
+    mei_speaking "嗯……啊？！{p}呃，怎么了？"
     hide xiangimg
     show xiangimg smile at char_right
     xiang_speaking "我在问你呐，我看房子里好像没什么生活用品，要不要一起买？这个套装打折，第二件半价呢，一起买会便宜很多。你应该也需要吧，买吗？"
@@ -27,7 +27,7 @@ label chap1_x2:
     mei_speaking "……\n随你。"
     hide xiangimg
     show xiangimg fist smile at char_right
-    xiang_speaking "好啦，我知道的，就是说说嘛，唉。\n算啦算啦，我去拿一件，然后我们去结账吧。你还要买别的吗？"
+    xiang_speaking "好啦，我知道的，就是说说嘛，唉。{p}算啦算啦，我去拿一件，然后我们去结账吧。你还要买别的吗？"
     hide xiangimg with moveoutleft
     hide meiimg with moveoutleft
     mei "我摇了摇头，于是她很快跑过几个货架，又很快从另一侧回来，手里还拎着一件长长的……大概像是是毛绒大衣一样的衣服。"
@@ -40,7 +40,7 @@ label chap1_x2:
     
     scene bg_meiliv with pixellate
     $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True)
-    mei "成功说上话之后，现在看到向夏的时候好像也没有那么尴尬了。我的神经稍微放松一些，回到家也有些懒得上楼，干脆陷进宽大的沙发一角。"
+    mei "成功说上话之后，现在看到向夏的时候好像也没有那么尴尬了。{p}我的神经稍微放松一些，回到家也有些懒得上楼，干脆陷进宽大的沙发一角。"
     show xiangimg o at char_right with moveinright
     xiang_speaking "对了，刚的小票呢？"
     show meiimg o at char_left with dissolve
