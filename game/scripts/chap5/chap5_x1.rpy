@@ -1,63 +1,129 @@
 label chap5_x1:
-    scene bg_meiliv
+    scene bg_meiliv with fade
     na "咔哒。"
+    show xiangimg o at char_right with moveinright
     xiang_speaking "原来是你啊，你今天终于出来吃饭了？"
     mei "我到楼下的时候，角落的门被打开，向夏也刚好走出来，笑着朝我挥了挥手。"
+    show meiimg shirt o at char_left with moveinleft
     mei_speaking "嗯。"
+    hide xiangimg
+    show xiangimg smile at char_right
     xiang_speaking "对了，看起来你好像没事，你要跟我一起出去吗？"
     mei_speaking "啊？"
+    hide xiangimg
+    show xiangimg o at char_right
     xiang_speaking "我要去别人家帮个忙，清理房间和家具啥的。"
+    mei_speaking "……你去帮忙？"
+    hide xiangimg
+    show xiangimg smile at char_right
+    xiang_speaking "啊，有报酬的，顺便帮帮嘛，大家都是邻居。"
+    hide meiimg
+    show meiimg shirt at char_left
+    mei_speaking "……"
+    mei "难道我才是那个外来的人？"
+    mei "说真的，我还真是很佩服她这既来之则安之的心态……"
+    xiang_speaking "所以你去不去？我马上就要走了。"
     mei_speaking "……\n不。"
-    xiang_speaking "好吧，我看你之前还——"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "好吧，我看你之前不是还——"
+    hide meiimg
+    show meiimg shirt eye_still at char_left
     mei_speaking "我去也没用。"
     mei "我意识到向夏似乎要提到之前的事情，脑中的弦瞬间绷紧，连想都没想，就粗暴地打断了她的话。"
+    hide xiangimg
+    show xiangimg fist o at char_right
     xiang_speaking "——还，嗯，所以你的意思是，你其实是想去的？"
+    hide meiimg
+    show meiimg shirt at char_left
     mei_speaking "不。我又做不了事。"
+    hide xiangimg
+    show xiangimg fist at char_right
     xiang_speaking "这样啊，嗯，我说……{p}你是不是没上过班？"
+    hide meiimg
+    show meiimg shirt eye_wacky at char_left
     mei_speaking "哈？"
-    xiang_speaking "你想做事还不简单啊，就算没事也能给你找出事情来。\n反正你现在也没事吧，真的不去吗？"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "你想做事还不简单啊，就算没事也能给你找出事情来。\n反正你现在也没别的安排吧，真的不去吗？"
     mei_speaking "……\n好吧。"
-    mei "她倒是说对了一点，我的确没事可做。\n无所谓了……我也，不知道该做什么……"
+    mei "她倒是说对了一点，我的确没事可做。\n确实，无所谓了……我也不知道该做什么……"
 
-    scene bg_vil2 with pixellate
+    scene bg_misc1 with pixellate
     mei "家具被近日的阳光晒得很干，看起来已经恢复原状，但只要靠近，就能闻到表面散发出的难闻气味。"
     mei "水分和污染物并不会因为日晒通风就被除尽，我拿着抹布，小心地沾上清洁剂，在家具的表面来回擦拭。"
     mei "去除可能残留的细菌和脏污之后，可以把去味剂放在有空间的家具内部，不过，之后向夏会把家具再拿去晾晒，这时候就没必要太过浪费资源。"
+    show xiangimg o at char_right with moveinright
     xiang_speaking "这边弄完了吗？"
-    mei_speaking "啊，没，我快点……"
-    xiang_speaking "我就问问，先搬那边也一样的，之前搞了一些了。\n又没催你，别急啊，这事不得细致点嘛。"
+    show meiimg shirt o at char_left with dissolve
+    mei_speaking "啊，没，我尽量快……"
+    hide xiangimg
+    show xiangimg smile at char_right with moveinright
+    xiang_speaking "哦我就问问，先搬那边也一样的，之前搞了一些了。\n又没催你，别急啊，这事不得细致点嘛。"
+    show meiimg shirt at char_left 
     mei_speaking "哦……"
-    mei "她这么说，让我稍微放松一些。"
-    mei "我擦洗家具的每个缝隙和死角，清理之后，让向夏把东西搬到后院。\n之后，再处理之前晒好的一部分，使用防霉剂防止可能的霉菌。"
+    mei "她这么说，倒是让我稍微放松一些。"
+    mei "我擦洗家具的每个缝隙和死角，清理之后，让向夏把东西搬到后院。{p}之后，再处理之前晒好的一部分，使用防霉剂防止可能的霉菌。"
 
+    scene bg_misc1 with pixellate
     grandma_speaking "行了行了，别再忙了。今天真是多亏你们啊，做得可真干净，真是谢谢了。"
     grandma_speaking "我这也没什么好东西，你俩一人一个荷包，收着吧。"
+    show meiimg o at char_left with dissolve
     mei_speaking "啊？不……"
-    xiang_speaking "那就谢谢您啦，之后需要帮忙再来找我就行。"
-    mei "没等我再说话，向夏很快和老人完成了交涉，让她回家去了。\n绣有刺绣的布包鼓鼓囊囊，我打开一看，发现里面竟然塞了几张小额钞票。"
+    show xiangimg fist eye_squint laugh at char_right with dissolve
+    xiang_speaking "好哎，那就谢谢您啦，之后需要帮忙再来找我就行。"
+    mei "没等我再说话，向夏很快和老人完成了交涉，然后推着我往外走。{p}绣有刺绣的布包鼓鼓囊囊，我打开一看，发现里面竟然塞了几张小额钞票。"
+    mei "这差点让我惊得跳起来，我原本以为她说的报酬只是邻里间互送的小玩意，没想到是货真价实的报酬。"
+    show cg_x51 at cg_0 with dissolve
     mei_speaking "喂，这个，得还回去……"
     xiang_speaking "为啥？我就是为了这个才来帮忙的啊。"
     mei_speaking "哈？你连人家这——"
     xiang_speaking "等等等等，都说了你别急啊。这边的广场那里有个公告栏，日常会发些超市打折啊送东西啊还有找人帮忙的告示，这个都是人家说好的，我就是赚一点点小外快。"
     mei_speaking "……这样啊。"
+    hide cg_x51
+    show cg_x52 at cg_0 with dissolve
     xiang_speaking "嘿嘿，我是不是比你更像这里的人？"
     mei_speaking "……哦。"
-    mei "在得意什么……\n不过，被她提到我才发现，我已经很久没有主动关注过周围的世界了，人也好事情也好。"
-    mei_speaking "这给你吧，我没做什么。"
-    mei "我之前不知道，现在反倒是像跟她抢报酬的了。我想了想，还是把荷包递过去，她却并没有接。"
-    xiang_speaking "说啥呢，你做了很多事啊，别把自己的努力说得这么不值钱。她谢谢的是我们，不是我。"
+    mei "在得意什么……我无奈地干笑两声，只觉得额头上的汗比之前更多了。"
+    show bg_vil4 with dissolve:
+        blur 25 
+    mei "黏糊的感觉让我不太舒服，但还挺新鲜——平时我很少出门，也不做任何额外的活动，这里面自然也包括会让人出汗的事。"
+    mei "直到风吹过，比以往更加凉爽。{p}我愣愣地伸出手，想要抓住风中飘摇的发丝，那深黑色和橙棕色交缠的几缕。"
+
+    scene bg_vill6 with fade
+    show meiimg shirt at char_left with dissolve
+    mei_speaking "……啊。"
+    hide meiimg
+    show meiimg shirt o at char_left
+    mei_speaking "这给你吧，我也没帮上什么忙。。"
+    mei "回过神来，我意识到自己在做什么，连忙飞快地收回手，而后把另一只手攥着的布包递给向夏。"
+    mei "之前是不知道，现在我反倒是像跟她抢报酬的了，这不是我的本意。{p}当然，也有要掩饰刚刚的动作的意思……"
+    mei "不过，向夏却没有接，反而一脸惊讶地看着我。"
+    show xiangimg fist o at char_right with dissolve
+    xiang_speaking "说啥呢，你做了很多事啊，别把自己的努力说得这么不值钱。她谢谢的是我们，不是我一个。"
     mei_speaking "啊……"
-    xiang_speaking "你就拿着吧，人老人家给你的啊。"
+    xiang_speaking "所以说，你就拿着吧，人老人家给你的啊。"
+    hide meiimg
+    show meiimg shirt at char_left
     mei_speaking "嗯。"
-    mei "我默默收回手，说不清现在是什么心情。\n但，回去的路上，脚步似乎变得轻快起来。"
+    hide meiimg with dissolve
+    hide xiangimg with dissolve
+    mei "我默默收回手，说不清现在是什么心情。{p}但，回去的路上，脚步似乎变得轻快起来。"
 
-    mei "几天没进厨房，本来也不熟练的事情更加生疏了。"
-    xiang_speaking "不错啊，我还以为在我走之前都是我做饭了呢。"
-    mei_speaking "……抱歉。"
-    xiang_speaking "不用道歉啊，我只是说说，反正这是你家，你想怎么做都行啊。"
-
-    "哗啦。
-    "
+    scene bg_meikitc
+    mei "几天没进厨房，本来也不熟练的事情更加生疏了。{p}前几天我都把自己关在房间里，现在决定出门后自然也要恢复做饭。"
+    show xiangimg fist o at char_right with moveinright
+    xiang_speaking "哦，不错啊，我还以为在我走之前都是我做饭了呢。"
+    show meiimg shirt o at char_left with moveinleft
+    mei_speaking "……嗯，抱歉。"
+    xiang_speaking "啊？你不用道歉啊，我只是说说。"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "反正这是你家嘛，你想怎么做都行，我哪能逼你。"
+    hide meiimg
+    show meiimg shirt at char_left
+    mei_speaking "……"
+    "哗啦。"
     mei "洗到一半的菜离开我的手，一下子全部散开，落到盆里，溅出不少水花。"
     mei_speaking "为什么，要这么说？"
     xiang_speaking "嗯？什么意思？"
