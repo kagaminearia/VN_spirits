@@ -23,8 +23,10 @@ label chap2_2:
     show xiangimg fist o at char_right
     xiang_speaking "那不就是了，就先问问，如果她拒绝我再想别的方法？稳妥一点。"
     mei_speaking "好。"
+    stop music fadeout 0.5
 
     scene bg_meiroom with pixellate
+    $ renpy.music.play(music.cold_night, channel="music", loop=True, fadein=0.5)
     mei_speaking "……好，烦……"
     mei "吃完药后，我躺在床上辗转反侧。已经到了平时睡觉的时间，我却没有任何睡意。{p}要是之前没有答应向夏就好了……我本来就不常和人说话，现在还被夹在两个人中间，实在是不安而烦躁。"
     mei "如果可以，我根本不想答应这些事。可……彭江丽是我最好的朋友，即使她现在可能已经不这么认为，我还是不希望她难过。"
@@ -34,9 +36,11 @@ label chap2_2:
 
     show bg_black with dissolve
     mei "身体的疲惫和吃药后的反应来势汹汹，大脑虽然还在被毛线团般的问题困扰，我还是逐渐陷入了深深的睡眠。"
+    stop music fadeout 0.5
 
     scene bg_meiliv with fade
     show xiangimg fist o at char_right with dissolve
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     xiang_speaking "前几天我不小心冒犯到你，真的对不起了！\n我不是有意的，你要是觉得哪里不对，直接跟我说吧！"
     xiang_speaking "哦对了，一顿饭可能不够……我还需要做什么，你说，我都尽量做。"
     mei "她还是好直接，连铺垫都没有……不只是我，彭江丽也愣住了一瞬间。"
@@ -54,6 +58,7 @@ label chap2_2:
     peng_speaking "……嗯。就这样吧。"
     mei "她俩的对话磕磕绊绊，像没上润滑油的链条努力向前推进。{p}我只用在旁边听着，倒是轻松不少。"
     mei "这么想不太合适，但我心里似乎莫名生出一种接近于暗爽的情绪——也许是因为看到不止我一个人跟向夏说话很费劲……"
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     show pengimg shirt at char_left with dissolve
@@ -68,6 +73,7 @@ label chap2_2:
     xiang_speaking "你们说的信仰具体是什么东西啊，是名字就叫“灵”吗，是什么传说里的人物吗，还是别的东西？"
     hide pengimg
     show pengimg shirt at char_left 
+    $ renpy.music.play(music.nature, channel="music", loop=True, fadein=0.5)
     peng_speaking "不是的。灵……就是灵。"
 
     scene video_1 with Fade(1,1,1)
@@ -89,8 +95,10 @@ label chap2_2:
 
     scene bg_meiliv with fade
     show xiangimg o at char_right with moveinright
+    stop music
     xiang_speaking "喂，梅雨！"
     show meiimg shirt o at char_left with moveinleft
+    $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True, fadein=0.5)
     mei_speaking "嗯？"
     xiang_speaking "你怎么总是走神啊？你还有什么要说的吗？"
     mei_speaking "没……你们讲完啦？"
@@ -120,6 +128,7 @@ label chap2_2:
     mei "哒，桌上发出轻微的响声，仿佛一种打断我们对话的信号。\n彭江丽若无其事地放下筷子，冲着我们笑了笑。"
     xiang_speaking "诶，你吃得好快哦。"
     mei "向夏的注意力似乎被分走了，刚好，我也还没想好怎么搪塞刚才的问题……趁这个机会，别让她再继续纠结这些好了。"
+    stop sound fadeout 0.5
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "什么时候祝灵节？"
@@ -137,6 +146,7 @@ label chap2_2:
     mei "不像我……"
 
     scene bg_meiliv with pixellate
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei "吃完饭后，我照常开始吃药。彭江丽和向夏坐在餐桌旁，有一搭没一搭地讨论除了祝灵节以外的其他部分。\n当然，主要是向夏在问。"
     show xiangimg fist o at char_right with moveinright
     xiang_speaking "话说你每天是吃什么药啊，我平时需要注意什么吗？"
@@ -160,6 +170,7 @@ label chap2_2:
     
     scene bg_meiliv with pixellate
     mei "只是我应当知道，糖果的味道从来没变过。{p}自然，改变的是其他东西。"
+    stop music fadeout 0.5
     
     show xiangimg fist smile at char_right with moveinright
     xiang_speaking "哇哦，这糖好甜，谢谢你啊。"
@@ -174,6 +185,7 @@ label chap2_2:
     xiang_speaking "是这样吗？在我看来……可能你自己没感觉，但真的很明显。"
     hide pengimg
     show pengimg shirt eye_angry at char_left
+    $ renpy.music.play(music.peng_explode, channel="music", loop=True, fadein=0.5)
     peng_speaking "……哦。\n既然你知道，那为什么还要继续问？你非要问这种问题吗？"
     mei "完了，感觉……{p}气氛很不妙……"
     hide xiangimg
@@ -201,6 +213,7 @@ label chap2_2:
     peng_speaking "你太过分了……！！"
     hide pengimg
     show pengimg shirt eye_angry o at char_left with vpunchs
+    $ renpy.sound.play(sound.crash, channel="sound")
     na "啪！哐当！"
     hide xiangimg
     show xiangimg fist o at char_right
@@ -215,19 +228,23 @@ label chap2_2:
     hide pengimg
     show pengimg shirt eye_care at char_left with vpunchs
     mei "……而我却真的没能说出任何一句话。"
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     show pengimg shirt eye_still o at char_mid with dissolve
     peng_speaking "啊……这样啊，我明白了。\n抱歉，是我擅自做这样的事。"
+    $ renpy.sound.play(sound.heartbeat_1, channel="sound")
     mei "不是……"
     hide pengimg
     show pengimg shirt eye_care o at char_mid
     peng_speaking "让你们感到困扰了，真是抱歉。\n你……你们，你们继续聊吧。我先走了。"
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound")
     mei "不是这样的……"
     hide pengimg
     show pengimg shirt eye_care smile at char_mid
     peng_speaking "今天打扰了，饭很好吃，谢谢你们。\n拜拜！"
     hide pengimg with easeoutright
+    $ renpy.sound.play(sound.heartbeat_3, channel="sound")
     mei "别……"
     show meiimg shirt eye_shock at char_mid with vpunchs
     "砰！"

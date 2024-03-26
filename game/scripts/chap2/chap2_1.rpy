@@ -1,7 +1,9 @@
 label chap2_1:
     scene bg_meiliv with Fade(1.5,0.5,1)
+    $ renpy.music.play(music.xiang_spirits, channel="music", loop=True, fadein=0.5)
     mei "客厅的顶灯也许是年代太久了，在晚上显得有些昏暗，竟然将向夏的脸庞盖上一层诡秘的阴影。{p}不，那只是我自己产生的错觉……"
     stop sound
+    $ renpy.sound.play(sound.summer_night, channel="sound", loop=True, relative_volume=0.8, fadein=0.5)
     show meiimg shirt at char_left with dissolve
     mei_speaking "那是什么意思？"
     show xiangimg o at char_right with dissolve
@@ -24,6 +26,7 @@ label chap2_1:
     hide meiimg
     show meiimg shirt eye_wacky o at char_left 
     mei_speaking "等等等等……"
+    stop music
     hide meiimg
     show meiimg shirt eye_wacky at char_left 
     mei "眼看着她越说越兴奋，我赶紧打断了她，结果她反而一副很不理解的样子。我无奈地捏了捏眉心，甚至已经隐隐感觉到了乏意。"
@@ -31,7 +34,7 @@ label chap2_1:
     show xiangimg fist o at char_right
     xiang_speaking "嗯？"
     hide meiimg
-    show meiimg shirt at char_left 
+    show meiimg shirt at char_left
     mei_speaking "你说的，我不知道。\n你之前应该听叶成华说过吧，我是最近才回来的，之前不住在这里。"
     mei "虽然其实很小的时候是在这里住……不过这些事也没必要跟她讲，实在麻烦。只要跟她说我不知道就行了。"
     mei "其实，关于立涧村，我就只知道自己以前住过，以及这里好像发展渔业，除此之外什么都不知道。或许，还不如她这个外来人。"
@@ -39,8 +42,11 @@ label chap2_1:
     show xiangimg fist at char_right
     xiang_speaking "好吧……不好意思啊。"
     mei "嗯，这样她也知道该放弃了吧……"
+    stop sound fadeout 0.5
+    $ renpy.sound.set_volume(1.0, 0, channel="sound")
     hide xiangimg
     show xiangimg fist smile at char_right
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     xiang_speaking "要不你帮我问问其他人？可以吗？"
     hide meiimg
     show meiimg shirt eye_wacky o at char_left 
@@ -99,6 +105,7 @@ label chap2_1:
     show xiangimg fist eye_squint smile at char_right
     xiang_speaking "噢……好吧好吧。没事，我不逼你的。\n那，晚安！"
     mei_speaking "嗯。"
+    stop music fadeout 0.5
 
     scene bg_meihome with Fade(1.5,1,1.5)
     show pengimg o at char_right with moveinright
@@ -110,7 +117,8 @@ label chap2_1:
     mei "虽然答应了向夏，但真正开口还是难以启齿——我和彭江丽的关系才刚刚和缓一些，我可不想又回归原点。{p}但话都答应了，我也只好磕磕绊绊说完。"
     mei "于是……现在我在令人不安的沉默中，等着彭江丽的回答。"
     hide pengimg
-    show pengimg o at char_right 
+    show pengimg o at char_right
+    $ renpy.music.play(music.peng_awkward_talk, channel="music", loop=True, fadein=0.5) 
     peng_speaking "原来这就是她来这里的原因啊……"
     mei_speaking "嗯，应该是。"
     hide pengimg
@@ -144,6 +152,7 @@ label chap2_1:
     hide pengimg
     show pengimg eye_care o at char_right
     peng_speaking "嗯，那，那就好……"
+    stop music fadeout 0.5
     hide meiimg
     show meiimg at char_left 
     mei_speaking "那……这件事，你怎么……？"
@@ -162,6 +171,7 @@ label chap2_1:
     mei "我刚想说“应该不会”，但想了想，又觉得可能是向夏能做出来的事，于是只好硬生生止住话头。"
     hide meiimg
     show meiimg smile at char_left
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei_speaking "你真好。"
     hide pengimg
     show pengimg red at char_right
@@ -176,9 +186,11 @@ label chap2_1:
     show pengimg smile at char_right
     peng_speaking "没事没事，我这不是马上就要走了嘛，就是路过来找你一下。\n那我先走啦，下次见。"
     mei_speaking "好。下次见。"
+    stop music fadeout 0.5
 
     scene bg_pengliv with fade
     show xiangimg smile at char_right with moveinright
+    $ renpy.sound.play(sound.bird_chirping_2, channel="sound", loop=True, fadein=0.5)
     xiang_speaking "你们家也好大啊，村里的房子真是不错。\n啊，我能坐这儿吗？"
     show pengimg shirt at char_left with moveinleft
     peng_speaking "……\n坐这边就行。"
@@ -191,7 +203,9 @@ label chap2_1:
     hide meiimg
     show meiimg shirt at char_mid
     mei_speaking "嗯，好……"
+    stop sound fadeout 0.5
     hide xiangimg with moveoutright
+    $ renpy.music.play(music.awkward, channel="music", loop=True, fadein=0.5)
     mei "向夏已经很自然地坐下，这倒也没什么。只是我有点担心彭江丽，总觉得她看上去兴致不高。但她这么说了，也只好点点头。"
     mei "之前，她说她和向夏也不熟，与其干坐着谈话，不如一起吃顿饭。{p}至于为什么是把我们请到她家来……自然是她不相信我和向夏的做饭水平。"
     hide meiimg
@@ -214,6 +228,7 @@ label chap2_1:
     show q_m10 at cg_s with dissolve
     mei "等的时间不久，很快她就把餐桌布置完。一张圆桌，我坐在彭江丽和向夏的中间。{p}毕竟她们不熟……"
     mei "只是，我在人群中向来存在感很低，这个座位实在令我有些坐立难安。"
+    stop music fadeout 0.5
 
     scene bg_pengliv with pixellate
     show xiangimg fist smile at char_right with moveinright
@@ -224,11 +239,14 @@ label chap2_1:
     show xiangimg fist laugh at char_right
     xiang_speaking "不会不会！你能告诉我就很好了，我不挑的。"
     mei "好直接的开场啊……我还以为她们会先说些闲话。"
+    pause
     hide pengimg
     show pengimg shirt o at char_left
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True, relative_volume=0.7, fadein=0.5)
     peng_speaking "这些是我以前在一个姐姐那里听来的事。以前，立涧村的确有深厚的，对于灵的信仰。"
     hide xiangimg
-    show xiangimg fist o at char_right 
+    show xiangimg fist o at char_right
+    $ renpy.music.set_pause(True, channel="music")
     xiang_speaking "啊，抱歉，谁？这是人名吗？"
     hide pengimg
     show pengimg shirt at char_left
@@ -238,12 +256,14 @@ label chap2_1:
     xiang_speaking "噢，我说呢，抱歉啊，我们说话的有些发音好像不一样，我刚没听清。"
     hide pengimg
     show pengimg shirt eye_still at char_left
+    $ renpy.music.set_pause(False, channel="music")
     peng_speaking "……没事。"
     hide pengimg
     show pengimg shirt o at char_left
     peng_speaking "以前这里有对于灵的信仰，其实现在也有，只不过因为很多因素，不会像以前那样普及了。"
     hide xiangimg
     show xiangimg fist o at char_right 
+    $ renpy.music.set_pause(True, channel="music")
     xiang_speaking "就是说，现在也没什么人信这个了吗？"
     peng_speaking "也不是，要说不信也没有，只是，可能在很多时候显得没有那么重要了吧。"
     peng_speaking "就像在其他地方，其实好像根本没有这些说法……以前的故事在他们看来都过时了，也没什么稀奇的，我们这里，当然也会被影响。"
@@ -252,6 +272,7 @@ label chap2_1:
     xiang_speaking "唔，好像是这样，即使是最偏僻的地方，只要和别的地方还有联系就会有影响吧。"
     hide pengimg
     show pengimg shirt at char_left
+    $ renpy.music.set_pause(False, channel="music")
     peng_speaking "嗯……"
     hide xiangimg
     show xiangimg fist o at char_right 
@@ -267,8 +288,10 @@ label chap2_1:
     hide xiangimg
     show xiangimg fist o at char_right 
     xiang_speaking "噢噢我感觉这个味道有点重，不太适应。而且我吃饭很快，不方便说话，我待会晚点吃吧，我想先问点别的，比如……"
+    stop music
     hide pengimg
     show pengimg shirt eye_angry at char_left
+    $ renpy.music.play(music.peng_angry, channel="music", loop=True, fadein=0.5, relative_volume=1.0)
     peng_speaking "算了吧。"
     hide xiangimg
     show xiangimg fist eye_squint o at char_right 
@@ -297,6 +320,7 @@ label chap2_1:
     hide pengimg
     show pengimg shirt eye_still at char_left
     peng_speaking "好，拜拜。"
+    stop music fadeout 0.5
 
 
     scene bg_vil5 with fade
@@ -304,6 +328,7 @@ label chap2_1:
     mei_speaking "……"
     show xiangimg fist eye_still o at char_right with moveinright
     xiang_speaking "我是不是说错话了？"
+    $ renpy.music.play(music.fatigue, channel="music", loop=True, fadein=0.5)
     mei "我看着向夏，竟然不知道该有什么反应。{p}说生气，我好像没有生气的资格，说难过，可能也不至于。但，心里确实莫名有种堵着的感觉。"
     hide meiimg
     show meiimg shirt eye_still at char_left
