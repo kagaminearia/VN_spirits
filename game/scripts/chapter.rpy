@@ -130,3 +130,15 @@ label chapter5:
     call chap5_2
     return
     
+label chapter6:
+    call chap6_1
+    if route == "x":
+        call chap6_x1
+        call chap6_x2
+        call chap6_x3
+        call chap6_x4
+    else:
+        call chap6_p1
+        call chap6_p2
+        call chap6_p3
+    return
