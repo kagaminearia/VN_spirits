@@ -151,16 +151,25 @@ label chap5_p1:
     peng_speaking "我也觉得，回头找人做一个发夹，不错吧？"
     mei_speaking "诶？啊，好啊。"
     mei "她在脑袋上比划两下，这动作实在可爱，让我忍不住笑出来。"
+    show pengimg shirt eye_still smile at char_right with dissolve
     peng_speaking "谢谢你，今天陪我过来看海。"
+    show meiimg shirt at char_left with dissolve
     mei_speaking "没，我自己……也想出来的。"
+    hide pengimg
+    show pengimg shirt laugh at char_right
     peng_speaking "嗯，好。\n不过我要回去啦，待会还有别的事，走吧？"
-    mei "她轻松跳下石头，朝着我伸出手。我自然是不能勉强了……我犹豫一下，握住她的手。\n下一瞬，我被向下拉，然后肩膀被稳稳扶住，站在原地。"
+    mei "她轻松跳下石头，朝着我伸出手。我自然是不能勉强了……我犹豫一下，握住她的手。"
+    mei "下一瞬间，我被向下拉，然后肩膀被稳稳扶住，站在原地。"
 
+    hide pengimg with dissolve
+    hide meiimg with dissolve
     mei "天气的确很好，即使远离海边，明媚的阳光和轻柔的风也让人感到舒适。"
     mei "只是……\n我总是忍不住回想，和彭江丽分别时她说的话。"
 
+    show halfblack
     peng_speaking "我是想着，你回来一趟，尽量带你在周围都感受一下呀。"
     peng_speaking "因为，也不知道你还会在这里待多久，之后还会不会回来了。"
 
     mei_speaking "……"
-    mei "我当时没有接话，她也只是轻松带过。\n不过……今天本来应该很开心的，为什么，总是会变成这样。"
+    mei "我当时没有接话，她也很快轻松带过。但……{p}我们之间似乎还是隔着一道看不见的墙。"
+    mei "今天本来应该很开心的，为什么，总是会变成这样。"

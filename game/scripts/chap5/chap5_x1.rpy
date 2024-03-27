@@ -123,50 +123,119 @@ label chap5_x1:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "……"
-    "哗啦。"
+    na "哗啦。"
     mei "洗到一半的菜离开我的手，一下子全部散开，落到盆里，溅出不少水花。"
+    hide meiimg
+    show meiimg shirt eye_still at char_left
     mei_speaking "为什么，要这么说？"
+    hide xiangimg
+    show xiangimg fist at char_right
     xiang_speaking "嗯？什么意思？"
-    mei_speaking "之前，我们不是说好，轮流做的吗？"
-    xiang_speaking "嗯，是啊。难道你的意思是我应该对你发火？"
+    mei "对啊，我什么意思……\n但……看着她疑惑的表情，莫名的，我心里突然冒起的火似乎烧得更旺了。"
+    mei_speaking "之前，我们不是说好的吗？说轮流做饭。"
+    xiang_speaking "嗯，是啊。"
+    mei_speaking "可我违反了约定。"
+    hide xiangimg
+    show xiangimg fist o at char_right
+    xiang_speaking "所以，难道你的意思是我应该对你发火？"
+    hide meiimg
+    show meiimg shirt o at char_left
     mei_speaking "你就不生气？"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
     xiang_speaking "我为什么要为了这种事生气……本来我跟你就不一样，再怎么说，我也没有立场对你发火吧？"
-    mei_speaking "……因为你觉得，我们只是租客和房东？"
+    mei_speaking "为什么？"
+    xiang_speaking "我在这，都听你的还来不及——"
+    mei_speaking "因为你觉得，我们只是租客和房东？"
     xiang_speaking "不然呢？"
-    mei "她斩钉截铁的话语打断了我所有的情绪，一瞬间，我竟然也搞不懂自己为何会心绪起伏。\n可恶，但还是好生气……"
-    mei "我深吸一口气，先努力按住了不安的胸口。别说着说着，自己晕过去了……"
-
-    mei_speaking "我怎样都可以，那你觉得，我之前，为什么跟你一起轮流做事？"
-    xiang_speaking "你可以跟我分担饭钱啊。而且，你也需要活动活动身体？你不是身体不好吗，刚好可以多活动一下，不就对你有好处吗。"
-    mei_speaking "……\n在你看来，所有事都是交易吗？"
+    hide meiimg
+    show meiimg shirt at char_left
+    mei_speaking "……"
+    show halfblack with dissolve
+    mei "她斩钉截铁的话语打断了我所有的情绪，一瞬间，我竟然也搞不懂自己为何会心绪起伏。{p}为什么，似乎是我在生气……"
+    mei "我深吸一口气，先努力按住了不安的胸口——以免说着说着，自己先晕过去了……"
+    hide halfblack with dissolve
+    hide meiimg
+    show meiimg shirt o at char_left
+    mei_speaking "我怎样都可以，那你觉得，之前，我为什么跟你一起轮流做事？"
+    hide xiangimg
+    show xiangimg fist o at char_right
+    xiang_speaking "什么？你可以跟我分担饭钱啊。而且，你也需要活动活动身体吧。\n你不是身体不好吗，刚好可以多活动一下，不就对你有好处吗。"
+    xiang_speaking "那句话怎么说来着，各自要各自的？"
+    mei_speaking "各取所需？"
+    hide xiangimg
+    show xiangimg fist smile at char_right
+    xiang_speaking "嗯！"
+    hide meiimg
+    show meiimg shirt at char_left
+    mei_speaking "……"
+    mei_speaking "在你看来，这些都是各取所需吗。只是交易吗。"
+    hide xiangimg
+    show xiangimg fist o at char_right
     xiang_speaking "是啊。"
     mei_speaking "暴风雨的时候，为什么，要来找我和彭江丽？"
     xiang_speaking "……"
-    xiang_speaking "我住在这里，如果你出事了，那我岂不是很难交代？"
+    xiang_speaking "我跟你一起住在这里，如果你出事了，那我岂不是很难交代？"
+    hide meiimg
+    show meiimg shirt eye_still smile at char_left
     mei_speaking "好。"
+    hide meiimg
+    show meiimg shirt eye_still at char_left
     mei_speaking "所以你觉得，叶成华让你住在这就是为了收房租。隔壁，那几个奶奶找我们帮忙，是因为我们比镇上的人便宜方便。是这样吧？"
-    xiang_speaking "……\n可能吧。"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
+    xiang_speaking "……\n啊，可能吧。"
+    hide xiangimg
+    show xiangimg fist eye_still at char_right
     mei "你以为房租才多少钱？还要冒着把陌生人带回家里的风险，还不是因为叶成华觉得你看起来很需要帮助……你以为我们做的能比得上镇上的专业公司吗，只不过是这里的人习惯了互相帮忙……"
-    mei "当然，我知道这些都是一厢情愿，也不觉得只要付出了就非要期盼别人有相同的回应。\n但是，但是……"
-    mei "一起吃饭，看夕阳，聊传说，暴风雨，讲故事，一起去帮忙，在你看来都是交易吗？"
-    mei "我有很多话想说，但看到她不知什么时候变得毫无表情的脸，突然什么也不想说了。\n烦死了，心脏好痛……"
+    mei "当然，我知道这些都是一厢情愿，也不觉得只要付出过，就非要期盼别人有相同的回应。{p}但是，但是……"
+    mei "做饭，吃饭，看夕阳，聊传说，暴风雨，讲故事，一起去帮忙，在你看来都是交易吗？"
+    mei "我有很多话想说，但看到她不知什么时候变得毫无表情的脸，却突然觉得没力气开口了。{p}她都这么说了，就这样吧……"
+    mei "好烦，总觉得，心脏好痛……"
+    hide meiimg
+    show meiimg shirt eye_still o at char_left
     mei_speaking "你脑子里只有这些吗？"
-    xiang_speaking "……"
-    mei_speaking "……我知道了。"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
+    xiang_speaking "……\n这样不好吗？"
+    hide xiangimg
+    show xiangimg fist eye_still at char_right
+    xiang_speaking "谁也不欠谁的。"
+    hide meiimg
+    show meiimg shirt eye_still at char_left
+    mei_speaking "……嗯，我知道了。"
+    hide meiimg with dissolve
+    hide xiangimg with dissolve
     mei "我长长地吐出一口气，不再开口，只是避开她的目光往门外走去。"
+
+    show xiangimg fist o at char_right with dissolve
     xiang_speaking "梅雨。"
+    show meiimg shirt o at char_left with dissolve
     mei_speaking "嗯？"
-    mei "烦死了，为什么下意识就转过头……"
-    xiang_speaking "对，就像你说的那样，我应该就是个愚蠢又自私的人吧。\n不过没关系，因为……我也不会在这里住很久。就是还要麻烦你再忍受一阵子了，你要是想的话，我也可以不出现在你面前。"
+    mei "烦死了，为什么我下意识就转过头……"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
+    xiang_speaking "对，可能就像你说的那样，我应该就是个愚蠢又自私的人。{p}不过没关系，因为……我也不会在这里住很久嘛。就是还要麻烦你再忍受一阵子了。"
+    hide xiangimg
+    show xiangimg fist eye_still smile at char_right
+    xiang_speaking "你要是想的话，我也可以不出现在你面前。"
+    hide meiimg
+    show meiimg shirt at char_left
     mei_speaking "……"
-    mei "你就想说这些吗。"
-    xiang_speaking "之后还是我做饭吧，抱歉啦，你是不是要休息会？"
-    mei_speaking "嗯。"
+    mei "你就想说这些吗。{p}亏我还期待了一瞬间……"
+    hide xiangimg
+    show xiangimg fist eye_still o at char_right
+    xiang_speaking "哦，你不想见到我的话，那之后就还是我做饭吧？抱歉啦，你是不是要休息会。"
+    hide meiimg
+    show meiimg shirt o at char_left
+    mei_speaking "嗯。\n没事，轮流。"
+    mei "我咽下那句“没有不想见你”，只是尽量缩短词句，简要回应。"
     mei "我这次没有再回头，几乎用上跑步的速度，飞快地穿过楼梯，走到二楼，再也不要看到那个房间的身影。"
 
+    scene bg_meiroom with fade
     mei "……"
     mei "气死我了，气死我了……"
-    mei "你知道我花了多大勇气才主动找人说话吗？你知道你轻松做到的事情对我来说有多难吗？结果你一点也不懂，根本不知道珍惜，也根本不理解这种事……"
-    mei "亏我还天真地以为，你是为了鼓励我才说出那些话……"
-    mei "我才是愚蠢的人，你只不过是个……令人讨厌的人罢了。"
+    mei "你知道我花了多大勇气才主动找人说话吗？你知道你轻松做到的事情对我来说有多难吗？{p}结果你一点也不懂，根本不知道珍惜，也根本不理解这种事……"
+    mei "亏我还天真地以为，你是因为我们变熟悉了才说出那些话……"
+    mei "我才是愚蠢的人，你只不过是个……令人讨厌的家伙罢了。"
     mei "可恶……"
