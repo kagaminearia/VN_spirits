@@ -30,18 +30,19 @@ label splashscreen():
     #     hide text with dissolve
     # else:
     #     return
-    scene bg_grey
-    show ink at cg_0 with dissolve
-    pause 0.5
-    hide ink with dissolve
-    show screen sp_screen("本故事纯属虚构") with dissolve
-    pause 0.5
-    hide screen sp_screen with dissolve
 
-    show screen sp_screen("与真实世界的一切无关") with dissolve
-    pause 0.5
-    hide screen sp_screen with dissolve
-    pause 0.5
+    # scene bg_grey
+    # show ink at cg_0 with dissolve
+    # pause 0.5
+    # hide ink with dissolve
+    # show screen sp_screen("本故事纯属虚构") with dissolve
+    # pause 0.5
+    # hide screen sp_screen with dissolve
+
+    # show screen sp_screen("与真实世界的一切无关") with dissolve
+    # pause 0.5
+    # hide screen sp_screen with dissolve
+    # pause 0.5
 
     return
 

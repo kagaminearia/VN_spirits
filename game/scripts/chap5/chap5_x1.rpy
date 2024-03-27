@@ -202,6 +202,10 @@ label chap5_x1:
     show xiangimg fist eye_still at char_right
     xiang_speaking "谁也不欠谁的。"
     hide meiimg
+    show meiimg shirt at char_left
+    mei_speaking "跟我做朋友的话会很麻烦吗？"
+    xiang_speaking "……"
+    hide meiimg
     show meiimg shirt eye_still at char_left
     mei_speaking "……嗯，我知道了。"
     hide meiimg with dissolve
@@ -235,6 +239,7 @@ label chap5_x1:
     scene bg_meiroom with fade
     mei "……"
     mei "气死我了，气死我了……"
+    mei "我以为你是不同的，结果，还是一样……{p}还是，会用特殊的眼光打量我……"
     mei "你知道我花了多大勇气才主动找人说话吗？你知道你轻松做到的事情对我来说有多难吗？{p}结果你一点也不懂，根本不知道珍惜，也根本不理解这种事……"
     mei "亏我还天真地以为，你是因为我们变熟悉了才说出那些话……"
     mei "我才是愚蠢的人，你只不过是个……令人讨厌的家伙罢了。"

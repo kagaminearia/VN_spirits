@@ -239,7 +239,6 @@ label chap2_1:
     show xiangimg fist laugh at char_right
     xiang_speaking "不会不会！你能告诉我就很好了，我不挑的。"
     mei "好直接的开场啊……我还以为她们会先说些闲话。"
-    pause
     hide pengimg
     show pengimg shirt o at char_left
     $ renpy.music.play(music.calming_guitar, channel="music", loop=True, relative_volume=0.7, fadein=0.5)

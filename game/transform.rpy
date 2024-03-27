@@ -37,6 +37,12 @@ transform cg_l2:
     xalign 0.5
     yalign 0.2
 
+
+transform cg_1:
+    xalign 0.5
+    yalign 0.5
+
+
 init python:
     # change punch variable
     hpunch = Move((30, 0), (-30, 0), .50, bounce=True, repeat=True, delay=.275)

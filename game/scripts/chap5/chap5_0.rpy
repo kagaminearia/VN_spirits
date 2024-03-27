@@ -5,21 +5,21 @@ label chap5_0:
     mei "我想要后退，却动弹不得，只能待在原地看着它们逼近。"
     mei "难闻的药味涌起，令人想吐，空空如也的胃部继续蠕动，呕出不明成分的粘稠液体，恶心无比。"
     mei "不知何时，四周也传来嘈杂的声音，逐渐靠近，叽叽喳喳。"
-    show bg_line1, shaking
+    show bg_line1 at cg_1, shaking
     na "“怪吓人的。”"
     na "“万一出事赖上我怎么办。”"
-    show bg_line2, shaking
+    show bg_line2 at cg_1, shaking
     na "“做不了就不要装啊。”"
     na "“别给我们添麻烦。“"
-    show bg_line3, shaking
+    show bg_line3 at cg_1, shaking
     na "“走啦走啦，别管了。”"
     na "声音越来越多，越来越大，越来越吵，分不清谁是谁，只是无尽的烦躁。"
     mei "别吵了，别吵了……"
-    show bg_line4, shaking
+    show bg_line4 at cg_1, shaking
     na "“她明明什么都做不了。”"
-    show bg_line5, shaking
+    show bg_line5 at cg_1, shaking
     na "“为什么就她特殊，不公平。”"
-    show bg_line6, shaking
+    show bg_line6 at cg_1, shaking
     na "“病没治好来干什么啊。”"
     na "……"
     show bg_black with vpunchm

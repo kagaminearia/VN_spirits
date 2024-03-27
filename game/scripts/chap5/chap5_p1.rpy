@@ -146,11 +146,15 @@ label chap5_p1:
     show pengimg shirt laugh at char_right
     peng_speaking "哎，看这个，你觉得好看吗？"
     mei_speaking "嗯？"
+    hide pengimg with dissolve
+    hide meiimg with dissolve
+    show q_shell at cg_s with dissolve
     mei "彭江丽弯下腰，不知道在哪里扒拉两下，手上举起一粒色彩绚丽的小贝壳。"
     mei_speaking "好好看啊。"
     peng_speaking "我也觉得，回头找人做一个发夹，不错吧？"
     mei_speaking "诶？啊，好啊。"
     mei "她在脑袋上比划两下，这动作实在可爱，让我忍不住笑出来。"
+    scene bg_sea2 with pixellate
     show pengimg shirt eye_still smile at char_right with dissolve
     peng_speaking "谢谢你，今天陪我过来看海。"
     show meiimg shirt at char_left with dissolve
@@ -166,10 +170,11 @@ label chap5_p1:
     mei "天气的确很好，即使远离海边，明媚的阳光和轻柔的风也让人感到舒适。"
     mei "只是……\n我总是忍不住回想，和彭江丽分别时她说的话。"
 
-    show halfblack
+    show halfblack with dissolve
     peng_speaking "我是想着，你回来一趟，尽量带你在周围都感受一下呀。"
     peng_speaking "因为，也不知道你还会在这里待多久，之后还会不会回来了。"
 
+    hide halfblack with dissolve
     mei_speaking "……"
     mei "我当时没有接话，她也很快轻松带过。但……{p}我们之间似乎还是隔着一道看不见的墙。"
     mei "今天本来应该很开心的，为什么，总是会变成这样。"
