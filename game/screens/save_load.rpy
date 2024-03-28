@@ -14,7 +14,7 @@ define config.thumbnail_height = 400 / 16 * 9
 define gui.file_slot_cols = 1
 define gui.file_slot_rows = 4
 define slot_verticle_spacing = 40
-define text_length = 20
+define text_length = 18
 define slot_x_size = 600
 define slot_y_size = 160
 
@@ -75,9 +75,11 @@ screen file_slots(title):
 
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
+                                        f"Chapter {chap_index} \n"
                                         name_to_save = strip(_history_list[-1].what)
                                     else: 
                                         name_to_save = (
+                                            f"Chapter {chap_index} \n"
                                             "【" + _history_list[-1].who + "】 "
                                             + strip(_history_list[-1].what)
                                         )
@@ -99,8 +101,8 @@ screen file_slots(title):
                                             text FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
                                                 style "slot_time_text"
                                             
-                                            text current_chapter:
-                                                style "slot_name_text"
+                                            # text current_chapter:
+                                            #     style "slot_name_text"
 
                                             text FileSaveName(slot):
                                                 style "slot_button_text"
@@ -119,9 +121,11 @@ screen file_slots(title):
                                     
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
+                                        f"Chapter {chap_index} \n"
                                         name_to_save = strip(_history_list[-1].what)
                                     else: 
                                         name_to_save = (
+                                            f"Chapter {chap_index} \n"
                                             "【" + _history_list[-1].who + "】 "
                                             + strip(_history_list[-1].what)
                                         )
@@ -143,8 +147,8 @@ screen file_slots(title):
                                             text FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
                                                 style "slot_time_text"
                                             
-                                            text current_chapter:
-                                                style "slot_name_text"
+                                            # text current_chapter:
+                                            #     style "slot_name_text"
                                             
                                             text FileSaveName(slot):
                                                 style "slot_button_text"
@@ -214,20 +218,22 @@ style slot_vbox:
 style slot_button:
     xysize (slot_x_size, slot_y_size)
     padding (15, 15, 15, 15)
-    # background "gui/button/slot_[prefix_]background.png"
+    background "gui/button/slot_idle.jpg"
+    hover_background "gui/button/slot_hover.jpg"
 
 style slot_button_text:
     size 21
     xalign 0.0
-    idle_color '#000000'
-    hover_color '#ff8335'
+    idle_color gui.dark_grey
+    hover_color gui.light_blue
     selected_idle_color gui.dark_grey
+    font gui.text_font
 
 style no_record_slot_button_text:
     size 21
     xalign 0.0
-    idle_color '#000000'
-    hover_color '#8c5ec9'
+    idle_color gui.dark_grey
+    hover_color gui.light_blue
     selected_idle_color gui.dark_grey
 
 style page_hbox:

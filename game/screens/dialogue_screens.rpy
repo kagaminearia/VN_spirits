@@ -99,9 +99,8 @@ screen quick_menu():
 
             hbox:
                 spacing 25
-                textbutton _("Q.SAVE") action QuickSave()
-                textbutton _("Q.LOAD") action QuickLoad()
-                
+                textbutton _("SAVE") action ShowMenu('save')
+                textbutton _("LOAD") action ShowMenu('load')
                 textbutton _("LOG") action ShowMenu('history')
 
 
@@ -126,7 +125,7 @@ style quick_button_text:
     selected_color gui.dark_grey
     idle_color "#ffffff"
     hover_color gui.dark_grey
-    outlines[(1.5,"#cacaca")]
+    outlines[(1.8,gui.light_grey)]
     font gui.main_menu_font
 
 ## NVL screen ##################################################################

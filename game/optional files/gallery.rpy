@@ -46,15 +46,16 @@ image xia_cg_1_thumb = Transform("#bd580a", xysize=gallery_thumb_size)
 image ashwin_cg_1_thumb = Transform("#127151", xysize=gallery_thumb_size)
 image zoran_cg_1_thumb = Transform("#8157b9", xysize=gallery_thumb_size)
 
-screen gallery():
+screen gallery_m():
 
     tag menu
+    key "mouseup_3" action Return()
+    # add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
 
-    add HBox(Transform("#292835", xsize=350), "#21212db2") # The background; can be whatever
+    # use game_menu(_("Gallery"))
 
-    use game_menu(_("Gallery"))
-
-
+    add "#fff"
+    add "gui/starlight_2.png"
     fixed:
         style_prefix 'gal'
         ## Organize the gallery images into a grid
@@ -66,7 +67,7 @@ screen gallery():
 
 style gal_fixed:
     yfill True
-    xsize config.screen_width-420
+    xsize config.screen_width
     align (1.0, 0.5)
 
 style gal_grid:
