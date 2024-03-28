@@ -12,8 +12,9 @@
 define config.thumbnail_width = 400
 define config.thumbnail_height = 400 / 16 * 9
 define gui.file_slot_cols = 1
-define gui.file_slot_rows = 3
-define slot_verticle_spacing = 120
+define gui.file_slot_rows = 4
+define slot_verticle_spacing = 40
+define text_length = 20
 define slot_x_size = 600
 define slot_y_size = 160
 
@@ -69,8 +70,8 @@ screen file_slots(title):
                                 slot = i * 2 + 1
                                 name_to_save = ""
                                 strip = lambda string : string \
-                                    if len(string) <= 25 \
-                                    else string[: 25] + "……"
+                                    if len(string) <= text_length \
+                                    else string[: text_length] + "……"
 
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
@@ -80,6 +81,8 @@ screen file_slots(title):
                                             "【" + _history_list[-1].who + "】 "
                                             + strip(_history_list[-1].what)
                                         )
+                                        
+                                current_chapter = f"Chapter {chap_index}"
                             
                             button:
                                 action [
@@ -92,23 +95,27 @@ screen file_slots(title):
                                     if FileTime(slot):
                                         add FileScreenshot(slot) align(0.1, 0.1) zoom 0.6
                                         vbox:
-                                            xalign 0.1 yalign 0.1 spacing 10
-                                            text "{color=#000000}%s{/color}" % FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
+                                            spacing 10
+                                            text FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
                                                 style "slot_time_text"
+                                            
+                                            text current_chapter:
+                                                style "slot_name_text"
+
                                             text FileSaveName(slot):
-                                                style "slot_name_text"
+                                                style "slot_button_text"
                                     else:
-                                        image "gui/button/slot_idle_background.png" zoom 0.6
-                                        hbox:
-                                            text "{color=#000000}%s{/color}" % "尚无记录":
-                                                style "slot_name_text"
+                                        image "gui/button/gray_image.png" zoom 0.6
+                                        vbox:
+                                            text "尚无记录":
+                                                style "no_record_slot_button_text"
                             
                             python:
                                 slot = slot + 1
                                 name_to_save = ""
                                 strip = lambda string : string \
-                                    if len(string) <= 25 \
-                                    else string[: 25] + "……"
+                                    if len(string) <= text_length \
+                                    else string[: text_length] + "……"
                                     
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
@@ -118,6 +125,8 @@ screen file_slots(title):
                                             "【" + _history_list[-1].who + "】 "
                                             + strip(_history_list[-1].what)
                                         )
+                                
+                                current_chapter = f"Chapter {chap_index}"
                                         
                             button:
                                 action [
@@ -130,17 +139,20 @@ screen file_slots(title):
                                     if FileTime(slot):
                                         add FileScreenshot(slot) align(0.1, 0.1) zoom 0.6
                                         vbox:
-                                            xalign 0.1 yalign 0.1 spacing 10
-                                            text "{color=#000000}%s{/color}" % FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
+                                            spacing 10
+                                            text FileTime(slot, format=_("{#file_time}%Y/%m/%d %H:%M")):
                                                 style "slot_time_text"
                                             
+                                            text current_chapter:
+                                                style "slot_name_text"
+                                            
                                             text FileSaveName(slot):
-                                                style "slot_name_text"
+                                                style "slot_button_text"
                                     else:
-                                        image "gui/button/slot_idle_background.png" zoom 0.6
+                                        image "gui/button/gray_image.png" zoom 0.6
                                         vbox:
-                                            text "{color=#000000}%s{/color}" % "尚无记录":
-                                                style "slot_name_text"
+                                            text "尚无记录":
+                                                style "no_record_slot_button_text"
 
                                 key "save_delete" action FileDelete(slot) 
 
@@ -188,11 +200,13 @@ style slot_grid:
 
 style slot_time_text:
     size 21
-    xalign 0.5
+    xalign 0.0
+    color gui.dark_grey
 
 style slot_name_text:
     size 21
-    xalign 0.5
+    xalign 0.0
+    color gui.dark_grey
 
 style slot_vbox:
     spacing 12
@@ -204,10 +218,17 @@ style slot_button:
 
 style slot_button_text:
     size 21
-    xalign 0.5
-    idle_color gui.dark_grey
+    xalign 0.0
+    idle_color '#000000'
     hover_color '#ff8335'
-    selected_idle_color '#ffffff'
+    selected_idle_color gui.dark_grey
+
+style no_record_slot_button_text:
+    size 21
+    xalign 0.0
+    idle_color '#000000'
+    hover_color '#8c5ec9'
+    selected_idle_color gui.dark_grey
 
 style page_hbox:
     xalign 0.5

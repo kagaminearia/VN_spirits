@@ -5,3 +5,6 @@ game/cache/*
 *.rpymc
 *.rpyb
 game/saves/*
+
+# Ignore files named temp.py at all sub-directories
+**/temp.py
