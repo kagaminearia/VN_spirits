@@ -94,12 +94,13 @@ label chap6_p1:
     mei "她猛地伸出手，手指紧紧地攥着一个精致的小发卡。\n发卡是细长的形状，主体透明，前端是一个色彩斑斓的小巧贝壳。"
     mei_speaking "诶，这是……"
     mei "我有些不可置信的看着那个熟悉的颜色和形状。"
-    peng_speaking "嗯，是，是啊……就是，之前你说你觉得好看，我就想着，可以做一个东西送给你。啊，不过不是我做的，我只是找了人帮忙……"
+    peng_speaking "嗯，是，是啊……就是，之前你说你觉得好看，我就想着，可以做一个东西送给你。{p}啊，不过不是我做的，我只是找了人帮忙……"
     peng_speaking "对了，那个，就是……不会有味道吧？"
     mei_speaking "啊？没有没有……"
+    mei "一时间，我失去正常说话的能力，只是有些慌张地抓着外套。"
     mei_speaking "谢谢你……我，我不知道，该怎么才……"
     mei "我有些不知所措，两只手也只是僵硬着接过发卡，然后就完全不知道应该做什么动作好。"
-    peng_speaking "别说啦，你能收下的话，对我来说就是最好的事情了。"
+    peng_speaking "别这样说啦，你能收下的话，对我来说就是最好的事情了。"
     show bg_black with dissolve
     mei "彭江丽笑了笑，她轻轻捏住我的手，从我的手里取回发卡。\n距离更近了，似乎能感觉到对方的气息。不知为何，我闭上了眼睛。"
     hide bg_black with dissolve
@@ -110,7 +111,13 @@ label chap6_p1:
     show pengimg laugh behind halfblack at char_right with moveinright
     peng_speaking "看，就像这样就行啦。\n果然很好看，跟我想象的一样。"
     show meiimg o shell behind halfblack at char_left with moveinleft
-    mei_speaking "谢，谢谢……"
+    mei_speaking "真的，谢谢……"
+    peng_speaking "是我要谢谢你。"
+    mei_speaking "诶？为什么……"
+    peng_speaking "我都没想过，可以陪你过生日。所以，谢谢你……{p}我真的，很高兴哦。"
+    mei_speaking "彭江丽……"
+
+    
     mei_speaking "我，我帮你补课吧……"
     peng_speaking "……哎？"
     mei_speaking "啊，之前，路花跟我说的。她说你最近，学习有点累……我就想着，能不能帮你……啊，你要是不喜欢，就算了。"
