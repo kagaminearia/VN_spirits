@@ -130,6 +130,8 @@ init:
                 "images/char/other/ye_laugh.png"
             attribute smile:
                 "images/char/other/ye_smile.png"
+            attribute o:
+                "images/char/other/ye_o.png"
 
     
     layeredimage luimg:
@@ -143,3 +145,5 @@ init:
                 "images/char/other/lu_laugh.png"
             attribute smile:
                 "images/char/other/lu_smile.png"
+            attribute o:
+                "images/char/other/lu_o.png"

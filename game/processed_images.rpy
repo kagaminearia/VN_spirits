@@ -15,7 +15,7 @@ image glitches:
     repeat
 
 
-screen chap_interval(index):
+screen chap_interval(index,route="n"):
     add "#fff"
     style_prefix 'chap_interval'
     hbox:
