@@ -1,4 +1,5 @@
 label chap2_1:
+    stop sound
     scene bg_meiliv with Fade(1.5,0.5,1)
     $ renpy.music.play(music.xiang_spirits, channel="music", loop=True, fadein=0.5)
     mei "客厅的顶灯也许是年代太久了，在晚上显得有些昏暗，竟然将向夏的脸庞盖上一层诡秘的阴影。{p}不，那只是我自己产生的错觉……"
