@@ -75,8 +75,7 @@ screen file_slots(title):
 
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
-                                        f"Chapter {chap_index} \n"
-                                        name_to_save = strip(_history_list[-1].what)
+                                        name_to_save = f"Chapter {chap_index} \n" + strip(_history_list[-1].what)
                                     else: 
                                         name_to_save = (
                                             f"Chapter {chap_index} \n"
@@ -121,8 +120,7 @@ screen file_slots(title):
                                     
                                 if len(_history_list) != 0:
                                     if type(_history_list[-1].who) is NoneType:
-                                        f"Chapter {chap_index} \n"
-                                        name_to_save = strip(_history_list[-1].what)
+                                        name_to_save = f"Chapter {chap_index} \n" + strip(_history_list[-1].what)
                                     else: 
                                         name_to_save = (
                                             f"Chapter {chap_index} \n"
