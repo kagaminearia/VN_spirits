@@ -41,6 +41,9 @@ screen game_menu(title):
 
         elif not main_menu:
             textbutton _("TITLE") action MainMenu()
+            
+        if main_menu:
+            textbutton _("ABOUT") action ShowMenu("about")
 
         # if renpy.variant("pc"):
         #     textbutton _("Quit") action Quit(confirm=not main_menu)
