@@ -29,7 +29,7 @@ screen main_menu():
             textbutton _("CONTINUE") action Continue()
             textbutton _("LOAD") action ShowMenu("load")
             textbutton _("CONFIG") action ShowMenu("preferences")
-            # textbutton _("TEST") action ShowMenu("testchapter")
+            textbutton _("TEST") action ShowMenu("testchapter")
 
         vbox:
             xalign 0
@@ -66,3 +66,4 @@ screen testchapter():
         textbutton ("chap3") action Start("chapter3")
         textbutton ("chap4") action Start("chapter4")
         textbutton ("chap5") action Start("chapter5")
+        textbutton ('chap6p1') action Start("chap6_p1")
