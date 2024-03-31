@@ -1,7 +1,8 @@
 label prologue_p1:
     mei "其实我并没有不想和彭江丽见面。但叶成华说出那句话时我的下意识反应确实是抗拒……这也是没办法的事情。"
     mei "一起经过的时间不是假的，即使记忆模糊，现在我也能回想起那种朦胧的快乐。{p}但……我们分开的时间也太久了，久到我几乎忘了她是什么样子。"
-    mei "反正晚上也要一起吃饭，就当事情提前了吧……我慢吞吞地下楼，找到电话和旁边写着号码的便签条。"
+    mei "更何况，当时我一走了之，最后也没有成功跟她说一声，现在再出现，她应该会很生气吧……"
+    mei "反正晚上也要一起吃饭，总要面对的，就当事情提前了吧……{p}我慢吞吞地下楼，找到电话和旁边写着号码的便签条。"
     $ renpy.sound.play(sound.ringtone, channel="sound", loop=True, fadein=0.5)
     na "嘟，嘟，嘟……"
     stop sound
@@ -64,7 +65,7 @@ label prologue_p1:
     peng_speaking "……"
     mei "我们一边走路一边寒暄，来回都在讲关于我回镇上的客气话，热情的笑容在断断续续的节奏中逐渐变得有些无奈。"
     mei "我终于明白，现实中的重逢并不总是像小说里那样充满美好或是戏剧性，也没有自然而然的激烈火花。"
-    mei "对于我和彭江丽，这数十年的间隔足以将我们之间的所有故事抹平。\n没有什么爱与恨，甜或苦，什么都没有。"
+    mei "对于我和彭江丽，这数年的间隔足以将我们之间的所有故事抹平。\n没有什么爱与恨，甜或苦，什么都没有。"
     mei "但不约而同地保持着这时表面的欣喜，或许也是我们之间的默契。{p}不过……我这应该算是，在自我安慰吧……"
     
     hide meiimg
@@ -72,18 +73,18 @@ label prologue_p1:
     mei_speaking "对了，叶成华没跟你说过吗？"
     hide pengimg
     show pengimg o at char_right
-    peng_speaking "说什么？她没说什么啊。成华姐只是提到你回来了，约我今晚吃饭，没说别的。"
+    peng_speaking "说什么？她没说什么啊。嗯，成华姐只是说……她说你身体不舒服，回来休息一段时间，约我今晚吃饭，没说别的。"
     hide meiimg
     show meiimg shirt eye_still o at char_left
     mei_speaking "哦……"
     mei "这样，的确也不奇怪……我一直以为叶成华只是粗暴地把我拎回来而已，但她也许比我考虑得更多，包括一些不太能注意到的细节……"
-    mei "既然是彭江丽，没什么不能说的，尽管有些丢脸……\n不过，她估计也知道一些……"
+    mei "不过，至少身体的大概状况她应该会说，也许是怕出事吧……既然是彭江丽，没什么不能说的，尽管有些丢脸……"
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "其实就是……叶成华拉我回来的。{p}她是说，觉得我的身体适合在这里休养一段时间，吧……"
     hide pengimg
     show pengimg o at char_right
-    peng_speaking "噢，对哦，那个……那你的身体还是……？"
+    peng_speaking "噢，对哦，那个……那你的身体真的是……？"
     $ renpy.music.set_volume(0.5, 0.5, channel="music")
     mei "谈到这方面，她的声音骤然放低不少，带着明显的小心翼翼。"
     hide meiimg

@@ -57,7 +57,7 @@ label chap6_p2:
     peng_speaking "当然，你最好看了。"
     hide meiimg
     show meiimg shirt eye_close o shell at char_left
-    mei "见她微微皱起的眉毛终于舒展，我也在心里松了口气，其实我只是不习惯在身上带饰品。"
+    mei "见她微微皱起的眉毛终于舒展，我也在心里松了口气。其实我只是不习惯在身上带饰品，并没有别的意思。"
     mei "不过，看她这么在意……之后，还是一直戴着好了……"
 
     scene bg_meiroom with pixellate
@@ -104,7 +104,7 @@ label chap6_p2:
     hide pengimg
     show pengimg shirt laugh at char_right
     peng_speaking "不不……你讲得很好啊。大城市的学校肯定和我们这不一样嘛，你学习的地方好，又那么聪明，比我自己学效率高多了。"
-    mei_speaking "那……{p}之后再讲一起题目吧？"
+    mei_speaking "那……{p}之后再一起讲题目吧？"
     mei "如果我真的能帮到她，那讲更多题目的话，会不会让她更轻松呢……"
     hide pengimg
     show pengimg shirt o at char_right
@@ -127,18 +127,73 @@ label chap6_p2:
     peng_speaking "好。那，之后我不补课的时间，都来找你讲题。"
 
     scene bg_meiliv with pixellate
-    mei "午饭是在家吃的，我和彭江丽都没有什么需求，所以只是简单应付一下。"
+    mei "午饭是在家吃的，我和彭江丽都没有什么需求，所以只是简单应付一下而已。"
+    show pengimg shirt o at char_right with dissolve
     peng_speaking "要继续看题目吗？"
+    show meiimg shirt o shell at char_left
     mei_speaking "诶，啊，你不休息一会？"
-
-
-
-    mei_speaking "当然可以了。我本来就没事做嘛。\n不过，你们是怎么补课？明年考试的话，不是天天上课吗？"
-    peng_speaking "噢……是这样的，我们这里本来老师就少，假期是没有人愿意过来上课的。我们这边人不多，镇上那边的学校就说如果愿意可以去旁听。"
-    mei_speaking "这样啊，那学校怎么样？"
+    hide pengimg
+    show pengimg shirt smile at char_right
+    peng_speaking "不用啊，我都……噢，现在我们休息一下吧。"
+    hide meiimg
+    show meiimg shirt shell at char_left
+    mei_speaking "……我是不是，耽误你的进度了？"
+    hide pengimg
+    show pengimg shirt o at char_right
+    peng_speaking "怎么会！"
+    mei "彭江丽瞪大了眼睛，语气用力地反驳我。但……不管怎么看，她都只是因为我才继续休息的。"
+    hide pengimg
+    show pengimg shirt smile at char_right
+    peng_speaking "而且，这不是有你在嘛。"
+    hide meiimg
+    show meiimg shirt o shell at char_left
+    mei_speaking "嗯……啊？"
+    peng_speaking "在学校的时候，老师总是说效率才是最重要的。要找对方法，堆时间没有用。"
+    hide pengimg
+    show pengimg shirt laugh at char_right
+    peng_speaking "我想，我之前肯定就只是在堆时间，但现在有你教我，我肯定会学得比以前快很多。"
+    mei_speaking "是，是吗……{p}我会加油的，一定会尽力做到最好。"
+    hide meiimg
+    show meiimg shirt shell at char_left
+    mei "看到她的眼神，我吞下原本想说的丧气话，努力回应这份信任。"
+    hide meiimg
+    show meiimg shirt o shell at char_left
+    mei_speaking "对了，在学校，你们是怎么补课？明年升学考的话，不用天天上课吗？"
+    mei "说完自己的想法之后，我还是有些羞愧，不由得转到另一个话题。"
+    hide pengimg
+    show pengimg shirt o at char_right
+    peng_speaking "噢，这个啊……"
+    mei "彭江丽挠挠头，语气变得有些含糊。我正担心自己是不是说错了话，她又重新开口，吸引了我的注意。"
+    peng_speaking "是这样的，我们这里本来老师就少，平时能上课已经很不容易了，假期是没有人愿意过来上课的。\n{size=30}不然，我也不会这个年纪才到升学考……{/size}"
+    mei_speaking "那，现在是？"
+    peng_speaking "嗯，因为读到现在的学生也不多，镇上那边的学校就说如果愿意可以去旁听。{p}不过，那边……因为不是自己学校，我们只能旁听复习课，讲题的时候是不能去的。"
+    hide pengimg
+    show pengimg shirt smile at char_right
+    peng_speaking "所以我只上半天课，有时候在上午，有时候在下午，其他时间就可以做别的事。"
+    hide meiimg
+    show meiimg shirt eye_still o shell at char_left
+    mei_speaking "噢，难怪你每天都那么累……从这里去镇上要多久？"
+    hide pengimg
+    show pengimg shirt o at char_right
+    peng_speaking "坐车，坐大巴的话，一个小时左右吧。"
+    mei_speaking "这，这样啊……那学校怎么样？"
+    hide pengimg
+    show pengimg shirt at char_right
     peng_speaking "嗯？就，挺好的啊。"
     mei "她像是没想到我会问这个问题，愣了一下才回答。"
-    peng_speaking "不过，那边……因为不是自己学校，我们只能旁听复习课，讲题的时候是不能去的。\n所以我只用上半天课，有时候在上午，有时候在下午，其他时间可以做别的事。"
-    mei_speaking "这，这样啊……"
-    mei "我生硬地附和后，突然有些后悔问了这些话。\n总觉得，彭江丽描述的事情离我太过遥远，我根本无法感受，更无法随意评价什么。"
+    peng_speaking "老师跟同学都挺好的，偶尔，也会帮我，不过大家都要学习，平时说话也不多。"
+    hide pengimg
+    show pengimg shirt at char_right
+    hide meiimg
+    show meiimg shirt o shell at char_left
+    mei_speaking "那还不错。"
+    hide pengimg
+    show pengimg shirt smile at char_right
+    peng_speaking "嗯，不过……跟你一起更开心。"
+    hide meiimg
+    show meiimg shirt shell at char_left
+    mei "不知为何，我突然觉得有些脸热。"
+    mei "原本，我有些后悔问她学校的情况。因为彭江丽描述的事情离我太过遥远，我根本无法感受，更无法随意评价什么。"
+    mei "但，听她说跟我说自己的事，看到她脸上涌上生动的表情，我实在……感到很高兴。"
+
     return
