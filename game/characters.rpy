@@ -8,6 +8,8 @@ define ye_speaking = Character("叶成华",what_prefix="“",what_suffix="”",i
 define lu_speaking = Character("路花",what_prefix="“",what_suffix="”",image='luimg',callback=name_callback,cb_name="lu")
 define unknown_speaking = Character("？？？",what_prefix="“",what_suffix="”")
 define old_speaking = Character("老人",what_prefix="“",what_suffix="”")
+define school_boy = Character("男学生",what_prefix="“",what_suffix="”")
+define school_girl = Character("女学生",what_prefix="“",what_suffix="”")
 
 init:
     layeredimage xiangimg:
