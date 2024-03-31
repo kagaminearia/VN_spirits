@@ -78,7 +78,8 @@ label prologue_p1:
     show meiimg shirt eye_still o at char_left
     mei_speaking "哦……"
     mei "这样，的确也不奇怪……我一直以为叶成华只是粗暴地把我拎回来而已，但她也许比我考虑得更多，包括一些不太能注意到的细节……"
-    mei "不过，至少身体的大概状况她应该会说，也许是怕出事吧……既然是彭江丽，没什么不能说的，尽管有些丢脸……"
+    mei "不过，至少身体的大概状况她应该会说，也许是怕出事吧……既然是彭江丽，没什么不能说的，尽管有些尴尬……"
+    mei "只要不说那些最丢人的事就好……"
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "其实就是……叶成华拉我回来的。{p}她是说，觉得我的身体适合在这里休养一段时间，吧……"

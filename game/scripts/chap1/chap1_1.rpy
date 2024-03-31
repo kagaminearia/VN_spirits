@@ -15,8 +15,11 @@ label chap1_1:
     mei_speaking "真的没事啦……"
     $ renpy.sound.set_volume(0.4, 0.5, channel="sound")
     mei "也许是电话的信号不好，传来的声音竟然让我觉得有些刺耳。我无意识地掐紧手指，还好，至少不用让她看到我现在的样子……"
-    peng_speaking "那就好……我真的好担心，真的，担心死了……"
+    peng_speaking "那就好……"
+    peng_speaking "对了，因为昨天那个……就是，我去找成华姐问了你的事，啊，不过只是大概，对不起……"
+    peng_speaking "我就是想了解你的身体情况，因为我真的好担心，真的，担心死了……"
     mei_speaking "嗯，对不起……"
+    mei "叶成华跟她说了多少呢？不过，这些都无所谓了……我不想问，也一点都不想再听到这些事。"
     $ renpy.sound.set_volume(0.2, 0.5, channel="sound")
     peng_speaking "不是！你别对不起，都怪我，怪我没有看好你。"
     peng_speaking "那你，你要是以后有什么事，都可以跟我说……"
