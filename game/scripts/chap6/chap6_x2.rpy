@@ -125,21 +125,48 @@ label chap6_x2:
     xiang_speaking "我的妈呀，你没事吧？？"
     hide xiangimg with dissolve
     show meiimg eye_close o at char_mid with dissolve
-    mei_speaking "咳，哈……"
-    mei "身上变得又潮又湿，液滴顺着头发流下，在尖端脱离，落在额头和脸颊的皮肤上，令人感到一阵黏腻的不快。"
     hide meiimg
-    show meiimg eye_shock at char_mid 
+    show halfblack
+    mei_speaking "咳，哈……"
+    mei "身上变得又潮又湿，液滴顺着头发流下，在尖端脱离，落在额头和脸颊的皮肤上，令人感到一阵黏腻到晕眩的不快。"
+    mei "我用力甩了甩头，才感觉眼前的场景重新变得清明。"
+    hide halfblack with dissolve
     mei_speaking "飞来横祸啊……"
-    mei ""
+    mei "好不容易把气喘匀之后，我才注意到周围的狼藉已经被向夏收好，只剩下地板上滞留的几摊水渍。"
+    mei "我愣愣地抬起头，正好也看到她看向我。{p}逆着光，仍然能清晰地看到那双明亮的眼眸。"
 
-
-
-    mei "等我反应过来，向夏已经把周围的混乱收拾好。只是……\n我低头看着自己的衣服，被打湿了，毛衣的前面还被勾开了线。"
-    xiang_speaking "没事吧你？"
-    mei_speaking "飞来横祸啊……"
-    xiang_speaking "等下我！我把这些搬过去就过来找你！"
-    mei_speaking "去吧。"
+    scene bg_seacoast1 with dissolve
+    show xiangimg fist o at char_right with moveinright
+    xiang_speaking "怎么啦？"
+    show meiimg at char_left with moveinleft
+    mei_speaking "……"
+    hide xiangimg
+    show xiangimg o at char_right
+    xiang_speaking "啊？你不会摔坏脑袋了吧！喂——看这是几？"
+    hide meiimg
+    show meiimg o at char_left
+    mei_speaking "……你才摔坏了。"
+    mei "愣神只有一瞬间，我赶紧避开了向夏将要伸过来的手。\n她嘿嘿笑着，无所谓地收回刚才的动作。"
+    hide xiangimg
+    show xiangimg smile at char_right
+    xiang_speaking "哎，这不是怕你出事嘛。对了，你要不要把外套脱了？"
+    mei_speaking "……啊？"
+    hide xiangimg
+    show xiangimg o at char_right
+    xiang_speaking "你自己看啊，喏，穿着不难受？"
+    mei_speaking "啊？哦……"
+    mei "听她这么说，我低头看着自己的衣服，这才发现外套都被打湿了，胸口的地方被勾开了线，松松垮垮地拉出一个洞。"
+    hide meiimg
+    show meiimg at char_left
+    mei_speaking "……"
+    xiang_speaking "那你先自己收拾一下呗，我来搬这些，把这些桶搬过去。"
+    hide xiangimg with moveoutright
+    mei_speaking "嗯，好。"
     mei "我摆摆手，也懒得再抬头，只是顺势靠在旁边的巨大石块上。"
-    mei "微风把略微被汗水濡湿的刘海吹干，让人觉得清爽很多。虽然很累，不过……"
-    mei "风景真好啊。"
+    scene bg_seacoast1 with dissolve
+    mei "外套沾了不少的污水，变得又湿又重，我有些费劲地把它脱下来，团成一团。"
+    mei "微风把略微被汗水和海水濡湿的刘海吹干，让人觉得清爽很多。虽然很累，不过……"
+    mei_speaking "……天气，真好。"
+
+
     return
