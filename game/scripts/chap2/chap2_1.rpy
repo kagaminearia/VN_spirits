@@ -71,6 +71,8 @@ label chap2_1:
     show meiimg shirt at char_left 
     mei_speaking "算是。"
     mei "虽然认识她不久，但我不觉得她像是会有什么信仰的人……"
+    hide xiangimg
+    show xiangimg fist eye_squint smile at char_right
     xiang_speaking "其实，我是个很信鬼神的人哦。"
     hide meiimg
     show meiimg shirt o at char_left 

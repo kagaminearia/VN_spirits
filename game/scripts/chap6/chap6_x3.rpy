@@ -1,4 +1,5 @@
 label chap6_x3:
+    scene bg_meiliv with Fade(0.5,0.5,0.5)
     mei_speaking "……你在干嘛？"
     mei "下午，我准备到楼下拿洗完的衣服的时候，正好看到向夏坐在沙发上，手里拿着我准备丢掉的毛衣外套。"
     xiang_speaking "什么？哦，我之前不是跟你说了吗，帮你补一下这件衣服，保证跟之前一样哦！"

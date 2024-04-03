@@ -47,7 +47,8 @@ screen about():
             text _("场景素材：{a=https://unsplash.com/}{font=fonts/Aboreto-Regular.ttf}Unsplash{/font}{/a}，\
 {a=https://www.videvo.net/#rs=videvo-logo}{font=fonts/Aboreto-Regular.ttf}Videvo{/font}{/a}，\
 {a=https://www.videezy.com/abstract/42744-raindrops-falling-background}{font=fonts/Aboreto-Regular.ttf}Videezy{/font}{/a}，\
-{a=https://www.freepik.com/}{font=fonts/Aboreto-Regular.ttf}Freepik{/font}{/a}") 
+{a=https://www.freepik.com/}{font=fonts/Aboreto-Regular.ttf}Freepik{/font}{/a}\
+{a=https://www.youtube.com/@melvinmellow}{font=fonts/Aboreto-Regular.ttf}melvinmellow{/font}{/a}") 
             text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}{font=fonts/Aboreto-Regular.ttf}Astrology Ren'Py GUI by Siyokoy{/font}{/a}")
             text _("代码：{a=https://wattson.itch.io/renpy-wave-shader}{font=fonts/Aboreto-Regular.ttf}Ren'py Wave Shader by Wattson{/font}{/a}，\
 {a=https://wattson.itch.io/renpy-auto-highlight}{font=fonts/Aboreto-Regular.ttf}Renpy Auto Highlight by Wattson{/font}{/a}，\

@@ -95,8 +95,8 @@ label chap3_x2:
     mei_speaking "我只是想知道，会不会影响彭江丽和其他人，别的无所谓。"
     mei "况且，就算她说谎了，我也没法辨认啊……"
     hide xiangimg
-    show xiangimg fist eye_close smile at char_right 
-    xiang_speaking "你们倒是互相关心，合着只有我当恶人啊。"
+    show xiangimg fist eye_close laugh at char_right 
+    xiang_speaking "行吧行吧。你们倒是互相关心，合着只有我当恶人啊。"
     hide meiimg
     show meiimg shirt at char_mid
     mei_speaking "……"
