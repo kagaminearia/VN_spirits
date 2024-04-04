@@ -18,6 +18,12 @@ transform char_left:
     yoffset 80
     xoffset -100
 
+transform char_c:
+    zoom 0.7
+    xalign 0.5
+    yalign 0.1
+    yoffset 100
+
 
 transform cg_0:
     zoom 0.5
