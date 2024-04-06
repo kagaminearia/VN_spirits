@@ -224,7 +224,7 @@ label chap6_p3:
     peng_speaking "……对不起，我今天可能，有点累了。"
     hide pengimg
     show pengimg shirt eye_care smile at char_right
-    peng_speaking "谢谢你，今天来找我。"
+    peng_speaking "谢谢你，今天来找我。不过……之后，不用这样了，然后也……不用再帮我讲题了。"
     hide meiimg
     show meiimg eye_still shell at char_left 
     mei_speaking "……"

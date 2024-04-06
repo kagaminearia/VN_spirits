@@ -20,8 +20,8 @@ label chap7_p1:
     mei_speaking "早，早上好……"
     hide pengimg
     show pengimg shirt eye_still o at char_right 
-    peng_speaking "……早上好。怎么了，有什么事吗？今天，我们好像没有活动吧？"
-    mei_speaking "嗯……那，你现在有时间吗？"
+    peng_speaking "……早上好。怎么了，有什么事吗？我之前好像说过，不用帮我讲题目了吧？"
+    mei_speaking "我知道，是，别的事……那，你现在有时间吗？"
     hide pengimg
     show pengimg shirt eye_still at char_right 
     peng_speaking "有，有的。"
@@ -216,7 +216,8 @@ label chap7_p1:
     peng_speaking "我知道的，你也不用为了考虑我的感受做伪装什么的。"
     hide pengimg
     show pengimg shirt eye_still smile at char_right
-    peng_speaking "我，应该挺让人看不起的吧。又土又穷，没见过世面，还喜欢装样子。"
+    peng_speaking "我，应该挺让人看不起的吧。自己就是村里长大的，还觉得村子给自己丢脸。"
+    peng_speaking "明明是自己又土又穷，没见过世面，喜欢装样子。"
     hide pengimg
     show pengimg shirt eye_care laugh at char_right
     peng_speaking "明明没有什么能力，还总是做白日梦，想要得不到的东西，而且我还总是……"
