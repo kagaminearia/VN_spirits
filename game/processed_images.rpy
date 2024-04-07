@@ -41,7 +41,7 @@ screen chap_interval(index,route="n"):
 style chap_interval_text:
     font "fonts/瑞美加张清平硬笔楷书.ttf"
     size 55
-    color gui.dark_blue
+    color gui.light_blue
 
 image intro = Movie(play="videos/intro.webm",loop=False)
 image video_1 = Movie(play="videos/v1.webm")

@@ -5,7 +5,7 @@ init python:
     config.keymap['rollback'] = ('K_UP')
 
 define config.mouse = { }
-define config.mouse['default'] = [ ( "gui/cursor.png", 0, 0) ]
+define config.mouse['default'] = [ ( "gui/cc.png", 0, 0) ]
 
 # save setting
 init python:

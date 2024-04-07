@@ -53,7 +53,7 @@ screen about():
             text _("代码：{a=https://wattson.itch.io/renpy-wave-shader}{font=fonts/Aboreto-Regular.ttf}Ren'py Wave Shader by Wattson{/font}{/a}，\
 {a=https://wattson.itch.io/renpy-auto-highlight}{font=fonts/Aboreto-Regular.ttf}Renpy Auto Highlight by Wattson{/font}{/a}，\
 {a=https://feniksdev.itch.io/easy-renpy-gui}{font=fonts/Aboreto-Regular.ttf}Easy Ren'Py GUI by Feniks{/font}{/a}")
-            text _("使用字体：{font=fonts/Aboreto-Regular.ttf}Aboreto{/font}，瑞美加张清平硬笔楷书，三极素纤简体，霞鹜文楷等宽")
+            text _("字体：{font=fonts/Aboreto-Regular.ttf}Aboreto{/font}，瑞美加张清平硬笔楷书，三极素纤简体，霞鹜文楷等宽")
 
 style about_label_text:
     size 35
