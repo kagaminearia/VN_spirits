@@ -40,9 +40,11 @@ define gui.eng_font = "fonts/Aboreto-Regular.ttf"
 
 define gui.dark_grey = '#4b4b4b'
 
-define gui.light_grey = '#909090'
+define gui.light_grey = '#818181'
 
 define gui.light_blue = '#b5dcf7'
+
+define gui.dark_blue = '#6796b8'
 
 ## Localization ################################################################
 

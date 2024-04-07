@@ -301,22 +301,24 @@ label chap3_1:
     mei "其实我也没有，不过，这是能直接说的么……"
     hide pengimg
     show pengimg behind halfdarkblue at char_mid
-    peng_speaking "嗯。这个，说不定只是巧合呢，毕竟，是传说嘛……"
+    peng_speaking "嗯。这个啊，也许只是巧合呢，毕竟，是传说嘛……"
     hide xiangimg
     show xiangimg fist behind halfdarkblue at char_right
-    xiang_speaking "诶——这样也是巧合吗——"
+    xiang_speaking "诶——都这样了也是巧合吗——"
     hide pengimg
     show pengimg o behind halfdarkblue at char_mid
+    peng_speaking "说不定，你内心也是想相信的？但是自己不知道。"
+    xiang_speaking "唔……"
     peng_speaking "或者，可能……你的想法没有那么坚定，只是不信，或者不喜欢，但并没有强烈的排斥。"
     hide pengimg
     show pengimg eye_still o behind halfdarkblue at char_mid
     peng_speaking "就像……如果我们没有紧抓着什么，就会被水推着走一样。"
     hide pengimg
     show pengimg o behind halfdarkblue at char_mid
-    peng_speaking "单独的想法，没到一定程度的话，在这里……没有那么庞大的力量。"
+    peng_speaking "毕竟……一般来说，单独的想法，在这里……没有那么庞大的力量。"
     hide xiangimg
     show xiangimg fist eye_still behind halfdarkblue at char_right
-    xiang_speaking "{size=30}喔……个人的意志吗……{/size}"
+    xiang_speaking "{size=30}喔……所谓个人的意志吗……{/size}"
     hide meiimg
     show meiimg eye_close behind halfdarkblue at char_left
     mei "向夏开始自己嘀咕起来，我听不清，也没打算再听了。{p}反正……"

@@ -1,6 +1,26 @@
-define ch5_title = "其实是我的问题……"
+define c6_title_p = "什么都不知道"
+define c6_title_x = "谁特别倔强"
 
 
+
+define c_title = [
+    "“已经无所谓了……”",
+    "“随便相处一下”",
+    "“万物有灵”",
+    "“个人的意志”",
+    "“白天和夜晚完全不同”",
+    "“无法消除的刻痕”",
+]
+
+define p_title = [
+    "“什么都不知道”",
+    "xxx",
+]
+
+define x_title = [
+    "“谁特别倔强”",
+    "xxx",
+]
 
 define c0_x1 = 0
 define c0_p1 = 0

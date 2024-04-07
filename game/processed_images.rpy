@@ -18,20 +18,32 @@ image glitches:
 screen chap_interval(index,route="n"):
     add "#fff"
     style_prefix 'chap_interval'
-    hbox:
+    vbox:
         xalign 0.5
         yalign 0.5
-        spacing 10
-        text "Chapter"
-        text "[index]"
+        spacing 20
+        hbox:
+            xalign 0.5
+            yalign 0.5
+            spacing 10
+            text "Chapter"
+            text "[index]"
+        hbox:
+            if index<6:
+                text c_title[index] size 40
+            else:
+                if route == "p":
+                    text p_title[index-6] size 40
+                else:
+                    text x_title[index-6] size 40
 
 
 style chap_interval_text:
     font "fonts/瑞美加张清平硬笔楷书.ttf"
-    size 45
-    color gui.light_blue
+    size 55
+    color gui.dark_blue
 
-
+image intro = Movie(play="videos/intro.webm",loop=False)
 image video_1 = Movie(play="videos/v1.webm")
 image video_2 = Movie(play="videos/v2.webm")
 image video_3 = Movie(play="videos/v3.webm")
