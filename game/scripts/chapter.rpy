@@ -4,7 +4,7 @@ define c6_title_x = "谁特别倔强"
 
 
 define c_title = [
-    "“已经无所谓了……”",
+    "“已经无所谓了”",
     "“随便相处一下”",
     "“万物有灵”",
     "“个人的意志”",
@@ -162,3 +162,12 @@ label chapter6:
         call chap6_p2
         call chap6_p3
     return
+
+
+label chapter7:
+    if route == "x":
+        return
+    else:
+        call chap7_p1
+        call chap7_p2
+        call chap7_p3
