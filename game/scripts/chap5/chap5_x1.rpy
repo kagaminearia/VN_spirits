@@ -127,17 +127,17 @@ label chap5_x1:
     mei "洗到一半的菜离开我的手，一下子全部散开，落到盆里，溅出不少水花。"
     hide meiimg
     show meiimg shirt eye_still at char_left
-    mei_speaking "为什么，要这么说？"
+    mei_speaking "为什么要这么说？"
     hide xiangimg
     show xiangimg fist at char_right
     xiang_speaking "嗯？什么意思？"
     mei "对啊，我什么意思……\n但……看着她疑惑的表情，莫名的，我心里突然冒起的火似乎烧得更旺了。"
-    mei_speaking "之前，我们不是说好的吗？说轮流做饭。"
+    mei_speaking "之前，我们不是说好的吗？说接下来的时间轮流做饭。"
     xiang_speaking "嗯，是啊。"
     mei_speaking "可我违反了约定。"
     hide xiangimg
     show xiangimg fist o at char_right
-    xiang_speaking "所以，难道你的意思是我应该对你发火？"
+    xiang_speaking "所以，难道你的意思是我应该对你发火？你这是什么喜好？"
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "你就不生气？"
@@ -146,15 +146,20 @@ label chap5_x1:
     xiang_speaking "我为什么要为了这种事生气……本来我跟你就不一样，再怎么说，我也没有立场对你发火吧？"
     mei_speaking "为什么？"
     xiang_speaking "我在这，都听你的还来不及——"
+    mei_speaking "我们不一样吗？"
+    xiang_speaking "哇，我哪能跟你比呀。"
+    show halfblack with dissolve
+    mei "向夏夸张地叫起来，这一嗓子让我眼前蓦的一晃神，竟然以为自己在教室。"
+    mei "教室，以前的那些人……"
+    mei "……不，别再想了。"
+    hide halfblack with dissolve
     mei_speaking "因为你觉得，我们只是租客和房东？"
     xiang_speaking "不然呢？"
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "……"
-    show halfblack with dissolve
     mei "她斩钉截铁的话语打断了我所有的情绪，一瞬间，我竟然也搞不懂自己为何会心绪起伏。{p}为什么，似乎是我在生气……"
     mei "我深吸一口气，先努力按住了不安的胸口——以免说着说着，自己先晕过去了……"
-    hide halfblack with dissolve
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "我怎样都可以，那你觉得，之前，我为什么跟你一起轮流做事？"
@@ -169,12 +174,16 @@ label chap5_x1:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "……"
-    mei_speaking "在你看来，这些都是各取所需吗。只是交易吗。"
+    mei_speaking "在你看来，这些都是各取所需吗。"
     hide xiangimg
     show xiangimg fist o at char_right
     xiang_speaking "是啊。"
     mei_speaking "暴风雨的时候，为什么，要来找我和彭江丽？"
+    hide xiangimg
+    show xiangimg fist eye_still at char_right
     xiang_speaking "……"
+    hide xiangimg
+    show xiangimg fist o at char_right
     xiang_speaking "我跟你一起住在这里，如果你出事了，那我岂不是很难交代？"
     hide meiimg
     show meiimg shirt eye_still smile at char_left
@@ -203,8 +212,13 @@ label chap5_x1:
     xiang_speaking "谁也不欠谁的。"
     hide meiimg
     show meiimg shirt at char_left
-    mei_speaking "跟我做朋友的话会很麻烦吗？"
+    mei_speaking "……\n我以为，我们是朋友。"
+    mei "犹豫片刻，我还是说了这句话。尽管我说完就有些后悔。"
+    mei "向夏的表情变得为难，真诚，真诚的为难。"
     xiang_speaking "……"
+    hide xiangimg
+    show xiangimg fist eye_still smile at char_right
+    xiang_speaking "这个词，让人压力好大啊。"
     hide meiimg
     show meiimg shirt eye_still at char_left
     mei_speaking "……嗯，我知道了。"
@@ -242,5 +256,5 @@ label chap5_x1:
     mei "我以为你是不同的，结果，还是一样……{p}还是，会用特殊的眼光打量我……"
     mei "你知道我花了多大勇气才主动找人说话吗？你知道你轻松做到的事情对我来说有多难吗？{p}结果你一点也不懂，根本不知道珍惜，也根本不理解这种事……"
     mei "亏我还天真地以为，你是因为我们变熟悉了才说出那些话……"
-    mei "我才是愚蠢的人，你只不过是个……令人讨厌的家伙罢了。"
+    mei "我才是愚蠢的人，你只不过是个……自大无比，令人讨厌的家伙罢了。"
     mei "可恶……"

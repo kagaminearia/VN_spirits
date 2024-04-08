@@ -114,9 +114,10 @@ label chap7_p1:
     hide meiimg
     show meiimg shell eye_still o at char_mid
     mei_speaking "我是不是很过分？总是让你迁就……"
-    peng_speaking "不，不是……"
+    peng_speaking "不，不是……是我……"
     hide pengimg
     show pengimg shirt eye_care o at char_right
+    peng_speaking "我以为，你再也不会理我了。我以为你肯定很讨厌我。"
     peng_speaking "都怪我不好，我就应该一开始听你说话的，这样你也不用这样才……"
     hide meiimg
     show meiimg shell eye_still at char_mid
@@ -217,10 +218,11 @@ label chap7_p1:
     hide pengimg
     show pengimg shirt eye_still smile at char_right
     peng_speaking "我，应该挺让人看不起的吧。自己就是村里长大的，还觉得村子给自己丢脸。"
+    peng_speaking "别人看不起，所以自己也跟着看不起了，还装得很不在乎。"
     peng_speaking "明明是自己又土又穷，没见过世面，喜欢装样子。"
     hide pengimg
     show pengimg shirt eye_care laugh at char_right
-    peng_speaking "明明没有什么能力，还总是做白日梦，想要得不到的东西，而且我还总是……"
+    peng_speaking "明明是自己没有什么能力，还总是做白日梦，想要得不到的东西，而且我还总是……"
     hide meiimg
     show meiimg eye_shock o shell at char_left
     mei_speaking "不是啊，才没有！"

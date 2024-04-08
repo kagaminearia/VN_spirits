@@ -212,7 +212,7 @@ label chap6_p3:
     mei "不……不应该是这样的……"
     hide meiimg
     show meiimg eye_still o shell at char_left 
-    mei_speaking "那个啊，我，我努力的话，说不定，可以比他们讲得都厉害，所以我……"
+    mei_speaking "我，我努力的话，说不定，可以比他们讲得都厉害，所以我……"
     hide pengimg
     show pengimg shirt eye_angry o at char_right
     peng_speaking "关你什么事？！\n不要可怜我！！！"
