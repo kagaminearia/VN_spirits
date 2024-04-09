@@ -1,7 +1,10 @@
 label chap7_x1h:
-    mei_speaking "哈？我不要。"
-    mei "我想也没想就拒绝了。"
-    mei "我的确没想着要求她做什么，这件事也一样。虽然我是很好奇，但如果她不想说，这样也没必要。"
+
+    mei_speaking "……啊？我不要。"
+    mei "我没怎么想就拒绝了。"
+    mei_speaking "我是不知道怎么用，所以现在这事也一样啊。"
+    xiang_speaking "但是，你不想知道发生什么了吗？难道只是这么简单的道歉就够了吗？"
+    
     xiang_speaking "……\n好吧。"
     xiang_speaking "我现在，倒是有点理解你那个朋友，嗯，叫彭江丽？我倒是有点理解她的想法了。"
     mei_speaking "……什么意思？"
