@@ -163,11 +163,20 @@ label chapter6:
         call chap6_p3
     return
 
-
+define x_end = "n"
 label chapter7:
     if route == "x":
-        return
+        call chap7_x1
+        menu:
+            mei "不过……"
+            "答应":
+                call chap7_x1n
+            "拒绝":
+                $ x_end = "h"
+                call chap7_x1h
     else:
         call chap7_p1
         call chap7_p2
         call chap7_p3
+
+    return
