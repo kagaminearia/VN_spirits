@@ -153,30 +153,49 @@ label chapter5:
 label chapter6:
     call chap6_1
     if route == "x":
-        call chap6_x1
-        call chap6_x2
-        call chap6_x3
-        call chap6_x4
+        call chapter6x
     else:
-        call chap6_p1
-        call chap6_p2
-        call chap6_p3
+        call chapter6p
     return
+
+
+label chapter6x:
+    call chap6_x1
+    call chap6_x2
+    call chap6_x3
+    call chap6_x4
+    return
+
+label chapter6p:
+    call chap6_p1
+    call chap6_p2
+    call chap6_p3
+    return
+
 
 define x_end = "n"
 label chapter7:
     if route == "x":
-        call chap7_x1
-        menu:
-            mei "不过……"
-            "答应":
-                call chap7_x1n
-            "拒绝":
-                $ x_end = "h"
-                call chap7_x1h
+        call chapter7x
     else:
-        call chap7_p1
-        call chap7_p2
-        call chap7_p3
+        call chapter7p
+    return
 
+
+label chapter7x:
+    call chap7_x1
+    menu:
+        mei "不过……"
+        "答应":
+            call chap7_x1n
+        "拒绝":
+            $ x_end = "h"
+            call chap7_x1h
+    
+    return
+
+label chapter7p:
+    call chap7_p1
+    call chap7_p2
+    call chap7_p3
     return
