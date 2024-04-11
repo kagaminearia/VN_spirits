@@ -191,6 +191,8 @@ label chapter7x:
     if x_end == "n":
         call chap7_x2n
         jump pNE
+    else:
+        call chap7_x2h
     return
 
 label chapter7p:

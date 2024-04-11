@@ -43,6 +43,11 @@ style chap_interval_text:
     size 55
     color gui.light_blue
 
+
+screen endings_screen(route="n"):
+    add "#fff"
+    
+
 image intro = Movie(play="videos/intro.webm",loop=False)
 image video_1 = Movie(play="videos/v1.webm")
 image video_2 = Movie(play="videos/v2.webm")
