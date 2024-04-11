@@ -10,6 +10,9 @@ define unknown_speaking = Character("？？？",what_prefix="“",what_suffix="�
 define old_speaking = Character("老人",what_prefix="“",what_suffix="”")
 define school_boy = Character("男学生",what_prefix="“",what_suffix="”")
 define school_girl = Character("女学生",what_prefix="“",what_suffix="”")
+define fem = Character("女人",what_prefix="“",what_suffix="”")
+define mal = Character("男人",what_prefix="“",what_suffix="”")
+
 
 init:
     layeredimage xiangimg:

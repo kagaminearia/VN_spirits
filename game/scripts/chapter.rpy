@@ -191,7 +191,7 @@ label chapter7x:
         "拒绝":
             $ x_end = "h"
             call chap7_x1h
-    
+    call chap7_x2
     return
 
 label chapter7p:

@@ -89,8 +89,9 @@ label chap7_x1h:
     mei_speaking "……哼。"
     mei_speaking "{size=30}在这里看星星，也还行啊。{/size}"
 
-    xiang_speaking "好啦，我会说的，不过，虽然是无聊的故事，但我说不定会讲很久哦。"
+    xiang_speaking "好啦，我会说的，不过我不知道该怎么讲，要不直接从头开始吧？但我说不定会讲很久哦。"
     mei_speaking "无所谓啊，我不介意。"
-    xiang_speaking "嗯，让我想想，从哪开始呢……"
+    mei "我还没听过别人讲故事，说实话，挺新奇的……"
+    xiang_speaking "嗯，让我想想……"
 
     return
