@@ -244,7 +244,11 @@ label chap7_p1:
     hide meiimg
     show meiimg eye_still o shell at char_left
     mei_speaking "所以说，就是，这样……"
+    hide pengimg
+    show pengimg shirt eye_care at char_right
     peng_speaking "……"
+    hide pengimg
+    show pengimg shirt eye_care o at char_right
     peng_speaking "真的吗？你不觉得跟我做朋友丢脸吗？不觉得我太麻烦你吗？不讨厌我吗？"
     mei_speaking "是真的，从来没觉得过，不讨厌你。"
     hide pengimg
