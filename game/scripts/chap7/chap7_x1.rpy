@@ -6,18 +6,18 @@ label chap7_x1:
     mei "在傍晚顶着一身湿衣服吹冷风，我毫不意外的受凉了。好在不严重，只是流流鼻涕。"
     show yeimg o at char_right with moveinright
     ye_speaking "唉，看你这小脸白的呀，没事吧？"
-    show meiimg at char_left with moveinleft
+    show meiimg flower at char_left with moveinleft
     mei_speaking "我没事，她人呢？"
     ye_speaking "向夏回房间了，要我帮你去叫她吗？"
     hide meiimg
-    show meiimg o at char_left
+    show meiimg o flower at char_left
     mei_speaking "……能叫到？"
     hide yeimg
     show yeimg smile at char_right
     ye_speaking "我可以开门啊，你要是想的话当然能。要吗？"
     mei "这不太好吧……"
     hide meiimg
-    show meiimg eye_close o at char_left
+    show meiimg eye_close o flower at char_left
     mei_speaking "算了，不用。"
     mei "意外的，我感觉自己现在十分冷静，没有很愤怒，也没有很难过。"
     mei "不过，说是冷静，不如说是因为太过震惊，以至于整个人有点茫然……"
@@ -27,27 +27,27 @@ label chap7_x1:
     show yeimg o at char_right
     ye_speaking "之后如果你需要，我可以帮你跟她说说。"
     hide meiimg
-    show meiimg o at char_left
+    show meiimg o flower at char_left
     mei_speaking "哦，我去说就行了，你……你别担心。"
     hide yeimg
     show yeimg smile at char_right
     ye_speaking "好，我不担心，我妹妹这么厉害，怎么可能搞不定呢。"
     hide meiimg
-    show meiimg at char_left
+    show meiimg flower at char_left
     mei_speaking "……"
     mei "我无奈地捏了捏衣角，没有回复这句话。"
     hide yeimg
     show yeimg o at char_right
     ye_speaking "好啦，别担心。唉呀，其实这话不适合现在说……"
     hide meiimg
-    show meiimg o at char_left
+    show meiimg o flower at char_left
     mei_speaking "……但是？"
     mei "虽然她这么说，但我知道，一般这种时候，都是想说后一句话。"
     hide yeimg
     show yeimg laugh at char_right
     ye_speaking "哈哈，你看吧，我就说你很聪明嘛。\n我是觉得啊，你现在真的变了很多。我其实……挺高兴的，嗯。"
     hide meiimg
-    show meiimg eye_close smile at char_left
+    show meiimg eye_close smile flower at char_left
     mei_speaking "……哈哈，是吗。"
     mei "听她这么说，我虽然有些莫名，但也跟着笑了起来。"
     mei "尽管我还摸不清楚，但，说不定……真的是这样。"
@@ -117,6 +117,8 @@ label chap7_x1:
     show xiangimg fist eye_squint smile at char_right 
     xiang_speaking "刚好，之前有一件事……我没有跟你讲清楚，这次可以一起讲完。"
     mei "嗯？这事我的确忘了。事实上，我以为那只是口头的玩笑，从没正式在意过。"
+    hide meiimg
+    show meiimg shirt at char_left
     mei "不过……"
 
     return

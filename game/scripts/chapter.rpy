@@ -136,7 +136,7 @@ label chapter5:
         $ route = "p"
     
     if route == "n":
-        call NE
+        jump NE
         return
     call chap5_1
     if route == "x":
