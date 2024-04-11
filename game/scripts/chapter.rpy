@@ -1,8 +1,4 @@
-define c6_title_p = "什么都不知道"
-define c6_title_x = "谁特别倔强"
-
-
-
+# titles of each chapter
 define c_title = [
     "“已经无所谓了”",
     "“随便相处一下”",
@@ -14,12 +10,12 @@ define c_title = [
 
 define p_title = [
     "“什么都不知道”",
-    "xxx",
+    "完美的笑容",
 ]
 
 define x_title = [
     "“谁特别倔强”",
-    "xxx",
+    "欠你一个要求",
 ]
 
 define c0_x1 = 0
@@ -96,10 +92,10 @@ label chapter3:
     call chap3_2
     menu:
         mei "虽然很无聊，不过现在本来也没别的事做……投给谁呢？"
-        "投给彭江丽":
+        "彭江丽":
             $ x_point += 1
             call chap3_x2
-        "投给向夏":
+        "向夏":
             $ p_point += 1
             call chap3_p2
     call chap3_3
@@ -192,6 +188,9 @@ label chapter7x:
             $ x_end = "h"
             call chap7_x1h
     call chap7_x2
+    if x_end == "n":
+        call chap7_x2n
+        jump pNE
     return
 
 label chapter7p:
