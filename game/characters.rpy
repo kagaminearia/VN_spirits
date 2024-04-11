@@ -1,6 +1,6 @@
 # main characters
-define na = Character(None, what_color=gui.light_grey)
-define mei = Character("梅雨",what_color=gui.light_grey,who_color=gui.light_grey)
+define na = Character(None)
+define mei = Character(None,what_color=gui.light_grey,who_color=gui.light_grey)
 define mei_speaking = Character("梅雨",what_prefix="“",what_suffix="”",image='meiimg',callback=name_callback,cb_name="mei")
 define xiang_speaking = Character("向夏",what_prefix="“",what_suffix="”",image='xiangimg',callback=name_callback,cb_name="xiang")
 define peng_speaking = Character("彭江丽",what_prefix="“",what_suffix="”",image='pengimg',callback=name_callback,cb_name="peng")
