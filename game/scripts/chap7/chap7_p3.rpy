@@ -1,48 +1,101 @@
 label chap7_p3:
+    scene bg_meiroom with fade
     mei "被阳光晒醒时，我有一瞬的恍惚，好一会才反应过来自己是在彭江丽家——我自己住时，睡觉几乎不开窗帘。"
     mei_speaking "几点了……"
     mei "昨晚没睡好，也许是因为床太小了，也许是因为睡在她身边，我的心脏一直在不规律地跳动，搞得我心神不宁。"
+    show halfwhite with dissolve
     mei "以至于，即使醒了，脑袋也昏昏沉沉的，眼睛也因为阳光太刺眼而睁不开，只能眯着眼睛四处摸索。"
     mei "外套，好像在柜子上，先拿一下……"
+    scene bg_black with vpunchm
     na "轰！咚！"
     mei_speaking "哇啊！"
-    mei "因为看不清，我凭着感觉到处乱摸，手肘不小心挂到了桌子抽屉的把手。\n随即，里面的东西噼里啪啦掉出来，落了一地。"
+    mei "因为看不清，我凭着感觉到处乱摸，手肘不小心挂到了桌子抽屉的把手。\n随即，似乎有什么东西噼里啪啦掉出来，落了一地。"
+    scene bg_meiroom with dissolve
+    mei_speaking "呃……"
     mei "眼睛逐渐习惯光线，我赶紧把东西摆回原来的地方，却被其中一个东西吸引了注意力。\n它旧得离谱，和其他东西格格不入。"
+    show q_letter at cg_s with dissolve
     mei "这似乎是一张“纸”，上面密密麻麻贴满了胶带。胶带已经发黄，可以隐约看见底下的碎纸边缘和墨水晕开的字。"
+    hide q_letter with dissolve
     mei_speaking "这什么……"
+    show pengimg shirt o at char_right with moveinright
     peng_speaking "梅雨！你没事——"
+    hide pengimg
+    show pengimg shirt at char_right 
     mei "彭江丽急匆匆地推开房门，脸上还带着水——大概是刚洗完脸——看到我时却愣在原地。"
-    mei_speaking "抱歉，我不小心撞到了柜子，这个……"
-    peng_speaking "我来收就好！"
+    show meiimg shirt eye_still o at char_left with moveinleft
+    mei_speaking "抱歉，我刚刚不小心撞到了柜子，这个……"
+    hide pengimg
+    show pengimg shirt eye_care o at char_right with vpunchs
+    peng_speaking "啊这个我来收就好！"
     mei "砰的一声，她粗暴地把所有东西一股脑塞进抽屉。"
+
+    scene bg_meiroom with pixellate
+    show meiimg eye_still o shell at char_left with dissolve
     mei_speaking "对不起，不过你别担心，我什么都没看到……"
     mei "实话说，那胶带缠得一层一层，还变色，我都差点看不出那里面贴的是一张纸。"
+    show pengimg shirt eye_care o at char_right with dissolve
     peng_speaking "……啊，没事，没事的……我就是，有点惊讶。刚刚你没受伤吧？没撞到哪里吧？"
+    hide meiimg
+    show meiimg shell at char_left
     mei_speaking "没事，不过你没去上学么？"
+    hide pengimg
+    show pengimg shirt smile at char_right
     peng_speaking "我刚回来呀，现在都到午饭时间啦。"
+    hide meiimg
+    show meiimg o shell at char_left
     mei_speaking "啊？我睡了这么久……那我怎么还这么困……"
+    hide pengimg
+    show pengimg shirt o at char_right
     peng_speaking "肯定是昨晚没睡好，都怪我，非要拉你过来睡觉，唉……"
+    hide meiimg
+    show meiimg shell at char_left
     mei_speaking "没有没有，没事的，今天晚上我回去就行了，也不打扰你。"
+    hide pengimg
+    show pengimg shirt at char_right
     peng_speaking "嗯，好吧……"
 
+    scene bg_pengback with pixellate
     mei "彭江丽看起来兴致不高，因而我午饭后又跟她一起做了一次清洗工作——当然，我也只能在院子里看着。"
     mei "她来回搬着已经洗完的工具，动作却突然停了下来。"
+    show meiimg eye_shock o shell at char_left with moveinleft
     mei_speaking "怎，怎么了？"
     mei "我有些慌忙地走上前，她却只是笑了笑，冲着我摇摇头。"
+    show pengimg shirt smile at char_right with moveinright
     peng_speaking "只是感觉有点重……可能是最近没锻炼身体吧，嘿嘿……"
+    hide meiimg
+    show meiimg eye_still shell at char_left 
     mei_speaking "……"
     mei "是因为最近太累了吧……家里的事变多，去学校补课的次数也多。\n只是，我虽然这么想着，却什么也没说。"
+    hide meiimg with dissolve
+    hide pengimg with dissolve
     mei "苍白的安慰最无力，而我什么也帮不到她。"
     mei "她明明是我最重要的朋友，我应该，应该……"
 
+    show pengimg shirt smile at char_right with dissolve
     peng_speaking "怎么啦？站在这里，我东西都搬完了哦。"
+    show meiimg o shell at char_left with dissolve
     mei_speaking "噢……"
+    show halfwhite with dissolve
     mei "汗珠从彭江丽的脸颊两侧流下，在反射出亮晶晶的光线，晃了我的眼睛，也晃了我的心神。"
     mei "因此，没有多想，话语就从我的口中蹦出。"
-    mei_speaking "我身体的事，你知道多少？"
-    peng_speaking "啊……啊？！\n怎么突然这样问……"
+    hide halfwhite with dissolve
+    hide meiimg
+    show meiimg shell at char_left
+    mei_speaking "我身体的情况，你知道多少？"
+    hide pengimg
+    show pengimg shirt eye_care o at char_right
+    peng_speaking "啊……啊？！"
+    hide pengimg
+    show pengimg shirt eye_care at char_right
+    peng_speaking "怎么突然这样问……"
+    hide pengimg
+    show pengimg shirt eye_still o at char_right
     peng_speaking "就是，嗯……知道你之前搬家是因为生病了，这次回来是休养身体，之前，嗯，晕倒的时候，好像也是因为……"
+    hide pengimg
+    show pengimg shirt eye_still at char_right
     mei "她的声音越说越小，表情也变得紧张。\n我尽量让自己露出一个笑容，试图让气氛轻松一些。"
+    hide meiimg
+    show meiimg eye_still smile shell at char_left
     mei_speaking "感觉，之前都瞒着你，不太好……\n不过其实，差不多……"
     mei_speaking "这次是被叶成华强硬带回来的。她可能……觉得我需要换个环境休息一段时间吧。"
     mei_speaking "因为，嗯……其实我今年的升学考失败了。"
