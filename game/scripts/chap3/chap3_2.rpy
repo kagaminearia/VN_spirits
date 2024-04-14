@@ -1,6 +1,7 @@
 label chap3_2:
     scene bg_emptyroom with fade
     show halfblack
+    $ renpy.sound.play(sound.close_water_tap, channel="sound", loop=False)
     mei_speaking "呼……"
     mei "黏着的水汽慢慢消散在空气中，身上的潮湿沉重感也尽数褪去。不幸中的万幸，二楼的水还能用。{p}我放松地舒出一口气，总觉得……平日里这种随处可见的情形，竟然感觉有些久违。"
     mei "现在，还在下着雨吧……{p}我在心里默念着明知道结果的问题，披上干净的外套往外走。"
@@ -8,6 +9,8 @@ label chap3_2:
     show movie_side
     show video_4 behind movie_side with dissolve
     show video_5 behind movie_side
+    $ renpy.sound.play(sound.wind, channel="nature", loop=True)
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True)
     mei "无数的雨点下，我站在窗前，幻想着它们落在自己身上。{p}但是没有，当然没有，它们只是落在雾蒙蒙的窗户上，发出噼里啪啦的敲打声。"
     mei "肆意飞溅，没有方向。{p}我，是不是也……"
     mei "我下意识地伸出手，却只摸到冰凉坚硬的玻璃。"
@@ -85,6 +88,7 @@ label chap3_2:
     scene bg_emptyroom with fade
     show halfblack
     show xiangimg smile behind halfblack at char_right with moveinright
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "一起来玩游戏吧！"
     show pengimg shirt o behind halfblack at char_left with moveinleft
     peng_speaking "这不好吧。"
@@ -169,6 +173,7 @@ label chap3_2:
     mei_speaking "……"
     mei "怎么反倒是她劝起来了……{p}不知道是不是因为顾虑到我，虽然彭江丽看起来兴致不高，但最终也点了点头。"
     mei "果然……我不知道该庆幸还是该不安。{p}是她的话，即使自己有顾虑，基本上也不会让人为难。"
+    stop music fadeout 0.5
 
     scene bg_emptyroom with fade
     show halfblack
@@ -177,7 +182,10 @@ label chap3_2:
     xiang_speaking "那，我先开始说啰。"
     peng_speaking "嗯。"
     mei "我跟着点点头。{p}这事谁开头都无所谓，我们没人非得争这个，自然没什么意见。"
+    $ renpy.music.set_pause(True, channel="sound")
+    $ renpy.music.set_pause(True, channel="nature")
     hide xiangimg
+
     show xiangimg fist eye_still o at char_right
     xiang_speaking "我想想该怎么说啊，嗯，讲个……主角是小女孩的故事吧。"
     xiang_speaking "有一天，小女孩的家里人带回一个布袋，说那是可以给带来好运的宝藏。"
@@ -187,12 +195,16 @@ label chap3_2:
     xiang_speaking "那天，房间昏暗，声音却格外清楚。她轻轻挪动脚步，偷偷走进厨房，生怕自己的声音吵醒家人……"
     xiang_speaking "灶台上什么都没有，女孩小心翼翼地在橱柜里翻找，却只翻出一张皱巴巴的，字迹混乱的纸条。"
     xiang_speaking "她会认的字不多，在窗外的月光下野只能勉强辨认出部分文字：……为治……于……方子……成年……处女之血……"
+    $ renpy.music.play(music.right_behind_you, channel="music", loop=False)
     xiang_speaking "她想继续读的时候，却发现除了自己轻轻朗读的声音，好像还有别的声音出现在背后。\n然后，很轻的女人的声音从后面响起来。"
     xiang_speaking "那个声音说……"
     xiang_speaking "你是不是，看到了？"
     
     scene bg_black with dissolve
+    stop music fadeout 0.5
     "啪。"
+    $ renpy.music.set_pause(False, channel="sound")
+    $ renpy.music.set_pause(False, channel="nature")
     mei_speaking "嘶……"
     mei "话音刚落，向夏按掉了小夜灯，房间里瞬间变黑，令我不自觉感叹一声。"
     scene bg_emptyroom with fade
@@ -222,15 +234,21 @@ label chap3_2:
     peng_speaking "我来吧。"
     peng_speaking "对了，这个并不算跟村子有关的故事，就像我之前说的，这里的信仰本质上并不是鬼神一类的东西……"
 
+    $ renpy.music.set_pause(True, channel="sound")
+    $ renpy.music.set_pause(True, channel="nature")
+    $ renpy.music.play(music.peng_horror_story, channel="music", loop=False, fadein=1.0)
     peng_speaking "有一个少女醒来，发现自己被困在不认识的走廊。\n身后和两边都是墙，只有一条又长又直的路。"
     peng_speaking "她只能前进，每走一步，脚下的地板都在剧烈摇晃，所以她只能加快速度，越来越快。"
     peng_speaking "但是，她走快之后，她发现两边的墙壁也动了起来。\n而且它们是向内收缩的，也就是说……她要被压住了。"
     peng_speaking "她拼命想逃，可是无论怎么跑都看不到走廊的尽头。"
     peng_speaking "最后，她还是没有逃出去，被不断压缩的空间压死了。"
+    stop music
 
     scene bg_emptyroom with fade
     show halfdarkblue
     show xiangimg fist o at char_right with moveinright
+    $ renpy.music.set_pause(False, channel="sound")
+    $ renpy.music.set_pause(False, channel="nature")
     xiang_speaking "……"
     show meiimg shirt at char_mid with moveinright
     mei_speaking "……"
@@ -273,9 +291,12 @@ label chap3_2:
     hide meiimg
     show meiimg shirt eye_still at char_mid
     mei_speaking "嗯，我也不会讲，所以只是，随便试试……"
+    $ renpy.music.set_pause(True, channel="sound")
+    $ renpy.music.set_pause(True, channel="nature")
 
     scene bg_emptyroom with fade
     show halfdarkblue
+    $ renpy.music.play(music.mei_horror_story, channel="music", loop=True, fadein=0.5)
     mei_speaking "住院部的晚上是很安静的，但这一天却不太一样。"
     mei_speaking "少女在换药之前就醒了，她觉得有些奇怪，因为，她是被病床下的摩擦声吵醒的。"
     mei_speaking "刺啦，刺啦……像是撕扯衣服的声音从床下传来，在她愣神的时候，声音还在继续，没有停止的迹象。"
@@ -296,11 +317,15 @@ label chap3_2:
     mei_speaking "如果这是噩梦就好了……她闭上眼睛，狠狠地掐了自己的脸颊。"
     mei_speaking "很痛，痛得她恢复神志，现在，应该逃跑才对……她猛地睁开眼睛。"
     mei_speaking "——密密麻麻的尖牙占据了她的全部视野。"
+    $ renpy.music.play(sound.woman_scream, channel="others", loop=False)
     mei_speaking "又一声惊叫传来，但这之后，走廊上再也没有任何声响。"
+    stop music
 
     scene bg_emptyroom with fade
     show halfdarkblue
     show meiimg shirt at char_mid with dissolve
+    $ renpy.music.set_pause(False, channel="sound")
+    $ renpy.music.set_pause(False, channel="nature")
     mei_speaking "……完。"
     mei "虽然我已经说得很慢，虽然我全程语气平淡，没用任何多余的力气，但这可以说是我第一次说这么多话。"
     mei "因而，我还是觉得有些累，还有些发晕，到结束语的时候就只剩下短短一个字。"

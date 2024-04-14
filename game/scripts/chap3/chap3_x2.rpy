@@ -5,6 +5,7 @@ label chap3_x2:
 
     scene bg_emptyroom with fade
     show halfdarkblue
+    $ renpy.music.play(music.chill_vibe, channel="music", loop=True)
     mei "三张纸写好后放在一起，随后同时被翻开。{p}向夏一票，彭江丽一票，我一票。"
     hide pengimg
     show pengimg shirt o at char_left
@@ -102,4 +103,5 @@ label chap3_x2:
     mei_speaking "……"
     mei "她这话让我心下一紧，但看向她时她仍然是笑着的，语调也很轻松，我也就顺着她把这事揭了过去。"
     mei "不过，我其实并没有想太多，只是不想给别人添麻烦。{p}而向夏某种程度上，也算是我带来的“麻烦”，所以我有种莫名的责任感。"
+    stop music fadeout 0.5
     return

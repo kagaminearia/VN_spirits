@@ -5,6 +5,7 @@ label chap3_p2:
 
     scene bg_emptyroom with fade
     show halfdarkblue
+    $ renpy.music.play(music.chill_vibe, channel="music", loop=True)
     mei "三张纸写好后放在一起，随后同时被翻开。{p}向夏两票，我一票。"
     hide pengimg
     show pengimg shirt o at char_left
@@ -82,4 +83,5 @@ label chap3_p2:
 
     mei "她的回答合情合理，但我总觉得有种微妙的，不合时宜的滞涩感。{p}也许是因为我注意到，在问完问题的瞬间，她的表情似乎有些错愕。"
     mei "不过，我并不打算刨根问底。且不说冒犯的问题……现在的场合着实不太合适。{p}就当……没注意过吧。"
+    stop music fadeout 0.5
     return

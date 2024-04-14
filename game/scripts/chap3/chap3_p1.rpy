@@ -1,5 +1,6 @@
 label chap3_p1:
     scene cg_p30 at cg_0 with fade
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True)
     mei "我转过头看彭江丽，她睡得很熟，肩膀缩起，双臂互相环抱。她的神情很平静，眼皮也紧紧闭着，看不到那双精神的金色眼眸。"
     mei "平时的她，似乎很少露出这样的表情……她总是充满活力，好像永远不用休息，永远也不会累。{p}像这样，好像也不错……"
     mei "等等，我怎么开始仔细观察起来了……{p}我有些尴尬地捏了捏衣角，此时反倒感谢她已经睡熟。"
@@ -50,4 +51,7 @@ label chap3_p1:
     hide meiimg
     show meiimg behind halfdarkblue at char_left 
     mei_speaking "嗯，好。"
+    stop music fadeout 0.5
+    stop sound
+    stop nature
     return
