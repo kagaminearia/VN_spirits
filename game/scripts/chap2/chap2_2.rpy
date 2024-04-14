@@ -302,8 +302,11 @@ label chap2_2:
     mei "太好了，没有什么我没能解读出的暗示，她说话一如既往简单直接，真的，太好了……"
     
     scene bg_meiliv with pixellate
+    $ renpy.music.play(music.prologue_ending, channel="music", loop=True, fadein=0.5)
+    $ renpy.sound.play(sound.ringtone, channel="sound", loop=True)
     na "嘟，嘟……"
     mei "听筒里第三次传来未接电话的忙音，我下意识地再次重复拨号的动作，又在最后一个按键按下时匆匆止住。"
+    stop sound fadeout 1.0
     mei "这样也没什么意义……彭江丽不想接电话，我再继续也只是骚扰而已。"
     scene bg_meiroom with pixellate
     mei "我有些困乏地拖着脚步上楼，放任自己的身体扑通一声倒在床上，用厚厚的被子把自己埋住。{p}仿佛这样就能隔绝一切不顺心的事。"
@@ -311,10 +314,13 @@ label chap2_2:
     mei "明天，直接去找她吧。就算她要骂我……我还是想……"
     scene bg_black with dissolve
     mei "我似乎在呢喃什么，但意识已经陷入了模糊。"
+    stop music fadeout 1.5
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.light_rain, channel="sound", loop=True, fadein=1.0)
     na "呼——呼——呼——"
     na "哒，哒哒，哒哒……"
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True)
     scene bg_rainy_window with dissolve
     mei "事情没能像昨天预想的那般发展。{p}我坐在窗边，指关节来回敲打着窗台。不规律的敲击声响暴露了我内心的焦虑，但我即使意识到也无法控制。"
     mei "被水流来回冲洗过的窗玻璃又蒙上了一层水雾，却仍然能看到窗外凌乱飞舞的枝叶和密密麻麻落下的水滴。"

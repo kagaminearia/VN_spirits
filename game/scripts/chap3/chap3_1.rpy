@@ -1,6 +1,9 @@
 label chap3_1:
     scene bg_rain1 with fade
+    $ renpy.music.play(sound.thunder, channel="music")
     mei "墨色的云厚重无比，层层叠叠互相堆积，但即使如此，也阻挡不住源源不断的水流从云层间倾倒。在阴沉的天幕下，如瀑布一般，铺天盖地的雨点飘散至四面八方，粗莽地敲打在每个阻拦它的东西表面，溅开水花。"
+    $ renpy.sound.play(sound.repeated_rain, channel="sound", loop=True)
+    $ renpy.music.play(sound.wind, channel="music")
     mei "狂风也并不逊色，在空荡的区域轰隆作响，将路面上的轻巧物品尽数吹飞，碎屑跟随雨水飞得到处都是。"
     mei "现在可没法出门啊……我叹了口气，无奈地停止无意义的重复动作。{p}看来，只能等雨停再去找彭江丽了。"
 
@@ -20,6 +23,8 @@ label chap3_1:
     scene bg_black with dissolve
     mei "希望能快点停雨……"
     na "……"
+    stop music fadeout 1.0
+    stop sound fadeout 1.0
     show halfblack with vpunchs
     unknown_speaking "醒……醒醒！！"
     show halfblack with vpunchm
@@ -27,6 +32,7 @@ label chap3_1:
 
     scene bg_meiroom with dissolve
     show halfdarkblue
+    $ renpy.sound.play(sound.repeated_rain, channel="sound", loop=True)
     mei_speaking "……啊？"
     show xiangimg fist eye_shock o behind halfdarkblue at char_right with dissolve
     xiang_speaking "楼下涨水了！"
@@ -44,6 +50,7 @@ label chap3_1:
 
     scene bg_water1 with fade
     mei_speaking "嘶……"
+    $ renpy.music.play(music.tension, channel="music", loop=True)
     mei "即使在脑海里想象过，我还是忍不住抽了一口凉气。"
     mei "从楼梯下楼，走不到最后就不得不停住了。{p}浑浊的水流卷着断裂的树枝和细小的石粒，在室内快速流淌翻卷，已经到达了二层台阶的高度，甚至还有继续上涨的趋势。"
     mei "怎么会……我下意识按紧心口，用疼痛令自己保持冷静。"
@@ -81,16 +88,22 @@ label chap3_1:
     show meiimg eye_still behind halfdarkblue at char_left 
     mei_speaking "我，我……"
     mei "我怕我做不到，我怕我反而添麻烦……{p}不，可是……不对……我还在犹豫什么？"
+    $ renpy.sound.play(sound.heartbeat_3, channel="nature", loop=True)
     mei "心脏跳动的声音在我耳边隆隆作响，带着阵阵的刺痛。流水哗啦，携带发出摩擦碰撞声的垃圾和杂物。\n好烦，好吵……"
     hide meiimg
     show meiimg behind halfdarkblue at char_left 
     mei_speaking "……我去找她。"
+    stop nature
     mei "我来不及想太多，又或者是不想再想下去，只是凭着冲动匆匆下楼。"
+    stop music fadeout 0.5
+    stop sound
 
     scene bg_black with Fade(0.2,0.2,0.2)
     show movie_side
     show video_2 behind movie_side with dissolve
+    $ renpy.sound.queue([sound.rainstorm_1, sound.rainstorm_2], channel="sound")
     mei_speaking "好……冷。"
+    $ renpy.sound.play(sound.rainstorm_2, channel="sound", loop=True)
     mei "水流比表面看起来还要快，冰凉的触感没过小腿的一半，堪堪停在让我能站稳的高度。{p}我感觉全身都起了鸡皮疙瘩，只好死死拢着外套，往熟悉的方向缓步行走。"
     mei "雨还在下，在阴郁的天气里更加模糊我的视线。看不清……我眯着眼睛，深一脚浅一脚踩在湿润的土地上。"
 
@@ -99,8 +112,8 @@ label chap3_1:
     
     unknown_speaking "小心！"
     scene bg_vil6 with fade
-    show halfdarkblue
     show raindrop
+    show halfdarkblue
     mei "我失去重心的一瞬间，右肩膀被有力的手掌支撑住。"
     show xiangimg fist eye_shock behind halfdarkblue at char_right with dissolve 
     mei "我猛地转过头，而后，竟然看到向夏的脸。"
@@ -164,6 +177,7 @@ label chap3_1:
     mei_speaking "嗯，那就——"
     hide pengimg
     show pengimg eye_care o behind halfdarkblue at char_left
+    $ renpy.music.play(music.peng_angry, channel="music", loop=True)
     peng_speaking "——我不去了，我就送你回去吧。"
     hide meiimg
     show meiimg o behind halfdarkblue at char_mid 
@@ -186,12 +200,14 @@ label chap3_1:
     show xiangimg fist behind halfdarkblue at char_right
     xiang_speaking "不要说这种明知故问的事情啦，都说了很明显的。"
     hide meiimg
-    show meiimg eye_still o behind halfdarkblue at char_mid 
+    show meiimg eye_still o behind halfdarkblue at char_mid
+    $ renpy.sound.play(sound.heartbeat_1, channel="nature", loop=True)
     mei_speaking "{size=30}喂，等等……{/size}"
     mei "我想要打断她们的话，说出口的一瞬间却被无名的恐惧挟住，缺乏了勇气。声音很小，溶解在雨幕中，连我自己都几乎听不清。{p}我是不是又要搞砸了……"
     mei "相比之下，她们的声音……"
     hide meiimg
-    show meiimg eye_still behind halfdarkblue at char_mid 
+    show meiimg eye_still behind halfdarkblue at char_mid
+    $ renpy.sound.play(sound.heartbeat_2, channel="nature", loop=True)
     mei "这两个人，又……"
     hide pengimg
     show pengimg eye_angry laugh behind halfdarkblue at char_left
@@ -202,13 +218,17 @@ label chap3_1:
     mei "糟糕，不行……不能这样下去……"
     hide pengimg
     show pengimg eye_angry o behind halfdarkblue at char_left
+    $ renpy.sound.play(sound.heartbeat_3, channel="nature", loop=True)
     peng_speaking "照你自己的话说，这不是明知故问吗？"
     mei "不能这样……我必须说点什么……这次……"
     hide xiangimg
     show xiangimg fist behind halfdarkblue at char_right
     xiang_speaking "这才不是呢，我——"
+    stop nature
+    stop music
 
     scene cg_m10 at cg_l1 with vpunchm
+    $ renpy.sound.play(sound.thunder, channel="sound")
     mei_speaking "烦死了！！！"
     show cg_m10 at cg_0 with dissolve
     xiang_speaking "噫。"
@@ -222,6 +242,7 @@ label chap3_1:
     scene bg_vil5 with fade
     show halfdarkblue
     show raindrop
+    $ renpy.sound.play(sound.rainstorm_2, channel="sound", loop=True)
     mei_speaking "……"
     mei "我刚刚……说了什么？"
     mei "这两人安静下来后，其他声音便愈加明显。{p}湍急的水声已经到了膝盖，带着疼痛的心跳声也更加激烈。"
@@ -241,13 +262,16 @@ label chap3_1:
 
     show movie_side
     show video_3 behind movie_side with dissolve
+    stop sound fadeout 0.5
     mei_speaking "哈……呜……咕啊……"
+    $ renpy.sound.play(sound.echo, channel="sound", loop=True)
     mei "双腿难以在地面站稳，我彻底失去重心。看不见，听不清……"
     mei "不断有水花拍在我的身上，连周围的空气都快要被液体灌满，还在不断吞噬。{p}我，在哪，现在，怎么办……"
     mei "痛……"
     mei "腿完全不听使唤……"
     mei "好累……我要累死了……或者是痛死……"
     mei "天旋地转……"
+    stop sound fadeout 1.0
     scene bg_black with dissolve
     na "……"
     show bg_black with vpunchm
@@ -264,6 +288,7 @@ label chap3_1:
     scene bg_meicorridor with dissolve
     show halfdarkblue
     show pengimg eye_care o behind halfdarkblue at char_mid with moveinright
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True)
     peng_speaking "你还好吗？听得见吗，有没有哪里不舒服？"
     show meiimg behind halfdarkblue at char_left with moveinleft
     mei_speaking "啊？没，没事……"
@@ -280,6 +305,7 @@ label chap3_1:
     hide meiimg
     show meiimg behind halfdarkblue at char_left
     mei_speaking "啊？"
+    $ renpy.music.play(sound.wave, channel="music", fadein=0.5)
     xiang_speaking "那个时候不是突然雨变大了吗……我们本来想快点扶着你回去的，但是水太快了，实在很难走。但是，之后水流竟然换了方向。"
     xiang_speaking "当时真的吓死我了，因为水太高了，我们抓着你也走不动。结果发现水竟然直接把我们推回来了，然后我们把你拉上二楼的。"
     hide pengimg
@@ -325,11 +351,15 @@ label chap3_1:
     mei "彭江丽没事，我们也都顺利回来，我实在不能再维持精力了。{p}我太累了，就让我在这休息会吧……"
     show bg_black with dissolve
     na "……"
+    stop music
+    stop sound fadeout 0.5
 
     scene bg_meicorridor with fade
     show halfdarkblue
     mei "嗯，好热……嗯？"
     show cg_m20 at cg_0 with fade
+    $ renpy.sound.play(sound.wind, channel="nature", loop=True)
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True)
     mei "我迷迷糊糊地醒来，发现自己靠在走廊的角落坐着，一左一右还都挤着人。{p}难怪这么热……"
     mei "淅淅沥沥的水滴声和狂风的呼啸声不断传来，只是止于窗户，无法穿透玻璃。\n此时此刻，无比令人安心。"
     mei "不知道为什么，彭江丽和向夏都睡在这里。{p}估计……她们也是累了吧，不知道，现在怎么样……"

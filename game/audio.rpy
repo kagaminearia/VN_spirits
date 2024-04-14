@@ -1,3 +1,20 @@
+define music.xiang_chill_vibe = 'sfx/music/xiang_chill_vibe.mp3'
+define sound.woman_scream = 'sfx/sound/woman_scream.mp3'
+define music.chill_vibe = 'sfx/music/chill_vibe.mp3'
+define music.peng_horror_story = 'sfx/music/peng_horror_story.mp3'
+define music.mei_horror_story = 'sfx/music/mei_horror_story.mp3'
+define music.right_behind_you = 'sfx/music/right_behind_you.mp3'
+define sound.rain_on_window = 'sfx/sound/rain_on_window.mp3'
+define sound.close_water_tap = 'sfx/sound/close_water_tap.mp3'
+define sound.echo = 'sfx/sound/echo.mp3'
+define sound.rainstorm_2 = 'sfx/sound/rainstorm_2.mp3'
+define sound.rainstorm_1 = 'sfx/sound/rainstorm_1.mp3'
+define music.tension = 'sfx/music/tension.mp3'
+define sound.repeated_rain = 'sfx/sound/repeated_rain.mp3'
+define sound.wind = 'sfx/sound/wind.mp3'
+define sound.thunder = 'sfx/sound/thunder.mp3'
+define sound.rain_on_window = 'sfx/sound/rain_on_window.mp3'
+define sound.light_rain = 'sfx/sound/light_rain.mp3'
 define sound.crash = 'sfx/sound/crash.mp3'
 define music.nature = 'sfx/music/nature.mp3'
 define music.cold_night = 'sfx/music/cold_night.mp3'
@@ -39,3 +56,7 @@ define sound.cicada = 'sfx/sound/cicada.mp3'
 define sound.cough = 'sfx/sound/cough.mp3'
 define music.summer_wind = 'sfx/music/summer_wind.mp3'
 define sound.buzz = 'sfx/sound/buzz.mp3'
+
+init -1 python:
+    renpy.music.register_channel("nature", "sfx", True)
+    renpy.music.register_channel("others", "sfx", True)

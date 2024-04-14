@@ -46,6 +46,7 @@ label chap3_3:
 
     scene bg_emptyroom with fade
     show halfblack
+    $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei "如之前所说，地垫确实够大，睡三个人绰绰有余，但……"
     mei_speaking "……"
     mei "总觉得……好奇怪啊。{p}我连宿舍都没睡过，现在却要直接跟两个人平躺在同一张“床”上。这对我来说……实在是有些冲击过大。"
@@ -59,6 +60,7 @@ label chap3_3:
     scene bg_black with dissolve
     mei "身体越来越重，我的思绪也逐渐变得朦胧。"
     mei "希望，雨快点停吧……"
-
-
+    stop music fadeout 0.5
+    stop nature
+    stop sound
     return

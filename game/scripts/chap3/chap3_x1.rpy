@@ -1,5 +1,6 @@
 label chap3_x1:
     scene cg_x30 at cg_0 with fade
+    $ renpy.music.play(music.xiang_chill_vibe, channel="music", loop=True, fadein=1.0)
     mei "我偏向一侧，看着向夏。"
     mei "转过头，我的动作骤然变轻。{p}她似乎睡得很不安稳，我只是稍微侧身就让她的肩膀抽动几下。"
     mei "没事吧……嗯？{p}因为她动了动，我有些紧张地看着她。而就在这时，我似乎隐约看到她的眼角和脸颊上，有些模糊的泪光。"
@@ -39,4 +40,7 @@ label chap3_x1:
     mei "我赶紧转移话题，生怕她再继续说这些。"
     xiang_speaking "好吧——那我先去就是了。\n我去把那边收一下可以吧？"
     mei_speaking "嗯。"
+    stop music fadeout 0.5
+    stop nature
+    stop sound
     return
