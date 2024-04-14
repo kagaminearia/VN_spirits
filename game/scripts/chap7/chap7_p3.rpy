@@ -109,7 +109,10 @@ label chap7_p3:
     peng_speaking "我，我欺骗了她，还想装作什么都没发生过，想跟她越来越亲密……我知道这不对……可是我更不想让她讨厌我……"
     peng_speaking "成华姐，你这么聪明，肯定早就看出来了对不对……"
     ye_speaking "……嗯，是啊。\n不过，你是怎么想的呢？"
+    peng_speaking "我……"
+    show cg_p91 at cg_0 with dissolve
     peng_speaking "……\n求求你，千万不要告诉梅雨。\n我好不容易才找回她，无论怎样都好，我绝对不要她讨厌我……！！"
-    mei_speaking "……怎么会……"
-
+    mei_speaking "……"
+    mei_speaking "怎么会……"
+    scene bg_black with dissolve
     mei "我完全呆住了，甚至没有时间去思考对话中代表的含义。\n彭江丽她……在我的记忆里，她从来没有流过眼泪。\n这是……我第一次见到她哭。"

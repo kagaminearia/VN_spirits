@@ -116,17 +116,23 @@ label chap7_x2h:
     mei "我无语地盯着她一会，而后不知出于什么心情，也躺了下去。"
     mei "角度变换之后，视野也更加开阔。\n虽然是夜晚，但天空并不沉寂，因为除了黑暗还有大片的繁星。"
     mei "它们一闪一闪，此起彼伏，众多微不足道的光晕集合在一起，变成绮丽的画卷。"
+    show cg_x71 at cg_0 with dissolve
     xiang_speaking "哎，不管怎么说，我们也算是扯平了。嗯，这样也挺好。"
     mei_speaking "是啊。"
     xiang_speaking "我倒是……有点佩服你了。跟我想象得不一样啊——"
+    show cg_x72 at cg_0 with dissolve
+    hide cg_x71
     mei_speaking "怎么？故事太沉重吗？"
     mei "我半开玩笑地重复她之前的话，她也感慨般地笑起来。"
+    show cg_x73 at cg_0 with dissolve
+    hide cg_x72
     xiang_speaking "可不是吗？"
     mei_speaking "你的故事更沉重吧。"
     xiang_speaking "绝对是你的更沉重啦。"
     mei_speaking "是你——不，这是用来攀比的吗？"
     xiang_speaking "哈哈哈，就是说啊！我真是有病。"
     mei_speaking "那，那我也是。"
+    hide cg_x73 with dissolve
     mei "况且，我可是真有病……噗。"
     mei "我莫名跟着向夏笑起来，笑得连视线里的星光都在发抖。"
     mei "我从没想象过这样的场景……但，似乎也不错。"
@@ -160,17 +166,25 @@ label chap7_x2h:
     mei_speaking "……"
     mei "向夏的身形比我大些，因而她的双臂完全能环住我。"
     mei "而后，她稍稍弯腰……肩膀落在我的肩头。\n轻柔的呼吸刮擦着皮肤，有些毛糙的卷曲发尾正巧落在我的颈边。"
+    show cg_x81 at cg_0 with dissolve
     mei "深夜很凉，显得我接触到的皮肤部分格外温暖。\n但是……好近。"
     mei_speaking "你……你还，挺靠谱的。"
+    show cg_x82 at cg_0 with dissolve
+    hide cg_x81
     xiang_speaking "是啊，不错吧。"
     mei "这个姿势对她来说大概有点累，但她没动，我也没动，只是维持着这个有些别扭的姿势，站在原地。"
+    show cg_x83 at cg_0 with dissolve
+    hide cg_x82
     mei "她的声音从背后传来，带着贴近的肌肤跟随胸腔一起震颤。"
     mei "也许是因为靠得太近，我总觉得不止后背，连我的胸口也在高速颤抖。"
     mei_speaking "……"
     xiang_speaking "……"
+    show cg_x84 at cg_0 with dissolve
+    hide cg_x83
     mei_speaking "……走吗？"
     mei "我轻轻出声，仿佛打断了某种粘稠的连接，使得时间继续，周围的空气又重新流动起来。"
     mei "向夏猛地松开手，微凉的夜风巧妙地灌入我的领口。"
+    hide cg_x84
     xiang_speaking "走，走吧！"
     mei_speaking "嗯。"
     mei "我飞快理了理外套，快步跟上向夏。"
