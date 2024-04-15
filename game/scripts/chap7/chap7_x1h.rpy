@@ -146,7 +146,7 @@ label chap7_x1h:
     mei "阳台有上到这栋楼最顶端天台的楼梯，向夏指的就是那里。"
     mei "的确，无人的天台很符合一般故事里说秘密的场合，但是……"
     show meiimg flower behind halfblack at char_left with dissolve
-    mei_speaking "我上不去。"
+    mei_speaking "我上不去啊。"
     mei "嵌进墙壁的梯子底部距离地面有一定距离，我的脚够不到，而我的力气没法让我只靠手臂就把自己拉上去。"
     show xiangimg fist eye_squint smile behind halfblack at char_right with dissolve
     xiang_speaking "原来你说这个呀。这个简单啊，我有办法，这样——"
@@ -165,29 +165,61 @@ label chap7_x1h:
     mei "她托着我，声音仍旧充满中气，甚至隐隐有顺着手臂传到我身上的感觉……不对，我在想什么。"
     mei "到这个高度，要爬上去就轻松很多，她都这样了，我也没法下去……"
     mei "唉……我轻轻叹气，无奈地伸出手，抓住栏杆。"
-    
+
+
+    scene bg_roof with fade
+    show halfdarkblue
     mei_speaking "……呼啊。"
     mei "好在梯子不高，几乎不费什么力气。\n我上去之后，向夏也很快爬了上来。"
     mei "群星散布在头顶高高的天穹，像天鹅绒绸缎上点缀的钻石，在浓郁的夜色中发出微弱的光芒。"
-    mei "四周很安静，也许所有生物都睡着了，只有我和旁边的人的呼吸声。\n这让我蓦地想起……那个充斥着狂风暴雨的夜晚。"
+    mei "四周很安静，也许所有生物都睡着了，只有我和旁边的人的呼吸声。"
+    mei "这……\n这让我蓦地想起……那个充斥着狂风暴雨的夜晚。"
     mei "同样是夜晚……那时候，我注意到完全不同的向夏。而现在……也会是吗？"
     mei "我偏头看向她，不知是因为夜晚太黑，或是因为我被回忆影响，还是……她真的没有任何表情。"
     
+    show xiangimg fist eye_still o behind halfdarkblue at char_right with moveinright
     xiang_speaking "我现在，倒是有点理解你那个朋友，嗯，叫彭江丽？我倒是有点理解她的想法了。"
+    show meiimg o flower behind halfdarkblue at char_left with moveinleft
     mei_speaking "啊？什么意思……"
-    xiang_speaking "有些事情，可能是很不想说啊。连自己多说一句拒绝的话都不愿意，所以才想让别人帮忙。"
-    mei_speaking "……那你就别说啊。"
-    mei "不知为何，我有些莫名地烦闷。是外套太热了吗？可是这个时间点的温度应该很低才对……"
+    hide xiangimg
+    show xiangimg fist eye_still smile behind halfdarkblue at char_right
+    xiang_speaking "有些事情，可能就是很不想说吧。连自己多说一句拒绝的话都不愿意，所以才想让别人帮忙。"
+    hide meiimg
+    show meiimg flower behind halfdarkblue at char_left 
+    mei_speaking "……"
+    hide meiimg
+    show meiimg eye_close o flower behind halfdarkblue at char_left 
+    mei_speaking "那你就别说啊。"
+    hide meiimg
+    show meiimg eye_close flower behind halfdarkblue at char_left 
+    mei "不知为何，我有些莫名地烦闷，语气也变得生硬。\n是外套太热了吗？可是这个时间点的温度应该很低才对……"
     mei "真是的，既然想逃避，那为什么非要逼自己去做……"
     mei "……这样的话，岂不是，显得我十分软弱吗……"
-    xiang_speaking "{size=30}是啊，你会那么想也是理所应当的，但是我……我必须自己面对一切才行。{/size}"
-    mei_speaking "你说什么了吗？"
+    hide xiangimg
+    show xiangimg fist eye_still laugh behind halfdarkblue at char_right
+    xiang_speaking "嗯，也对。"
+    hide xiangimg
+    show xiangimg fist eye_close laugh behind halfdarkblue at char_right
+    xiang_speaking "{size=30}你会那么想也是理所应当的，但是我……我必须自己面对一切才行。{/size}"
+    hide meiimg
+    show meiimg o flower behind halfdarkblue at char_left 
+    mei_speaking "等等，你刚说什么了吗？"
+    hide xiangimg
+    show xiangimg fist o behind halfdarkblue at char_right
     xiang_speaking "啊，没有。"
+    hide xiangimg
+    show xiangimg fist laugh behind halfdarkblue at char_right
     xiang_speaking "我是说，来都来了啊，不说的话不就白爬上来啦？"
+    hide xiangimg
+    show xiangimg fist laugh behind halfdarkblue at char_right
     xiang_speaking "是吧？嘿嘿。"
+    hide meiimg
+    show meiimg flower behind halfdarkblue at char_left 
     mei_speaking "……哼。"
-    mei_speaking "{size=30}在这里看星星，也还行啊。{/size}"
+    mei_speaking "{size=30}就算，只是在这里看星星……也还行啊。{/size}"
 
+    hide meiimg with dissolve
+    hide xiangimg with dissolve
     xiang_speaking "好啦，我会说的，不过我不知道该怎么讲，要不直接从头开始吧？但我说不定会讲很久哦。"
     mei_speaking "无所谓啊，我不介意。"
     mei "我还没听过别人讲故事，说实话，挺新奇的……"
