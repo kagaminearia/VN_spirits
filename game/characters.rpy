@@ -12,6 +12,7 @@ define school_boy = Character("男学生",what_prefix="“",what_suffix="”")
 define school_girl = Character("女学生",what_prefix="“",what_suffix="”")
 define fem = Character("女人",what_prefix="“",what_suffix="”")
 define mal = Character("男人",what_prefix="“",what_suffix="”")
+define young_peng = Character("小时候的彭江丽",what_prefix="“",what_suffix="”")
 
 
 init:

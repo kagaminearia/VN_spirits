@@ -96,24 +96,66 @@ label chap7_p3:
     mei "她的声音越说越小，表情也变得紧张。\n我尽量让自己露出一个笑容，试图让气氛轻松一些。"
     hide meiimg
     show meiimg eye_still smile shell at char_left
-    mei_speaking "感觉，之前都瞒着你，不太好……\n不过其实，差不多……"
-    mei_speaking "这次是被叶成华强硬带回来的。她可能……觉得我需要换个环境休息一段时间吧。"
+    mei_speaking "感觉，之前都瞒着你，不太好……\n不过其实，也差不多……"
+    hide meiimg
+    show meiimg eye_close shell at char_left
+    mei_speaking "这次是叶成华让我回来住的。她可能……觉得我需要换个环境休息一段时间吧。"
+    hide meiimg
+    show meiimg eye_close o shell at char_left
     mei_speaking "因为，嗯……其实我今年的升学考失败了。"
+    hide pengimg
+    show pengimg shirt eye_care o at char_right
     peng_speaking "……啊……？？"
-    mei_speaking "噢，我晕倒是因为病跟心脏有关，还……挺严重的。那天，算是后遗症吧……抱歉啊，我都没跟你说。"
-    mei_speaking "其实我小时候有给你写信，一到新家就开始写了。后来在医院的时候也……我一直想跟你联系，但是我没想到，那时候弄错地址了，就没寄成……"
-    mei_speaking "后来做完手术，可以正常上学，只是要吃药，不能做激烈的活动，也不能有激烈的情绪起伏。那时候，我也没有想着回来找你……因为我一直害怕你怪我什么都不说就走了。对不起。"
+    hide meiimg
+    show meiimg o shell at char_left
+    mei_speaking "噢，我晕倒是因为病跟心脏有关，还……挺严重的。那天，跟你第一次见面的时候，算是后遗症吧……抱歉啊，我都没跟你说。"
+    hide meiimg
+    show meiimg eye_still o shell at char_left
+    mei_speaking "不过其实……我小时候有给你写信，一到新家就开始写了。后来在医院的时候也……我一直想跟你联系，但是我没想到，那时候弄错地址了，就没寄成……"
+    mei_speaking "后来做完手术，可以正常上学，只是要吃药，不能做激烈的活动，也不能有激烈的情绪起伏。"
+    hide meiimg
+    show meiimg eye_close o shell at char_left
+    mei_speaking "那时候，我也没有想着回来找你……因为我一直害怕，害怕你怪我，什么都不说就走了。对不起。"
+    hide pengimg
+    show pengimg shirt eye_care at char_right
     peng_speaking "我怎么会那么想……"
-    peng_speaking "那，就是……\n升学考的事呢……？"
-    mei_speaking "嗯……在学校的时候，我有很多……很无聊很幼稚的想法，想证明自己啦之类的。\n所以，那个考试我真的很看重。"
-    mei_speaking "结果……结果挺可笑的，第一天考试我过度紧张，心脏受到刺激晕倒了，后来就在医院里看着考试结束。"
-    peng_speaking "怎，怎么会……"
+    hide meiimg
+    show meiimg eye_close shell at char_left
     mei_speaking "……"
-    mei_speaking "哎呀，就是……\n就是……"
+    hide pengimg
+    show pengimg shirt eye_care o at char_right
+    peng_speaking "那，就是……\n升学考的事呢……？"
+    hide meiimg
+    show meiimg eye_still o shell at char_left
+    mei_speaking "嗯……在学校的时候，我有很多……很无聊很幼稚的想法，想证明自己啦之类的。\n所以，那个考试我真的很看重。"
+    hide meiimg
+    show meiimg eye_still smile shell at char_left
+    mei_speaking "结果……结果挺可笑的，第一天考试我过度紧张，心脏受到刺激晕倒了，后来就在医院里看着考试结束。"
+    mei "真有意思啊。\n一直把我牢牢困住的事情，留下让我疼痛的印记的事情，竟然用这么简单的一句话就能说完了。"
+    hide pengimg
+    show pengimg shirt eye_care at char_right
+    peng_speaking "怎，怎么会……"
+    hide meiimg
+    show meiimg eye_still shell at char_left
+    mei_speaking "……"
+    hide meiimg
+    show meiimg eye_still laugh shell at char_left
+    mei_speaking "哎呀，其实只是，就是……"
+    hide meiimg
+    show meiimg eye_still smile shell at char_left
+    mei_speaking "就是……"
+    hide meiimg
+    show meiimg eye_close shell at char_left
     mei "……就是什么呢？\n就是我太笨了。就是我不自量力。就是我什么都做不好。就是……"
-    mei "我沉默很久，还是没能说出完整的话。{p}我以为我能豁达地笑笑，显得很潇洒，但……做不到。"
+    mei "我沉默很久，还是没能说出完整的话。{p}我以为我能豁达地笑过去，显得很潇洒，不在意，但……做不到。"
+    hide meiimg
+    show meiimg eye_still o shell at char_left
     mei_speaking "反正——"
-    mei_speaking "我的话没能说完，因为彭江丽忽然抱住了我。\n她的双臂温暖而有力，虽然微微颤抖，但还是紧紧环抱着我。"
+    hide meiimg
+    hide pengimg
+    show halfwhite with dissolve
+    mei_speaking "……啊。"
+    mei_speaking "我的话没能说完，因为彭江丽忽然抱住了我。\n她的双臂温暖而有力，虽然在微微颤抖，但还是紧紧环抱着我。"
     peng_speaking "……是我该说对不起，才对。"
     peng_speaking "是我给你太大压力了吧……对不起。\n那天，我说有话想跟你说，吓到你了吧。"
     mei_speaking "不，没……"
@@ -123,49 +165,103 @@ label chap7_p3:
     mei_speaking "当然愿意了。"
     peng_speaking "那就好……\n{size=30}只要这样，就好……{/size}"
 
+    scene bg_pengback with fade
     mei "拥抱后，身上还残留着她的体温，我有些尴尬地移开视线。"
+    show meiimg eye_close o shell at char_left with dissolve
     mei_speaking "咳……其实，我是想说。"
+    show pengimg shirt o at char_right with dissolve
     peng_speaking "什么？"
+    hide meiimg
+    show meiimg o shell at char_left
     mei_speaking "你看，我现在也……需要学习。所以，跟你讲题的时候，也是自己复习啊。我也会，跟你一起学习的。"
     mei "俗话说，说谎要三分假七分真，我大概现在就在实际应用吧。"
+    hide pengimg
+    show pengimg shirt eye_care at char_right
     peng_speaking "……啊。"
-    mei_speaking "我不是要强迫你，我是想，你……不去学校的时候，可以再一起讲题目吗？"
+    mei_speaking "我不是要强迫你，我是想问，你……不去学校的时候，可以再一起讲题目吗？"
     peng_speaking "……"
+    hide pengimg
+    show pengimg shirt smile at char_right
     peng_speaking "好啊。"
 
-    mei "今天，终于说完了想说的话……"
-    mei "我躺在床上，止不住卷着被子滚来滚去。\n真是，不知道为什么……"
-    mei "之后，能跟她一起学习，太好了……\n虽然有些自大，不过，我想帮她，想帮她实现目标……"
+    scene bg_meiroom with fade
+    mei "今天，终于说出想说的话了……"
+    mei "我躺在床上，止不住卷着被子滚来滚去的动作。\n真是，不知道为什么……"
+    show halfblack with dissolve
+    mei "之后，还能跟她一起学习，太好了……\n虽然这么说很自大，但是……"
+    mei "我想帮她，想帮她实现目标……"
 
+    scene bg_meiroom with fade
     mei_speaking "嗯……"
     mei "结果，因为我对还没开始的事想太多，昨天晚上又没睡好，连第二天的午睡也比平时更久，睡得头晕。"
     mei_speaking "现在，几点……"
-    mei "窗帘晃动，些许光线进入，照亮床头的电子显示屏，下午五点。\n昨天才说想要努力，结果今天就睡这么久……"
+    mei "窗帘晃动，些许光线进入，照亮床头的电子显示屏，下午五点。"
+    mei "昨天才说想要努力，结果今天就睡这么久……"
     mei "唉……我叹了口气，有些无语地往外走。\n……嗯？"
-    mei "楼梯口传来微小的声响，似乎是有人在说话。这时候会有谁在客厅……我放轻脚步，如同做贼一样悄悄下楼，还没下到楼底，我就听清了外面的声音。"
-    mei "是……叶成华和彭江丽……？叶成华倒是有时会回来，但彭江丽为什么在这……\n不知道出于什么心情，我没有直接下楼走出去，而是继续压低脚步，停在墙边。"
 
-    ye_speaking "你说我跟路花？让我想想……我当时刚开始在镇上工作，然后就认识她了，后来就在一起了。"
+    scene bg_meicorridor with dissolve
+    mei "楼梯口传来微小的声响，似乎是有人在说话。"
+    mei "这时候会有谁在客厅……我放轻脚步，如同做贼一样悄悄下楼，还没下到楼底，我就听清了外面的声音。"
+    mei "是……叶成华和彭江丽……？叶成华倒是有时会回来，但彭江丽为什么在这……"
+    show halfblack with dissolve
+    mei "不知道出于什么心情，我没有直接下楼走出去，而是继续压低脚步，停在墙边。"
+
+    scene bg_black with Dissolve(0.2)
+    show movie_side
+    show bg_meiliv behind movie_side with moveinleft
+    ye_speaking "你问我跟路花？让我想想……我当时刚开始在镇上工作，然后就认识她了，后来就在一起了。"
     peng_speaking "……这样啊……"
-    ye_speaking "哈哈哈，抱歉啊，有些事涉及路花，我是不太好说。\n不过……你特意过来，应该不是真的只是想问我这个吧？"
-    ye_speaking "我只是猜测啊，要是说错了，你就当我在胡扯。"
-    peng_speaking "没有错……我……\n……梅雨还在睡觉吗？"
+    mei "声音窸窸窣窣，隔着墙壁传来，不算大声，但也足够听得清。"
+    ye_speaking "哈哈哈，抱歉啊，有些事涉及路花，我是不太好私自说。"
+    peng_speaking "没有，我其实……"
+    ye_speaking "嗯，你特意过来，应该不是真的只是想问我这个吧？"
+    peng_speaking "啊……"
+    ye_speaking "我只是自己猜测啊，要是说错了，你就当我在胡扯。"
+    peng_speaking "没有错……我……"
+    peng_speaking "……梅雨还在睡觉吗？"
+    mei "怎么突然提到我的名字……虽然知道自己不会被看到，我还是不由得绷紧了身体。"
     ye_speaking "肯定还没起呢，估计是昨天没睡好吧？她但凡下午睡觉总会睡很久，没事，我不会跟她讲的。"
     peng_speaking "……嗯，我知道。我就……问问。"
     peng_speaking "你和路花姐，是怎么确定关系的呢……？\n我好像也有，喜欢的人……但，我……"
-    mei "……咦？"
+    mei "什么……彭江丽，她有喜欢的人……"
 
-    ye_speaking "……\n也是女孩子吗？"
-    peng_speaking "是，的……但是，我……\n我虽然喜欢她，却也忍不住嫉妒她，我希望她好，却不希望她那么好，我怕她把我甩在身后……"
+    ye_speaking "……\n你喜欢的人，也是女生吗？"
+    peng_speaking "……"
+    peng_speaking "……是，的……但是，我……"
+    peng_speaking "我不知道……我应该是喜欢她，却忍不住嫉妒她。我希望她好，却不希望她那么好，我怕她把我甩在身后，我怕她嫌弃我……"
     peng_speaking "她总是很善良，很坚强，不管我怎么样都会包容我……我对她做了很过分的事，她却还是……我，呜……"
-    ye_speaking "不要这样想，她肯定……"
-    peng_speaking "我，我欺骗了她，还想装作什么都没发生过，想跟她越来越亲密……我知道这不对……可是我更不想让她讨厌我……"
-    peng_speaking "成华姐，你这么聪明，肯定早就看出来了对不对……"
-    ye_speaking "……嗯，是啊。\n不过，你是怎么想的呢？"
-    peng_speaking "我……"
+    ye_speaking "嗯，我觉得你先不要这样想，她肯定——"
+    peng_speaking "不是的，我……我欺骗了她，还想装作什么都没发生过，想跟她越来越亲密……我知道这不对……可是我不敢告诉她……"
+    peng_speaking "我只是，不，我……我觉得……我觉得保持现状就已经很满足了……"
+    ye_speaking "……"
+    ye_speaking "我想，你一直都是个很有自己想法的人，现在也肯定是。"
+    ye_speaking "既然你已经想好了，今天特意过来，我现在有什么能帮你的呢？"
+    peng_speaking "谢谢你，成华姐……"
+    peng_speaking "我只是，我想……\n……"
+    peng_speaking "成华姐，你这么聪明，肯定早就知道我在说谁了对不对……"
+    ye_speaking "哎呀，这个怎么说呢……"
+    peng_speaking "对不对……？"
+    ye_speaking "算是有一些自己的猜测吧。"
+    peng_speaking "嗯，我知道……\n我，就是想拜托成华姐一件事……"
+    ye_speaking "嗯，什么？"
+    peng_speaking "我……我知道，梅雨是您很关照的妹妹，所以……"
+    peng_speaking "我知道这样很卑鄙，但是……{p}求求你，不要把我说的事情告诉梅雨。"
+    mei "……咦？"
+    peng_speaking "我……我绝对不会再做对她不好的事，但是……"
     show cg_p91 at cg_0 with dissolve
-    peng_speaking "……\n求求你，千万不要告诉梅雨。\n我好不容易才找回她，无论怎样都好，我绝对不要她讨厌我……！！"
+    peng_speaking "我好不容易才找回她，无论怎样都好，我绝对不要她讨厌我……！！"
     mei_speaking "……"
     mei_speaking "怎么会……"
     scene bg_black with dissolve
-    mei "我完全呆住了，甚至没有时间去思考对话中代表的含义。\n彭江丽她……在我的记忆里，她从来没有流过眼泪。\n这是……我第一次见到她哭。"
+    mei "我完全呆住了，甚至没有时间去思考对话中代表的含义。"
+    mei "剧烈的抽泣声和断断续续的说话声变成无意义的噪音，四面八方，从耳朵进入大脑，把一切绞成无序的碎片。"
+    mei "一团乱麻中，我突兀地抓住一条可以听见的声音。"
+    show glitches with dissolve
+    young_peng "我，我才不会哭呢，那样太丢脸了！"
+    young_peng "但是但是，阿雨你哭的话就没关系，我会帮你打掩护的！"
+    hide glitches with dissolve
+    mei "……"
+    mei "我后知后觉地意识到，那时候说的玩笑话，彭江丽真的做到了。"
+    mei "至少……在我认识她的时间里，她从来没有流过眼泪。"
+    mei "这是……我第一次见到她哭。"
+    return
