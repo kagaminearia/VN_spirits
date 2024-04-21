@@ -11,7 +11,6 @@ label chap1_x3:
 
     scene bg_meiliv with pixellate
     show xiangimg o at char_right with moveinright
-    $ renpy.music.play(music.slow_laugh, channel="music", loop=True, fadein=0.5)
     xiang_speaking "哇，你真的不吃吗？浪费食物很过分欸。"
     show meiimg shirt o at char_left with dissolve
     mei_speaking "啊？才没有。"
@@ -67,7 +66,6 @@ label chap1_x3:
     show meiimg shirt eye_still at char_left
     mei "唉，我这忽上忽下的情绪到底是怎么回事啊……{p}我挠挠头，总觉得莫名有些别扭，但也不打算再继续细想什么。"
     mei "心情好，总归不算坏事吧……"
-    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     xiang_speaking "梅雨，过来一下！"
