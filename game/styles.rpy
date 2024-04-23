@@ -25,7 +25,7 @@ define config.check_conflicting_properties = True
 # The text font for dialogue and choice menus
 define gui.text_font = "fonts/LXGWWenKaiMono-Light.ttf"
 # The text font for buttons
-define gui.interface_text_font = "fonts/三极素纤简体.ttf"
+define gui.interface_text_font = "fonts/CangErShuYuanTiW.ttf"
 # The default size of in-game text
 define gui.text_size = 38
 # The font for character names

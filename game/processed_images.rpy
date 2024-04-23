@@ -39,7 +39,7 @@ screen chap_interval(index,route="n"):
 
 
 style chap_interval_text:
-    font "fonts/瑞美加张清平硬笔楷书.ttf"
+    font "fonts/HongLeiBanShuJianTi.ttf"
     size 55
     color gui.light_blue
 

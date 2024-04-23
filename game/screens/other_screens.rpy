@@ -29,7 +29,7 @@ screen about():
                 text _("可食用蓝墨水") 
             vbox:
                 text _("音乐·音效") size 35
-                text _("{font=fonts/Aboreto-Regular.ttf}akagi{/font} · 可食用蓝墨水") 
+                text _("akagi · 可食用蓝墨水") 
             # vbox:
             #     text _("测试") size 40
             #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
@@ -40,20 +40,20 @@ screen about():
         vbox:
             spacing 13
             text _("参考·素材·资源") size 35
-            text _("游戏引擎：{a=https://www.renpy.org/}{font=fonts/Aboreto-Regular.ttf}Ren'Py{/font}{/a}")
-            text _("音乐/音效：{a=https://www.FesliyanStudios.com}{font=fonts/Aboreto-Regular.ttf}FesliyanStudios{/font}{/a}，\
-{a=https://amachamusic.chagasi.com}{font=fonts/Aboreto-Regular.ttf}Amachamusic{/font}{/a}，\
-{a=https://pixabay.com}{font=fonts/Aboreto-Regular.ttf}Pixabay{/font}{/a}") 
-            text _("场景素材：{a=https://unsplash.com/}{font=fonts/Aboreto-Regular.ttf}Unsplash{/font}{/a}，\
-{a=https://www.videvo.net/#rs=videvo-logo}{font=fonts/Aboreto-Regular.ttf}Videvo{/font}{/a}，\
-{a=https://www.videezy.com/abstract/42744-raindrops-falling-background}{font=fonts/Aboreto-Regular.ttf}Videezy{/font}{/a}，\
-{a=https://www.freepik.com/}{font=fonts/Aboreto-Regular.ttf}Freepik{/font}{/a}\
-{a=https://www.youtube.com/@melvinmellow}{font=fonts/Aboreto-Regular.ttf}melvinmellow{/font}{/a}") 
-            text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}{font=fonts/Aboreto-Regular.ttf}Astrology Ren'Py GUI by Siyokoy{/font}{/a}")
-            text _("代码：{a=https://wattson.itch.io/renpy-wave-shader}{font=fonts/Aboreto-Regular.ttf}Ren'py Wave Shader by Wattson{/font}{/a}，\
-{a=https://wattson.itch.io/renpy-auto-highlight}{font=fonts/Aboreto-Regular.ttf}Renpy Auto Highlight by Wattson{/font}{/a}，\
-{a=https://feniksdev.itch.io/easy-renpy-gui}{font=fonts/Aboreto-Regular.ttf}Easy Ren'Py GUI by Feniks{/font}{/a}")
-            text _("字体：{font=fonts/Aboreto-Regular.ttf}Aboreto{/font}，瑞美加张清平硬笔楷书，三极素纤简体，霞鹜文楷等宽")
+            text _("游戏引擎：{a=https://www.renpy.org/}Ren'Py{/a}")
+            text _("音乐/音效：{a=https://www.FesliyanStudios.com}FesliyanStudios{/a}，\
+{a=https://amachamusic.chagasi.com}Amachamusic{/a}，\
+{a=https://pixabay.com}Pixabay{/a}") 
+            text _("场景素材：{a=https://unsplash.com/}Unsplash{/a}，\
+{a=https://www.videvo.net/#rs=videvo-logo}Videvo{/a}，\
+{a=https://www.videezy.com/abstract/42744-raindrops-falling-background}Videezy{/a}，\
+{a=https://www.freepik.com/}Freepik{/a}，\
+{a=https://www.youtube.com/@melvinmellow}melvinmellow{/a}") 
+            text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI by Siyokoy{/a}")
+            text _("代码：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader by Wattson{/a}，\
+{a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight by Wattson{/a}，\
+{a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI by Feniks{/a}")
+            text _("字体：Aboreto，鸿雷板书简体，仓耳舒圆体，霞鹜文楷等宽")
 
 style about_label_text:
     size 35
