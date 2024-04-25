@@ -12,6 +12,7 @@ label chap4_3:
     ye_speaking "行，多的我也不说了，估计你现在也累得慌。\n你呢别想太多，记着有任何事任何时候都可以来找我就行。"
     mei_speaking "好。"
     mei "我简短和叶成华聊完，把手机递给向夏。她只是朝另一侧耸耸肩膀，我看过去，才发现不知道什么时候彭江丽也来走廊上了。"
+    $ renpy.music.play(music.peng_awkward_talk, channel="music", loop=True, fadein=0.5)
     show xiangimg fist o at char_right with dissolve
     xiang_speaking "干啥呢？给她呀。"
     show pengimg shirt eye_care at char_left with dissolve
@@ -21,15 +22,18 @@ label chap4_3:
     show pengimg shirt at char_left
     peng_speaking "……\n那，谢谢了。真的。"
     mei "看着彭江丽沉默一阵后的回应，我在心底松了口气。{p}马上就可以出去了，不管怎么样，她们两个只要别再起冲突就好。"
+    stop music fadeout 0.5
 
     scene bg_emptyroom with pixellate
     mei "信号的回归似乎是一个好的预兆，当天上午，持续的暴雨终于迎来了终止。"
     mei "到了下午，轻柔的阳光从云后冒出了头。{p}雨停后，积水很快褪去，屋内和屋外都只剩浅至鞋跟的水层。"
 
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True, fadein=0.5)
     scene bg_meicorridor with pixellate
     xiang_speaking "噢哟，放晴了。"
     show xiangimg o at char_right with moveinright
     mei "刷的一声，半遮挡的窗帘被向夏彻底拉开，明亮的光线穿过玻璃照进房间。"
+    $ renpy.sound.play(sound.bird_chirping_2, loop=False)
     show meiimg shirt at char_left with moveinleft
     mei_speaking "嗯……"
     hide meiimg
@@ -70,6 +74,9 @@ label chap4_3:
     scene bg_meihome with pixellate
     mei "其实我不喜欢凑热闹，但正大光明坐着休息总觉得还是有些不合时宜。"
     mei "不过，即使下楼，能做的事也并不多。{p}在向夏的大呼小叫下，我大概只是是见缝插针地帮忙递水、开门——只是让我自己心里有些慰藉而已。"
+    stop music fadeout 0.5
+    stop sound
+    
     unknown_speaking "小姑娘？"
     mei "那，我还有什么能做的吗……"
     unknown_speaking "小姑娘？"
@@ -92,6 +99,7 @@ label chap4_3:
     mei "我看着她们走远，不知道该不该跟上去。{p}正在纠结，向夏回过头，朝我摆了摆手，我于是有些磨蹭地跟在后面，保持一段距离。"
     
     scene bg_vil2 with pixellate
+    $ renpy.music.play(music.peng_xiang_work_together, channel="music", loop=False, fadein=0.5)
     mei "我的猜测倒是没错，冰箱着实巨大，适合平时在家囤货的人。{p}在我凑近的时候，彭江丽和向夏已经在冰箱两侧站好，跃跃欲试。"
     show xiangimg fist o at char_right with dissolve
     xiang_speaking "哇……好重！"
@@ -110,6 +118,7 @@ label chap4_3:
     mei "她们放下冰箱，顺着刚才的动作击掌。彭江丽瞬间放下手臂、面无表情地撇过头，却也没说别的抱怨的话。"
     hide q0 with dissolve
     mei "而我只是站在旁边，不知道为什么移开了视线。"
+    stop sound fadeout 0.5
 
     scene bg_vil2 with pixellate
     show pengimg shirt o at char_left with dissolve
@@ -129,6 +138,7 @@ label chap4_3:
 
     scene bg_meikitc with fade
     show pengimg shirt o at char_right with moveinright
+    $ renpy.sound.play(sound.running_tap_water, channel="sound", loop=True, relative_volume=0.7)
     peng_speaking "对了，梅雨。{p}就是……能帮我叫向夏过来一下吗？"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "诶？"
@@ -136,13 +146,17 @@ label chap4_3:
     hide meiimg
     show meiimg shirt at char_left
     mei "彭江丽突然出声让我有些惊讶，但她的表情似乎没有要跟我解释的意思，我也不好多问。"
+    stop sound fadeout 0.5
+
     show xiangimg o at char_mid with moveinleft
     xiang_speaking "咋了？我做了饭还要洗碗吗？"
     mei_speaking "应该，不是……"
     mei "为什么这会是第一想法……不过，我也不知道彭江丽要说什么。{p}甚至，我应该在这吗……但是，现在出去似乎也太刻意了。"
+    $ renpy.sound.play(sound.running_tap_water, channel="sound", relative_volume=0.3)
     mei "所以，我只好小心地拧着水龙头，让流出的水柱控制到最小的尺寸，几乎没有声音，尽量把自己的存在感降低。{p}对……我只是需要在这里洗碗而已。"
     hide pengimg
-    show pengimg shirt at char_right 
+    show pengimg shirt at char_right
+    $ renpy.music.play(music.peng_xiang_talk, channel="music", loop=True, fadein=0.5)
     peng_speaking "哦，是我有事找你。{p}就是……"
     hide pengimg
     show pengimg shirt o at char_right 
@@ -187,10 +201,13 @@ label chap4_3:
 
     scene bg_meikitc with dissolve:
         blur 20
+    $ renpy.sound.set_volume(0.8, 0, channel="sound")
     mei "我重新开始手上的动作，却突然有些不得要领，时不时就握不住海绵，让它滑落到水槽里。"
     mei "不对，我只是在走神而已……"
     mei "因为我似乎后知后觉地摸清楚，令我迷茫而产生堵塞感的模糊感情。"
     mei "虽然不合，虽然碰撞，虽然有不理解，但她们都在各自前进。{p}只有我……"
     mei "只有我，一直停留在原地。"
+    stop sound fadeout 1.0
+    stop music fadeout 1.0
 
     return

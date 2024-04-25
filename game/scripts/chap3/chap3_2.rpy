@@ -318,8 +318,8 @@ label chap3_2:
     mei_speaking "很痛，痛得她恢复神志，现在，应该逃跑才对……她猛地睁开眼睛。"
     mei_speaking "——密密麻麻的尖牙占据了她的全部视野。"
     $ renpy.music.play(sound.woman_scream, channel="others", loop=False)
-    mei_speaking "又一声惊叫传来，但这之后，走廊上再也没有任何声响。"
     stop music
+    mei_speaking "又一声惊叫传来，但这之后，走廊上再也没有任何声响。"
 
     scene bg_emptyroom with fade
     show halfdarkblue

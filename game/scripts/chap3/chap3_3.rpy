@@ -60,7 +60,6 @@ label chap3_3:
     scene bg_black with dissolve
     mei "身体越来越重，我的思绪也逐渐变得朦胧。"
     mei "希望，雨快点停吧……"
-    stop music fadeout 0.5
     stop nature
     stop sound
     return
