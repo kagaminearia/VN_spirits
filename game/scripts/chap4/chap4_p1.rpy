@@ -42,10 +42,12 @@ label chap4_p1:
     hide cg_p40
     show cg_p41 at cg_0
     mei_speaking "嗯……"
+    stop music
     mei "彭江丽突兀地止住了话，我也瞬间意识到她原本想说什么。{p}我们从未直接提起过，却从来都避而不谈。"
     show cg_p40 at cg_0 with dissolve:
         linear .5 blur 10
         linear .5 blur 10
+    $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     peng_speaking "没事的……{p}现在这样，我也觉得很好。"
     mei "她轻声说道，而我则沉默许久。{p}现在，只要我稍稍抬起眼，就能够看到近在咫尺的她。"
     mei "灯光照明范围有限，灰沉沉的房间溶解了身影的轮廓，使得她看起来格外柔软。"
@@ -80,3 +82,5 @@ label chap4_p1:
     peng_speaking "你是这么想的吗？{p}那，真是……"
     show cg_p52 at cg_0 with dissolve
     peng_speaking "……太好了。"
+    stop music fadeout 0.5
+    stop sound fadeout 0.5

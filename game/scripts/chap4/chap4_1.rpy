@@ -1,8 +1,11 @@
 label chap4_1:
+    stop music fadeout 0.5
     scene bg_black with fade
     mei "事情并没有朝我期望的方向发展。{p}不过，这也正常，我早就习惯这种感觉了。习惯期望落空的感觉。"
     show movie_side
     show video_6 behind movie_side with dissolve
+    $ renpy.sound.play(sound.thunder, channel="nature", loop=False)
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True)
     mei "我是被突然的响声吵醒的，像震天的爆炸在耳边炸开，惊得我下意识打了个寒颤。{p}睁开眼，才发现是瞬间迸发的闪电。"
     na "轰隆！！"
     mei_speaking "啊……噫！"
@@ -16,6 +19,7 @@ label chap4_1:
     mei_speaking "诶？！"
     hide meiimg
     show meiimg shirt behind halfblack at char_left
+    $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei "我揉揉眼睛，重新适应黑暗后才发现彭江丽醒着。她已经坐起来，正定定地看着我。{p}而另一边，原本是向夏睡的地方却空了出来。"
     hide meiimg
     show meiimg shirt o behind halfblack at char_left

@@ -3,6 +3,7 @@ label chap4_2:
     "……"
 
     scene bg_emptyroom with fade
+    $ renpy.sound.play(sound.rain_on_window, channel="sound", loop=True, relative_volume=0.5)
     mei_speaking "……"
     mei_speaking "咦……"
     mei "我揉了揉眼睛，一时间有些不适应明亮的房间，大脑还处在宕机阶段。"
@@ -18,7 +19,7 @@ label chap4_2:
     peng_speaking "我去楼下检查一下现在的情况吧。"
     mei "简单吃过午饭——也就是饼干和矿泉水——之后，彭江丽突然开口。"
     hide meiimg
-    show meiimg shirt at char_left with moveinleft
+    # show meiimg shirt at char_left with moveinleft
     mei_speaking "啊？我去吧。"
     hide pengimg
     show pengimg shirt at char_mid 
@@ -54,6 +55,7 @@ label chap4_2:
     mei_speaking "噢，好……谢谢。。"
 
     scene bg_black with dissolve
+    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=0.5)
     mei "我重复好几次扎紧系带的动作，堪堪让裤子固定在腰上。接下来，把之前的衣服放好……{p}我拿起裙子，一瞬间有些莫名的恍惚。"
     show cg_m30 at cg_0 with dissolve
     mei "我的衣柜里大多是这样的裙子，宽松，单色，样式一致。{p}和喜好无关，因为平时总是要接受检查，时不时需要住院，这样的衣服穿脱起来更方便，不知道什么时候就习惯了。"
@@ -62,9 +64,11 @@ label chap4_2:
     mei "看着镜子中不太合身的衣服，我久违地感受到——不，应该说是再次注意到被刻意忽略的——{p}格格不入。"
     mei_speaking "……"
     mei_speaking "算了，别再想了。"
+    stop music fadeout 0.5
 
     scene bg_emptyroom with fade
     show pengimg shirt o at char_left with dissolve
+    $ renpy.sound.play(sound.wind, channel="others", loop=True, relative_volume=0.5)
     peng_speaking "我去检查后院那一片，向夏你去前门，梅雨去厨房和洗手间看一下吧。"
     show xiangimg o at char_right with dissolve
     xiang_speaking "好，不过要检查什么啊？"
@@ -89,6 +93,7 @@ label chap4_2:
     mei "我小心探进厨房，这里没什么家具，检查起来也不算难。不出意料，角落的几个出水口都有些阻塞。{p}我有些费劲地弯腰，用手指清理累积起来的细小杂物。"
     
     hide halfdarkblue with vpunchm
+    $ renpy.sound.play(sound.thunder, channel="nature", loop=False)
     na "轰隆！！"
     mei_speaking "哇……！"
     show halfdarkblue
@@ -113,11 +118,16 @@ label chap4_2:
 
     scene bg_black with dissolve
     mei "这一天晚上没有打雷，雨势似乎也变小了一些，我也逐渐习惯睡在两人中间，在断断续续的风声和雨声下，竟然获得了很安稳的睡眠。"
+    stop music
+    stop sound
+    stop others
+    stop nature
 
     scene bg_emptyroom with dissolve
     show xiangimg laugh at char_right with moveinright
     xiang_speaking "早啊，我跟你说，我的手机有信号了！"
     show meiimg shirt o at char_left with moveinleft
+    $ renpy.sound.play(sound.bird_chirping_1, channel="nature", loop=False)
     mei_speaking "诶？"
     mei "因为太累，我睡得早，也起得早了一些。刚起床，就看到向夏挥着手机，显得比平时还活跃。{p}这也难怪，从开始下雨的时间算，没信号的时间都快持续两天了。"
     hide xiangimg
