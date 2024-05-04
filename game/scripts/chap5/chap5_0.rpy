@@ -39,7 +39,7 @@ label chap5_0:
     mei "……我都说别吵了……！！！"
     
     scene bg_meiroom with Fade(1,1,2,color="#fff")
-    show halfwhite with vpunchms
+    show halfwhite with vpunchm
     na "砰！"
     hide halfwhite with dissolve
     mei_speaking "……"
