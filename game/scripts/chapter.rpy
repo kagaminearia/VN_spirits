@@ -11,12 +11,16 @@ define c_title = [
 define p_title = [
     "“什么都不知道”",
     "“完美的笑容”",
+    "“甜到发腻”",
+    "“沉淀的记忆”",
 ]
 
 define x_title = [
     "“谁特别倔强”",
     "“欠你一个要求”",
-    "“心跳”"
+    "“控制心跳”",
+    "“讨厌你”",
+    "“一点也不温暖”"
 ]
 
 define c0_x1 = 0
@@ -205,6 +209,8 @@ label chapter7p:
 label chapter8:
     if route == "x":
         call chapter8x
+    else:
+        call chapter8p
     return
 
 label chapter8x:
@@ -214,9 +220,36 @@ label chapter8x:
     call chap8_x4
     return
 
+label chapter8p:
+    call chap8_p1
+    call chap8_p2
+    return
+
+label chapter9:
+    if route == "x":
+        call chapter9x
+    else:
+        call chapter9p
+    return
+
 label chapter9x:
     call chap9_x1
     call chap9_x2
+    return
+
+label chapter9p:
+    call chap9_p1
+    menu:
+        mei "不能这样……"
+        "说实话":
+            call chap9_p2
+            menu:
+                "停下来":
+                    jump pBE
+                "追上去":
+                    call chap9_p3
+        "搪塞过去":
+            jump pNE
     return
 
 label chapter10x:
