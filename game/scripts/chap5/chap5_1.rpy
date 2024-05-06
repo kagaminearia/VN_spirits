@@ -1,6 +1,8 @@
 label chap5_1:
     scene bg_meiroom
     show yeimg smile at char_right with moveinright
+    $ renpy.music.play(music.time_alone_2, channel="music", loop=True, fadein=0.5, relative_volume=1.2)
+    $ renpy.sound.play(sound.boiling_water_long, channel="sound", loop=True, relative_volume=0.5)
     ye_speaking "对了，那你现在打算回去吗？我这边没问题，随时都能送你回去。"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "啊，不……"
@@ -23,6 +25,8 @@ label chap5_1:
     mei "叶成华本来已经站起来，就要离开饭桌，听到我的声音之后，又停住了动作。"
     hide meiimg
     show meiimg shirt at char_left
+    stop sound fadeout 0.5
+    $ renpy.sound.set_volume(1.0, 0, channel="sound")
     mei_speaking "我暂时应该，不回去。"
     ye_speaking "……"
     mei "我是不是说错话了……\n正当我思考要不要再说些什么的时候，她好像终于反应过来似的笑了。"
@@ -37,4 +41,5 @@ label chap5_1:
         blur 20
     mei "想做什么就去做吗……\n的确，就算妄想着，就算贪心着，自己不动的话，别人做再多也没用……我当然明白这一点。"
     mei "但是，我还是不知道，自己想做什么，能做什么啊……"
+    stop music fadeout 0.5
     return

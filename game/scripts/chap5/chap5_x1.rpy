@@ -1,5 +1,6 @@
 label chap5_x1:
     scene bg_meiliv with fade
+    $ renpy.sound.play(sound.door_open, channel="sound", loop=False, fadein=0.5)
     na "咔哒。"
     show xiangimg o at char_right with moveinright
     xiang_speaking "原来是你啊，你今天终于出来吃饭了？"
@@ -8,6 +9,7 @@ label chap5_x1:
     mei_speaking "嗯。"
     hide xiangimg
     show xiangimg smile at char_right
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=1.0)
     xiang_speaking "对了，看起来你好像没事，你要跟我一起出去吗？"
     mei_speaking "啊？"
     hide xiangimg
@@ -48,8 +50,11 @@ label chap5_x1:
     xiang_speaking "你想做事还不简单啊，就算没事也能给你找出事情来。\n反正你现在也没别的安排吧，真的不去吗？"
     mei_speaking "……\n好吧。"
     mei "她倒是说对了一点，我的确没事可做。\n确实，无所谓了……我也不知道该做什么……"
+    stop music fadeout 0.5
 
     scene bg_misc1 with pixellate
+    $ renpy.sound.play(sound.bird_chirping_1, channel="nature", loop=False, fadein=0.5)
+    $ renpy.music.play(music.peng_xiang_work_together, channel="music", loop=True, fadein=0.5)
     mei "家具被近日的阳光晒得很干，看起来已经恢复原状，但只要靠近，就能闻到表面散发出的难闻气味。"
     mei "水分和污染物并不会因为日晒通风就被除尽，我拿着抹布，小心地沾上清洁剂，在家具的表面来回擦拭。"
     mei "去除可能残留的细菌和脏污之后，可以把去味剂放在有空间的家具内部，不过，之后向夏会把家具再拿去晾晒，这时候就没必要太过浪费资源。"
@@ -64,13 +69,17 @@ label chap5_x1:
     mei_speaking "哦……"
     mei "她这么说，倒是让我稍微放松一些。"
     mei "我擦洗家具的每个缝隙和死角，清理之后，让向夏把东西搬到后院。{p}之后，再处理之前晒好的一部分，使用防霉剂防止可能的霉菌。"
+    stop sound
+    stop music fadeout 0.5
 
     scene bg_misc1 with pixellate
-    grandma_speaking "行了行了，别再忙了。今天真是多亏你们啊，做得可真干净，真是谢谢了。"
-    grandma_speaking "我这也没什么好东西，你俩一人一个荷包，收着吧。"
+    # replaced grandma_speaking with old_speaking
+    old_speaking "行了行了，别再忙了。今天真是多亏你们啊，做得可真干净，真是谢谢了。"
+    old_speaking "我这也没什么好东西，你俩一人一个荷包，收着吧。"
     show meiimg o at char_left with dissolve
     mei_speaking "啊？不……"
     show xiangimg fist eye_squint laugh at char_right with dissolve
+    $ renpy.music.play(music.xiang_bath, channel="music", loop=True, fadein=0.5)
     xiang_speaking "好哎，那就谢谢您啦，之后需要帮忙再来找我就行。"
     mei "没等我再说话，向夏很快和老人完成了交涉，然后推着我往外走。{p}绣有刺绣的布包鼓鼓囊囊，我打开一看，发现里面竟然塞了几张小额钞票。"
     mei "这差点让我惊得跳起来，我原本以为她说的报酬只是邻里间互送的小玩意，没想到是货真价实的报酬。"
@@ -80,7 +89,7 @@ label chap5_x1:
     mei_speaking "哈？你连人家这——"
     xiang_speaking "等等等等，都说了你别急啊。这边的广场那里有个公告栏，日常会发些超市打折啊送东西啊还有找人帮忙的告示，这个都是人家说好的，我就是赚一点点小外快。"
     mei_speaking "……这样啊。"
-    hide cg_x51
+    # hide cg_x51
     show cg_x52 at cg_0 with dissolve
     xiang_speaking "嘿嘿，我是不是比你更像这里的人？"
     mei_speaking "……哦。"
@@ -109,9 +118,11 @@ label chap5_x1:
     hide meiimg with dissolve
     hide xiangimg with dissolve
     mei "我默默收回手，说不清现在是什么心情。{p}但，回去的路上，脚步似乎变得轻快起来。"
+    stop music fadeout 0.5
 
     scene bg_meikitc
     mei "几天没进厨房，本来也不熟练的事情更加生疏了。{p}前几天我都把自己关在房间里，现在决定出门后自然也要恢复做饭。"
+    $ renpy.sound.play(sound.running_tap_water, channel="sound", loop=True, fadein=0.5)
     show xiangimg fist o at char_right with moveinright
     xiang_speaking "哦，不错啊，我还以为在我走之前都是我做饭了呢。"
     show meiimg shirt o at char_left with moveinleft
@@ -125,8 +136,10 @@ label chap5_x1:
     mei_speaking "……"
     na "哗啦。"
     mei "洗到一半的菜离开我的手，一下子全部散开，落到盆里，溅出不少水花。"
+    stop sound
     hide meiimg
     show meiimg shirt eye_still at char_left
+    $ renpy.music.play(music.peng_angry, channel="music", loop=True)
     mei_speaking "为什么要这么说？"
     hide xiangimg
     show xiangimg fist at char_right
@@ -196,6 +209,7 @@ label chap5_x1:
     xiang_speaking "……\n啊，可能吧。"
     hide xiangimg
     show xiangimg fist eye_still at char_right
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True, fadein=0.5)
     mei "你以为房租才多少钱？还要冒着把陌生人带回家里的风险，还不是因为叶成华觉得你看起来很需要帮助……你以为我们做的能比得上镇上的专业公司吗，只不过是这里的人习惯了互相帮忙……"
     mei "当然，我知道这些都是一厢情愿，也不觉得只要付出过，就非要期盼别人有相同的回应。{p}但是，但是……"
     mei "做饭，吃饭，看夕阳，聊传说，暴风雨，讲故事，一起去帮忙，在你看来都是交易吗？"
@@ -213,6 +227,8 @@ label chap5_x1:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "……\n我以为，我们是朋友。"
+    stop music
+    stop sound
     mei "犹豫片刻，我还是说了这句话。尽管我说完就有些后悔。"
     mei "向夏的表情变得为难，真诚，真诚的为难。"
     xiang_speaking "……"
@@ -251,6 +267,7 @@ label chap5_x1:
     mei "我这次没有再回头，几乎用上跑步的速度，飞快地穿过楼梯，走到二楼，再也不要看到那个房间的身影。"
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.stressed, channel="others", loop=True, fadein=0.5)
     mei "……"
     mei "气死我了，气死我了……"
     mei "我以为你是不同的，结果，还是一样……{p}还是，会用特殊的眼光打量我……"
@@ -258,3 +275,4 @@ label chap5_x1:
     mei "亏我还天真地以为，你是因为我们变熟悉了才说出那些话……"
     mei "我才是愚蠢的人，你只不过是个……自大无比，令人讨厌的家伙罢了。"
     mei "可恶……"
+    # Don't stop the sound here

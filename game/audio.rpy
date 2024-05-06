@@ -1,3 +1,20 @@
+define sound.ocean_wave = 'sfx/sound/ocean_wave.mp3'
+define sound.birthday = 'sfx/sound/birthday.mp3'
+define sound.boom = 'sfx/sound/boom.mp3'
+define sound.door_open = 'sfx/sound/door_open.mp3'
+define music.time_alone_3 = 'sfx/music/time_alone_3.mp3'
+define sound.boiling_water_long = 'sfx/sound/boiling_water_long.mp3'
+define sound.pencil_final = 'sfx/sound/pencil_final.mp3'
+define sound.pencil_3 = 'sfx/sound/pencil_3.mp3'
+define sound.dice = 'sfx/sound/dice.mp3'
+define sound.table_smash = 'sfx/sound/table_smash.mp3'
+define music.time_alone_2 = 'sfx/music/time_alone_2.mp3'
+define sound.pencil_writing = 'sfx/sound/pencil_writing.mp3'
+define sound.pencil_2 = 'sfx/sound/pencil_2.mp3'
+define sound.pencil_breaking = 'sfx/sound/pencil_breaking.mp3'
+define sound.stressed = 'sfx/sound/stressed.mp3'
+define sound.pencil_1 = 'sfx/sound/pencil_1.mp3'
+define sound.low_frequency = 'sfx/sound/low_frequency.mp3'
 define music.peng_xiang_work_together = 'sfx/music/peng_xiang_work_together.mp3'
 define music.xiang_crush_talk = 'sfx/music/xiang_crush_talk.mp3'
 define music.xiang_rainy_talk = 'sfx/music/xiang_rainy_talk.mp3'
@@ -65,3 +82,6 @@ define sound.buzz = 'sfx/sound/buzz.mp3'
 init -1 python:
     renpy.music.register_channel("nature", "sfx", True)
     renpy.music.register_channel("others", "sfx", True)
+    renpy.music.register_channel("extra_1", "sfx", True)
+    renpy.music.register_channel("extra_2", "sfx", True)
+

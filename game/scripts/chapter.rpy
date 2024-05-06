@@ -151,6 +151,26 @@ label chapter5:
         call chap5_p1
     call chap5_2
     return
+
+# Test sub chapters inside chapter 5
+label chapter5_x:
+    call chap5_0
+    call chap5_1
+    call chap5_x1
+    call chap5_2
+    return
+
+label chapter5_p:
+    call chap5_0
+    call chap5_1
+    call chap5_p1
+    call chap5_2
+    return
+
+label chapter5_ne:
+    call chap5_0
+    jump NE
+    return
     
 label chapter6:
     call chap6_1
