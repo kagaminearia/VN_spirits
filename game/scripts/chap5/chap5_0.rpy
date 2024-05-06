@@ -1,6 +1,8 @@
 label chap5_0:
-    scene bg_meiroom with fade 
+    scene bg_meiroom with fade
+    $ renpy.sound.play(sound.dice, channel="sound", loop=False)
     na "啪嗒。"
+    $ renpy.music.play(sound.stressed, channel="others", loop=True)
     mei "我面无表情地看着铅笔从我的手指间掉下来，然后轱辘轱辘地滚到地上。"
     mei "即使这样，我也没有动，只是保持着僵硬的姿势。"
     mei_speaking "不行……"
@@ -18,24 +20,36 @@ label chap5_0:
     mei "难闻的药味涌起，令人想吐，空空如也的胃部继续蠕动，呕出不明成分的粘稠液体，恶心无比。"
     mei "不知何时，四周也传来嘈杂的声音，逐渐靠近，叽叽喳喳。"
     show bg_line1 at cg_1, shaking
+    $ renpy.sound.play(sound.pencil_1, channel="sound", loop=True, fadein=0.5)
     na "“怪吓人的，万一出事赖上我怎么办。”"
     na "“我都这么让着了，还对她不够好吗！”"
+    $ renpy.sound.play(sound.pencil_2, channel="music", loop=True)
     show bg_line2 at cg_1, shaking
     na "“做不了就不要装啊。”"
     na "“别给我们添麻烦。”"
+    $ renpy.sound.play(sound.pencil_writing, channel="nature", loop=True)
     show bg_line3 at cg_1, shaking
     na "“走啦，别管了。”"
     na "“知道知道，哪敢惹她呀。”"
     na "声音越来越多，越来越多，越来越吵，分不清谁是谁，只是无尽的烦躁。"
     mei "别吵了，别吵了……"
+    $ renpy.sound.play(sound.pencil_3, channel="extra_1", loop=True)
     show bg_line4 at cg_1, shaking
     na "“她明明什么都做不了。”"
+    $ renpy.sound.play(sound.pencil_final, channel="extra_2", loop=True)
     show bg_line5 at cg_1, shaking
     na "“为什么就她特殊，好不公平。”"
     show bg_line6 at cg_1, shaking
     na "“病没治好来干什么啊。”"
     na "……"
     show bg_black with vpunchm
+    stop sound
+    stop nature
+    stop music
+    stop others
+    stop extra_1
+    stop extra_2
+    $ renpy.sound.play(sound.pencil_breaking, channel="sound", loop=False)
     mei "……我都说别吵了……！！！"
     
     scene bg_meiroom with Fade(1,1,2,color="#fff")
@@ -44,6 +58,7 @@ label chap5_0:
     hide halfwhite with dissolve
     mei_speaking "……"
     mei "剧烈的声响让我回神，我盯着放在桌上的泛红手腕，慢慢把脊背放松下来。"
+    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=0.5, relative_volume=1.2)
     mei_speaking "烦死了……"
     mei "尽是些让人不愉快的东西……要是，有什么开心的……"
     show halfdarkblue with dissolve
@@ -78,5 +93,6 @@ label chap5_0:
     mei "我大概只是……自己对自己失望吧。"
     mei "因为，我还是那个我……不管在哪里，都一样。{p}我逃不开那些记忆，它们已经深深扎根在身体的最底层，留下无法消除的刻痕。"
     mei_speaking "……{p}好烦……"
+    stop music fadeout 0.5
 
     return

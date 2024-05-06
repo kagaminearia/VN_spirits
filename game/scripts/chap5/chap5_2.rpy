@@ -1,4 +1,5 @@
 label chap5_2:
+    $ renpy.music.play(music.prologue_ending, channel="music", loop=True, fadein=0.5)
     scene bg_meiroom with fade
     show halfblack
 
@@ -8,9 +9,13 @@ label chap5_2:
     mei "好想逃走。什么都不想管了。好想离开这里……"
     mei "但是，但是……我已经自己过表明态度了，是我自己想要留在这里的。\n现在，我不能再反悔……"
     mei "再待一段时间吧，反正我也无处可去……"
+    stop music fadeout 0.5
+    stop others fadeout 0.5
 
     scene bg_meiroom with pixellate
     show yeimg at char_right with moveinright
+    $ renpy.music.play(music.time_alone_2, channel="music", loop=True, fadein=0.5, relative_volume=1.2)
+    $ renpy.sound.play(sound.bird_chirping_1, channel="nature", loop=False)
     ye_speaking "几天没见，你最近有没有好一点啊？看起来还可以？"
     show meiimg shirt at char_left with moveinleft
     mei_speaking "有吗。"
@@ -34,6 +39,8 @@ label chap5_2:
     mei_speaking "你只是这么说而已……因为你也觉得我是——"
     ye_speaking "你现在都愿意说这么多话了。"
     hide meiimg
+    stop music fadeout 0.5
+    $ renpy.sound.play(sound.wave, channel="sound", loop=False)
     show meiimg shirt at char_left
     mei_speaking "……啊？"
     mei "我将要说出口的话堪堪止住，变成一个有些滑稽的声音。"
@@ -49,6 +56,8 @@ label chap5_2:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "嗯……"
+    stop sound fadeout 0.5
+    stop nature
 
     scene bg_meiroom with vpunchs
     mei "在我纠结的时候，房门再度发出声响，顿时，我的手臂和肩膀全部紧缩了起来。"
@@ -57,6 +66,7 @@ label chap5_2:
     show meiimg shirt at char_left with dissolve
     mei_speaking "……"
     show luimg at char_right with moveinright
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True, fadein=0.5)
     unknown_speaking "哈喽哈喽。\n你好啊~我是路花。"
     mei "诶，是她？我不免有些惊讶地看过去。{p}虽然没见过，但由于某个人的炫耀行为，实际上，我还算了解，甚至熟悉这个名字……"
     mei "路花，叶成华的女朋友，之前出了车祸，最近正在做康复训练，现在已经可以下地走路了……"
@@ -85,13 +95,16 @@ label chap5_2:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "嗯。"
+    stop music fadeout 0.5
 
     scene bg_meicorridor with pixellate
     mei "走出卧室，穿过走廊，下楼梯，转过转角。"
     scene bg_meiliv with vpunchs
+    $ renpy.sound.play(sound.boom, channel="sound", loop=False)
     na "砰！"
     mei "……嗯？"
     mei "不大不小的爆炸声在头顶响起，随后，五彩斑斓的飘带和亮晶晶的闪片在屋子里炸开，四处飞扬。"
+    $ renpy.sound.play(sound.birthday, channel="sound", loop=True, fadein=0.5, relative_volume=0.6)
     show q_people at cg_s with dissolve
     "{size=50}生日快乐！！{/size}"
     mei_speaking "……啊……"
@@ -102,4 +115,5 @@ label chap5_2:
         blur 25
     mei "我卡壳的大脑努力思考，好一会才意识到这罕见的场景所代表的意义。"
     mei "今天是……{p}我的十八岁。"
+    # Don't stop music here
     return

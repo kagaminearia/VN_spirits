@@ -14,6 +14,8 @@ label chap5_p1:
     mei "这话其实正中我的下怀。虽然同样会紧张，但隔着电话线说话总有一种缥缈到抓不到实处的感觉。{p}至少，见面的话，也许更能够感受到对方的心情吧……"
     
     scene bg_sea1 with pixellate
+    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=0.5)
+    $ renpy.sound.play(sound.ocean_wave, channel="nature", loop=True)
     mei "清凉的风从远处传来，带着微微的咸味潮气。{p}脚下的水流向着出口缓慢流淌，融入更大的波浪。"
     mei "远处，海面与天空完美相接，隐约可见些许船只，在通透的水蓝之间格外显眼。"
     mei "如此，广阔……{p}一时间，我站在岸边，只是怔愣地看着前方，只能想到这个干瘪的词语。"
@@ -178,3 +180,5 @@ label chap5_p1:
     mei_speaking "……"
     mei "我当时没有接话，她也很快轻松带过。但……{p}我们之间似乎还是隔着一道看不见的墙。"
     mei "今天本来应该很开心的，为什么，总是会变成这样。"
+    stop music fadeout 0.5
+    stop nature fadeout 0.5

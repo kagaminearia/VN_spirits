@@ -55,7 +55,7 @@ label chap4_2:
     mei_speaking "噢，好……谢谢。。"
 
     scene bg_black with dissolve
-    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=0.5, relative_volume=1.2)
     mei "我重复好几次扎紧系带的动作，堪堪让裤子固定在腰上。接下来，把之前的衣服放好……{p}我拿起裙子，一瞬间有些莫名的恍惚。"
     show cg_m30 at cg_0 with dissolve
     mei "我的衣柜里大多是这样的裙子，宽松，单色，样式一致。{p}和喜好无关，因为平时总是要接受检查，时不时需要住院，这样的衣服穿脱起来更方便，不知道什么时候就习惯了。"
