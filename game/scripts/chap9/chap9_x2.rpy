@@ -19,7 +19,7 @@ label chap9_x2:
     mei_speaking "这……算是一个好消息吧。"
 
     mei_speaking "之前放哪了来着……好乱……"
-    xiang_speaking "在干嘛呢？"
+    xiang_speaking "你这是在干啥？"
     mei_speaking "咦？啊，我，我在找东西……"
     mei "我在客厅翻箱倒柜的时候，向夏忽然从旁边冒出来，吓得我手一抖，差点把纸洒了一地。"
     mei_speaking "之前暴风雨的时候，家里不是清过一遍吗，我有几本笔记本不知道后来扔哪了。"
