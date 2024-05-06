@@ -273,6 +273,13 @@ label chapter9p:
             jump pNE
     return
 
+label chapter10:
+    if route == "x":
+        call chapter10x
+    else:
+        call chapter10p
+    return
+
 label chapter10x:
     call chap10_x
     menu:
@@ -281,4 +288,9 @@ label chapter10x:
             jump xHE
         "拒绝":
             jump xBE
+    return
+
+label chapter10p:
+    call chap10_p1
+    jump pHE
     return
