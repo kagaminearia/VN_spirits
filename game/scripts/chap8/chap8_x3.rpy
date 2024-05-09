@@ -29,28 +29,55 @@ label chap8_x3:
     xiang_speaking "……"
     mei_speaking "……"
     mei "我们打住了这毫无营养的对话，只是沉默地站在原地。\n我在心里叹了口气，把视线从向夏身上重新转回墙面。"
-    mei "那张照片……我和她的照片，在众多亲密的照片里似是毫无违和感。但我们即使凝视许久，也没有人说要把照片带走。"
+    mei "那张照片……我和她的照片，在众多亲密的照片里似是毫无违和感。但我们即使凝视许久，也没有人说要把其中一张照片带走。"
     mei "仿佛那不是照片，而是某种神秘的封印，只要揭下，就再也掩饰不住隐匿的秘密。"
     mei "没关系……我在内心说服自己。"
     mei "留不下也没关系，我和她，本来就应该是这样。"
 
+    scene bg_station2 with fade
+    show xiangimg o at char_right with dissolve
     xiang_speaking "车还没来吗？我们不会错过了吧。"
+    show meiimg shirt o at char_left with dissolve
     mei_speaking "不会的，还没到时间。"
+    hide xiangimg
+    show xiangimg eye_squint laugh at char_right 
     xiang_speaking "好吧……今天真是感谢你了，偶尔这样出来玩也不错啊。"
+    hide xiangimg
+    show xiangimg smile at char_right 
     mei "她笑着望向我，一双眼睛显得亮晶晶的。\n我赶紧偏过头，不自然地移开话题。"
+    hide meiimg
+    show meiimg shirt eye_close o at char_left
     mei_speaking "嗯，应该感谢路花……说起来，她说有件事想拜托你。"
+    hide xiangimg
+    show xiangimg o at char_right 
     xiang_speaking "咦？我跟她？我能帮到什么吗？"
+    hide meiimg
+    show meiimg shirt at char_left
     mei_speaking "嗯，是这样……"
+    scene bg_station2 with fade
     mei "我大致复述了一下路花早上的安排。向夏一边听一边点头，最后甚至显得有点兴奋。"
+    show xiangimg fist laugh at char_right with dissolve
     xiang_speaking "哇，所以我也有戏份吗？"
+    show meiimg shirt eye_wacky o at char_left with dissolve
     mei_speaking "……重点是在这里吗？"
+    hide xiangimg
+    show xiangimg fist smile at char_right 
     xiang_speaking "是啊，不是你说你姐姐的女朋友找你帮忙，然后也需要我当个工具人嘛。"
+    hide meiimg
+    show meiimg shirt eye_wacky at char_left
     mei_speaking "所以你也愿意当这个工具人？"
+    hide xiangimg
+    show xiangimg fist eye_squint smile at char_right 
     xiang_speaking "嘿嘿，多有意思啊，凑热闹嘛。"
     mei_speaking "……"
+    hide meiimg
+    show meiimg shirt eye_close o at char_left
     mei_speaking "好吧。\n我们明天先去那边看一下？"
+    hide xiangimg
+    show xiangimg fist eye_squint laugh at char_right 
     xiang_speaking "没问题，提前踩点嘛，我懂我懂。"
-    mei "为什么，被她说得像在做什么不好的事……"
+    mei "为什么被她说得像在做什么不好的事……"
+
 
     mei "立涧村的北部不靠海，而是靠着高耸延绵的群山。山上有很多植物，山脚下也有大片的花草和其他设施。"
     xiang_speaking "这里好漂亮啊……我们要上山吗？"
@@ -65,8 +92,8 @@ label chap8_x3:
     xiang_speaking "别这样说嘛！"
     xiang_speaking "不过，她们看起来感情可真好，前段时间你姐姐不也让我们帮忙吗。"
     mei_speaking "是啊。"
-    xiang_speaking "还真是令人羡慕呢。"
-    mei_speaking "嗯。"
+    xiang_speaking "还真是有点令人羡慕。"
+    mei_speaking "嗯。是啊。"
     return
 
 

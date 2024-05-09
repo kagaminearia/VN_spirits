@@ -1,17 +1,27 @@
 label chap8_x4:
+    scene bg_meiliv with fade
+    show yeimg o at char_right with moveinright
     ye_speaking "什么？你说你联系不上向夏了？"
+    show meiimg shirt eye_close at char_left with dissolve
     mei_speaking "对……她今天早上说想去后山那边，但是中午到现在都没回来。"
     mei "我不擅长说谎，即使演练过，也还是难免有些不自然。好在我说话本身就比较慢，还容易卡壳。"
     mei "希望叶成华别发现吧……"
+    hide meiimg
+    show meiimg shirt o at char_left 
     mei_speaking "所以我想着去找一下，就是，我一个人的话可能不够……"
-    ye_speaking "的确麻烦啊，虽然我觉得她应该不会出什么问题，但这种事就怕有个万一啥的。反正也不远，我跟你一起过去看看吧。"
+    ye_speaking "嗯……的确麻烦啊。虽然我觉得她应该不会出什么问题，但这种事就怕有个万一啥的。"
+    hide yeimg
+    show yeimg smile at char_right 
+    ye_speaking "反正也不远，我跟你一起过去看看吧。"
     mei_speaking "嗯，好。"
 
+    scene bg_meihome with pixellate
     mei_speaking "我去找靠着山脚的那边吧，我小时候去过里面，比较熟悉。"
     ye_speaking "行，有什么事情就给我打电话，别着急。"
     mei "最后一步了……我悄悄地呼出一口气，按捺住自己的脚步，不让它变得过于慌乱。"
     mei "叶成华从花海的左侧往里走，我确认她的视线远离后，往花海的另一边走去。"
 
+    
     mei "走近之后，可以看出花群只是从外面看起来很拥挤，但它其实是分块种植的，不然也没法维护管理了。"
     mei "我站在花茎间留出的小路中，被巨大的花瓣和叶片震惊得说不出话。真正站到面前，我才意识到它貌似比我还高。"
     mei "真是神奇，只是花朵竟然也可以长这么高……嗯？"
