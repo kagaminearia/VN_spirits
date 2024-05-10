@@ -1,21 +1,38 @@
 label chap9_p1:
-    "咯吱咯吱……"
+    scene bg_cinema1 with fade
+    na "咯吱咯吱……"
+    show meiimg o shell at char_left with dissolve
     mei_speaking "……好吃吗？"
+    show pengimg eye_squint laugh at char_right with dissolve
     peng_speaking "嗯！那个人没说错，焦糖味的真的更好吃。"
+    hide meiimg
+    show meiimg smile shell at char_left 
     mei_speaking "那就好。"
-    "咯吱咯吱……"
+    na "咯吱咯吱……"
+    hide pengimg
+    show pengimg smile at char_right
     peng_speaking "你真的不吃吗？"
+    hide meiimg
+    show meiimg o shell at char_left 
     mei_speaking "不用，我感觉太甜了。"
     peng_speaking "那——好吧。"
-    "咯吱咯吱……"
+    na "咯吱咯吱……"
+    hide pengimg
+    show pengimg o at char_right
     peng_speaking "那你要吃点别的吗？饿不饿呀？"
     mei_speaking "真的不用，而且马上就回家了嘛。"
+    hide pengimg
+    show pengimg smile at char_right
     peng_speaking "好吧。"
-    "咯吱咯吱……"
+    scene bg_cinema1 with dissolve
+    na "咯吱咯吱……"
     mei "几个对话十分短暂，转瞬即逝。"
     mei "彭江丽大口大口地吃着爆米花，嚼得十分用力，仿佛这样就可以用声音去除刚才的尴尬气氛。"
     mei "我们没有再说别的事，也没有提及刚才影院里的突兀动作。当时，连我自己也没弄清楚我到底想做什么，只是本能地觉得尴尬，只好恢复坐姿，当作从没发生过。"
 
+    scene bg_black with dissolve
+    show movie_side
+    show video_9 behind movie_side with dissolve
     mei "回程的大巴车到得很及时，来的时候我靠着窗，现在则是彭江丽靠着窗。"
     mei "她没看我，坐下之后就撑着手臂看向窗外，不知道在看些什么。"
     mei "我坐下之后，重重地打了个哈欠，她便转过头，有些紧张地看着我。"
@@ -53,7 +70,11 @@ label chap9_p1:
     mei_speaking "那就好。"
     mei "而后，眼前趋于黑暗，我靠在温暖的肩膀上，睡了过去。"
 
+    scene bg_black with dissolve
     peng_speaking "睡吧……"
+    show movie_side
+    show video_9 behind movie_side:
+        alpha 0.5
     mei "理所当然的，我完全没有睡踏实。汽车摇摇晃晃，伴随着有些失真的噪音，让人觉得十分不安稳，像漂浮在动荡的大海中央。"
     mei "好在，涌动的潮水中，还有一座稳固的小岛，很小，但稳稳支撑着我。"
     peng_speaking "要是……"
@@ -76,17 +97,27 @@ label chap9_p1:
     mei "被发现了？！"
     mei "她忽然犹疑不定地开口，吓得我大气也不敢出。无论如何，现在更不可能承认了……"
     mei "我得尽量装得像一点，不能让气息乱掉，也不能让身体太僵硬……"
+    scene bg_black with dissolve
     peng_speaking "……还在睡吗？……好吧。"
     peng_speaking "那你好好休息，待会到了我会叫你的。"
     mei "呼……我悄悄松了口气。太好了，没被发现……"
     mei "只是……我稍稍抬起一点眼皮，感受到从窗外传来的些微光线，也感受到身旁挡住大部分光线的那片阴影。"
     mei "也许我并不该这么做……但现在也来不及了。"
 
+    scene bg_station1 with dissolve
+    show pengimg eye_care at char_right with dissolve
     peng_speaking "睡醒了吗？"
+    show meiimg eye_still o shell at char_left with dissolved
     mei_speaking "嗯……啊。"
+    hide meiimg
+    show meiimg o shell at char_left 
     mei_speaking "你……肩膀是不是很痛？"
     mei "之前想假装没醒，没想到竟然真的又枕着她睡着了，我有些尴尬地看向彭江丽，但她只是笑着摇摇头。"
+    hide pengimg
+    show pengimg smile at char_right 
     peng_speaking "没事啦，你那么轻，不费什么劲的。"
+    hide meiimg
+    show meiimg eye_close shell at char_left 
     mei_speaking "嗯……"
     mei "我的确是刚睡醒，还有些懵，只是亦步亦趋地跟在彭江丽身后。"
     mei "夕阳的余晖在交替的步伐下留下阴影，也让两个人的影子越拉越长，从很远的距离变成靠在一起。"
@@ -94,21 +125,45 @@ label chap9_p1:
     mei "因为……她？我看着前方的背影，不由得被那抹灵动的发尾魇住心神。"
     mei "她，我……"
 
+    scene bg_vil3 with fade
+    show halfyellow
+    show meiimg o shell behind halfyellow at char_left with dissolve
     mei_speaking "啊。"
+    show pengimg eye_care o behind halfyellow at char_right with dissolve
     peng_speaking "噫？！你你还好吗？对不起都是我突然停下来了……"
+    hide meiimg
+    show meiimg shell behind halfyellow at char_left 
     mei_speaking "啊……"
     peng_speaking "没撞疼吧？！梅雨？"
+    hide meiimg
+    show meiimg eye_shock shell behind halfyellow at char_left 
     mei_speaking "哦，哦！没事……"
+    hide pengimg
+    show pengimg eye_care behind halfyellow at char_right
+    hide meiimg
+    show meiimg shell behind halfyellow at char_left 
     mei "我被撞得愣了愣，因为没睡醒，反应仍然有些迟缓。听到彭江丽越来越担心的声音，我才回过神，对上她的眼睛。"
+    hide meiimg
+    show meiimg o shell behind halfyellow at char_left 
     mei_speaking "你怎么了？突然停下来……"
+    hide pengimg
+    show pengimg eye_care o behind halfyellow at char_right
     peng_speaking "那个，就是，我是有些担心。"
     mei_speaking "呃……担心什么？"
+    hide pengimg
+    show pengimg eye_care behind halfyellow at char_right
     peng_speaking "嗯，就是，感觉你最近状态都不是很好，好像没什么……热情。"
+    hide pengimg
+    show pengimg eye_care o behind halfyellow at char_right
     peng_speaking "我之前，以为是你看题目太累了，但是今天出去玩之后好像也差不多……"
+    hide meiimg
+    show meiimg shell behind halfyellow at char_left 
     mei_speaking "咦……"
     mei "其实，我能有什么事……但，果然，我下意识的退避还是会被察觉。"
     peng_speaking "是不是我太笨了，给我讲题太麻烦了，所以看到我就烦？还是说，我是做了什么……"
     peng_speaking "对不起啊。就是，你要是有任何不喜欢的，都跟我说吧，我不会烦你的。"
+    hide meiimg
+    show meiimg eye_still shell behind halfyellow at char_left 
     mei "等等，这样不行，她又开始自责了……"
     mei "不能这样……"
 

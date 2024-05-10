@@ -3,7 +3,7 @@ label chap8_x2:
     mei_speaking "……"
     mei "怎么是个人的力气就比我大……\n我有些无奈地看着手里被强塞的东西，除了向夏的证件，还有几张最大面额的纸币。"
     mei "之后跟叶成华说一下好了……不对，叶成华肯定是站在路花那头的。"
-    show meiimg shirt eye_clsoe o at char_left with dissolve
+    show meiimg shirt eye_close o at char_left with dissolve
     mei_speaking "算了……"
     show xiangimg fist o at char_right with moveinright
     xiang_speaking "怎么了？"
