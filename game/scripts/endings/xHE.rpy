@@ -1,6 +1,11 @@
 label xHE:
+    scene bg_black with dissolve
+    show movie_side
+    show bg_sunse1 behind movie_side with dissolve
     mei_speaking "……嗯？好。"
-    mei "虽然没想到她开口是说这个，但我毫不客气地点头，接过她递来的外套披在身上。厚重的布料还带着余温，压住我的肩膀，隔绝了转凉的空气。"
+    mei "虽然没想到她开口是说这个，但我毫不客气地点头，接过她递来的外套披在身上。"
+    mei "厚重的布料还带着余温，压住我的肩膀，隔绝了转凉的空气。"
+    hide movie_side with dissolve
     mei_speaking "你不是讨厌我吗，怎么还拿衣服过来。"
     xiang_speaking "这个嘛……要是，你生病了，多不好啊。"
     mei_speaking "那也是我的事情吧，我——"

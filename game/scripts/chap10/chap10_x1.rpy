@@ -1,19 +1,37 @@
 label chap10_x1:
+    scene bg_store2 with fade
+    show meiimg o flower at char_left with dissolve
     mei_speaking "好多人……"
     mei "我提着购物袋，只觉得今天排队的人比以往多了很多——连叶成华都经常往村里跑了。"
+    show yeimg smile at char_right with moveinright
     ye_speaking "当然，下周就是祝灵节了，基本上还有联系的人都会回来看看的，毕竟这是村里最重要的节日。夸张点的话，就跟过年差不多啊。"
+    hide meiimg
+    show meiimg flower at char_left
     mei_speaking "这样啊。"
+    hide yeimg
+    show yeimg o at char_right
     ye_speaking "不习惯吗？"
+    hide meiimg
+    show meiimg o flower at char_left
     mei_speaking "还好……只是很久没去过这么多人的地方。"
+    hide yeimg
+    show yeimg smile at char_right
     ye_speaking "我还以为你会很排斥，没想到还可以嘛。"
     mei_speaking "嗯，不会啊，之前是……没什么机会。"
+    hide yeimg
+    show yeimg laugh at char_right
     ye_speaking "挺好，真挺好的。不管怎么说，看到你这样，我也就不用时不时问你一下，你也不用嫌我烦了。"
+    hide meiimg
+    show meiimg smile flower at char_left
     mei_speaking "……是啊。"
-    mei "好像，还真的比以前好多了……某种程度上，还真是多亏了她……还有……她。"
+    mei "好像，还真的比以前好多了……某种程度上，还真是多亏了叶成华……还有……她。"
 
-    mei "时间很快，在意识到的时候尤其如此。现在，我穿着外套，已经隐隐觉得有些热。\n有些喧闹的声音从窗外传来，我偏过头，看到有几个小孩打闹着跑过楼底下，伴随着越来越明显的音乐声。"
+    scene bg_meiroom with fade
+    mei "时间很快，在意识到的时候尤其如此。现在，我穿着外套，已经隐隐觉得有些热。"
+    mei "有些喧闹的声音从窗外传来，我偏过头，看到有几个小孩打闹着跑过楼底下，伴随着越来越明显的音乐声。"
     mei "这样可没办法专心啊……干脆，也去看看好了，毕竟是一年一度的节日。"
-    mei "祝灵节……在这一天，空闲的人们集合起来，放上传统音乐，点上特制的香薰，围在广场上唱歌跳舞。\n在日落的瞬间，所有人会点亮火灯，念唱祝歌，祝愿所有的生灵平安幸福。"
+    mei "祝灵节……在这一天，空闲的人们集合起来，放上传统音乐，点上特制的香薰，围在广场上唱歌跳舞。"
+    mei "在日落的瞬间，所有人会点亮火灯，念唱祝歌，祝愿所有的生灵平安幸福。"
     mei "在那之后，如果对着天空许愿，据说……就能短暂地见到最想见的人。"
     mei "说起来好像，她当时，似乎就是为了这个节日来的。"
     mei_speaking "……"
@@ -37,15 +55,24 @@ label chap10_x1:
     mei "不知道是不是我的错觉，原本在我的位置应该已经看不见的，远处的火堆突然爆发出巨大的光芒。"
     mei "星星点点的微小光晕漂浮在空中，火光摇曳，撼动我的心神。"
     mei "奇迹……吗。我的脑海中不自觉浮现出许多记忆，在这里生活的日子，那些事情……"
-    mei "……无论，这是不是真实的，此时此刻，我想要相信，个人的意志能够带来奇迹。"
+    mei "……无论，这是不是真实的，此时此刻，我真心地想要相信……个人的意志能够带来奇迹。"
 
+    scene bg_black with dissolve
+    show movie_side
+    show bg_sunse1 behind movie_side with dissolve
     mei "天色渐晚，人群逐渐散开，周围的环境由篝火变为由夕阳染成的淡淡橙红。"
     mei_speaking "……阿嚏！"
     mei "冷风吹过，我终于回过神。因为篝火已经基本散去，我成功被冷得直打哆嗦。"
     mei_speaking "阿嚏！\n呃啊……嗯？"
+    show xiangimg eye_still o at char_right with dissolve
     xiang_speaking "要衣服吗？"
+    show meiimg shirt at char_left with dissolve
+    mei_speaking "……"
+    show halfblack with dissolve
     mei "我没想过转身会看到她。"
-    mei "事实上，在那天之后，我没有再见过向夏。我甚至以为她已经离开这里了，但是没有，她还是像之前所说的那样……也许，刚刚正与我见证了同一个时刻。"
+    mei "事实上，在那天之后，我没有再见过向夏，我甚至以为她已经离开这里了。"
+    mei "但是没有，她还是像之前所说的那样……也许，刚刚正与我见证了同一个时刻。"
     mei "她出现在这里，还主动找上了我。"
-    xiang_speaking "要衣服吗？"
+    hide halfblack with dissolve
+    xiang_speaking "……要衣服吗？"
     return
