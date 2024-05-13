@@ -1,12 +1,14 @@
 label pHE:
+    scene bg_meiroom with Fade(color="#fff")
     mei_speaking "几点了……呃嗯。"
     mei "看清时钟上的指针，我僵在原地，一时间竟然有些怀疑自己的眼睛。"
     mei "下午两点……这么晚了。大概是昨天晚上闹得太过……想起昨晚一团混乱的对话，我不免有些脸热，不禁拉起被子，又躺回床上。"
     mei "好一会，我才爬起来，简单地弄了点吃的，又回到书桌前。"
-    mei "之前答应过彭江丽，况且我也还是想做些什么……我打开笔记本，定定地看着那些黑色方块字，直到它们不再扭曲。"
+    mei "之前答应过彭江丽，况且我自己也还是想做些什么……我打开笔记本，定定地看着那些黑色方块字，直到它们不再扭曲。"
     mei "这是在考试失败之后，我首次自己主动翻开这本笔记，上面的题目是第一科的内容，我进到考场就晕倒的第一科。"
     mei "是第一科，也是一切的开始……"
 
+    scene bg_meiroom with fade
     mei_speaking "……嗯？"
     mei "有什么动静吸引了我，让我放下了笔，看向窗外。"
     mei "有些泛橙的天色下，隐约的人声和音乐声从远处传来，显得十分热闹。这是……？"
@@ -16,28 +18,63 @@ label pHE:
     mei "我坐在桌子前纠结了很久，最终还是套上外套出了门。"
     mei "昨天闹那么晚，今天说不定也耽误彭江丽的事情了，要不还是去看看吧……"
 
+    scene bg_vil3 with fade
+    show halfyellow with dissolve
     mei "空气中弥漫着悠扬的音乐声和淡淡的清香，和橘粉色的余晖一起落在房屋和道路的每个角落。"
     mei "转过第一个弯，我停下了脚步。"
+    show pengimg laugh behind halfyellow at char_right with moveinright
     peng_speaking "阿雨！好巧啊，我还想着去找你来着。"
+    show meiimg o shell behind halfyellow at char_left with moveinleft
     mei_speaking "啊，嗯……我也是……"
     mei "没想到这么快就遇到她，我甚至还没想好要说什么，大脑一片空白。"
+    hide meiimg
+    show meiimg shell behind halfyellow at char_left
     mei_speaking "呃，嗯，你没去参加活动吗？我以为你会去广场。"
-    peng_speaking "现在应该也快结束了吧，我刚起床没多久……"
+    hide pengimg
+    show pengimg o behind halfyellow at char_right
+    peng_speaking "你说活动？现在应该也快结束了吧，我刚起床没多久……"
+    hide meiimg
+    show meiimg o shell behind halfyellow at char_left
     mei_speaking "啊？"
+    hide pengimg
+    show pengimg eye_care smile behind halfyellow at char_right
     peng_speaking "昨晚，呃，就是……昨晚一直睡不着。想着今天过节，不用上学，就干脆没睡了……然后今天白天补的觉。"
+    hide meiimg
+    show meiimg eye_close o shell behind halfyellow at char_left
     mei_speaking "……原来，是这样。"
-    mei "总觉得突然有种莫名的愧疚感……我尴尬地笑了两声，试图让自己不要露出太奇怪的表情。"
+    hide meiimg
+    show meiimg eye_still smile shell behind halfyellow at char_left
+    mei "总觉得有种莫名的害羞和愧疚……我尴尬地笑了两声，试图让自己不要露出太奇怪的表情。"
+    hide meiimg
+    show meiimg eye_still o shell behind halfyellow at char_left
     mei_speaking "抱歉啊，我……我让你没赶上祝灵节。"
+    hide pengimg
+    show pengimg o behind halfyellow at char_right
     peng_speaking "不，没事的，我也……没那么在意这个。\n……是不是挺过分的？"
+    hide meiimg
+    show meiimg o shell behind halfyellow at char_left
     mei_speaking "为什么？\n……因为信仰吗？"
+    hide pengimg
+    show pengimg eye_still smile behind halfyellow at char_right
     peng_speaking "是啊。我是在这里长大的，但是……感情和信仰是有啦，但也没有很多，还总是想着离开这里。"
+    hide meiimg
+    show meiimg shell behind halfyellow at char_left
     mei_speaking "这应该不能强求吧，也没有什么规定……"
     mei "我对此也并不了解，因此说话的时候有些没底气。"
+    hide pengimg
+    show pengimg eye_still laugh behind halfyellow at char_right
     peng_speaking "嗯，是啊……我，昨天在后山找到你的时候，真的觉得……那就是奇迹。"
+    hide meiimg
+    show meiimg eye_close shell behind halfyellow at char_left
     mei_speaking "……是的。"
+    hide pengimg
+    show pengimg eye_squint smile laugh behind halfyellow at char_right
     peng_speaking "要不，还是去广场看看吧？要感谢它们呀，感谢它们让我再次找到了你。"
+    hide meiimg
+    show meiimg smile shell behind halfyellow at char_left
     mei_speaking "好。"
 
+    
     mei "远处的日光只剩下余晖，广场上也只剩稀稀落落的人流，能够轻松看到中央的篝火与天空有着相似的颜色。"
     mei_speaking "还是没赶上？是吗……抱歉。"
     peng_speaking "我没关系……不过毕竟是重要的节日，只是想让你看看。"
