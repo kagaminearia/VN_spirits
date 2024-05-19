@@ -49,13 +49,16 @@ label chap9_p1:
     mei_speaking "我我可以的。"
     peng_speaking "回去要好久的，这样干坐着很累的，真的睡不好。"
     mei_speaking "这样，我这样吧。"
+    scene bg_black with dissolve
     mei "防止她继续说服我，我赶紧把头靠在她的肩膀上。"
+    show cg_p121 at cg_0 with dissolve
     mei_speaking "这样也也可以吧？都有个支撑啦。"
     peng_speaking "嗯，嗯……你没觉得不舒服就行。"
     mei_speaking "嗯……好。"
     mei "躺下的时候一鼓作气，我现在才反应过来。这个姿势实在是太近了……即使我和她在同一张床上睡过觉，也没有靠得这么近过。身体的一部分完全靠在一起，以至于她说话时都会带着我的胸口一起微微震颤。"
     mei "一时间，我们都没再说话，只有逐渐一致的呼吸声音。"
-
+    show cg_p122 at cg_0 with dissolve
+    hide cg_p121
     peng_speaking "感觉好像在做梦啊。"
     mei_speaking "……什么？"
     mei "她的声音很轻，某种程度上，倒真的如同梦呓一般。"
@@ -63,11 +66,15 @@ label chap9_p1:
     mei "她笑嘻嘻地把电影票伸到我面前挥了挥，然后把它小心地收起来，放进她的包里。"
     mei_speaking "嗯，好啊……"
     mei "我也跟着她笑了，原本绷紧的肩膀也舒缓不少。"
+    show halfblack with dissolve
     mei "原本只是做个样子，放松之后，困意真的完全涌上来。"
+    show cg_p121 behind halfblack at cg_0 with dissolve:
+        blur 25
     mei "我忍不住眯起眼睛，眼前像隔上一层迷雾，思绪也变得混沌迟缓。"
     mei_speaking "……真的，很开心吗……"
     peng_speaking "嗯，很开心，特别特别开心。"
     mei_speaking "那就好。"
+    scene bg_black with dissolve
     mei "而后，眼前趋于黑暗，我靠在温暖的肩膀上，睡了过去。"
 
     scene bg_black with dissolve

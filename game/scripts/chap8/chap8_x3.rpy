@@ -1,4 +1,5 @@
 label chap8_x3:
+    scene bg_ground3 with fade
     stf "三，二，一——"
     xiang_speaking "喔——"
     mei_speaking "……"
@@ -12,11 +13,20 @@ label chap8_x3:
     xiang_speaking "你要吗？不然扔掉也行？"
     mei_speaking "……"
 
+    scene bg_ground3 with fade
     mei "墙上贴着许多照片，都是两人合照，不知道哪些是情侣，哪些是朋友。\n不过，这不重要……我看着看着，眼神就不自觉飘到一旁。"
+    show xiangimg fist eye_still o at char_right with moveinright
     xiang_speaking "怎么了，你不想贴另外一张吗？"
+    show meiimg o at char_left with dissolve
     mei_speaking "不，没有……"
+    hide xiangimg
+    show xiangimg fist eye_still at char_right
     xiang_speaking "噢。"
-    mei "我最终没留下相片，我们把多出的一张也贴在墙上。向夏盯着墙，不知道是在看我们的照片，还是在看别的地方。"
+    hide xiangimg with dissolve
+    hide meiimg with dissolve
+    show cg_x91 at cg_0 with fade
+    mei "我最终没留下相片，只是看向夏把多出的一张也贴在墙上。"
+    mei "向夏盯着墙面，不知道是在看我们的照片，还是在看别的地方。"
     mei_speaking "……"
     xiang_speaking "在看什么？"
     mei_speaking "你……不是，我在看你在看什么。"
@@ -28,10 +38,17 @@ label chap8_x3:
     mei_speaking "那我也没有。"
     xiang_speaking "……"
     mei_speaking "……"
-    mei "我们打住了这毫无营养的对话，只是沉默地站在原地。\n我在心里叹了口气，把视线从向夏身上重新转回墙面。"
+    scene bg_ground3 with fade
+    mei "我们打住了这毫无营养的对话，只是沉默地站在原地。"
+    mei "我在心里叹了口气，把视线从向夏身上重新转回墙面。"
+    scene bg_black with dissolve
+    show halfblack
+    show cg_x91 behind halfblack at cg_0 with dissolve:
+        blur 15
     mei "那张照片……我和她的照片，在众多亲密的照片里似是毫无违和感。但我们即使凝视许久，也没有人说要把其中一张照片带走。"
     mei "仿佛那不是照片，而是某种神秘的封印，只要揭下，就再也掩饰不住隐匿的秘密。"
     mei "没关系……我在内心说服自己。"
+    scene bg_black with dissolve
     mei "留不下也没关系，我和她，本来就应该是这样。"
 
     scene bg_station2 with fade
@@ -78,7 +95,7 @@ label chap8_x3:
     xiang_speaking "没问题，提前踩点嘛，我懂我懂。"
     mei "为什么被她说得像在做什么不好的事……"
 
-
+    scene bg_hill1 with fade
     mei "立涧村的北部不靠海，而是靠着高耸延绵的群山。山上有很多植物，山脚下也有大片的花草和其他设施。"
     xiang_speaking "这里好漂亮啊……我们要上山吗？"
     mei_speaking "不是啊，是要让叶成华自己去花丛那边。就那。"

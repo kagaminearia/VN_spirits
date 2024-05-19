@@ -206,7 +206,7 @@ label chap8_x2:
     show xiangimg fist laugh at char_right
     xiang_speaking "行啊，走吧！"
 
-
+    scene bg_store3 with fade
     mei "超市很大，灯光明亮，货架整齐，进去的一瞬间就让人觉得身上附着的热气消散了不少。"
     xiang_speaking "哇，我觉得，这里才是我想象的大城市的样子。"
     xiang_speaking "东西好新！"

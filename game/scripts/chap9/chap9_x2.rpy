@@ -326,15 +326,19 @@ label chap9_x2:
     mei_speaking "不过，这玩意怎么吃——"
     scene bg_black with vpunchm
     mei "？！"
+    show cg_x111 at cg_s with dissolve
     mei "那句话结尾的“尝”字只说到一半，柔软的指尖毫无预兆地落在我的唇边。"
     mei "瞬间，细腻绵密的口感蔓延至整个口腔，带着温热的，淡淡的甜。"
     mei "的确，味道很好……\n但是，但是……"
+    show cg_x112 at cg_s with dissolve
+    hide cg_x111
     mei "不仅是口腔，我的整个脑袋好像都热了起来。而向夏则是……\n她的脸泛起潮红，动作僵在原地，好像自己也没反应过来发生了什么。"
     xiang_speaking "……"
+    hide cg_x112 with dissolve
     mei "几秒的时间被拉得十分漫长，近乎停滞。在我即将退后的时候，向夏猝然撤回手臂，整个人往后弹了将近有一米的距离。"
     mei_speaking "……"
 
-    scene bg_meikitc with fade
+    scene bg_meikitc with dissolve
     mei "很长一段时间内，房间里都没有说话的声音。只有碗筷的碰撞声，液体的流动声，冰箱打开的声音。"
     show xiangimg fist eye_still at char_mid with dissolve
     xiang_speaking "……"
@@ -378,37 +382,27 @@ label chap9_x2:
     show meiimg shirt at char_left 
     mei_speaking "……"
     mei "这算自己给自己挖坑吗……我现在，甚至分不清这是她用来搪塞的借口，还是真心赞同那番“理论”。但是……"
-    hide meiimg
-    show meiimg shirt o at char_left 
+    scene bg_black with dissolve
+    mei "……我不想管那么多。"
+    mei "在我继续思考之前，我已经将她逼到墙角。"
+
+    show cg_x121 at cg_s with dissolve
     mei_speaking "我记得你之前说，我可以提一个不过分的要求。"
-    hide xiangimg
-    show xiangimg fist eye_still o at char_right
     xiang_speaking "……你不是说你不需要的嘛。"
     mei "向夏的嘴角稍稍撇了撇，声音也变得很可怜的样子。说实话……有点可爱。"
     mei "不，我怎么还在想这个……"
-    hide meiimg
-    show meiimg shirt eye_close at char_left 
-    mei_speaking "我反悔了。"
-    hide xiangimg
-    show xiangimg fist eye_still at char_right
+    mei_speaking "我现在反悔了。"
+    show cg_x122 at cg_s with dissolve
+    hide cg_x121
     xiang_speaking "……"
-    hide meiimg
-    show meiimg shirt eye_still o at char_left 
     mei_speaking "我只是想知道，为什么……要做这些事？"
-    hide xiangimg
-    show xiangimg fist eye_still smile at char_right
     xiang_speaking "没有，就是……我不小心做错了，之后不会了，对不起。"
-    hide meiimg
-    show meiimg shirt o at char_left 
     mei_speaking "……喂，那你——"
-    hide xiangimg
-    show xiangimg fist eye_close at char_right
-    xiang_speaking "我做错了，所以，我不是想刻意跟你拉进关系。所以别问了，我……"
-    hide xiangimg
-    show xiangimg fist eye_still o at char_right
+    xiang_speaking "都说了我做错了，所以，我也不是想刻意跟你拉进关系。所以别问了，我……"
+    show cg_x123 at cg_s with dissolve
     xiang_speaking "我很讨厌你。"
     scene bg_black with dissolve
     mei_speaking "……"
-    mei "向夏的话出口前，我想过很多种不同的回答。"
+    mei "向夏的话出口前，我猜过很多种不同的回答。"
     mei "但没有一种，猜到现在的结果。"
     return

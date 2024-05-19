@@ -191,11 +191,13 @@ label chap8_p2:
     mei_speaking "电影要开始了。"
     peng_speaking "嗯！"
 
-
+    scene bg_black with dissolve
+    show cg_p101 at cg_0 with dissolve
     mei "银屏闪烁片刻，再次亮起时染上了绮丽的色彩。"
     mei "今天的电影讲述的是学校里的故事，少男少女们聚在一起，明朗的阳光下充斥着欢天喜地的气氛。"
     mei_speaking "……"
     mei "电影还在继续播放，只是……这样的校园生活实在离我太远，我从没经历过，现在看着只觉得有些累，还有些刺眼。"
+    show cg_p102 at cg_0 with dissolve
     mei "不知不觉，我的注意力偏到了边上。"
     mei "和我刚好相反，彭江丽看电影看得很认真，完全没有注意到我分神的动静。这也刚好……我干脆完全摒弃了电影本身，只是看着她。"
     mei "她看得入神，眼睛被屏幕的亮光照得亮晶晶的。跟平时不同，她的表情虽然认真，却很放松，眉毛不再皱起，嘴角也很平稳。"
@@ -204,11 +206,15 @@ label chap8_p2:
     mei "但我知道这不是真实的，我只是观众，永远只是在注视别人的故事，没有资格参与。"
     mei "就像现在……我只是注视着彭江丽，注视着她的眼睛。"
     mei "可，我却好像，已经不满足于作为观众了。"
+    scene bg_black with dissolve
     mei_speaking "我也，想要……"
     peng_speaking "怎么了？"
     mei_speaking "……咦？"
     mei "是我毫不掩饰的眼光看太久了吗？彭江丽似乎意识到什么，转过了头，于是正好对上了我。"
+    show pengimg o at char_c with dissolve:
+        alpha 0.3
     "我怔怔地看着那张无比熟悉的脸庞，在强烈的单点光源照射下，竟然显得有些虚幻和陌生。这是真的吗？我和她如此靠近……"
+    scene bg_cinema2 with dissolve
     mei_speaking "我没事……吵到你了吗？对不起。"
     mei "我用气声缓慢说道，即使听不清，也能看清嘴唇的形状，知道大概的意思。"
     peng_speaking "你没事就好。"
@@ -217,9 +223,12 @@ label chap8_p2:
     peng_speaking "……嗯。"
     mei "她也用气声回应，却没有改变姿势，仍然直直地看着我。……十分认真地，看着我。"
     mei_speaking "……真奇怪。"
-    mei "为什么会变成这样呢？明明，电影还在播放。近在咫尺的，不同颜色的灯光映在我们脸上，却完全没有使我们融入进那个五光十色的世界。"
+    show cg_p111 with dissolve
+    mei "为什么会变成这样呢？明明，电影还在播放。"
+    mei "近在咫尺的，不同颜色的灯光映在我们脸上，却完全没有使我们融入进那个五光十色的世界。"
     mei "近在咫尺的，她的眼睛里，映照的只有我的身影。"
     mei "此时此刻，四周的黑暗反而令人安心。"
     mei "时间仿佛被魔法控制，变得粘稠，我感觉到自己的动作，缓慢而清晰。"
+    hide cg_p111 with zoomout
     mei "我们只是，越靠越近……"
     return
