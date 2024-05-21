@@ -111,10 +111,10 @@ label chap9_p1:
     mei "只是……我稍稍抬起一点眼皮，感受到从窗外传来的些微光线，也感受到身旁挡住大部分光线的那片阴影。"
     mei "也许我并不该这么做……但现在也来不及了。"
 
-    scene bg_station1 with dissolve
+    scene bg_station with dissolve
     show pengimg eye_care at char_right with dissolve
     peng_speaking "睡醒了吗？"
-    show meiimg eye_still o shell at char_left with dissolved
+    show meiimg eye_still o shell at char_left with dissolve
     mei_speaking "嗯……啊。"
     hide meiimg
     show meiimg o shell at char_left 

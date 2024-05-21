@@ -14,6 +14,12 @@ image glitches:
 
     repeat
 
+image flash:
+    "images/mem0.jpg"
+    pause 0.7
+    im.Scale("images/cg/cg_p131.jpg",1920,1080)
+    pause 0.7
+    repeat
 
 screen chap_interval(index,route="n"):
     add "#fff"

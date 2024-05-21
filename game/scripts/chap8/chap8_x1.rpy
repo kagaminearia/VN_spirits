@@ -61,7 +61,7 @@ label chap8_x1:
     mei "之前给她添这么多麻烦，现在有个机会帮她，我自然是要答应。"
 
     scene bg_station2 with dissolve
-    show meiimg shirt eye_close o at char_left witg dissolve
+    show meiimg shirt eye_close o at char_left with dissolve
     mei_speaking "呼……"
     show xiangimg o at char_right with dissolve
     xiang_speaking "哇，你竟然没晕倒，我都准备扶你了。"
