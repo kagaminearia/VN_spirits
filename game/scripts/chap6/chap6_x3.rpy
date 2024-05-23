@@ -8,6 +8,7 @@ label chap6_x3:
     mei_speaking "……你在干嘛？"
     mei "我拖着步伐到楼下，准备拿洗完的衣服的时候，正好看到向夏坐在沙发上，手里拿着我昨天穿着的，打算丢掉的毛衣外套。"
     show xiangimg o at char_right with moveinright
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "什么？哦，我之前不是跟你说了吗，帮你补一下这件衣服，保证跟之前一样哦！"
     hide meiimg 
     show meiimg shirt at char_left
@@ -38,6 +39,8 @@ label chap6_x3:
     mei "一时间，我还以为自己偷看被发现了，差点发出难听的颤音。\n不过，好像她只是在跟我解释。"
     mei "是我想多了啊……\n不知道是出于什么心情，我无声叹了口气。"
     mei "嗯……{p}我挠了挠头，顺手把电视的遥控器打开，免得这空旷的客厅显得太过安静。"
+    stop music fadeout 0.5
+    $ renpy.sound.play(sound.tv_noise, channel="extra_1", loop=False, fadein=0.5, relative_volume=0.2)
     hide meiimg
     show meiimg shirt o at char_left
     mei_speaking "你还会缝这个啊。"
@@ -48,8 +51,10 @@ label chap6_x3:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "呃……嗯。"
+    stop extra_1 fadeout 0.5
     hide xiangimg
-    show xiangimg fist o at char_right 
+    show xiangimg fist o at char_right
+    $ renpy.music.play(music.xiang_rainy_talk, channel="music", loop=True, fadein=0.5)
     xiang_speaking "对了，既然你来了刚好问问你，你想要哪个颜色的线，还有刺绣？"
     hide meiimg
     show meiimg shirt o at char_left
@@ -70,9 +75,11 @@ label chap6_x3:
     mei_speaking "欸……"
     mei "我下意识摸了摸自己的眼皮，在那底下就是我的眼珠。"
     show halfblack with dissolve
+    $ renpy.music.set_pause(True, channel="music")
     mei "这话没什么特别的，但我的心跳却莫名地停了一拍。{p}真奇怪……"
     mei "似乎……是因为她注意到了，还特地点出来。"
     mei "不过，嗯，我干嘛要因为一句话想这么多……"
+    $ renpy.music.set_pause(False, channel="music")
     hide halfblack with dissolve
     hide xiangimg
     show xiangimg fist o at char_right 
@@ -114,9 +121,13 @@ label chap6_x3:
     hide meiimg
     show meiimg shirt smile at char_left
     mei_speaking "这，嗯，这是有点……"
+    stop extra_1 fadeout 0.5
+    stop music fadeout 0.5
+
     na "“唔嗯~”"
     hide meiimg
     show meiimg shirt eye_wacky o at char_left
+    $ renpy.music.play(music.xiang_bath, channel="music", loop=True, fadein=0.5)
     mei_speaking "……哈？"
     mei "没说出口的话被别的声音打了岔，但那莫名奇妙的甜美声音明显不来自于旁边的人。"
     na "“啊啊……嗯，唔……”"
@@ -177,11 +188,13 @@ label chap6_x3:
     mei_speaking "……哈哈，意外。"
     mei "我尬笑两声，模糊掉这个话题——虽然是我自己提起的……"
     mei "不过，多亏她的面不改色，让我也冷静下来。\n总觉得，跟她相比，我刚才的反应好挫……"
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     show meiimg shirt o at char_left with dissolve
     mei_speaking "咳咳，好吧……对了，这衣服……"
     show xiangimg fist at char_right with dissolve
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     xiang_speaking "哇——别提了，这个真的对不起，要不我……我给你再买一件外套吧。"
     mei "这人刚刚好像诡异地停顿了啊……\n擅自揣度完她的心情后，我在心里默默笑了一声。"
     mei "不过，还是别为难她了。"
@@ -245,7 +258,8 @@ label chap6_x3:
     xiang_speaking "那可不行，我不喜欢欠人情。"
     mei "我丝毫没有头绪，向夏倒是一副苦思冥想的样子。\n好一会儿，不知道她想到什么，整个人忽然显得有些兴奋。"
     hide xiangimg
-    show xiangimg fist laugh at char_right 
+    stop music
+    show xiangimg fist laugh at char_right
     xiang_speaking "我知道了……我带你去山上玩吧！"
     mei_speaking "哈？不要。"
     hide xiangimg
@@ -256,6 +270,7 @@ label chap6_x3:
     mei_speaking "这是谁欠谁的啊？"
     hide xiangimg
     show xiangimg fist smile at char_right 
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True)
     xiang_speaking "好吧，我开玩笑的。\n不过，感觉你对什么事都没有太多兴趣，还真是难想。"
     hide meiimg
     show meiimg shirt at char_left
@@ -273,12 +288,14 @@ label chap6_x3:
     hide meiimg
     show meiimg shirt at char_left
     mei_speaking "……哦。"
+    stop music fadeout 0.5
     mei "她不经意的话让我突然意识到一件事，她不是会永远待在这里的，现在这样的情况并不会维持多久。"
     mei "那我呢？我还没有想好之后的事吗？我……"
     
 
     scene bg_meiliv with pixellate
     show yeimg smile at char_right with moveinright
+    $ renpy.sound.play(sound.wind_bell, channel="sound", loop=True, relative_volume=0.3)
     ye_speaking "我回来喽——你们在这干啥呢？"
     show meiimg o flower at char_left with moveinleft
     mei_speaking "诶？"
@@ -301,4 +318,5 @@ label chap6_x3:
     ye_speaking "——要吃烧烤吗？"
     mei "她刷的举起包里的一袋竹签。"
     mei_speaking "……哈？"
+    stop sound fadeout 0.5
     return

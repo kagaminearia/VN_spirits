@@ -7,6 +7,9 @@ label chap6_p2:
     "……"
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.ringtone, channel="sound", loop=False)
+    pause
+    stop sound
     peng_speaking "喂？我现在到你家楼下啦。"
     mei_speaking "啊……嗯？"
     
@@ -14,6 +17,7 @@ label chap6_p2:
     show pengimg shirt at char_right with dissolve
     mei "收到电话，我急忙下楼开门。果然，背着书包的彭江丽就站在门口。"
     show meiimg shirt o at char_left with moveinleft
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei_speaking "这么早，你怎么，不是，啊，我还想着，去你家找你……"
     mei "因为紧张，我有些语无伦次，说话也变得滑稽。"
     hide pengimg
@@ -38,6 +42,7 @@ label chap6_p2:
     scene bg_meiroom with pixellate
     show pengimg shirt o at char_right with moveinright
     peng_speaking "你怎么没带发夹，不喜欢吗？"
+    $ renpy.music.set_pause(True)
     show meiimg shirt at char_left
     mei_speaking "嗯？"
     mei "我没想到她进房间后说的第一句话是这个，愣了下才反应过来。"
@@ -61,6 +66,7 @@ label chap6_p2:
     mei "不过，看她这么在意……之后，还是一直戴着好了……"
 
     scene bg_meiroom with pixellate
+    $ renpy.music.set_pause(False)
     mei "说完闲话，我们才开始正事。{p}彭江丽只带了数学相关的习题，大概都是中等难度。整体来说，比我以前做的要简单很多。"
     mei "黑色的墨迹在有些粗糙的灰色纸张上整齐排列，却让我有些眩晕，看着看着，便逐渐糊成一团。"
     mei "我轻轻呼出一口气，在衣服底下掐了掐皮肤，终于让题目重新在眼前聚焦。"
@@ -121,13 +127,14 @@ label chap6_p2:
     peng_speaking "真的吗……"
     hide meiimg
     show meiimg shirt smile shell at char_left
-    mei "嗯，你有空的话，就找我吧。"
+    mei_speaking "嗯，你有空的话，就找我吧。"
     hide pengimg
     show pengimg shirt smile at char_right
     peng_speaking "好。那，之后我不补课的时间，都来找你讲题。"
 
     scene bg_meiliv with pixellate
     mei "午饭是在家吃的，我和彭江丽都没有什么需求，所以只是简单应付一下而已。"
+    $ renpy.sound.play(sound.wind_bell, channel="sound", loop=False, relative_volume=0.3)
     show pengimg shirt o at char_right with dissolve
     peng_speaking "要继续看题目吗？"
     show meiimg shirt o shell at char_left
@@ -195,5 +202,6 @@ label chap6_p2:
     mei "不知为何，我突然觉得有些脸热。"
     mei "原本，我有些后悔问她学校的情况。因为彭江丽描述的事情离我太过遥远，我根本无法感受，更无法随意评价什么。"
     mei "但，听她说跟我说自己的事，看到她脸上涌上生动的表情，我实在……感到很高兴。"
-
+    stop sound fadeout 0.5
+    stop music fadeout 0.5
     return

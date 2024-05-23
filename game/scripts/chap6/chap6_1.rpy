@@ -20,9 +20,12 @@ label chap6_1:
     mei "我还有些呆滞，听到这话，也只是跟随本能模仿其他人的动作拿起面前的蛋糕。{p}松软的蛋糕入口即化，配有甜香而不腻的奶油，着实是我极少尝过的味道。"
     scene bg_meiliv with dissolve:
         blur 25
+    $ renpy.sound.play(sound.girl_chuckle, channel="others", loop=False)
+    $ renpy.sound.play(sound.party_noise, channel="extra_1", loop=True, relative_volume=0.3)
     xiang_speaking "哇，好好吃，能不能让我多吃两块？"
     peng_speaking "你是寿星吗你就吃？"
     xiang_speaking "哎呀，我就说说。"
+    $ renpy.sound.play(sound.girl_chuckle, channel="others", loop=False)
     lu_speaking "啊，差点忘了！你们要喝饮料吗？"
     ye_speaking "对哦，我这就去拿！"
     
@@ -37,6 +40,9 @@ label chap6_1:
     mei "这样啊。"
     mei "我从没想过用这个词来形容自己，也曾经以为自己的眼泪早就流干了。"
     mei "但……我说不定其实是一个，很幸运的人。"
+    stop sound
+    stop extra_1 fadeout 0.5
+    stop music fadeout 0.5
 
     scene bg_meiliv with dissolve:
         blur 15
@@ -48,13 +54,16 @@ label chap6_1:
     mei_speaking "什，什么？她没事吧？！"
     show q_p30 at cg_s with dissolve
     mei "我听着周围的动静，突然捕捉到关键的词语。\n转过头，发现彭江丽果然已经趴倒在桌子上。"
+    $ renpy.sound.play(sound.tinnitus, channel="sound", loop=False, relative_volume=0.5)
     mei "我猛地站起身，有点晕，怎么回事……\n不过没关系，影响不大，看彭江丽要紧。"
     ye_speaking "这是怎么了？让我看看……眼睛有点黑眼圈，但是面色红润，气息均匀，身体也没有奇怪的症状……可能，只是睡着了？"
     mei_speaking "哈？怎么可能……"
+    stop sound
     
     scene bg_meiliv with dissolve
     show xiangimg fist eye_still o at char_right with dissolve
     xiang_speaking "我说，这看起来……像喝醉了啊。"
+    $ renpy.music.play(music.silly_mistake, channel="music", loop=True, fadein=0.5)
     show luimg o at char_left with dissolve
     lu_speaking "哎，哎？"
     show yeimg o at char_mid with dissolve
@@ -70,4 +79,5 @@ label chap6_1:
     scene bg_meiliv with dissolve
     mei_speaking "不……没事。"
     mei "据我所知，彭江丽是没有什么食物过敏的，这事真要说也没那么严重……何况，当下的重点应该是先把人送回去。"
+    stop music fadeout 0.5
     return

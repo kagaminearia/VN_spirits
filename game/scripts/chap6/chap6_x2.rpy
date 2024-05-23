@@ -1,5 +1,7 @@
 label chap6_x2:
     scene bg_seacoast1 with Fade(0.5,1,1.5)
+    $ renpy.sound.play(sound.ocean_wave, channel="nature", loop=True, relative_volume=0.5)
+    $ renpy.music.play(music.story_telling, channel="music", loop=True, fadein=0.5)
     mei "湿润的气流从海面的方向吹来，有些凉，带着淡淡的咸涩，勉强能说得上是清爽的气息。\n但，如果加上眼前这堆被困在网里还活蹦乱跳的鱼……就实在不太美妙了。"
     show q_fish at cg_s with dissolve
     mei "鱼腥味直冲脑门，像把我整个人泡在海里走了一圈。{p}呃啊……我忍住想要吐的感觉，认真地看着旁边的向夏把一大网兜的鱼扛起来，然后用力摊开。"
@@ -10,6 +12,7 @@ label chap6_x2:
     show meiimg o at char_left with moveinleft
     mei_speaking "好。"
     mei "现在，我和向夏坐在码头附近的海边空地上，对村民打捞来的鱼进行品检和分类。\n至于事情为什么会变成这样……"
+    stop nature fadeout 0.5
 
     scene bg_seacoast1 with pixellate
     show halfblack
@@ -19,8 +22,10 @@ label chap6_x2:
     mei "我和向夏纯属是被叶成华叫来帮忙的。向夏本人是很热衷——帮忙并不是白帮，是会正经分利润的，虽然不多——至于我，可以说并不讨厌……"
     mei "不过，像我们这种外行人也只能做一些不太需要专业的事。我负责辨认鱼类，向夏把它们放到不同的位置。"
     mei "不同类别的放在不同的地方，大小不合的放回去，不在捕捞种类里的放回去。再之后，我记录下有效的鱼的数目。"
+    stop music fadeout 0.5
     hide halfblack with dissolve
     show xiangimg fist o at char_right with moveinright
+    $ renpy.sound.play(sound.ocean_wave, channel="nature", loop=True, relative_volume=0.5)
     xiang_speaking "说起来，我好紧张啊。"
     show meiimg o at char_left with moveinleft
     mei_speaking "啊？"
@@ -79,6 +84,7 @@ label chap6_x2:
     mei "上次的事情说开之后，相处起来的确轻松很多，没有什么期待，也就没有什么压力。这方面，我倒是有一点理解她的想法了……{p}嗯，不过，只有一点，一点点。"
     
     hide halfblack with dissolve
+    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=0.5)
     show xiangimg fist eye_close o at char_right with dissolve
     xiang_speaking "哇~累死了累死了。"
     hide xiangimg
@@ -107,15 +113,19 @@ label chap6_x2:
     mei "我忍不住打了个呵欠，把写完的笔记本放在一边，在耀眼的阳光下放空思绪。{p}说实话，如果不是跟她一起，我还真没想到可以把这事做下来……"
     mei "我微微偏过头，看着向夏的侧脸。\n她也没有继续说话，只是直直地注视着泛起粼粼波光的海平面，难得十分安静。"
     mei "也让我感到十分平静……"
+    stop music fadeout 0.5
 
     mei_speaking "休息差不多了吧。这些拿回去？这个……哇啊！"
     show q_m20 at cg_s, shaking
+    $ renpy.sound.play(sound.fish_splash_1, channel="sound", loop=False)
     na "啪！砰！咚！"
     hide q_m20
     show q_m21 at cg_s, shaking
     xiang_speaking "小心！诶你！"
     show bg_black with pixellate
+    $ renpy.sound.play(sound.fish_splash_2, channel="sound", loop=False)
     na "啪，砰，啪……"
+    stop sound
 
     scene bg_seacoast1 with vpunchm
     mei_speaking "哈啊……呃，呃……"
@@ -128,8 +138,10 @@ label chap6_x2:
     hide meiimg
     show halfblack
     mei_speaking "咳，哈……"
+    $ renpy.sound.play(sound.tinnitus, channel="sound", loop=False)
     mei "身上变得又潮又湿，液滴顺着头发流下，在尖端脱离，落在额头和脸颊的皮肤上，令人感到一阵黏腻到晕眩的不快。"
     mei "我用力甩了甩头，才感觉眼前的场景重新变得清明。"
+    stop sound fadeout 0.5
     hide halfblack with dissolve
     mei_speaking "飞来横祸啊……"
     mei "好不容易把气喘匀之后，我才注意到周围的狼藉已经被向夏收好，只剩下地板上滞留的几摊水渍。"
@@ -137,6 +149,7 @@ label chap6_x2:
 
     scene bg_seacoast1 with dissolve
     show xiangimg fist o at char_right with moveinright
+    $ renpy.music.play(music.sunset, channel="music", loop=True)
     xiang_speaking "怎么啦？"
     show meiimg at char_left with moveinleft
     mei_speaking "……"
@@ -167,6 +180,6 @@ label chap6_x2:
     mei "外套沾了不少的污水，变得又湿又重，我有些费劲地把它脱下来，团成一团。"
     mei "微风把略微被汗水和海水濡湿的刘海吹干，让人觉得清爽很多。虽然很累，不过……"
     mei_speaking "……天气，真好。"
-
-
+    stop music fadeout 0.5
+    stop sound fadeout 0.5
     return

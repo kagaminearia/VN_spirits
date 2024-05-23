@@ -3,6 +3,7 @@ label chap6_x1:
     mei "叶成华把彭江丽抱到路花的车上，我们看着路花开车离开。"
     mei "我和叶成华回到房间，她拒绝了我的帮忙建议，只说她自己收拾就好，而后把我和向夏都赶到了厨房外面。"
     mei "我下意识地瞥向旁边，结果刚好和向夏对上了视线。"
+    $ renpy.music.play(music.xiang_awkward_talk, channel="music", loop=True)
     show xiangimg fist o at char_right with moveinright
     xiang_speaking "怎么了？"
     show meiimg shirt at char_left with moveinleft
@@ -60,6 +61,7 @@ label chap6_x1:
     hide meiimg
     show meiimg shirt o at char_left, shakeonce
     ye_speaking "你俩在这干嘛呢？"
+    stop music
     hide meiimg
     show meiimg shirt at char_left
     mei "嘶……吓死我了\n我的肩膀剧烈地抖了抖，而后被向夏按住。"
@@ -67,6 +69,7 @@ label chap6_x1:
     hide xiangimg
     show xiangimg fist eye_squint laugh at char_mid 
     xiang_speaking "哪能呢？我们是在讨论事情。"
+    $ renpy.sound.play(sound.girl_chuckle, channel="sound", loop=False)
     mei "向夏顺势一把拉过我的肩膀，摆出一副贴近的样子。\n这人的反应还真快……我有些无奈，但现在还是配合一下吧。"
     hide meiimg
     show meiimg shirt eye_close o at char_left
@@ -76,11 +79,14 @@ label chap6_x1:
     show meiimg shirt at char_left
     mei_speaking "……"
     mei "搬起石头砸自己的脚……"
+    stop sound
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.bird_chirping_2, channel="sound", loop=False, fadein=0.5)
     mei "老话说，一个谎言要用无数个谎言去圆。现在虽然不用再说，但……"
     mei "因为刚才的谎话，我现在只能待在房间里，和向夏面面相觑。"
     show xiangimg fist eye_still o at char_right with moveinright
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True)
     xiang_speaking "呃，这……是个意外。\n我以为，她说完之后就会走了。"
     show meiimg shirt at char_left with moveinleft
     mei_speaking "……"
@@ -134,5 +140,5 @@ label chap6_x1:
     hide meiimg
     show meiimg shirt at char_left
     mei "我挤出一声轻哼，算是对她这句无端的指责的回应。"
-
+    stop music fadeout 0.5
     return

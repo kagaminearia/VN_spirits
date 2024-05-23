@@ -5,8 +5,11 @@ label chap6_p3:
     mei "想到之前的事，我有些担心彭江丽是不是又累过头。\n不会吧……要不，去她家看看吧。"
 
     scene bg_vil1 with pixellate
+    $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True, fadein=0.5)
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei "清晨的温度不高，虽然太阳早已升起，但潮湿的风还是让我忍不住打了个喷嚏。"
     mei "露水在树叶上停留，缝隙间有光线穿透，也能看到浅蓝的天空。\n如果不是急着赶路，我大概会在这里停留几刻。"
+    stop sound fadeout 0.5
 
     scene bg_vil5 with pixellate
     mei_speaking "嗯……"
@@ -18,11 +21,13 @@ label chap6_p3:
     mei "以前似乎听过一个说法，一件事坚持七天可以养成习惯。我不知道这是谁说的，可不可靠，不过……\n我可能，的确已经习惯和彭江丽一起学习这件事了。"
     mei "就像回到小时候一样。"
     mei "如果她也那样觉得，就好了……"
+    stop music fadeout 0.5
 
     scene bg_vil6 with pixellate
     unknown_speaking "梅雨——梅雨——"
     mei_speaking "咦？"
     mei "听到有人叫自己名字，我停止脑内的遐想，转过头去看声音的主人。\n但没想到竟然是路花。"
+    $ renpy.music.play(music.lu_random_meetup, channel="music", loop=True, fadein=0.5, relative_volume=0.7)
     show meiimg o shell at char_left with moveinleft
     mei_speaking "你怎么在这？"
     show luimg smile at char_right with moveinright
@@ -72,6 +77,7 @@ label chap6_p3:
     mei "说实话，我们这两人不管谁出意外，都很危险啊……\n总之，还是小心一点吧。"
     mei "道路虽然从泥土变成了砖石，但也是一样凹凸不平，走起来时咯咯作响，偶尔会扬起飞扬的灰尘和小碎屑，触得腿部有些发痒，让人焦躁。"
     mei "不，也许是别的事情让我如此焦躁。\n……是什么呢？"
+    stop music fadeout 0.5
 
     scene bg_school1 with fade
     mei "穿过几个四五层矮楼之间的小巷，我看到标志着学校的牌子。"
@@ -111,10 +117,12 @@ label chap6_p3:
     mei "路花用力甩了甩拐杖，发出破空的刷刷声，男生只好悻悻地走了。\n直到他走，我还微微张着嘴。"
     hide luimg
     show luimg smile at char_right 
+    $ renpy.sound.play(sound.girl_chuckle, channel="sound", loop=False)
     lu_speaking "嘿嘿，怎么样，厉害吧？别小看我哦，虽然腿不好使了，手臂还是很有力气的~\n毕竟我以前可是跳舞的呀~"
     hide meiimg
     show meiimg shell at char_left
     mei_speaking "嗯，谢谢你……"
+    stop sound
 
     scene bg_school2 with pixellate
     mei "教室门口人来人往，不好再继续往里走，所以我们干脆停在原处，在附近找了个学生询问彭江丽的事。"
@@ -126,6 +134,7 @@ label chap6_p3:
     school_girl "你怎么这么慢啊？"
     show pengimg shirt eye_squint laugh at char_right with moveinright
     peng_speaking "抱歉啊，刚刚在收拾东西，谢谢你叫我，是谁——"
+    $ renpy.music.play(music.peng_poor_little_girl, channel="music", loop=True)
     hide pengimg
     show pengimg shirt at char_right
     peng_speaking "啊。"
@@ -165,6 +174,7 @@ label chap6_p3:
     peng_speaking "……"
     mei "从教室离开的时候，隐约能听到其他同学交谈的声音从背后传来。{p}不……其实并不是隐约，在这个距离，每一句话都能刚刚好好被听得非常清楚。"
     mei "彭江丽……她……{p}我，不敢说话，不敢抬头，不敢……看她的表情。"
+    stop music fadeout 0.5
 
     scene bg_incar with pixellate
     show luimg o at char_left with dissolve
@@ -183,6 +193,7 @@ label chap6_p3:
 
     scene bg_vil5 with fade
     mei "我们一路无言。\n到彭江丽的家附近后，路花把我们放下车，打完招呼就先离开了。"
+    $ renpy.music.play(music.peng_after_school, channel="music", loop=False, fadein=0.5)
     show pengimg shirt smile at char_right with moveinright
     peng_speaking "你也快回去吧，现在已经挺晚的了，不好再浪费你的时间呀。"
     show meiimg eye_still shell at char_left with dissolve
@@ -248,4 +259,5 @@ label chap6_p3:
     mei "好难受，我的心脏……{p}好像，快要窒息了……"
     mei "好痛，好痛……"
     mei "……"
+    stop music fadeout 0.5
     return

@@ -16,6 +16,7 @@ label chap6_p1:
     mei "我不再多说，跟着她们往外走，和睡着的彭江丽一起坐在车后座。"
 
     scene bg_incar with fade
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     lu_speaking "小梅啊，今天弄成这样，真是不好意思。"
     mei_speaking "诶……"
     lu_speaking "这话我来说其实不太适合，你就随便听听哈……{p}成华她也是想让你开心点，不过你要是真的不喜欢，之后直接去骂她就行，或者找我帮你骂！"
@@ -167,4 +168,5 @@ label chap6_p1:
     mei "只是……"
     mei "之前一激动就说了那样的话，其实，我并没有自信能做好。\n要是反而妨碍到她该怎么办……"
     mei "但是，说都说了，不管怎么样，我也只能先试试了……"
+    stop music fadeout 0.5
     return
