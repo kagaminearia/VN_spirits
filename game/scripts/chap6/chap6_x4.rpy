@@ -1,5 +1,6 @@
 label chap6_x4:
     scene bg_meiliv with fade
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     mei "虽然叶成华回来一趟，但真正在后院搞起烧烤架是在几天之后。"
     mei "至于为什么要拉着我们一起搞烧烤……"
     scene bg_meiliv with fade
@@ -16,6 +17,7 @@ label chap6_x4:
     hide yeimg
     show yeimg smile behind halfblack at char_right 
     ye_speaking "那真不错，你们到时候就等着吃吧。"
+    stop music fadeout 0.5
 
     scene bg_meiliv with fade
     show xiangimg o at char_right with moveinright
@@ -27,6 +29,7 @@ label chap6_x4:
 
     scene bg_meihome with pixellate
     show halfyellow
+    $ renpy.music.play(music.bbq_night, channel="music", loop=True, fadein=1.5)
     mei "我绕到后院，看到叶成华在不远处捣鼓着一个半人高的铁架。"
     mei "不用靠近，就能感觉到金属铁架底下已经开始散发出热气，在微凉的傍晚格外明显。"
     show yeimg o behind halfyellow at char_right with moveinright
@@ -70,26 +73,33 @@ label chap6_x4:
     show yeimg laugh behind halfyellow at char_right
     ye_speaking "这是手持烟花，烟花你知道吧？可以拿在手里点燃，很好看哦。"
     hide halfyellow with dissolve
+    $ renpy.sound.play(sound.fireworks_1, channel="sound", loop=False)
     na "呲……呲啦……"
     mei "细长的铁丝的最前端，微小的火星逐渐迸发开，在变得有些昏暗的天色下是如此耀眼。"
     mei "手腕轻轻甩动，火光闪烁，在空中短暂停留又逐渐消散。{p}的确……很美。"
     mei_speaking "还有吗？我给……"
+    stop sound fadeout 0.5
     hide yeimg
     show yeimg smile behind halfyellow at char_right
     ye_speaking "什么？哦对了，叫向夏一起来玩呗，买了好多呢。\n向夏！"
     mei_speaking "咦？"
+    $ renpy.sound.play(sound.fireworks_1, channel="sound", loop=False)
     mei "我愣了愣，才接过另一只烟花棒。刚刚我要说什么来着？哦，好像是想说我给向夏也拿一个……咦？"
     mei "怎么就这么想到她了。\n一定是因为刚刚叶成华提到过……我小声嘀咕着。"
+    stop sound fadeout 0.5
 
     scene bg_meihome with pixellate
     xiang_speaking "怎么了，叫我吗？可以吃饭了吗？"
     mei "听到向夏的声音从背后传来，我转过身，准——"
+    stop music
     show xiangimg fist eye_shock at char_c, shaking
+    $ renpy.sound.play(sound.fireworks_1, channel="sound", loop=False)
     xiang_speaking "别过来！"
     mei "……啊？"
     mei_speaking "你，你还好……"
     hide xiangimg with dissolve
     show xiangimg fist eye_shock at char_mid, shaking
+    $ renpy.music.play(music.xiang_splash_water, channel="music", loop=False)
     xiang_speaking "别过来！！！"
     mei "向夏突然的转变令我完全摸不到头绪，我惊讶又迷茫，不知所措地想要说些什么，却只看到她步步后退。"
     mei "这仅仅只是一瞬间的事……"
@@ -101,4 +111,6 @@ label chap6_x4:
     show halfdarkblue with dissolve
     mei "向夏将水杯里的水全部泼在了我的身上。"
     mei_speaking "……啊……？"
+    stop music
+    stop sound
     return

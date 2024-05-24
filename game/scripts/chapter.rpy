@@ -182,6 +182,7 @@ label chapter6:
 
 
 label chapter6x:
+    call chap6_1
     call chap6_x1
     call chap6_x2
     call chap6_x3
@@ -189,6 +190,7 @@ label chapter6x:
     return
 
 label chapter6p:
+    call chap6_1
     call chap6_p1
     call chap6_p2
     call chap6_p3

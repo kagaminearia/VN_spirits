@@ -6,5 +6,8 @@ game/cache/*
 *.rpyb
 game/saves/*
 
-# Ignore files named temp.py at all sub-directories
-**/temp.py
+# Ignore files named util.py at all sub-directories
+**/util.py
+
+# Ignore files named util.sh at all sub-directories
+**/util.sh
