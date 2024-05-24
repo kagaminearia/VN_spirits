@@ -1,4 +1,5 @@
 label chap10_p1:
+    scene bg_meiliv with fade
     ye_speaking "所以，你姐我为了你的事特意大晚上从家赶过来，你自己说跑就跑了，还不给个消息？"
     mei_speaking "呃，这是……"
     mei "叶成华笑眯眯地盯着我，我却只觉得浑身发凉。"
@@ -22,12 +23,15 @@ label chap10_p1:
     mei_speaking "好。"
     mei "想了想，我斟酌着，还是决定跟叶成华解释清楚，免得她太担心。"
     mei_speaking "之前在外面的时候，丽丽跟我说她喜欢我，所以我就把其他事都忘了，也忘了打电话。"
-    ye_speaking "噗……！！！"
+    show q_l1 at cg_s with vpunchm
+    ye_speaking "{size=42}噗……！！！{/size}"
     mei_speaking "……"
     mei "好像是有点直接……我说完之后，后知后觉地感到有些羞赧。"
     mei "但说都说了……我只好低下头，掩盖住自己的表情，装作冷静的样子。"
+    mei_speaking "{size=30}呃我是……实话实说……{/size}"
     ye_speaking "你，你们——咳，咳咳咳！"
     mei_speaking "……小心呛到。"
+    hide q_l1 with dissolve
     ye_speaking "……行，我没事，没事——总之呢你之后注意安全就好。"
     ye_speaking "那你们先聊啊我也不打扰了，我先回去了。"
     mei_speaking "……噢，好。"
@@ -36,7 +40,7 @@ label chap10_p1:
     mei "转过头，只见彭江丽站在楼梯口，满脸通红地看着我。"
     mei_speaking "……"
     peng_speaking "那个，我就是……想来看看你有没有被成华姐骂，想帮你求求情。"
-    mei_speaking "……所以，你都听到了？"
+    mei_speaking "……你，你都听到了？"
     peng_speaking "……嗯。"
     mei_speaking "……"
     mei "我一脸呆滞地站在原地，好一会儿，空白的大脑里跳出突兀的几个字。"
@@ -94,7 +98,8 @@ label chap10_p1:
     mei "说起来，之前听到她说“对我做的事”，以她的性格，我以为是指小时候那些抢被子抢零食的小事。\n……原来不是啊。"
     peng_speaking "你知道吗，暴风雨的那天，我不小心看到了，看到向夏在偷偷哭。\n我觉得，她应该也经历过很难过的事，才会让她平时装成那种性格。"
     mei_speaking "……向夏？"
-    peng_speaking "我那么讨厌她，讨厌她那么自由，谁也不在乎，就像我小时候嫉妒你一样。\n可是，可是那都是因为我只看到表面……我连嫉妒的资格也没有。"
+    peng_speaking "我那么讨厌她，讨厌她那么自由，谁也不在乎。我嫉妒她，她有我没有的东西，就像……我小时候嫉妒你一样。"
+    peng_speaking "可是，可是那都是因为我只看到表面……我其实连嫉妒的资格也没有。"
     peng_speaking "我嫉妒不了你，也嫉妒不了她。你们都比我艰难多了，我……"
     peng_speaking "我有着健康的身体，妈妈也对我很好，只要在村里生活就不会难过到哪里去。\n我所有的困难都是自己带来的，跟你们根本无法比较，我明明已经有的够多了，却还是不满足……"
     peng_speaking "我什么都比不过你，没有你厉害，没有你聪明，连受的苦都没你多。"
@@ -155,13 +160,14 @@ label chap10_p1:
     mei "这么一想，会不会不要太过逼迫彭江丽比较好……"
     mei "……呢？"
     mei "我正想继续说点什么找补的时候，彭江丽猛的一下扑过来，紧紧抱住了我，阻断了我的所有思绪。"
-    peng_speaking "呜……\n呜哇哇哇哇哇！！！！"
+    show q_p40 at cg_s with vpunchm
+    peng_speaking "{size=42}呜……\n呜哇哇哇哇哇！！！！{/size}"
     peng_speaking "哇啊啊啊对不起！我，我呜呜呜我又说谎了！对不起！"
     peng_speaking "我，我才不是无所谓呢！我最——喜欢你了，喜欢得不得了！绝对不想让你讨厌我！"
     peng_speaking "我呜呜呜对不起，我太贪心了！但是我就是，就是想要你高兴，想要你幸福，想要你喜欢我，还想要跟你一直一直在一起！永远在一起！！"
     peng_speaking "呜呜呜哇啊啊啊啊啊——"
     mei "彭江丽大声哭嚎着，她死死抱着我，用力到我的身体开始发疼，但我并没有任何反应，只是抱着她，同样紧紧地抱着她。"
-
+    hide q_p40 with dissolve
     mei_speaking "好。"
     peng_speaking "呜，呜呜呜……呜呜，呜啊啊啊……"
     return
