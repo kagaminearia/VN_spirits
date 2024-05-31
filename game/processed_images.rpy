@@ -64,6 +64,7 @@ image video_6 = Movie(play="videos/v6.webm")
 image video_7 = Movie(play="videos/v7.webm")
 image video_8 = Movie(play="videos/v8.webm")
 image video_9 = Movie(play="videos/v9.webm")
+image video_10 = Movie(play="videos/v10.webm")
 
 image raindrop:
     "images/rain1.webp"

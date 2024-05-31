@@ -39,18 +39,36 @@ label xHE:
     mei "向夏没说话，但我也不着急，只是默默地看着远处即将熄灭的火星。"
     xiang_speaking "你说得，有道理。"
     mei_speaking "嗯？"
-    mei "她转过身，站在我的面前。距离是如此近，以至于我能够看见她微微颤动的眼睛。"
+    scene bg_black with dissolve
+    mei "不知道自己在期待什么，我猛地转身，动作大到让身上轻轻披着的外套掉了出去。"
+    mei "但此时此刻，我们都没在意这些。"
+    show cg_x131 at cg_0 with dissolve
+    mei "向夏也向前两步，站在我的面前。距离是如此近，以至于我能够看见她微微颤动的眼睛。"
+    show cg_x132 at cg_0 with dissolve
+    hide cg_x131
     xiang_speaking "我——"
     mei "四目相对的时候，她倏地低下头，又很快抬起来，直直地看着我。"
+    show cg_x131 at cg_0 with dissolve
+    hide cg_x132
     xiang_speaking "我想，也是。"
+    show cg_x133 at cg_0 with dissolve
+    hide cg_x131
     xiang_speaking "我应该也不会，想和讨厌的人接吻。"
+    show cg_x134 at cg_0 with dissolve
+    hide cg_x133
     mei_speaking "……"
+    show cg_x135 at cg_0 with dissolve
+    hide cg_x134
     mei_speaking "你终于承认了。"
     mei "我有些挑衅地冲她笑了笑，趁她还没说下一句话时凑上前去。"
-
+    show cg_x136 at cg_0 with fade(0.2,0.5,0.2)
+    hide cg_x135
     mei "轻柔的触感转瞬即逝。很冷，一点也不温暖。但是……很舒服。"
-    "我又退后一步，眼睁睁看着向夏的脸瞬间涨红。\n糟糕，我好像也是……甚至觉得穿着外套有些热了。
-    "
+    show cg_x137 at cg_0 with dissolve
+    hide cg_x136
+    mei "我又退后一步，眼睁睁看着向夏的脸瞬间涨红。"
+    mei "糟糕，我自己好像也是……\n哪怕只穿一件衣服，也觉得很热。"
+    show bg_sunse1 with vpunchm 
     xiang_speaking "你你——你！！"
     mei_speaking "我？"
     mei "我故作镇定，双手背在身后，正在不停地颤抖。"

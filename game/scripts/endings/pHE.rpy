@@ -74,8 +74,9 @@ label pHE:
     show meiimg smile shell behind halfyellow at char_left
     mei_speaking "好。"
 
-    
+    scene bg_vil7 with Fade(0.3,0.5,0.3)
     mei "远处的日光只剩下余晖，广场上也只剩稀稀落落的人流，能够轻松看到中央的篝火与天空有着相似的颜色。"
+    show movie_side with dissolve
     mei_speaking "还是没赶上？是吗……抱歉。"
     peng_speaking "我没关系……不过毕竟是重要的节日，只是想让你看看。"
     mei "中央的篝火还剩最后一点火星，彭江丽看了看，把旁边堆着的燃料扔了进去。"
@@ -99,6 +100,9 @@ label pHE:
     mei "想起她的那些愿望，止不住的喜悦心情从胸中冒出，令我不由得嘴角上扬。"
     mei "我认真地看着她的脸，看着她温柔的笑容。"
     mei "火光在金色的双眸中跳动，连带着我的心脏一起高速跳动起来，紧张却激动。"
+    scene bg_black with dissolve
     mei "而后，我轻轻握住她放下的手。"
-    mei_speaking "我觉得……会灵验的。"
+    show cg_p161 at cg_0 with dissolve 
+    mei_speaking "我觉得……"
+    mei_speaking "一定会灵验的。"
     return

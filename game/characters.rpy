@@ -126,6 +126,10 @@ init:
             attribute shell:
                 "images/char/mei/shell.png"
 
+        group face:
+            attribute red:
+                "images/char/mei/red.png"
+
     
     layeredimage yeimg:
         at sprite_highlight('ye')

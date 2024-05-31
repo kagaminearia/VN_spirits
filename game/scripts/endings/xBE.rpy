@@ -24,39 +24,28 @@ label xBE:
 
     scene bg_vil3 with fade
     show halfyellow
-    show xiangimg o behind halfyellow at char_right with moveinright
     xiang_speaking "那个！"
     mei "我转过身，已经走出广场时，却又听到向夏的声音从背后传来。"
-    show meiimg shirt behind halfyellow at char_left with dissolve
     mei_speaking "……"
-    hide xiangimg
-    show xiangimg fist eye_still o behind halfyellow at char_right
     xiang_speaking "虽然，说了没意义，但我，还是有一句话要说……就一句！"
     mei "她一边跑步一边说话，声音被隔成一段一段的。听着就很累……我无奈地停下脚步，侧过身看向她。"
-    hide meiimg
-    show meiimg shirt o behind halfyellow at char_left 
+    show cg_x141 at cg_0 with dissolve
     mei_speaking "别着急。我又不是要跑。"
     xiang_speaking "好，我——我，就是想说，之前我错了，我没有讨厌你。你……"
-    hide xiangimg
-    show xiangimg fist eye_still behind halfyellow at char_right
+    show cg_x142 at cg_0 with dissolve
+    hide cg_x141
     xiang_speaking "你是个很好的人，真的很好。"
-    hide meiimg
-    show meiimg shirt eye_still behind halfyellow at char_left 
     mei_speaking "……"
-    hide meiimg
-    show meiimg shirt behind halfyellow at char_left 
     mei_speaking "没了？"
-    hide xiangimg
-    show xiangimg fist eye_still smile behind halfyellow at char_right
+    show cg_x141 at cg_0 with dissolve
+    hide cg_x142
     xiang_speaking "没了，说一句就是一句！"
     mei "我听到轻笑声从自己的胸腔发出，很神奇的，先前积郁的憋闷感也随着一起消散了。"
-    hide meiimg
-    show meiimg shirt eye_close smile behind halfyellow at char_left 
     mei_speaking "好，谢谢你！"
-    hide meiimg with dissolve
-    hide xiangimg with dissolve
     mei "这的确应该是最后一句话了……\n我朝她挥挥手，再次转身离开。"
-    scene bg_black with dissolve
+    show cg_x143 at cg_0 with dissolve
+    hide cg_x142
     mei "这一次，她没有再追上来。\n我也……"
+    scene bg_black with dissolve
     mei "我也没有再回头。"
     return
