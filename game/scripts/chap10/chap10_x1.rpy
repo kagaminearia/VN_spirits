@@ -62,6 +62,7 @@ label chap10_x1:
     scene bg_black with dissolve
     show movie_side
     show bg_sunset1 behind movie_side with dissolve
+    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=1)
     mei "天色渐晚，人群逐渐散开，周围的环境由篝火变为由夕阳染成的淡淡橙红。"
     mei_speaking "……阿嚏！"
     mei "冷风吹过，我终于回过神。因为篝火已经基本散去，我成功被冷得直打哆嗦。"

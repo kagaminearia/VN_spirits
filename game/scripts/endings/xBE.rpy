@@ -20,7 +20,8 @@ label xBE:
     xiang_speaking "……"
     mei "她沉默了很久，在我以为她就要默认，准备离开的时候，向夏低低地开口了。"
     xiang_speaking "好。"
-    "……"
+    stop music fadeout 0.5
+    na "……"
 
     scene bg_vil3 with fade
     show halfyellow
@@ -29,7 +30,8 @@ label xBE:
     mei_speaking "……"
     xiang_speaking "虽然，说了没意义，但我，还是有一句话要说……就一句！"
     mei "她一边跑步一边说话，声音被隔成一段一段的。听着就很累……我无奈地停下脚步，侧过身看向她。"
-    show cg_x141 at cg_0 with dissolve
+    $ renpy.music.play(music.story_telling, channel="music", loop=True, fadein=0.5)
+    show cg_x141 at cg_0 with Dissolve(1)
     mei_speaking "别着急。我又不是要跑。"
     xiang_speaking "好，我——我，就是想说，之前我错了，我没有讨厌你。你……"
     show cg_x142 at cg_0 with dissolve
@@ -46,6 +48,7 @@ label xBE:
     show cg_x143 at cg_0 with dissolve
     hide cg_x142
     mei "这一次，她没有再追上来。\n我也……"
+    stop music fadeout 0.5
     scene bg_black with dissolve
     mei "我也没有再回头。"
     return

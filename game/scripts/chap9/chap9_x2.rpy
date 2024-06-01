@@ -1,5 +1,6 @@
 label chap9_x2:
     scene bg_meiroom with fade(color="#fff")
+    $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei_speaking "啊——"
     mei "我从床上起来，长长地喘了一口气。昨晚没睡好，现在天已经大亮。"
     mei "但，我却还不想下楼吃早餐。"
@@ -7,15 +8,17 @@ label chap9_x2:
 
     scene bg_meiroom with pixellate
     mei_speaking "……难以置信。"
+    $ renpy.sound.play(sound.pencil_2, channel="sound", loop=False)
     mei "我的手指紧紧地捏着笔，看着笔尖落在方正的黑色文字上。台灯的光线被挡住些许，在纸上留下浅浅的影子。"
     mei "这一次，那些纸上的墨水并没有扭曲，清晰地烙印在我的视野里。"
+    $ renpy.sound.play(sound.pencil_3, channel="sound", loop=False,relative_volume=0.8)
     mei "第一题，第二题，第三题……笔尖在纸面上发出沙沙的声音，由慢变快。"
     show bg_line1 at cg_1, shaking
     mei "我好像又回到那个教室。周围都是人，我紧张地喘不上气。然后，下一秒，我就会晕倒……"
     mei "不，不是。现在已经不是那个时候了……"
     hide bg_line1 with dissolve
     mei "心脏有些憋闷，像是被东西压得难受。但没关系……\n我咬咬牙，继续写下去。"
-
+    stop music fadeout 0.5
     scene bg_meiroom with pixellate
     mei "笔记本上新加的字不好看，但题目已经被写满。"
     mei "没想到……我本来只是想让自己不去想向夏的事，才选择逼自己一把，选择我本来更不想面对的东西。"
@@ -24,6 +27,7 @@ label chap9_x2:
     mei_speaking "这……算是一个好消息吧。"
 
     scene bg_meiliv with fade
+    $ renpy.music.play(music.summer_wind, channel="music", loop=True, fadein=0.5)
     mei_speaking "之前放哪了来着……好乱……"
     show xiangimg o at char_right with moveinright
     xiang_speaking "你这是在干啥？"

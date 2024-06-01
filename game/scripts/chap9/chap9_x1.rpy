@@ -1,5 +1,6 @@
 label chap9_x1:
     scene bg_meiliv with fade
+    $ renpy.music.play(music.slow_laugh, channel="music", loop=True, fadein=0.5,relative_volume=0.7)
     show yeimg smile at char_mid with dissolve
     ye_speaking "梅雨啊梅雨，你现在倒是真的很厉害啊，开始合伙起来骗我了是吧？"
     mei_speaking "……这个……"
@@ -27,6 +28,7 @@ label chap9_x1:
     show yeimg o at char_mid
     ye_speaking "我怎么啦？还有，别叫我小叶！"
     mei_speaking "……"
+    stop music fadeout 0.5
     scene bg_meiliv with dissolve
     mei "这两人在干嘛啊……"
     mei "不过，看到话题又被转走，我不动声色地松了口气。"
@@ -37,6 +39,7 @@ label chap9_x1:
     scene bg_meiroom with fade
     mei "等我回到卧室，我才长长地吐出一口气，终于放下心来。"
     mei "说到底，我到底在心虚什么啊……"
+    $ renpy.music.play(music.remember_me_peng, channel="music", loop=True, fadein=0.5,relative_volume=0.8)
     mei "窗帘没有拉紧，我能隐约从窗玻璃上看到自己的倒影，一身白衣，面无表情。"
     mei "简直像鬼一样……那时候，她看到的我也是这样的吗？那她又会怎么想我？她也会……跟我有类似的感受吗？"
     mei_speaking "……"
@@ -48,10 +51,11 @@ label chap9_x1:
     mei "外面没开灯，很黑，但我倒也习惯了黑暗，于是懒得开灯，慢慢从走廊上摸下去。"
     mei "夜晚很宁静，每一个动作都在我的心里敲上重重的一声。"
     mei "我摸过墙，转弯……摸到一个柔软的东西。"
-
+    stop music
     scene bg_black with vpunchs
     mei_speaking "呃呜？！"
     unknown_speaking "哈啊？！"
+    $ renpy.sound.play(sound.table_smash, channel="sound", loop=False)
     scene bg_black with vpunchs
     na "啪！咚！"
     scene bg_meiliv with dissolve
@@ -65,6 +69,7 @@ label chap9_x1:
     show xiangimg fist eye_close at char_mid
     xiang_speaking "……"
     mei_speaking "……"
+    $ renpy.music.play(music.memory_1, channel="music", loop=True, fadein=0.5)
     hide xiangimg
     show xiangimg fist eye_still o at char_mid
     xiang_speaking "刚刚是不是吓到你了？对不起啊。"
@@ -76,10 +81,11 @@ label chap9_x1:
     show xiangimg fist eye_still at char_c 
     xiang_speaking "都红了……"
     mei "她的喃喃低语在此时格外清晰，引得我的腿猛地一颤，而后往相反的方向避开。"
-
+    stop music fadeout 0.5
     scene bg_meiliv with vpunchm
     show xiangimg fist eye_still at char_right with dissolve
     xiang_speaking "……"
+    $ renpy.music.play(music.memory_1, channel="music", loop=True, fadein=0.5,relative_volume=0.6)
     hide xiangimg
     show xiangimg fist o at char_right
     xiang_speaking "我怕你撞伤了，没事就好。"
@@ -109,6 +115,7 @@ label chap9_x1:
     mei "也许我就不该在那个地方停留，这样就不会看到突如其来的场景，也不会扰乱自己的心跳，更不会现在不睡觉在这里反复纠结。"
     mei "或者，也许我就不该搭话，不该靠近她，从一开始就……"
     mei "我不明白，这种心情以前从未有过，这让我感到烦闷。"
+    stop music fadeout 0.5
     scene bg_black with dissolve
     mei_speaking "唉……"
     mei "我不明白。为什么，你每次都能给我带来意外啊……"
