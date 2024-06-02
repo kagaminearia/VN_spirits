@@ -1,6 +1,7 @@
 label chap7_p1:
     scene bg_vil6 with fade
     mei_speaking "……"
+    $ renpy.music.play(music.peng_poor_little_girl, channel="music", loop=True, fadein=0.5)
     mei "这样真的合适吗……我的脚步在转弯前停下来，就这么停在路口。"
     mei "往前再走一段，就是彭江丽家。\n短短两天时间，我第二次想着到彭江丽家里找她，心情却完全不同了……"
     mei "虽然也有担心，可更多的，却是恐惧。"
@@ -66,10 +67,12 @@ label chap7_p1:
     peng_speaking "……为什么还待在这里？"
     mei_speaking "嗯……啊？"
     mei "我有些迷迷糊糊地睁开眼，视线里，有些晃眼的光线被熟悉的身影挡住。\n我仰起头，看着彭江丽定定地俯视坐着的我。"
+    stop music fadeout 0.5
     
     scene bg_vil5 with dissolve
     show pengimg shirt at char_right with dissolve
     peng_speaking "不回家吗？"
+    $ renpy.sound.play(sound.heartbeat_1, channel="sound", loop=False)
     mei "她没什么表情，语气也平淡无波，我却莫名觉得心脏被揪了一下。"
     hide pengimg
     show pengimg shirt eye_care o at char_right
@@ -96,6 +99,7 @@ label chap7_p1:
     show meiimg shell at char_mid
     peng_speaking "对不起，我不该让你等在外面的，是我，刚刚有些草率了。"
     hide pengimg
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     show pengimg shirt o at char_right
     peng_speaking "现在要回家吗？或者要干什么，我陪你吧？"
     mei "短暂的沉默之后，彭江丽还是笑着看向我。\n我知道的，她就是这样……"
@@ -173,6 +177,7 @@ label chap7_p1:
     hide meiimg
     show meiimg eye_still o shell at char_left
     mei_speaking "什么？不是这样的。"
+    $ renpy.sound.set_pause(True, channel="music")
     hide pengimg
     show pengimg shirt eye_still at char_right
     peng_speaking "……"
@@ -180,6 +185,7 @@ label chap7_p1:
     show meiimg eye_still shell at char_left
     mei_speaking "……"
     hide meiimg
+    $ renpy.sound.set_pause(False, channel="music")
     show meiimg eye_still o shell at char_left
     mei_speaking "昨天，我是想着，能够早点见到你，看看你在上学的地方，也不错。"
     hide meiimg
@@ -261,5 +267,6 @@ label chap7_p1:
     mei "一直紧绷的心脏缓和下来，我才惊讶于刚刚似乎并没有感到疼痛。"
     mei "也许，虽然紧张，但对彭江丽的担心还是占了上风吧……"
     mei "现在她没事，这样就好……"
+    stop music fadeout 0.5
 
     return

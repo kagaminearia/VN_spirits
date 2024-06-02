@@ -28,6 +28,7 @@ label chap7_x1h:
     hide xiangimg
     show xiangimg fist o at char_right 
     xiang_speaking "唔，想起来了，等等我拿个东西给你！"
+    stop music fadeout 0.5
     hide xiangimg with moveoutright
     hide meiimg
     show meiimg shirt o at char_left
@@ -37,6 +38,7 @@ label chap7_x1h:
     show meiimg shirt at char_left
     mei "总感觉，有些眼熟……"
     show xiangimg fist laugh at char_right with moveinright
+    $ renpy.music.fplay(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "这个，这回你能收下了吧，当作我的补偿！"
     hide meiimg
     show meiimg shirt o at char_left
@@ -80,6 +82,7 @@ label chap7_x1h:
     hide meiimg
     show meiimg shirt eye_close o at char_left
     mei "按照她的说法，下次再请她吃饭好了……\n还以为是什么礼物呢……我无奈地叹了口气。"
+    stop music fadeout 0.5
 
     scene bg_meiliv with pixellate
     mei "我剩下的饭没多少，向夏又速度很快，即使被中间的插曲打断，也没用多少时间就就吃完了。"
@@ -142,6 +145,7 @@ label chap7_x1h:
     mei "真亏她能想出来啊……"
     hide meiimg
     hide xiangimg
+    $ renpy.music.play(music.starlight, channel="music", loop=True, fadein=0.5)
     mei "二楼走廊的一侧连着落地玻璃门，外面就是阳台。上个月，我还在这里看过暴风雨。\n至于现在……"
     mei "阳台有上到这栋楼最顶端天台的楼梯，向夏指的就是那里。"
     mei "的确，无人的天台很符合一般故事里说秘密的场合，但是……"
@@ -223,6 +227,7 @@ label chap7_x1h:
     xiang_speaking "好啦，我会说的，不过我不知道该怎么讲，要不直接从头开始吧？但我说不定会讲很久哦。"
     mei_speaking "无所谓啊，我不介意。"
     mei "我还没听过别人讲故事，说实话，挺新奇的……"
+    stop music fadeout 0.5
     xiang_speaking "嗯，让我想想……"
 
     return

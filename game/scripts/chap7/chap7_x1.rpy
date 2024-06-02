@@ -1,6 +1,7 @@
 label chap7_x1:
     scene bg_meiroom with vpunchs
     mei_speaking "啊……啊嚏……！！"
+    $ renpy.music.play(music.summer_wind, channel="music", loop=True, fadein=1.0)
     mei "我小心地扔掉擦过的纸巾，更加用力地裹紧被子，但也许是余温在皮肤上蔓延，我还是忍不住抖了抖。"
     mei "之前，向夏泼完水后就惊慌失措地跑开，而我则是什么都反应不过来，呆愣地站在原地。"
     mei "在傍晚顶着一身湿衣服吹冷风，我毫不意外的受凉了。好在不严重，只是流流鼻涕。"
@@ -51,11 +52,13 @@ label chap7_x1:
     mei_speaking "……哈哈，是吗。"
     mei "听她这么说，我虽然有些莫名，但也跟着笑了起来。"
     mei "尽管我还摸不清楚，但，说不定……真的是这样。"
+    stop music fadeout 0.5
 
     scene bg_meiroom with pixellate
     mei "平时，叶成华晚上是不住在这里的，所以我今天也不想麻烦她。"
     mei "她很担心我，但在我再三强调没事之后还是回镇上那边了。"
     mei "然后，经过了将近二十四小时整，直到我这意外的微小感冒已经痊愈，我才在客厅听到角落的房间开门声音。"
+    $ renpy.sound.play(sound.door_open, channel="sound", loop=False, fadein=0.5)
 
     scene bg_meiliv with fade
     show xiangimg fist eye_still at char_right with easeinright
@@ -64,6 +67,7 @@ label chap7_x1:
     mei_speaking "……"
     hide xiangimg
     show xiangimg fist eye_still o at char_right 
+    $ renpy.music.play(music.xiang_awkward_talk, channel="music", loop=True)
     xiang_speaking "……呃，晚上好啊。\n不好意思啊，我好饿，有什么吃的吗？"
     hide meiimg
     show meiimg shirt smile at char_left 
@@ -89,6 +93,7 @@ label chap7_x1:
     mei "我拿过水壶准备倒水，她的眼神也顺着我的动作望过来，然后我们都愣住了。"
     mei "被我拿起的纸杯，和昨天她拿着泼向我的那个一样。"
     mei "其实这也是理所当然，家里的一次性杯子都是叶成华买的，还能不一样不成。\n只是……"
+    stop music fadeout 0.5
     hide xiangimg
     show xiangimg fist eye_still at char_right 
     xiang_speaking "……"
@@ -97,6 +102,7 @@ label chap7_x1:
     mei_speaking "……"
     hide xiangimg
     show xiangimg fist o at char_right 
+    $ renpy.music.play(music.xiang_rainy_talk, channel="music", loop=True, fadein=0.5)
     xiang_speaking "对不起。\n昨天我不是故意的。"
     xiang_speaking "之前也不是不想说，主要是我还没想好该怎么……"
     hide meiimg

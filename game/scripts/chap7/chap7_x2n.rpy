@@ -1,6 +1,7 @@
 label chap7_x2n:
     xiang_speaking "所以，我绕了一大个弯，就是想跟你说，那天我不是故意的，我只是……很怕会爆炸的火。怕得要死，哈哈。"
     mei_speaking "……我，知道。"
+    $ renpy.music.play(music.xiang_rainy_talk, channel="music", loop=True, fadein=1.0)
     mei "向夏笑着结束了这段回忆，但我却笑不出来。"
     xiang_speaking "抱歉啦，很无聊是吧？"
     mei_speaking "不，没有……"
@@ -16,15 +17,18 @@ label chap7_x2n:
     mei_speaking "……晚安。"
     xiang_speaking "晚安~"
     mei_speaking "……"
+    stop music fadeout 1.0
 
     mei "我直直地盯着她的背影，直到她转身消失在墙的后面。然后，我偏过头，看向饭桌旁边的另一把椅子。"
     mei_speaking "……呵……"
+    $ renpy.music.play(music.xiang_be, channel="music", loop=True, fadein=0.5)
     mei "人都走了，现在看有什么用。\n我暗暗嘲笑自己的虚伪，在再次发出声音之前死死咬住嘴唇。"
     mei "总觉得，我似乎理解向夏那套理论了……我也许，不该顺从她，开启这个话题的。"
     mei "现在的我们，并不适合聊完这些……但，某种微妙的平衡已经被打破了。"
     mei "而重要的是，我并不想……不对，是并没有勇气把自己的事和盘托出。"
     mei "所以，尽管她说的是所谓的“要求”，但这完全不等价的结果已经让我亏欠她了。"
     mei "所以……我无法面对她。\n这样的关系，已经不能继续了。"
+    stop music fadeout 0.5
 
 
     return
