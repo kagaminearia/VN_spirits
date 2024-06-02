@@ -12,5 +12,6 @@ label chap7_x1n:
     xiang_speaking "……"
     hide xiangimg
     show xiangimg fist eye_still o at char_right 
+    stop music fadeout 0.5
     xiang_speaking "先让我想想啊，应该从哪开始讲比较合适……"
     return

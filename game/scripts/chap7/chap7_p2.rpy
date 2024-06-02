@@ -5,6 +5,7 @@ label chap7_p2:
     show meiimg eye_still o at char_left with moveinleft
     mei_speaking "哪有……我没这么觉得。"
     hide meiimg
+    $ renpy.music.play(music.summer_wind, channel="music", loop=True, fadein=0.5)
     show meiimg at char_left
     mei "情绪涌起的气氛过了，现在我们两人面面相觑，总觉得有些尴尬。\n不过……至少比之前轻松多了。"
     hide pengimg
@@ -24,8 +25,10 @@ label chap7_p2:
     show meiimg at char_left
     mei_speaking "诶……好。"
     mei "虽然这和我的期望有些偏差，但既然彭江丽这么说了，我也爽快应下。\n可能，她还是不放心我的身体……"
+    stop music fadeout 0.5
 
     scene bg_pengback with pixellate
+    $ renpy.sound.play(sound.water_tube, channel="sound", loop=True)
     na "哗啦，哗啦……"
     mei_speaking "我拎着橡胶水管，感受到源源不断的水流从手掌下涌出。水花溅在渔具上，彭江丽摊开它们，不断拍打。"
     show pengimg shirt o at char_right with moveinright
@@ -77,9 +80,11 @@ label chap7_p2:
     show meiimg shirt eye_still smile shell at char_left
     mei_speaking "……嗯。"
     mei "彭江丽被我逗笑了，我也放松下来，看着她收好院子里的东西。"
+    stop sound fadeout 0.5
 
     scene bg_pengback with pixellate
     show pengimg shirt o at char_right with dissolve
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     peng_speaking "对了，今天……要来我家睡觉吗？晚上的话，家里没有味道。"
     show meiimg shirt o shell at char_left 
     mei_speaking "啊……？"
@@ -138,6 +143,7 @@ label chap7_p2:
     mei "关灯后，房间陷入一片黑暗。\n身旁的气息变得明显，令我忍不住微微缩紧肩膀。"
     mei "其实，到处都是熟悉的感觉。熟悉的房间，熟悉的床，以及旁边躺着的，熟悉的人。\n小时候，我就是和彭江丽在她的床上睡觉，度过每一个我妈不在家的晚上。"
     mei "但毕竟那是小时候……现在，两个成年人躺在这张不大的床上，我和她之间的距离被拉得很近，几乎就要贴在一起。"
+    $ renpy.music.play(music.peng_night_stay, channel="music", loop=True, fadein=0.5)
     show cg_p81 at cg_0 with dissolve
     peng_speaking "是不是太挤了？睡得难受吗？要不，我去跟我妈睡……"
     mei_speaking "还好……不用麻烦阿姨的。"
@@ -173,5 +179,6 @@ label chap7_p2:
     mei "仿佛只是想说出这些话，彭江丽的声音越来越低，说完之后，也只剩下轻微的呼吸声，逐渐变得均匀。"
     mei "过了许久，我稍稍偏过头，因为眼睛早已习惯黑暗，于是，便能看到她平静的脸庞。"
     mei_speaking "……\n丽丽……"
+    stop music fadeout 1.0
     
     return

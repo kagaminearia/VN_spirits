@@ -5,6 +5,7 @@ label chap7_x2h:
     mei_speaking "{size=30}对不起。{/size}"
     xiang_speaking "啊？你说啥呢？"
     mei_speaking "不，没，没事……"
+    $ renpy.music.play(music.xiang_story_end, channel="music", loop=True, fadein=0.5)
     mei "为什么……我也不知道。只是，刚刚那句话就这么飞快地脱口而出。"
     mei "明明最不该说的就是这句话……"
     mei "也许，只是我觉得……我好像不该听到这些。"
@@ -129,12 +130,14 @@ label chap7_x2h:
     xiang_speaking "什么？"
     mei_speaking "没，我说我要开始说了！"
     xiang_speaking "噢，好好——"
+    stop music fadeout 0.5
     mei "我松开手，有一搭没一搭地捋着头发。"
     mei "说吧……已经决定了，就不要再逃避……"
     mei "她都能面对，我为什么不能。"
     mei "说吧，就这样……"
 
     scene bg_black with dissolve
+    $ renpy.music.play(music.mei_story, channel="music", loop=True, fadein=0.8)
     show movie_side
     show halfblack
     show bg_roof behind halfblack
@@ -168,6 +171,7 @@ label chap7_x2h:
     mei "意外的，听到这个故事的人是她，这一点并没有让我感到排斥。"
     mei "只是……虽然早就应该习惯了，但我还是隐隐约约感受到身体某处传来的钝痛。\n就像留下的深刻印记多年之后也不会消失一样。"
     mei "不过，至少现在……我已经能把它们说出来了。"
+    stop music fadeout 0.5
 
 
     scene bg_roof with fade
@@ -206,6 +210,7 @@ label chap7_x2h:
     scene bg_black with Dissolve(1)
     show movie_side
     show video_8 behind movie_side
+    $ renpy.music.play(music.starlight, chanenl="music", loop=True, fadein=0.5)
     mei "角度变换之后，视野也更加开阔。\n虽然是夜晚，但天空并不沉寂，因为除了黑暗还有大片的繁星。"
     mei "它们一闪一闪，此起彼伏，众多微不足道的光晕集合在一起，变成绮丽的画卷。"
     show cg_x71 at cg_0 with dissolve
@@ -234,6 +239,7 @@ label chap7_x2h:
     mei_speaking "嗯。"
     mei "虽然应声，我却并没有要起身的意思。似乎……她也没有。"
     mei "我们只是并排平躺着，静静地躺在点缀繁星的夜空之下。"
+    stop music fadeout 0.5
 
     show bg_black with Dissolve(1)
     xiang_speaking "再躺下去，你就真的要再次感冒了。"
@@ -282,6 +288,7 @@ label chap7_x2h:
 
     scene bg_balcony with fade
     show halfblack
+    $ renpy.music.play(music.xiang_hug, channel="music", loop=True, fadein=0.5)
     mei_speaking "……"
     mei "向夏的身形比我大些，因而她的双臂完全能环住我。"
     mei "而后，她稍稍弯腰……肩膀落在我的肩头。\n轻柔的呼吸刮擦着皮肤，有些毛糙的卷曲发尾正巧落在我的颈边。"
@@ -308,4 +315,5 @@ label chap7_x2h:
     mei_speaking "嗯。"
     mei "我飞快理了理外套，快步跟上向夏。"
     mei "真是奇怪……{p}刚刚在上面呆了那么久，怎么我现在才开始觉得有点冷……"
+    stop music fadeout 0.5
     return

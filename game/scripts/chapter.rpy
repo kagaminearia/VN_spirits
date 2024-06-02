@@ -200,13 +200,13 @@ label chapter6p:
 define x_end = "n"
 label chapter7:
     if route == "x":
-        call chapter7x
+        call chapter7_x
     else:
-        call chapter7p
+        call chapter7_p
     return
 
 
-label chapter7x:
+label chapter7_x:
     call chap7_x1
     menu:
         mei "不过……"
@@ -223,7 +223,7 @@ label chapter7x:
         call chap7_x2h
     return
 
-label chapter7p:
+label chapter7_p:
     call chap7_p1
     call chap7_p2
     call chap7_p3

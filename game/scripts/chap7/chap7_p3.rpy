@@ -1,5 +1,6 @@
 label chap7_p3:
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=False, fadein=0.5)
     mei "被阳光晒醒时，我有一瞬的恍惚，好一会才反应过来自己是在彭江丽家——我自己住时，睡觉几乎不开窗帘。"
     mei_speaking "几点了……"
     mei "昨晚没睡好，也许是因为床太小了，也许是因为睡在她身边，我的心脏一直在不规律地跳动，搞得我心神不宁。"
@@ -28,6 +29,7 @@ label chap7_p3:
     show pengimg shirt eye_care o at char_right with vpunchs
     peng_speaking "啊这个我来收就好！"
     mei "砰的一声，她粗暴地把所有东西一股脑塞进抽屉。"
+    stop sound
 
     scene bg_meiroom with pixellate
     show meiimg eye_still o shell at char_left with dissolve
@@ -55,6 +57,7 @@ label chap7_p3:
     peng_speaking "嗯，好吧……"
 
     scene bg_pengback with pixellate
+    $ renpy.music.play(music.peng_poor_little_girl, channel="music", loop=True, fadein=0.5)
     mei "彭江丽看起来兴致不高，因而我午饭后又跟她一起做了一次清洗工作——当然，我也只能在院子里看着。"
     mei "她来回搬着已经洗完的工具，动作却突然停了下来。"
     show meiimg eye_shock o shell at char_left with moveinleft
@@ -183,13 +186,16 @@ label chap7_p3:
     hide pengimg
     show pengimg shirt smile at char_right
     peng_speaking "好啊。"
+    stop music fadeout 0.5
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.summer_night, channel="sound", loop=True, fadein=0.5)
     mei "今天，终于说出想说的话了……"
     mei "我躺在床上，止不住卷着被子滚来滚去的动作。\n真是，不知道为什么……"
     show halfblack with dissolve
     mei "之后，还能跟她一起学习，太好了……\n虽然这么说很自大，但是……"
     mei "我想帮她，想帮她实现目标……"
+    stop sound fadeout 0.5
 
     scene bg_meiroom with fade
     mei_speaking "嗯……"
@@ -200,6 +206,7 @@ label chap7_p3:
     mei "唉……我叹了口气，有些无语地往外走。\n……嗯？"
 
     scene bg_meicorridor with dissolve
+    $ renpy.sound.play(sound.stressed, channel="sound", loop=True, fadein=0.5)
     mei "楼梯口传来微小的声响，似乎是有人在说话。"
     mei "这时候会有谁在客厅……我放轻脚步，如同做贼一样悄悄下楼，还没下到楼底，我就听清了外面的声音。"
     mei "是……叶成华和彭江丽……？叶成华倒是有时会回来，但彭江丽为什么在这……"
@@ -223,6 +230,7 @@ label chap7_p3:
     ye_speaking "肯定还没起呢，估计是昨天没睡好吧？她但凡下午睡觉总会睡很久，没事，我不会跟她讲的。"
     peng_speaking "……嗯，我知道。我就……问问。"
     peng_speaking "你和路花姐，是怎么确定关系的呢……？\n我好像也有，喜欢的人……但，我……"
+    $ renpy.music.play(music.peng_after_school, channel="music", loop=True)
     mei "什么……彭江丽，她有喜欢的人……"
 
     ye_speaking "……\n你喜欢的人，也是女生吗？"
@@ -250,18 +258,31 @@ label chap7_p3:
     peng_speaking "我……我绝对不会再做对她不好的事，但是……"
     show cg_p91 at cg_0 with dissolve
     peng_speaking "我好不容易才找回她，无论怎样都好，我绝对不要她讨厌我……！！"
+    stop music
+    stop sound
     mei_speaking "……"
     mei_speaking "怎么会……"
     scene bg_black with dissolve
+    $ renpy.sound.play(sound.stressed, channel="sound", loop=True)
+    $ renpy.sound.play(sound.pencil_final, channel="nature", loop=True)
+    $ renpy.sound.play(sound.pencil_2, channel="extra_1", loop=True)
     mei "我完全呆住了，甚至没有时间去思考对话中代表的含义。"
     mei "剧烈的抽泣声和断断续续的说话声变成无意义的噪音，四面八方，从耳朵进入大脑，把一切绞成无序的碎片。"
     mei "一团乱麻中，我突兀地抓住一条可以听见的声音。"
+    stop sound
+    stop nature
+    stop extra_1
+
+    $ renpy.sound.play(sound.penciL_breaking, channel="sound", loop=False)
     show glitches with dissolve
     young_peng "我，我才不会哭呢，那样太丢脸了！"
     young_peng "但是但是，阿雨你哭的话就没关系，我会帮你打掩护的！"
+    stop sound
     hide glitches with dissolve
+    $ renpy.music.play(music.peng_after_school_2, channel="music", loop=True)
     mei "……"
     mei "我后知后觉地意识到，那时候说的玩笑话，彭江丽真的做到了。"
     mei "至少……在我认识她的时间里，她从来没有流过眼泪。"
     mei "这是……我第一次见到她哭。"
+    stop music fadeout 0.5
     return
