@@ -273,5 +273,5 @@ style page_button_text:
     color gui.dark_grey
     hover_color gui.light_grey
     selected_color "#fff"
-    font "fonts/Aboreto-Regular.ttf"
+    font gui.interface_text_font
 

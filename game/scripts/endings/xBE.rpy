@@ -51,4 +51,5 @@ label xBE:
     stop music fadeout 0.5
     scene bg_black with dissolve
     mei "我也没有再回头。"
+    $ persistent.xBE = 1
     return

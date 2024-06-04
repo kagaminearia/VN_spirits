@@ -89,4 +89,5 @@ label xHE:
     xiang_speaking "你得给我个说法——"
     mei_speaking "行，好，没问题，一定给。走吧，回去吧。"
     xiang_speaking "走就走！"
+    $ persistent.pHE = 1
     return

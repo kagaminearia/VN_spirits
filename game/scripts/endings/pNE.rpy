@@ -105,4 +105,5 @@ label pNE:
     mei_speaking "嗯，你……要加油啊。"
     scene bg_black with dissolve
     mei "只是，直到最后，我也没有正面回答彭江丽的第二句话。"
+    $ persistent.pNE = 1
     return

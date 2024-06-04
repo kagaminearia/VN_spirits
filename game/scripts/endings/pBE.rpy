@@ -36,5 +36,6 @@ label pBE:
     mei "我第一次这么做，是在电影院，不好打扰别人。第二次这么做，是现在，我已经听不见她的声音。"
     mei "我看见她在说……"
     scene bg_black with dissolve
-    peng_speaking "梅雨……再见。"
+    peng_speaking "梅雨……谢谢。"
+    $ persistent.pBE = 1
     return

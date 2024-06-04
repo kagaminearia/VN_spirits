@@ -105,4 +105,5 @@ label pHE:
     show cg_p161 at cg_0 with dissolve 
     mei_speaking "我觉得……"
     mei_speaking "一定会灵验的。"
+    $ persistent.pHE = 1
     return

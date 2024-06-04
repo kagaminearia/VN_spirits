@@ -119,4 +119,5 @@ label xNE:
     mei "我也不知道。所以，我只能说……再见。"
     mei "希望我们，都能做到想做的事吧。"
     mei "那样就……太好了。"
+    $ persistent.xNE = 1
     return

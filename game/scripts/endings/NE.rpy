@@ -40,10 +40,11 @@ label NE:
     mei "叶成华用力揉着我的脑袋，有些痒，不过我没有避开，而是任由她揉着。"
     hide yeimg
     show yeimg at char_right
-    ye_speaking "车快到了，你先过去吧。\n有任何事的话，随时联系我。"
+    ye_speaking "车快到了，你先过去吧。之后有任何事，随时联系我。"
     mei_speaking "好。"
     mei "感受到头顶的触感消失，我下意识地抬头，不知道是想挽留她的手，还是什么别的东西。{p}但是没有，我只是呆呆地看着叶成华。然后她笑了，轻轻拍了拍我的后背。"
     ye_speaking "别担心。"
     mei_speaking "嗯。"
     mei "没什么的，我知道……{p}我……总要找到自己的路。"
+    $ persistent.NE = 1
     return
