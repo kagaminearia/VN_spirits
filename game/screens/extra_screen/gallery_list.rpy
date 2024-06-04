@@ -19,7 +19,7 @@ screen gallery_menu:
         imagebutton:
             idle im.Scale("gui/extra/gal_btn_p.png",400,400)
             hover im.Scale("gui/extra/gal_btn_p_hover.png",400,400)
-            action NullAction()
+            action ShowMenu('gallery_p')
         imagebutton:
             idle im.Scale("gui/extra/gal_btn_m.png",400,400)
             hover im.Scale("gui/extra/gal_btn_m_hover.png",400,400)
@@ -27,7 +27,7 @@ screen gallery_menu:
         imagebutton:
             idle im.Scale("gui/extra/gal_btn_x.png",400,400)
             hover im.Scale("gui/extra/gal_btn_x_hover.png",400,400)
-            action NullAction()
+            action ShowMenu('gallery_x')
         
     hbox:
         xalign 0.5
