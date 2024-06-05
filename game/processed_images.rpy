@@ -50,8 +50,21 @@ style chap_interval_text:
     color gui.light_blue
 
 
-screen endings_screen(route="n"):
-    add "#fff"
+screen endings_screen(end,index):
+    add "gui/extra/endingbg.jpg"
+    style_prefix 'ending'
+    vbox:
+        xalign 0.5
+        yalign 0.5
+        text "ENDING"
+        text "[end[index]]"
+    
+
+style ending_text:
+    xalign 0.5
+    font "fonts/HongLeiBanShuJianTi.ttf"
+    size 60
+    color "#aaaaaae6"
     
 
 image intro = Movie(play="videos/intro.webm",loop=False)

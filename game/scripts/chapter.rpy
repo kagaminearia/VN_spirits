@@ -24,6 +24,17 @@ define x_title = [
     "“一点也不温暖”" # ch10
 ]
 
+define endings = {
+    "NE": "待定",
+    "xBE": "好人",
+    "xNE": "再见",
+    "xHE": "触碰",
+    "pBE": "谢谢",
+    "pNE": "回避",
+    "pHE": "成真"
+}
+
+
 define c0_x1 = 0
 define c0_p1 = 0
 label prologue:
