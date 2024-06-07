@@ -40,4 +40,4 @@ screen gallery_menu:
             text_hover_color "#fff"
             text_selected_color "#fff"
             text_outlines[(2,"#fff")]
-            action Return()
+            action ShowMenu("extra_menu")

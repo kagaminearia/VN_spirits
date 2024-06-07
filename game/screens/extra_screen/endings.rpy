@@ -7,7 +7,7 @@ default persistent.xHE = 0
 default persistent.NE = 0
 
 
-screen endings:
+screen ending_menu:
     tag menu
     key "mouseup_3" action Return()
     add "#fff"
@@ -104,4 +104,4 @@ screen endings:
             text_hover_color "#fff"
             text_selected_color "#fff"
             text_outlines[(2,"#fff")]
-            action Return()
+            action ShowMenu("extra_menu")

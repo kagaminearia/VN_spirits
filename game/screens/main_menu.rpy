@@ -7,6 +7,7 @@
 
 ## Replace this with your background image, if you like
 image main_menu_background = im.Scale("gui/main_menu.png",1920,1080)
+image main_menu_unlock = im.Scale("gui/main_unlock.jpg",1920,1080)
 image main_title = im.Alpha(im.Scale("gui/main_title.png",1920,1080),0.5)
 
 
@@ -14,7 +15,10 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add "main_menu_background"
+    if persistent.NE == 1 and persistent.xNE == 1 and persistent.xBE == 1 and persistent.xHE == 1 and persistent.pNE == 1 and persistent.pBE == 1 and persistent.pHE == 1:
+        add "main_menu_unlock"
+    else:
+        add "main_menu_background"
     add "main_title"
 
     hbox:
@@ -36,7 +40,7 @@ screen main_menu():
             spacing 45
             textbutton _("ABOUT") action ShowMenu("about")
             textbutton _("HELP") action ShowMenu("help")
-            textbutton _("EXTRA") action ShowMenu("gallery_menu")
+            textbutton _("EXTRA") action ShowMenu("extra_menu")
             textbutton _("EXIT") action Quit(confirm=not main_menu)
 
 style main_navigation_button_text:
