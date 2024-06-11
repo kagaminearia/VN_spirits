@@ -70,7 +70,7 @@ label prologue_0:
     mei_speaking "哦……好。"
 
     scene bg_meiroom with dissolve
-    $ renpy.sound.play(sound.cicada, channel="sound", loop=True)
+    $ renpy.sound.play(sound.cicada, channel="sound", loop=True, relative_volume=0.1)
     mei "房间只有必要的大件家具，显得空间更为开阔。我跟着叶成华从楼梯上到二楼，进到这个风格一样的卧室。"
     mei "同色系的双人床，竖柜，一大一小两张桌子，简约到甚至有些简陋。\n不过，我不是那种太注重精致环境的人，因而至少从宽敞程度来说，这里给我一种挺舒适的感觉。"
     show meiimg eye_still o at char_left with easeinleft

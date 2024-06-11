@@ -1,6 +1,7 @@
 label chap8_x3:
     scene bg_ground3 with fade
     stf "三，二，一——"
+    $ renpy.sound.play(sound.shutter, channel="sound", loop=False)
     xiang_speaking "喔——"
     mei_speaking "……"
     mei "我们在超市外面并排站好，很快，两下白光闪过。对面的人从机器里抽出两张卡片，笑着把其中一张递给我们。"
@@ -14,6 +15,7 @@ label chap8_x3:
     mei_speaking "……"
 
     scene bg_ground3 with fade
+    $ renpy.music.play(music.xiang_rainy_talk, channel="music", loop=True, fadein=0.5)
     mei "墙上贴着许多照片，都是两人合照，不知道哪些是情侣，哪些是朋友。\n不过，这不重要……我看着看着，眼神就不自觉飘到一旁。"
     show xiangimg fist eye_still o at char_right with moveinright
     xiang_speaking "怎么了，你不想贴另外一张吗？"
@@ -50,8 +52,10 @@ label chap8_x3:
     mei "没关系……我在内心说服自己。"
     scene bg_black with dissolve
     mei "留不下也没关系，我和她，本来就应该是这样。"
+    stop music fadeout 0.5
 
     scene bg_station2 with fade
+    $ renpy.sound.play(sound.car_pass, channel="sound", loop=False, fadein=0.5)
     show xiangimg o at char_right with dissolve
     xiang_speaking "车还没来吗？我们不会错过了吧。"
     show meiimg shirt o at char_left with dissolve
@@ -74,6 +78,7 @@ label chap8_x3:
     scene bg_station2 with fade
     mei "我大致复述了一下路花早上的安排。向夏一边听一边点头，最后甚至显得有点兴奋。"
     show xiangimg fist laugh at char_right with dissolve
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "哇，所以我也有戏份吗？"
     show meiimg shirt eye_wacky o at char_left with dissolve
     mei_speaking "……重点是在这里吗？"
@@ -94,8 +99,10 @@ label chap8_x3:
     show xiangimg fist eye_squint laugh at char_right 
     xiang_speaking "没问题，提前踩点嘛，我懂我懂。"
     mei "为什么被她说得像在做什么不好的事……"
+    stop music fadeout 0.5
 
     scene bg_hill1 with fade
+    $ renpy.sound.play(sound.mountain_birds, channel="nature", loop=True, fadein=0.2)
     mei "立涧村的北部不靠海，而是靠着高耸延绵的群山。山上有很多植物，山脚下也有大片的花草和其他设施。"
     xiang_speaking "这里好漂亮啊……我们要上山吗？"
     mei_speaking "不是啊，是要让叶成华自己去花丛那边。就那。"
@@ -111,7 +118,5 @@ label chap8_x3:
     mei_speaking "是啊。"
     xiang_speaking "还真是有点令人羡慕。"
     mei_speaking "嗯。是啊。"
+    stop nature fadeout 0.5
     return
-
-
-

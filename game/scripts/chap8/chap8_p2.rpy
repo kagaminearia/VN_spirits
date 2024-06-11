@@ -5,6 +5,7 @@ label chap8_p2:
     mei "明天啊……我难得地觉得，对于这个词有些期待。"
     show movie_side
     show video_9 behind movie_side with dissolve
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei "大巴车在有些颠簸的路面上缓慢行驶，摇摇晃晃。阳光穿过有些陈旧的玻璃，稀稀落落的映在我的眼中。"
     show meiimg shirt o shell at char_left with dissolve
     mei_speaking "感觉好像在春游……"
@@ -224,6 +225,7 @@ label chap8_p2:
     mei "她也用气声回应，却没有改变姿势，仍然直直地看着我。……十分认真地，看着我。"
     mei_speaking "……真奇怪。"
     show cg_p111 with dissolve
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True, relative_volume=1.2)
     mei "为什么会变成这样呢？明明，电影还在播放。"
     mei "近在咫尺的，不同颜色的灯光映在我们脸上，却完全没有使我们融入进那个五光十色的世界。"
     mei "近在咫尺的，她的眼睛里，映照的只有我的身影。"
@@ -231,4 +233,6 @@ label chap8_p2:
     mei "时间仿佛被魔法控制，变得粘稠，我感觉到自己的动作，缓慢而清晰。"
     hide cg_p111 with zoomout
     mei "我们只是，越靠越近……"
+    stop music
+    stop sound fadeout 2.0
     return

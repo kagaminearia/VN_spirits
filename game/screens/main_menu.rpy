@@ -75,5 +75,7 @@ screen testchapter():
         # textbutton ('chap5_ne') action Start("chapter5_ne")\
         textbutton ('chap7_x') action Start("chapter7_x")
         textbutton ('chap7_p') action Start("chapter7_p")
+        textbutton ('chap8_x') action Start("chapter8x")
+        textbutton ('chap8_p') action Start("chapter8p")
         textbutton ('chap10p') action Start("chapter10p")
         # textbutton ("ad") action Start("ad")
