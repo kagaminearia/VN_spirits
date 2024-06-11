@@ -1,10 +1,13 @@
 label chap8_x1:
     scene bg_station with fade
+    $ renpy.sound.play(sound.stressed, channel="sound", loop=True, fadein=0.5)
     mei "太阳高悬，带来持续的暑气。地面的温度仿佛顺着鞋底传至躯体，漂浮着灰尘的空气也仿佛被微微扭曲。"
     mei "时间过得真快啊……刚来的时候还没有这么热的。"
     mei "还要多久……也许是被气温影响，我难得变得有些焦躁起来，不断地来回查阅车票和手机上的时间。"
     show xiangimg o at char_right with dissolve
+    $ renpy.music.play(music.xiang_awkward_talk, channel="music", loop=True, fadein=0.5)
     xiang_speaking "应该还要五分钟吧。"
+    stop sound fadeout 0.5
     show meiimg shirt at char_left with dissolve
     mei_speaking "啊？哦……你怎么知道我在看时间。"
     hide xiangimg
@@ -50,12 +53,14 @@ label chap8_x1:
     mei_speaking "……没有。"
     mei "就是说啊，再怎么说这也是她的事情，我有什么好生气的，纠结个什么劲啊。\n只是，莫名有种憋闷的感觉……"
     mei "肯定是因为今天太热了。"
+    stop music fadeout 0.5
 
     scene bg_black with dissolve
     show movie_side
     show video_9 behind movie_side with dissolve
     mei "大巴一路颠簸，晃晃悠悠地开了一个多小时。"
     hide video_9 with dissolve
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True, fadein=0.5)
     mei "到站后，我赶紧提着袋子从车上跳下来，只觉得车外的热风也变得清爽。"
     mei "我实在不喜欢乘坐交通工具，尤其是这样满员的老旧公交。今天会到镇上，也是为了帮叶成华一个忙。"
     mei "之前给她添这么多麻烦，现在有个机会帮她，我自然是要答应。"
@@ -168,9 +173,11 @@ label chap8_x1:
     mei_speaking "……好吧。"
     mei "我倒是没有不愿意，如果她觉得我行，也没什么不可以的。"
     mei "只是……我也着实佩服她的脑回路。\n只能说，路花不愧是叶成华的女朋友。"
+    stop music fadeout 0.5
 
     scene bg_clinic1 with pixellate
     show luimg smile at char_right with dissolve
+    $ renpy.sound.play(sound.cicada, channel="sound", loop=True, fadein=0.5, relative_volume=0.1)
     lu_speaking "好啦，那你今天还有什么安排？你应该是下午的车回去吧。"
     show meiimg shirt at char_left with dissolve
     mei_speaking "嗯。"
@@ -197,6 +204,5 @@ label chap8_x1:
     hide meiimg
     show meiimg shirt eye_shock o at char_left 
     mei_speaking "啊？不用，我——"
+    stop sound fadeout 0.5
     return
-
-

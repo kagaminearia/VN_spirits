@@ -1,5 +1,6 @@
 label chap8_x2:
     scene bg_ground2 with fade
+    $ renpy.music.play(music.awkward, channel="music", loop=True, fadein=0.5)
     mei_speaking "……"
     mei "怎么是个人的力气就比我大……\n我有些无奈地看着手里被强塞的东西，除了向夏的证件，还有几张最大面额的纸币。"
     mei "之后跟叶成华说一下好了……不对，叶成华肯定是站在路花那头的。"
@@ -25,6 +26,7 @@ label chap8_x2:
     hide xiangimg
     show xiangimg eye_squint laugh at char_right
     xiang_speaking "是这样吗？我们都进过医院的诶，可以说是住院三人组，多么巧合！"
+    $ renpy.music.set_pause(True, channel="music")
     hide meiimg
     show meiimg shirt eye_wacky at char_left 
     mei_speaking "……"
@@ -33,6 +35,7 @@ label chap8_x2:
     xiang_speaking "不好笑吗？"
     hide meiimg
     show meiimg shirt eye_close o at char_left 
+    $ renpy.music.set_pause(False, channel="music")
     mei_speaking "……你有什么忌口的吗，午饭"
     mei "我干笑两声，直接转移了话题。"
     hide xiangimg
@@ -48,10 +51,12 @@ label chap8_x2:
     hide xiangimg
     show xiangimg fist eye_squint laugh at char_right
     xiang_speaking "好~没问题！"
+    stop music fadeout 0.5
 
     scene bg_ground1 with fade
     mei "今天不是节假日，面积很大的广场显得更加宽阔。"
     show xiangimg fist o at char_right with moveinright
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "喔，我还以为这里会很豪华呢，看起来也没什么区别嘛，就是店确实很多。"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "跟你老家那边差不多吗？"
@@ -90,12 +95,14 @@ label chap8_x2:
     hide xiangimg
     show xiangimg smile at char_right 
     xiang_speaking "就这个吧！"
+    stop music fadeout 0.5
     
     scene bg_room1 with fade
     mei "店里人不算多，但粗粗看来，在这个时间点，已经超过了这个广场上的平均人口密度。"
     mei "这样看来，这家店应该还可以……"
     mei "我坐在窗边的座位上，稍稍偏过头，看着向夏专心致志地选菜。"
     show xiangimg fist eye_still laugh at char_right with moveinright
+    $ renpy.music.play(music.xiang_bath, channel="music", loop=True, fadein=0.5)
     xiang_speaking "先提前谢谢你请客咯，别怪我吃得多啊。"
     show meiimg shirt o at char_left with moveinleft
     mei_speaking "啊？不会，你随意。"
@@ -205,9 +212,11 @@ label chap8_x2:
     hide xiangimg
     show xiangimg fist laugh at char_right
     xiang_speaking "行啊，走吧！"
+    stop music fadeout 0.5
 
     scene bg_store3 with fade
     mei "超市很大，灯光明亮，货架整齐，进去的一瞬间就让人觉得身上附着的热气消散了不少。"
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "哇，我觉得，这里才是我想象的大城市的样子。"
     xiang_speaking "东西好新！"
     mei "严格来说，也不算大城市就是了……"
@@ -223,13 +232,9 @@ label chap8_x2:
     xiang_speaking "不买了，我是在看……这个活动。你介意吗？"
     mei_speaking "什么？"
     mei "我没搞懂向夏的迟疑，她侧开身体，指了指海报上的字。那上面写着优惠活动，情侣或朋友拍照，就可以在结账时打折。"
+    stop music
     mei "原来如此……我的动作顿住，也莫名陷入短暂的沉默。"
     xiang_speaking "那——"
     mei_speaking "拍呗。"
     mei "我快速地做出选择，以免让拖延的时间影响思考。"
     return
-
-
-
-
-

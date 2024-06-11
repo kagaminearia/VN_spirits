@@ -4,6 +4,7 @@ label chap8_x4:
     ye_speaking "什么？你说你联系不上向夏了？"
     show meiimg shirt eye_close at char_left with dissolve
     mei_speaking "对……她今天早上说想去后山那边，但是中午到现在都没回来。"
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     mei "我不擅长说谎，即使演练过，也还是难免有些不自然。好在我说话本身就比较慢，还容易卡壳。"
     mei "希望叶成华别发现吧……"
     hide meiimg
@@ -39,7 +40,9 @@ label chap8_x4:
     mei "实话说我也很好奇，但还是用意志力制止了这份心动。"
     xiang_speaking "这怎么了，这里可是公共场合呀，我们就是碰巧路过怎么了？来都来了嘛。"
     mei_speaking "……"
+    stop music fadeout 0.5
     hide q_x40 with dissolve
+    $ renpy.sound.play(sound.light_wind, channel="nature", loop=True, fadein=0.5)
     mei "我和她之间绝对有一个人对“碰巧”的理解有问题。"
     mei "只是，虽然这么说，但我也没有再往外走。因为……"
     mei "起风了。"
@@ -70,6 +73,7 @@ label chap8_x4:
     mei "在我们讲话时，舞蹈已经迎来尾声。因而，场景里增加了观众的身影。"
     mei "明艳的花丛中，两个身影逐渐靠近，而后贴在了一起。"
     mei_speaking "……"
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True, relative_volume=1.2)
     mei "我知道，我应该移开视线，可身体却十分僵硬，不知道该如何行动。"
     mei "身侧……身侧，不属于自己的气息在这时变得格外明显，仿佛提醒我，应该赶快打断这奇怪的气氛。"
     mei "我和向夏躲在这里看情侣接吻，而我们之间的距离也如此接近……不知为何，我突然不敢转头看她。"
@@ -77,10 +81,12 @@ label chap8_x4:
     scene bg_black with dissolve
     mei "我突然不敢继续想。"
     mei "不，不对，我肯定想多了，向夏肯定不会在意这些的，她冷静的话我也能冷静下——"
+    stop nature fadeout 0.5
 
     show cg_x101 at cg_0 with dissolve
     mei "我猛地转过头，却彻底愣住。"
     mei_speaking "……\n你……"
+    $ renpy.music.play(music.xiang_heartbeat, channel="music", loop=False)
     mei "向夏正目不转睛地看着我，似乎在我转过头之前，就已经注视了许久。"
     mei "她从未有过地睁大了双眼，黑曜石一般的眸子清澈透亮，似乎因为某种情绪而微微颤动。"
     mei "阳光不止照耀她的眼眸，也在她那随风摇曳的发丝上落下斑驳光影，更诚实地映照出她通红的脸颊。"
@@ -91,5 +97,6 @@ label chap8_x4:
     mei "你……你在脸红什么啊！你怎么会脸红啊，明明你之前看到那些黄色小电影都毫无反应的不是吗……？！"
     mei "你要是这样……"
     mei "我岂不是，更加没有办法控制住自己的心跳了吗？"
+    stop music fadeout 0.5
+    stop sound fadeout 0.5
     return
-

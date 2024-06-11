@@ -1,6 +1,7 @@
 label chap8_p1:
     scene bg_meiroom with fade
     show pengimg shirt eye_care at char_right with moveinright
+    $ renpy.sound.play(sound.cicada, channel="sound", loop=True, fadein=0.5, relative_volume=0.1)
     peng_speaking "那个，这道题好像错了……"
     hide pengimg
     show pengimg shirt eye_care o at char_right 
@@ -33,9 +34,11 @@ label chap8_p1:
     mei "我不想就这么装傻，无条件接受她的好意，却也不知道该如何面对她的感情。\n即使是现在，她那天的哭泣仍然会回荡在我的脑海里。"
     mei "真是的，我之前还真敢说，说什么她是最重要的人……我对她的感情，真的比得上她对我的吗？我到底，对她是什么想法……？"
     mei "这样沉重的、真实的感情……我真的，能够回应吗？"
+    stop sound fadeout 0.5
 
     scene bg_meiroom with dissolve
     show pengimg shirt eye_care o at char_right with moveinright
+    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=0.5, relative_volume=1.2)
     peng_speaking "啊……梅雨，你还是不舒服吗？哪里难受？"
     peng_speaking "其实我本来上课机会就很少，平时都是自己在家里看书的。你就算只帮我看一道题，就已经比平时的进度快很多了。所以——"
     hide pengimg
@@ -59,6 +62,7 @@ label chap8_p1:
     mei "必须要打起精神才行……"
     hide meiimg
     show meiimg shirt o shell at char_left
+    $ renpy.music.play(music.time_alone_2, channel="music", loop=True, relative_volume=1.2)
     mei_speaking "你之前出去玩过吗？"
     hide pengimg
     show pengimg shirt o at char_right
@@ -86,6 +90,7 @@ label chap8_p1:
     hide meiimg
     show meiimg shirt shell at char_left 
     mei_speaking "啊？是啊……"
+    stop music
     mei "我没搞懂她突如其来的态度，一时间有些惴惴不安。"
     hide pengimg
     show pengimg shirt at char_right 
@@ -103,6 +108,7 @@ label chap8_p1:
     mei "她的声音戛然而止，最终还是没能说下去，我也终于明白她的意思，却只好低下头。"
     hide meiimg
     show meiimg shirt eye_still shell at char_left 
+    $ renpy.music.play(music.time_alone_2, channel="music", loop=True, relative_volume=1.2)
     mei_speaking "……抱歉。"
     hide pengimg
     show pengimg shirt eye_still at char_right 
@@ -209,6 +215,7 @@ label chap8_p1:
     peng_speaking "就是……让我来帮你吧！"
 
     scene bg_meiroom with Fade(0.2,0.5,0.3)
+    $ renpy.music.play(music.time_alone_3, channel="music", loop=True)
     peng_speaking "‘……在第二段中……表达了什么……’"
     peng_speaking "读完了。"
     mei_speaking "嗯……选B？"
@@ -231,5 +238,5 @@ label chap8_p1:
     mei_speaking "不，是我——"
     peng_speaking "那，那你要谢谢我的话，之后就一起加油吧！"
     mei_speaking "……{p}好。"
+    stop music fadeout 0.5
     return
-
