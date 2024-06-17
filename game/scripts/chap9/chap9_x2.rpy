@@ -2,9 +2,11 @@ label chap9_x2:
     scene bg_meiroom with fade(color="#fff")
     $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei_speaking "啊——"
+    $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True, fadein=0.5)
     mei "我从床上起来，长长地喘了一口气。昨晚没睡好，现在天已经大亮。"
     mei "但，我却还不想下楼吃早餐。"
     mei_speaking "做些别的吧……"
+    stop sound fadeout 0.5
 
     scene bg_meiroom with pixellate
     mei_speaking "……难以置信。"
@@ -160,10 +162,13 @@ label chap9_x2:
     hide xiangimg
     show xiangimg fist at char_right 
     xiang_speaking "唔，这个问题好难啊，我——"
+    stop music
+    $ renpy.sound.play(sound.table_smash, channel="sound", loop=False)
     na "砰！"
     hide meiimg
     show meiimg shirt o at char_left 
     mei_speaking "……什么声音？我没听错吧。"
+    $ renpy.sound.play(sound.pot_drop, channel="sound", loop=False)
     na "梆！"
     hide xiangimg
     show xiangimg fist eye_shock o at char_right 
@@ -179,6 +184,7 @@ label chap9_x2:
     mei_speaking "我也去！"
 
     scene bg_meikitc with fade
+    $ renpy.music.play(music.xiang_first_meet, channel="music", loop=True, fadein=0.5)
     na "滋……滋滋……"
     mei "冰凉的水流落在滚烫的锅底上，接触的表层发出阵阵声响。"
     mei "我盯了一会糊掉的锅底，随后把目光转移到向夏身上。"
@@ -206,6 +212,7 @@ label chap9_x2:
     hide meiimg
     show meiimg shirt eye_close at char_left 
     mei "好吧，我没法生气了。硬要说的话，这事故也有我的一份力……"
+    stop music fadeout 0.5
     hide meiimg
     show meiimg shirt o at char_left 
     mei_speaking "你本来要做什么？"
@@ -226,6 +233,7 @@ label chap9_x2:
     mei "灶台旁边一字排开容器、厨具和原材料，我小心地用刀把水果切碎，推给向夏，而她正用筷子在大碗里粗暴地把水果块捣成糊状。"
     mei "此情此景简直可以称得上温馨……却好像让我的心情变得更加复杂。"
     show xiangimg fist eye_close o at char_right with dissolve
+    $ renpy.music.play(music.xiang_cooking, channel="music", loop=True, fadein=1.0)
     xiang_speaking "虽然现在找些零工容易多了，但我还是想找个靠谱点的好一点的工作啊。"
     show meiimg shirt at char_left with dissolve
     mei_speaking "嗯？啊……"
@@ -246,6 +254,7 @@ label chap9_x2:
     mei "于是我没再说话，只是默默地看着她。"
     hide xiangimg
     show xiangimg fist eye_still at char_right
+    $ renpy.sound.play(sound.boiling_water, channel="sound", loop=True, relative_volume=0.6)
     mei "灶上开了小火，锅里的液体发出咕嘟咕嘟的响声。向夏垂着眼睛，没有看我，只是慢条斯理地搅拌。"
     hide xiangimg
     show xiangimg fist eye_close o at char_right
@@ -295,14 +304,17 @@ label chap9_x2:
     show meiimg shirt eye_close o at char_left 
     mei "我不得不承认，听到她刚刚的话，我的嘴角好像是上扬了一些。"
     mei "……明知道她说的只是鼓励，一点也不现实，但我还是为此感到高兴。"
+    stop music fadeout 0.5
     hide meiimg
     show meiimg shirt o at char_left 
     mei_speaking "对了，刚刚我的东西还没收完就进来了，我去收东西。"
     mei "下意识地，我飞速抛出一个借口，转身就走。"
     mei "向夏的惊诧声从身后传来，我眼疾手快，带上了厨房的门。"
+    stop sound
 
     scene bg_meiliv with dissolve
     mei_speaking "……"
+    $ renpy.music.play(music.xiang_crush_talk, channel="music", loop=True, fadein=0.5)
     mei "说好要收东西，但那些笔记本仍然散乱地堆在桌上，而我站在旁边没动，只是瞪着桌上的一小块污渍。"
     mei "刚才的场景顺滑地在我脑中重现，我那行云流水的动作……"
     mei "梅雨啊梅雨，你到底在想什么啊，太丢人了……"
@@ -330,6 +342,7 @@ label chap9_x2:
     mei_speaking "不过，这玩意怎么吃——"
     scene bg_black with vpunchm
     mei "？！"
+    stop music
     show cg_x111 at cg_s with dissolve
     mei "那句话结尾的“尝”字只说到一半，柔软的指尖毫无预兆地落在我的唇边。"
     mei "瞬间，细腻绵密的口感蔓延至整个口腔，带着温热的，淡淡的甜。"
@@ -343,6 +356,7 @@ label chap9_x2:
     mei_speaking "……"
 
     scene bg_meikitc with dissolve
+    $ renpy.sound.play(sound.water_tube, channel="sound", loop=True, fadein=0.5)
     mei "很长一段时间内，房间里都没有说话的声音。只有碗筷的碰撞声，液体的流动声，冰箱打开的声音。"
     show xiangimg fist eye_still at char_mid with dissolve
     xiang_speaking "……"
@@ -356,9 +370,11 @@ label chap9_x2:
     show xiangimg fist eye_still smile at char_mid
     xiang_speaking "……怎么了？"
     mei "不知不觉，我已经走上前，拉近了和向夏的距离。她身高比我高，但只比我高一些，所以，我抬眼，就可以看到她不自然的表情。"
+    stop sound fadeout 0.5
 
     scene bg_meikitc with fade
     show meiimg shirt at char_left with dissolve
+    $ renpy.music.play(music.xiang_heartbeat, channel="music", loop=True, fadein=0.5)
     mei_speaking "你又要装作无事发生吗？像之前的事那样。"
     mei "想都没想，我的话不经大脑就出口。但，的确……也许，这就是，我那被堵住的，憋闷而不知从何说起的情感……"
     show xiangimg fist eye_still at char_right with dissolve
@@ -404,6 +420,7 @@ label chap9_x2:
     mei_speaking "……喂，那你——"
     xiang_speaking "都说了我做错了，所以，我也不是想刻意跟你拉进关系。所以别问了，我……"
     show cg_x123 at cg_s with dissolve
+    stop music
     xiang_speaking "我很讨厌你。"
     scene bg_black with dissolve
     mei_speaking "……"

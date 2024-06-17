@@ -1,5 +1,6 @@
 label chap9_p1:
     scene bg_cinema1 with fade
+    $ renpy.sound.play(sound.popcorn, channel="sound", loop=True)
     na "咯吱咯吱……"
     show meiimg o shell at char_left with dissolve
     mei_speaking "……好吃吗？"
@@ -26,13 +27,16 @@ label chap9_p1:
     peng_speaking "好吧。"
     scene bg_cinema1 with dissolve
     na "咯吱咯吱……"
+    $ renpy.sound.set_volume(1.2, 0, channel="sound")
     mei "几个对话十分短暂，转瞬即逝。"
     mei "彭江丽大口大口地吃着爆米花，嚼得十分用力，仿佛这样就可以用声音去除刚才的尴尬气氛。"
     mei "我们没有再说别的事，也没有提及刚才影院里的突兀动作。当时，连我自己也没弄清楚我到底想做什么，只是本能地觉得尴尬，只好恢复坐姿，当作从没发生过。"
+    stop sound fadeout 0.5
 
     scene bg_black with dissolve
     show movie_side
     show video_9 behind movie_side with dissolve
+    $ renpy.music.play(music.peng_way_back_home, channel="music", loop=True, fadein=0.5)
     mei "回程的大巴车到得很及时，来的时候我靠着窗，现在则是彭江丽靠着窗。"
     mei "她没看我，坐下之后就撑着手臂看向窗外，不知道在看些什么。"
     mei "我坐下之后，重重地打了个哈欠，她便转过头，有些紧张地看着我。"
@@ -98,6 +102,7 @@ label chap9_p1:
     mei "……咦……"
     mei "朦胧中，听到自己的名字，我的眼皮猛地抽了抽，彻底清醒过来。"
     mei "但我仍然没有睁开眼睛。毕竟，显而易见，现在并不是一个合适的时机。"
+    $ renpy.music.set_pause(True, channel="music")
     peng_speaking "……梅雨？"
     mei "……？！"
     peng_speaking "嗯……梅雨？你醒着吗？"
@@ -106,10 +111,12 @@ label chap9_p1:
     mei "我得尽量装得像一点，不能让气息乱掉，也不能让身体太僵硬……"
     scene bg_black with dissolve
     peng_speaking "……还在睡吗？……好吧。"
+    $ renpy.music.set_pause(False, channel="music")
     peng_speaking "那你好好休息，待会到了我会叫你的。"
     mei "呼……我悄悄松了口气。太好了，没被发现……"
     mei "只是……我稍稍抬起一点眼皮，感受到从窗外传来的些微光线，也感受到身旁挡住大部分光线的那片阴影。"
     mei "也许我并不该这么做……但现在也来不及了。"
+    stop music fadeout 1.5
 
     scene bg_station with dissolve
     show pengimg eye_care at char_right with dissolve
@@ -118,6 +125,7 @@ label chap9_p1:
     mei_speaking "嗯……啊。"
     hide meiimg
     show meiimg o shell at char_left 
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei_speaking "你……肩膀是不是很痛？"
     mei "之前想假装没醒，没想到竟然真的又枕着她睡着了，我有些尴尬地看向彭江丽，但她只是笑着摇摇头。"
     hide pengimg
@@ -174,4 +182,5 @@ label chap9_p1:
     mei "等等，这样不行，她又开始自责了……"
     mei "不能这样……"
 
+    # music.peng_hanging_out continued to the next script
     
