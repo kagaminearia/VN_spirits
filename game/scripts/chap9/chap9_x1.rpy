@@ -46,6 +46,7 @@ label chap9_x1:
     mei "算了，胡思乱想什么呢。她怎么想……与我无关。"
     mei "只是……我莫名觉得有些烦闷，思来想去，想不出结果。"
     mei "去楼下拿杯水喝吧，刚好也透透气……"
+    stop music fadeout 0.5
 
     scene bg_black with dissolve
     mei "外面没开灯，很黑，但我倒也习惯了黑暗，于是懒得开灯，慢慢从走廊上摸下去。"
@@ -106,8 +107,10 @@ label chap9_x1:
     mei "她笑了笑，而我只是站在原地。不知道过了多久，我慢慢移动脚步，离开客厅。"
 
     scene bg_meiroom with fade
+    $ renpy.sound.play(sound.table_smash, channel="sound", loop=False)
     mei "砰的一声，卧室的门关上，我才感觉自己从那种浓稠的气氛中脱离出来。"
     mei_speaking "哈……"
+    $ renpy.music.play(music.time_alone, channel="music", loop=True, fadein=1.0)
     mei "我靠着门滑坐在地上，仔细回想到底是哪里出了错。"
     mei "就在几天前，我们还可以一起爬到天台，交换平时难以启齿的故事。\n现在，连互相对话好像也变得难以启齿。"
     mei "而且，她为什么要那样做……"
@@ -119,4 +122,5 @@ label chap9_x1:
     scene bg_black with dissolve
     mei_speaking "唉……"
     mei "我不明白。为什么，你每次都能给我带来意外啊……"
+    stop music fadeout 0.5
     return

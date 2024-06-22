@@ -15,6 +15,7 @@ label chap9_p3:
 
     scene bg_hill1 with fade
     mei_speaking "啊——累死了……你可把我害惨了……"
+    $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True, fadein=0.5)
     mei "我大喘一口气，无奈地嘟囔着，看向草丛里明显不久前才被人踩过的痕迹。"
     mei "这个地方通往北边的后山，因为土壤不适合种果树，现在也没有合适的植物成熟，平时很少会有人来这里。"
     mei "但，如果是她的话，应该就是这里了……"
@@ -25,6 +26,7 @@ label chap9_p3:
     mei "不，要是我当时拦住她就好了……"
     mei "不过，现在想这些也没有用。我长叹一声，只好也顺着脚步痕迹往里走。"
     scene bg_hill2 with fade
+    $ renpy.sound.play(sound.peng_wind, channel="sound", loop=True, fadein=0.5)
     na "啪嚓……簌簌，唰唰……"
     mei "摩擦和碰撞的声响从身边不断发出，偶尔因为我的动作停止，而后又随着步伐响起。"
     mei "就这样，我慢慢进了树林。"
@@ -46,11 +48,14 @@ label chap9_p3:
     mei_speaking "怎么办……\n啊。\n……咦？"
     mei "我无意识地一直在往前走，现在停下来才发现自己已经找不到路了。"
     mei "天色阴沉，四周的景象更加相似，只是茂密的枝叶相互叠加，分不清前后左右。"
+    $ renpy.sound.play(sound.owl, channel="nature", loop=True, fadein=0.5)
     mei_speaking "……彭江丽……？\n有人吗？"
     mei_speaking "有……？唉。"
     mei "唉……理所当然的，我听不到第二个人类的声音。"
     mei "那，还是算了……我无奈地摇摇头，不打算继续做无用功。"
     mei "虽然这样很不好，但也没办法……我掏出手机给叶成华打了个电话。"
+    stop nature
+
     ye_speaking "……你说什么？！你没在开玩笑？\n梅雨，你……"
     mei "叶成华的分贝大到有些刺耳，我把手机拿开一点，过了一会才听到她长长地叹了口气。"
     ye_speaking "梅雨，梅雨，你啊……真没想到你能做出这种事。"
@@ -69,6 +74,8 @@ label chap9_p3:
     show halfblack behind bg_black
     hide bg_black with dissolve
     mei_speaking "……嗯？"
+    stop sound fadeout 0.5
+    $ renpy.music.play(music.young_dream, channel="music", loop=True, fadein=0.5)
     mei "我眯着眼睛，忽然觉得哪里有些不对。余光处似有点点微光在闪烁，但天色早就暗下，我的手机屏幕也已经熄灭，哪来的光源？"
     hide halfblack with dissolve
     mei "我放下手，彻底睁开双眼。然后……我发现那并不是错觉。"
@@ -110,6 +117,7 @@ label chap9_p3:
     mei "一瞬间，已经跨越多年的，沉淀的记忆重新浮起，和眼前的场景重叠。"
     show cg_p131 at cg_0 with dissolve
     mei "同样的记忆，同样的情形，同样是……那个人，出现在我面前。"
+    stop music fadeout 0.5
     show cg_p133 at cg_0 with dissolve
     hide cg_p131
     peng_speaking "梅雨真的是你！太好了你没事……太好了，我要吓死了……"
@@ -119,6 +127,7 @@ label chap9_p3:
     hide cg_p132 with dissolve
     mei "什么都不想去想了。"
     mei "我张开双臂，抱住了她。此时此刻，我只想这么做。"
+    $ renpy.music.play(music.peng_love_you, channel="music", loop=True, fadein=0.5)
     mei_speaking "谢谢。"
     mei_speaking "谢谢你……丽丽。"
     mei "谢谢你，再一次出现在我的面前。{p}谢谢你，担心着我。{p}谢谢你……一直以来，如此重视我。"
@@ -131,4 +140,5 @@ label chap9_p3:
     peng_speaking "……阿雨……"
     hide cg_p141 with dissolve
     peng_speaking "我喜欢你。"
+    stop music fadeout 0.5
     return
