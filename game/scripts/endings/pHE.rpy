@@ -106,4 +106,9 @@ label pHE:
     mei_speaking "我觉得……"
     mei_speaking "一定会灵验的。"
     $ persistent.pHE = 1
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"pHE") with Pixellate(3,25)
+    pause
     return

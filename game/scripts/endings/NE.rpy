@@ -47,8 +47,13 @@ label NE:
     mei_speaking "嗯。"
     mei "没什么的，我知道……{p}我……总要找到自己的路。"
     $ persistent.NE = 1
-
-    scene bg_station with Dissolve(4)
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"NE") with Pixellate(3,25)
+    pause
+    scene bg_station with Fade(0.5,1.5,0.5)
+    show movie_side with moveinleft
     lu_speaking "行了，车都走远了，还有啥好看的？"
     ye_speaking "啊……是。"
     na "被身旁的人提醒，叶成华下意识应了一声，而后才回过神，有些无所谓地笑了笑。"
@@ -86,5 +91,6 @@ label NE:
     lu_speaking "是啊。大人照顾小孩儿，天经地义嘛。"
     na "温暖的阳光从树叶间落下，落在两人相视而笑的脸庞之上。远处，大巴车离开的方向已经没有人影，只有被加热到有些扭曲的空气。"
     na "如同梅雨来时的那天一样。"
-
+    scene bg_white with Dissolve(1)
+    pause
     return

@@ -120,4 +120,11 @@ label xNE:
     mei "希望我们，都能做到想做的事吧。"
     mei "那样就……太好了。"
     $ persistent.xNE = 1
+
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"xNE") with Pixellate(3,25)
+    pause
+
     return

@@ -1,7 +1,7 @@
 label xHE:
     scene bg_black with dissolve
     show movie_side
-    show bg_sunse1 behind movie_side with dissolve
+    show bg_sunset1 behind movie_side with dissolve
     mei_speaking "……嗯？好。"
     mei "虽然没想到她开口是说这个，但我毫不客气地点头，接过她递来的外套披在身上。"
     mei "厚重的布料还带着余温，压住我的肩膀，隔绝了转凉的空气。"
@@ -27,9 +27,9 @@ label xHE:
     mei "好在……她似乎已经在短时间内说服好自己，还用拳头用力挥了挥空气，一副打气的样子。"
     xiang_speaking "算了！不说那些……反正本来就是不可能的事情，是我做梦。"
     mei "她左手摸过被长袖盖住的右手臂，似是有些恍神，但最终还是又笑出来。"
-    show bg_black with dissolve
+    show bg_white with dissolve
     pause(0.5)
-    hide bg_black with dissolve
+    hide bg_white with dissolve
     mei_speaking "……怎么样？你……"
     xiang_speaking "我都说，无所谓咯。"
     mei_speaking "哦……那好。抱歉啊，我没话找话，提到这个话题。"
@@ -108,14 +108,14 @@ label xHE:
     hide cg_x134
     mei_speaking "你终于承认了。"
     mei "我有些挑衅地冲她笑了笑，趁她还没说下一句话时凑上前去。"
-    show cg_x136 at cg_0 with fade(0.2,0.5,0.2)
+    show cg_x136 at cg_0 with Fade(0.2,0.5,0.2)
     hide cg_x135
     mei "轻柔的触感转瞬即逝。很冷，一点也不温暖。但是……很舒服。"
     show cg_x137 at cg_0 with dissolve
     hide cg_x136
     mei "我又退后一步，眼睁睁看着向夏的脸瞬间涨红。"
     mei "糟糕，我自己好像也是……{p}哪怕只穿一件衣服，也觉得很热。"
-    show bg_sunse1 with vpunchm 
+    scene bg_sunset1 with vpunchm 
     xiang_speaking "你你——你！！"
     mei_speaking "我？"
     mei "我故作镇定，双手背在身后，正在不停地颤抖。"
@@ -137,7 +137,10 @@ label xHE:
     mei_speaking "行，好，没问题，一定给。走吧，回去吧。"
     xiang_speaking "走就走！"
     $ persistent.pHE = 1
-
-
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"xHE") with Pixellate(3,25)
+    pause
 
     return

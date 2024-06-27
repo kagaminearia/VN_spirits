@@ -94,7 +94,7 @@ define config.after_load_transition = dissolve
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = Dissolve(1.5)
+define config.end_game_transition = Dissolve(3)
 
 ## Window management ###########################################################
 ##

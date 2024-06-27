@@ -106,4 +106,9 @@ label pNE:
     scene bg_black with dissolve
     mei "只是，直到最后，我也没有正面回答彭江丽的第二句话。"
     $ persistent.pNE = 1
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"pNE") with Pixellate(3,25)
+    pause
     return

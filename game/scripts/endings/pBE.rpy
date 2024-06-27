@@ -38,4 +38,9 @@ label pBE:
     scene bg_black with dissolve
     peng_speaking "梅雨……谢谢。"
     $ persistent.pBE = 1
+    window hide
+    scene bg_white with Dissolve(4)
+    pause(0.5)
+    show screen endings_screen(endings,"pBE") with Pixellate(3,25)
+    pause
     return
