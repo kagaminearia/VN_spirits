@@ -7,6 +7,7 @@ label pNE:
     show pengimg eye_care behind halfyellow at char_right
     hide meiimg
     show meiimg shell behind halfyellow at char_left
+    $ renpy.music.play(music.peng_sorry, channel="music", loop=True, fadein=0.5)
     mei_speaking "没有的事，我没这么觉得。刚刚我只是刚睡醒，没反应过来。"
     hide meiimg
     show meiimg eye_close o shell behind halfyellow at char_left
@@ -37,6 +38,7 @@ label pNE:
     show meiimg eye_close shell behind halfyellow at char_left
     mei_speaking "好。今天……谢谢你。"
     mei "我不敢看她的眼睛，只是尽量快速解决了对话。"
+    stop music fadeout 0.5
 
     scene bg_black with dissolve
     mei "后来我才意识到，那天说不定就是最好的坦白时机。"
@@ -45,6 +47,7 @@ label pNE:
 
     scene bg_station1 with fade
     show pengimg shirt o at char_right with moveinright
+    $ renpy.music.play(music.peng_poor_little_girl, channel="music", loop=True, fadein=0.5)
     peng_speaking "你应该保存了我的号码对吧？"
     show meiimg shell at char_left with moveinleft
     mei_speaking "嗯，是啊。"
@@ -111,4 +114,5 @@ label pNE:
     pause(0.5)
     show screen endings_screen(endings,"pNE") with Pixellate(3,25)
     pause
+    stop music fadeout 0.5
     return

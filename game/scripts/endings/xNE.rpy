@@ -1,4 +1,5 @@
 label xNE:
+    stop music fadeout 0.5
     scene bg_station1 with fade
     mei "只要在这个季节，这个地方，大部分时候阳光总是如此耀眼。"
     mei "周围的环境如此相似——包括褪色的车站和身旁站着的人——令我一瞬间还以为出现了幻觉，以为之前经历的时间并不存在。"
@@ -8,6 +9,7 @@ label xNE:
     hide cg_x10 with dissolve
     mei "那一天，第一次看到她的时候，我绝对不会想到事情会变成这样……"
     show xiangimg smile at char_right with moveinright
+    $ renpy.music.play(music.xiang_crush_talk, channel="music", loop=True, fadein=0.5)
     xiang_speaking "中午好啊。"
     show meiimg o flower at char_left with moveinleft
     mei_speaking "嗯……？嗯，中午好……"
@@ -126,5 +128,6 @@ label xNE:
     pause(0.5)
     show screen endings_screen(endings,"xNE") with Pixellate(3,25)
     pause
+    stop music fadeout 1.0
 
     return

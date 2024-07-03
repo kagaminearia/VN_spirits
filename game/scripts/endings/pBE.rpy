@@ -9,6 +9,7 @@ label pBE:
     mei "希望，她会没事……"
 
     scene bg_meiroom with fade
+    $ renpy.music.play(music.peng_be, channel="music", loop=True, fadein=0.5, relative_volume=1.5)
     mei "似乎我每次抱有什么期望的时候，总是会事与愿违。\n也许，这是对我自己付出不够，只会祈求的惩罚吧……"
     mei "总之，那天是我和彭江丽最后一次直接说话。"
     mei "在那之后，她总是拼尽全力想要避开我，即使我再次到她家门口，她也不会再出来，只有我和阿姨的尴尬会面。"
@@ -35,12 +36,15 @@ label pBE:
     mei "我看见她在说话，说得很慢，能够让我读出口型。"
     mei "我第一次这么做，是在电影院，不好打扰别人。第二次这么做，是现在，我已经听不见她的声音。"
     mei "我看见她在说……"
+    stop music fadeout 1.0
     scene bg_black with dissolve
     peng_speaking "梅雨……谢谢。"
     $ persistent.pBE = 1
     window hide
+    $ renpy.sound.play(sound.rain_after_peng_be, channel="nature", loop=False, fadein=1.0)
     scene bg_white with Dissolve(4)
     pause(0.5)
     show screen endings_screen(endings,"pBE") with Pixellate(3,25)
     pause
+    stop nature fadeout 1.0
     return

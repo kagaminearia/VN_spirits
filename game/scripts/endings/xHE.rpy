@@ -3,9 +3,11 @@ label xHE:
     show movie_side
     show bg_sunset1 behind movie_side with dissolve
     mei_speaking "……嗯？好。"
+    stop music fadeout 0.5
     mei "虽然没想到她开口是说这个，但我毫不客气地点头，接过她递来的外套披在身上。"
     mei "厚重的布料还带着余温，压住我的肩膀，隔绝了转凉的空气。"
     mei "外套换到梅雨身上后，向夏仍然攥着拳，久久没有改变动作，也没有再说话。"
+    $ renpy.music.play(music.xiang_hug, channel="music", loop=True, fadein=0.5)
     mei_speaking "……"
     mei_speaking "你到这里的，呃，要做的事，做完了吗？"
     xiang_speaking "啊……没，不，也算是吧，做完了。"
@@ -44,9 +46,11 @@ label xHE:
     xiang_speaking "就是，你……"
     xiang_speaking "……"
     mei "向夏翕动着嘴唇，张开嘴，又闭上，还是没憋出一句完整的话。"
+    stop music fadeout 0.5
     mei_speaking "……"
 
     hide movie_side with dissolve
+    $ renpy.music.play(music.xiang_love_you, channel="music", loop=True, fadein=0.5)
     mei_speaking "你不是讨厌我吗，怎么还拿衣服过来，还跟我聊这么久。"
     xiang_speaking "……"
     xiang_speaking "这个嘛……要是，你生病了，多不好啊。"
@@ -115,7 +119,10 @@ label xHE:
     hide cg_x136
     mei "我又退后一步，眼睁睁看着向夏的脸瞬间涨红。"
     mei "糟糕，我自己好像也是……{p}哪怕只穿一件衣服，也觉得很热。"
+    stop music fadeout 0.5
+    pause(0.5)
     scene bg_sunset1 with vpunchm 
+    $ renpy.music.play(music.xiang_he, channel="music", loop=True, fadein=0.5)
     xiang_speaking "你你——你！！"
     mei_speaking "我？"
     mei "我故作镇定，双手背在身后，正在不停地颤抖。"
@@ -142,5 +149,6 @@ label xHE:
     pause(0.5)
     show screen endings_screen(endings,"xHE") with Pixellate(3,25)
     pause
+    stop music fadeout 1.0
 
     return

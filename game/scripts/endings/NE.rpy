@@ -1,5 +1,6 @@
 label NE:
     scene bg_vil4 with fade
+    $ renpy.music.play(music.calming_guitar, channel="music", loop=True)
     mei "天色湛蓝，薄云缓慢地漂浮，在远处的山脉上留下淡淡的阴影。\n我拖着行李，在不规则的路上发出喀喀的声响。"
     mei "……和来的那天差不多。"
     show yeimg at char_right with moveinright
@@ -46,6 +47,7 @@ label NE:
     ye_speaking "别担心。"
     mei_speaking "嗯。"
     mei "没什么的，我知道……{p}我……总要找到自己的路。"
+    stop music fadeout 1.0
     $ persistent.NE = 1
     window hide
     scene bg_white with Dissolve(4)
@@ -56,6 +58,7 @@ label NE:
     show movie_side with moveinleft
     lu_speaking "行了，车都走远了，还有啥好看的？"
     ye_speaking "啊……是。"
+    $ renpy.music.play(music.ne_end, channel="music", loop=True, fadein=0.5)
     na "被身旁的人提醒，叶成华下意识应了一声，而后才回过神，有些无所谓地笑了笑。"
     lu_speaking "怎么，后悔啊？"
     ye_speaking "后悔什么？"
@@ -93,4 +96,5 @@ label NE:
     na "如同梅雨来时的那天一样。"
     scene bg_white with Dissolve(1)
     pause
+    stop music fadeout 1.0
     return

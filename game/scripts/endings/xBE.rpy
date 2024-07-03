@@ -30,7 +30,7 @@ label xBE:
     mei_speaking "……"
     xiang_speaking "虽然，说了没意义，但我，还是有一句话要说……就一句！"
     mei "她一边跑步一边说话，声音被隔成一段一段的。听着就很累……我无奈地停下脚步，侧过身看向她。"
-    $ renpy.music.play(music.story_telling, channel="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.xiang_be, channel="music", loop=True, fadein=0.5)
     show cg_x141 at cg_0 with Dissolve(1)
     mei_speaking "别着急。我又不是要跑。"
     xiang_speaking "好，我——我，就是想说，之前我错了，我没有讨厌你。你……"
@@ -57,4 +57,5 @@ label xBE:
     pause(0.5)
     show screen endings_screen(endings,"xBE") with Pixellate(3,25)
     pause
+    stop music fadeout 1.0
     return

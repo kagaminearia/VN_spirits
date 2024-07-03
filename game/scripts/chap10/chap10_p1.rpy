@@ -1,6 +1,7 @@
 label chap10_p1:
     scene bg_meiliv with fade
     show yeimg smile at char_right with moveinright
+    $ renpy.music.play(music.awkward, channel="music", loop=True, fadein=0.5)
     ye_speaking "所以，你姐我为了你的事特意大晚上从家赶过来，你自己说跑就跑了，还不给个消息？"
     show meiimg shell red at char_left with moveinleft
     mei_speaking "呃，这是……"
@@ -39,10 +40,12 @@ label chap10_p1:
     hide meiimg
     show meiimg shell at char_left
     mei_speaking "好。"
+    stop music fadeout 0.5
     mei "想了想，我斟酌着，还是决定跟叶成华解释清楚，免得她太担心。"
     mei_speaking "之前，呃……"
     hide meiimg
     show meiimg o shell at char_left
+    $ renpy.music.play(music.peng_night_stay, channel="music", loop=True, fadein=0.5)
     mei_speaking "之前在外面的时候，丽丽跟我说她喜欢我，所以我就把其他事都忘了，也忘了打电话。"
     hide meiimg 
     hide yeimg 
@@ -64,6 +67,7 @@ label chap10_p1:
     mei "转过头，只见彭江丽站在楼梯口，满脸通红地看着我。"
     show meiimg eye_shock o shell at char_left with dissolve
     mei_speaking "……"
+    stop music fadeout 0.5
     hide meiimg
     show meiimg eye_shock shell at char_left
     hide pengimg
@@ -83,6 +87,7 @@ label chap10_p1:
 
     scene bg_meiliv with Fade(0.3,0.5,0.3)
     show meiimg o shell red at char_left with dissolve
+    $ renpy.music.play(music.peng_awkward_talk, channel="music", loop=True, fadein=0.5)
     mei_speaking "呃，我刚刚，就是跟叶成华解释一下……没有别的意思。"
     show pengimg o red at char_right with dissolve
     mei "回过神来，我试图说明当时的行为，但彭江丽还是杵在原地，没有反应。"
@@ -131,9 +136,11 @@ label chap10_p1:
     hide meiimg
     show meiimg o shell at char_left
     mei_speaking "……你怎么知道我不喜欢你？"
+    stop music
     scene bg_meiliv with dissolve
     mei "我脱口而出。而后，我们两个人面面相觑，僵硬地杵在客厅。"
     mei "但话都说到这了……我强行让自己冷静下来，而后定定地，认真地看向她。"
+    $ renpy.music.play(music.peng_confess, channel="music", loop=True, fadein=0.5)
     mei_speaking "我说真的。我……彭江丽，我喜欢你。"
     peng_speaking "……"
     peng_speaking "怎么可能……"
@@ -283,6 +290,7 @@ label chap10_p1:
     mei "我用力地，深深地吸了一口气，然后缓缓吐出。"
     mei_speaking "能不能别总是擅自揣测别人的想法？"
     peng_speaking "……咦？"
+    stop music fadeout 0.5
     mei "彭江丽完全呆住了，像是不敢相信自己听到的话。"
     mei_speaking "擅自觉得对方会生气，擅自觉得对方讨厌自己，擅自觉得我在意什么，不在意什么，啊啊，反正就是擅自想那么多！"
     peng_speaking "啊？"
@@ -301,6 +309,7 @@ label chap10_p1:
     mei "我正想继续说点什么找补的时候，彭江丽猛的一下扑过来，紧紧抱住了我，阻断了我的所有思绪。"
     hide movie_side
     show q_p40 at cg_s with vpunchm
+    $ renpy.music.play(music.peng_love_you, channel="music", loop=True, fadein=0.5)
     peng_speaking "{size=42}呜……\n呜哇哇哇哇哇！！！！{/size}"
     peng_speaking "哇啊啊啊对不起！我，我呜呜呜我又说谎了！对不起！"
     peng_speaking "我，我才不是无所谓呢！我最——喜欢你了，喜欢得不得了！绝对不想让你讨厌我！"
@@ -310,4 +319,5 @@ label chap10_p1:
     hide q_p40 with dissolve
     mei_speaking "好。"
     peng_speaking "呜，呜呜呜……呜呜，呜啊啊啊……"
+    stop music fadeout 0.5
     return
