@@ -1,6 +1,7 @@
 label chap10_x1:
     scene bg_store2 with fade
     show meiimg o flower at char_left with dissolve
+    $ renpy.music.play(music.peng_hanging_out, channel="music", loop=True, fadein=0.5)
     mei_speaking "好多人……"
     mei "我提着购物袋，只觉得今天排队的人比以往多了很多——连叶成华都经常往村里跑了。"
     show yeimg smile at char_right with moveinright
@@ -25,10 +26,13 @@ label chap10_x1:
     show meiimg smile flower at char_left
     mei_speaking "……是啊。"
     mei "好像，还真的比以前好多了……某种程度上，还真是多亏了叶成华……还有……她。"
+    stop music fadeout 0.5
 
     scene bg_meiroom with fade
     mei "时间很快，在意识到的时候尤其如此。现在，我穿着外套，已经隐隐觉得有些热。"
     mei "有些喧闹的声音从窗外传来，我偏过头，看到有几个小孩打闹着跑过楼底下，伴随着越来越明显的音乐声。"
+    $ renpy.music.play(music.festival, channel="music", loop=True, relative_volume=0.3, fadein=0.5)
+    $ renpy.sound.play(sound.chinese_beat, channel="sound", loop=True, relative_volume=0.2, fadein=0.5)
     mei "这样可没办法专心啊……干脆，也去看看好了，毕竟是一年一度的节日。"
     mei "祝灵节……在这一天，空闲的人们集合起来，放上传统音乐，点上特制的香薰，围在广场上唱歌跳舞。"
     mei "在日落的瞬间，所有人会点亮火灯，念唱祝歌，祝愿所有的生灵平安幸福。"
@@ -48,9 +52,12 @@ label chap10_x1:
     mei_speaking "……\n噢。"
     mei "我原本只是在自言自语，却被旁边热情的阿姨“科普”一番。\n反正现在也走不出去了……就这样吧。"
     mei "……当然，我是不会唱歌的，哼哼也不会。"
+    stop music
+    stop sound
     scene halfblack with Fade(0.3,0.5,0.3)
     mei "人群逐渐密集，直到我看不到边沿。周围的人双手相交，盯着远处空旷的天际。\n被这样的气氛带动，我也不自觉地合起了双手。"
     mei "终于，那橘黄色的耀眼光芒只剩一缕，马上就要彻底消失。不知道谁起了头，所有人呢喃起我不知名字的歌。"
+    $ renpy.music.play(music.worship, channel="music", loop=True, fadein=0.5)
     mei "不同的低语声汇在一起，变得浑厚明亮，形成汹涌的海洋，而我也被卷入其中。"
     na "祝愿吧，祝愿所有的生灵，都获得幸福。"
     na "祝愿……"
@@ -58,12 +65,13 @@ label chap10_x1:
     mei "星星点点的微小光晕漂浮在空中，火光摇曳，撼动我的心神。"
     mei "奇迹……吗。我的脑海中不自觉浮现出许多记忆，在这里生活的日子，那些事情……"
     mei "……无论，这是不是真实的，此时此刻，我真心地想要相信……个人的意志能够带来奇迹。"
+    stop music fadeout 0.5
 
     scene bg_black with dissolve
     show movie_side
     show bg_sunset1 behind movie_side with dissolve
-    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=1)
     mei "天色渐晚，人群逐渐散开，周围的环境由篝火变为由夕阳染成的淡淡橙红。"
+    $ renpy.music.play(music.xiang_coming_back, channel="music", loop=True, fadein=0.5)
     mei_speaking "……阿嚏！"
     mei "冷风吹过，我终于回过神。因为篝火已经基本散去，我成功被冷得直打哆嗦。"
     mei_speaking "阿嚏！\n呃啊……嗯？"

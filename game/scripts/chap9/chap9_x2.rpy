@@ -422,6 +422,7 @@ label chap9_x2:
     show cg_x123 at cg_s with dissolve
     stop music
     xiang_speaking "我很讨厌你。"
+    stop music
     scene bg_black with dissolve
     mei_speaking "……"
     mei "向夏的话出口前，我猜过很多种不同的回答。"

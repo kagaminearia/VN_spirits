@@ -1,5 +1,5 @@
 label pHE:
-    scene bg_meiroom with Fade(color="#fff")
+    scene bg_meiroom with Fade(0.5, 0.5, 1.0, color="#fff")
     mei_speaking "几点了……呃嗯。"
     mei "看清时钟上的指针，我僵在原地，一时间竟然有些怀疑自己的眼睛。"
     mei "下午两点……这么晚了。大概是昨天晚上闹得太过……想起昨晚一团混乱的对话，我不免有些脸热，不禁拉起被子，又躺回床上。"
@@ -9,6 +9,8 @@ label pHE:
     mei "是第一科，也是一切的开始……"
 
     scene bg_meiroom with fade
+    $ renpy.music.play(music.festival, channel="music", loop=True, relative_volume=0.3)
+    $ renpy.sound.play(sound.chinese_beat, channel="sound", loop=True, relative_volume=0.2)
     mei_speaking "……嗯？"
     mei "有什么动静吸引了我，让我放下了笔，看向窗外。"
     mei "有些泛橙的天色下，隐约的人声和音乐声从远处传来，显得十分热闹。这是……？"
@@ -68,13 +70,16 @@ label pHE:
     show meiimg eye_close shell behind halfyellow at char_left
     mei_speaking "……是的。"
     hide pengimg
-    show pengimg eye_squint smile laugh behind halfyellow at char_right
+    show pengimg eye_squint smile behind halfyellow at char_right
     peng_speaking "要不，还是去广场看看吧？要感谢它们呀，感谢它们让我再次找到了你。"
     hide meiimg
     show meiimg smile shell behind halfyellow at char_left
     mei_speaking "好。"
+    stop music fadeout 0.5
+    stop sound fadeout 0.5
 
-    scene bg_vil7 with Fade(0.3,0.5,0.3)
+    scene bg_vil7 with Fade(0.3,0.5,1.0)
+    $ renpy.music.play(music.sunset, channel="music", loop=True, fadein=0.5)
     mei "远处的日光只剩下余晖，广场上也只剩稀稀落落的人流，能够轻松看到中央的篝火与天空有着相似的颜色。"
     show movie_side with dissolve
     mei_speaking "还是没赶上？是吗……抱歉。"
@@ -86,9 +91,11 @@ label pHE:
     peng_speaking "嗯。\n我本来……是没那么相信这些的。虽然我在这里长大……"
     peng_speaking "但是，我现在明白了。有时候，即使知道是没有用的，还是会希望多一份祝愿。\n想把最好的，所有的都献给那个愿望，期望成真……"
     peng_speaking "更何况，我的确遇到了奇迹。……就是你。"
+    stop music fadeout 0.5
     mei_speaking "……"
     mei "我摸了摸脸颊，总觉得有点热，应该不是被火烤的吧……"
     mei "她轻轻伸出双手，交握，凝视着前方的火光和天空。"
+    $ renpy.music.play(music.peng_love_you, channel="music", loop=True)
     mei_speaking "你要许什么愿？"
     mei_speaking "哦，对了，我听说这种不能讲出来对吧，不然不灵了。"
     peng_speaking "没事的，不会影响。"
@@ -111,4 +118,5 @@ label pHE:
     pause(0.5)
     show screen endings_screen(endings,"pHE") with Pixellate(3,25)
     pause
+    stop music fadeout 0.5
     return
