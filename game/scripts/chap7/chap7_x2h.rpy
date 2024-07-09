@@ -177,6 +177,7 @@ label chap7_x2h:
     scene bg_roof with fade
     show halfdarkblue
     show xiangimg fist eye_still behind halfdarkblue at char_right with dissolve
+    $ renpy.sound.play(sound.cicada, channel="nature", loop=True)
     xiang_speaking "……\n所以，你才是那副样子啊。"
     hide xiangimg
     show xiangimg fist eye_still o behind halfdarkblue at char_right
@@ -200,6 +201,7 @@ label chap7_x2h:
     hide meiimg with dissolve
     hide xiangimg with dissolve
     mei "唉，我的危机意识去哪里了啊……"
+    stop nature fadeout 0.5
 
     show xiangimg fist o behind halfdarkblue at char_mid with dissolve
     xiang_speaking "不过，还真是个沉重的故事啊，感觉我都要被压垮了，唉，就像这——样。"
@@ -210,7 +212,7 @@ label chap7_x2h:
     scene bg_black with Dissolve(1)
     show movie_side
     show video_8 behind movie_side
-    $ renpy.music.play(music.starlight, chanenl="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.starlight, channel="music", loop=True, fadein=0.5)
     mei "角度变换之后，视野也更加开阔。\n虽然是夜晚，但天空并不沉寂，因为除了黑暗还有大片的繁星。"
     mei "它们一闪一闪，此起彼伏，众多微不足道的光晕集合在一起，变成绮丽的画卷。"
     show cg_x71 at cg_0 with dissolve
@@ -239,11 +241,11 @@ label chap7_x2h:
     mei_speaking "嗯。"
     mei "虽然应声，我却并没有要起身的意思。似乎……她也没有。"
     mei "我们只是并排平躺着，静静地躺在点缀繁星的夜空之下。"
-    stop music fadeout 0.5
 
     show bg_black with Dissolve(1)
     xiang_speaking "再躺下去，你就真的要再次感冒了。"
     hide bg_black with Dissolve(0.5)
+    stop music fadeout 0.5
     mei_speaking "啊？嗯……哦。"
     xiang_speaking "走吧走吧。"
     mei "再次听到向夏的声音，我才反应过来，睁开眼睛，愣愣地跟着她站起身。"
@@ -252,6 +254,7 @@ label chap7_x2h:
     show halfdarkblue
     mei "但……走到扶梯边缘才意识到不对。\n同样的高度，我当时上不来，现在也下不去啊……"
     show xiangimg fist o behind halfdarkblue at char_right with dissolve
+    $ renpy.music.play(music.xiang_bath, channel="music", loop=True)
     xiang_speaking "怎么了？哦，这个啊，没问题！"
     show meiimg flower behind halfdarkblue at char_left with dissolve
     mei_speaking "……"
@@ -281,6 +284,7 @@ label chap7_x2h:
     hide meiimg
     show meiimg eye_close o flower behind halfdarkblue at char_left
     mei "我努力从鼻子里发出一声嗤笑，她“嘿嘿”地挠了挠脑袋，毫不在意，率先轻巧地跳了下去。\n哎，这人真是……"
+    stop music fadeout 0.5
     hide meiimg with dissolve
     mei "但，现在的确没有别的办法……我十分谨慎地握住梯子的两侧。一步，又一步……直到底端。"
     mei "然后，我深吸一口气，松开双手，任凭身体随着重力下落。\n不，要掉下去……"

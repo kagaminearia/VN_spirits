@@ -1,6 +1,6 @@
 label chap7_x2:
     scene glitches with fade
-    $ renpy.music.play(music.fallen_leaves, channel="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.xiang_story, channel="music", loop=True, fadein=0.5)
     xiang_speaking "我没什么文化啊，所以，你就随便听听好了。"
     xiang_speaking "这是我……啊，这样讲还是有点不好意思，那就说，这是关于向夏的故事吧。"
     

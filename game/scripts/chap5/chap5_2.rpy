@@ -100,7 +100,7 @@ label chap5_2:
     scene bg_meicorridor with pixellate
     mei "走出卧室，穿过走廊，下楼梯，转过转角。"
     scene bg_meiliv with vpunchs
-    $ renpy.sound.play(sound.boom, channel="sound", loop=False)
+    $ renpy.sound.play(sound.boom, channel="sound", loop=False, relative_volume=0.5)
     na "砰！"
     mei "……嗯？"
     mei "不大不小的爆炸声在头顶响起，随后，五彩斑斓的飘带和亮晶晶的闪片在屋子里炸开，四处飞扬。"

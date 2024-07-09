@@ -1,5 +1,5 @@
 label chap4_1:
-    stop music fadeout 0.5
+    stop music
     scene bg_black with fade
     mei "事情并没有朝我期望的方向发展。{p}不过，这也正常，我早就习惯这种感觉了。习惯期望落空的感觉。"
     show movie_side

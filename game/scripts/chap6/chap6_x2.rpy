@@ -182,4 +182,5 @@ label chap6_x2:
     mei_speaking "……天气，真好。"
     stop music fadeout 0.5
     stop sound fadeout 0.5
+    stop nature fadeout 0.5
     return

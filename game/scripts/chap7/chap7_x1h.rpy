@@ -38,7 +38,7 @@ label chap7_x1h:
     show meiimg shirt at char_left
     mei "总感觉，有些眼熟……"
     show xiangimg fist laugh at char_right with moveinright
-    $ renpy.music.fplay(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.xiang_handing_out, channel="music", loop=True, fadein=0.5)
     xiang_speaking "这个，这回你能收下了吧，当作我的补偿！"
     hide meiimg
     show meiimg shirt o at char_left
@@ -124,6 +124,7 @@ label chap7_x1h:
     scene bg_balcony with pixellate
     show halfblack
     show xiangimg laugh behind halfblack at char_right with moveinright
+    $ renpy.music.play(music.starlight, channel="music", loop=True, fadein=1.0)
     xiang_speaking "就这里吧！上去！"
     show meiimg eye_wacky flower behind halfblack at char_left with moveinleft
     mei_speaking "你说……这里？"
@@ -145,7 +146,6 @@ label chap7_x1h:
     mei "真亏她能想出来啊……"
     hide meiimg
     hide xiangimg
-    $ renpy.music.play(music.starlight, channel="music", loop=True, fadein=0.5)
     mei "二楼走廊的一侧连着落地玻璃门，外面就是阳台。上个月，我还在这里看过暴风雨。\n至于现在……"
     mei "阳台有上到这栋楼最顶端天台的楼梯，向夏指的就是那里。"
     mei "的确，无人的天台很符合一般故事里说秘密的场合，但是……"

@@ -45,7 +45,7 @@ label pNE:
     mei "第一次没能说出口，之后我再也不敢承认自己偷听到的对话，也不敢接受太多她的好意。"
     mei "不过，她仍然是我最好的朋友。\n……至少在我看来是这样。"
 
-    scene bg_station1 with fade
+    scene bg_station with fade
     show pengimg shirt o at char_right with moveinright
     $ renpy.music.play(music.peng_poor_little_girl, channel="music", loop=True, fadein=0.5)
     peng_speaking "你应该保存了我的号码对吧？"
