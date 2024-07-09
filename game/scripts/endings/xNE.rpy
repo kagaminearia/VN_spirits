@@ -1,6 +1,6 @@
 label xNE:
     stop music fadeout 0.5
-    scene bg_station1 with fade
+    scene bg_station with fade
     mei "只要在这个季节，这个地方，大部分时候阳光总是如此耀眼。"
     mei "周围的环境如此相似——包括褪色的车站和身旁站着的人——令我一瞬间还以为出现了幻觉，以为之前经历的时间并不存在。"
     show cg_x10 at cg_0:

@@ -73,6 +73,7 @@ label chap8_x4:
     mei "在我们讲话时，舞蹈已经迎来尾声。因而，场景里增加了观众的身影。"
     mei "明艳的花丛中，两个身影逐渐靠近，而后贴在了一起。"
     mei_speaking "……"
+    stop nature
     $ renpy.sound.play(sound.heartbeat_2, channel="sound", loop=True, relative_volume=1.2)
     mei "我知道，我应该移开视线，可身体却十分僵硬，不知道该如何行动。"
     mei "身侧……身侧，不属于自己的气息在这时变得格外明显，仿佛提醒我，应该赶快打断这奇怪的气氛。"
@@ -86,7 +87,7 @@ label chap8_x4:
     show cg_x101 at cg_0 with dissolve
     mei "我猛地转过头，却彻底愣住。"
     mei_speaking "……\n你……"
-    $ renpy.music.play(music.xiang_heartbeat, channel="music", loop=False)
+    $ renpy.music.play(music.xiang_heartbeat, channel="music", loop=False, fadein=1.0, relative_volume=0.8)
     mei "向夏正目不转睛地看着我，似乎在我转过头之前，就已经注视了许久。"
     mei "她从未有过地睁大了双眼，黑曜石一般的眸子清澈透亮，似乎因为某种情绪而微微颤动。"
     mei "阳光不止照耀她的眼眸，也在她那随风摇曳的发丝上落下斑驳光影，更诚实地映照出她通红的脸颊。"

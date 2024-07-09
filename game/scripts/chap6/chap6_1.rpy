@@ -21,7 +21,6 @@ label chap6_1:
     scene bg_meiliv with dissolve:
         blur 25
     $ renpy.sound.play(sound.girl_chuckle, channel="others", loop=False)
-    $ renpy.sound.play(sound.party_noise, channel="extra_1", loop=True, relative_volume=0.3)
     xiang_speaking "哇，好好吃，能不能让我多吃两块？"
     peng_speaking "你是寿星吗你就吃？"
     xiang_speaking "哎呀，我就说说。"
@@ -41,7 +40,6 @@ label chap6_1:
     mei "我从没想过用这个词来形容自己，也曾经以为自己的眼泪早就流干了。"
     mei "但……我说不定其实是一个，很幸运的人。"
     stop sound
-    stop extra_1 fadeout 0.5
     stop music fadeout 0.5
 
     scene bg_meiliv with dissolve:

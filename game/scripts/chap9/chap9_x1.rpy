@@ -1,4 +1,5 @@
 label chap9_x1:
+    # nit: delete the first scene here?
     scene bg_meiliv with fade
     $ renpy.music.play(music.slow_laugh, channel="music", loop=True, fadein=0.5,relative_volume=0.7)
     show yeimg smile at char_mid with dissolve

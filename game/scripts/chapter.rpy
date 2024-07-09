@@ -144,14 +144,15 @@ label chapter4:
     call chap4_3
     return
 
-define route = "n"
+define route = "x"
 label chapter5:
     call chap5_0
-    if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
-        $ route = "x"
-    elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
-        $ route = "p"
+    # if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
+    #     $ route = "x"
+    # elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
+    #     $ route = "p"
     
+    # ?: Very easy to fall into NE
     if route == "n":
         jump NE
         return
@@ -229,6 +230,7 @@ label chapter7_x:
     call chap7_x2
     if x_end == "n":
         call chap7_x2n
+        # ?: jump was called but game didn't end here
         jump xNE
     else:
         call chap7_x2h
@@ -294,7 +296,7 @@ label chapter10:
     return
 
 label chapter10x:
-    call chap10_x
+    call chap10_x1
     menu:
         "答应":
             jump xHE

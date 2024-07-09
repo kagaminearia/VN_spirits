@@ -168,7 +168,7 @@ label chap9_x2:
     hide meiimg
     show meiimg shirt o at char_left 
     mei_speaking "……什么声音？我没听错吧。"
-    $ renpy.sound.play(sound.pot_drop, channel="sound", loop=False)
+    $ renpy.sound.play(sound.pot_dropping_1, channel="sound", loop=False)
     na "梆！"
     hide xiangimg
     show xiangimg fist eye_shock o at char_right 

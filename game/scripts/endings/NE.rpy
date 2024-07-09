@@ -52,6 +52,7 @@ label NE:
     window hide
     scene bg_white with Dissolve(4)
     pause(0.5)
+    #?: Ending here?
     show screen endings_screen(endings,"NE") with Pixellate(3,25)
     pause
     scene bg_station with Fade(0.5,1.5,0.5)

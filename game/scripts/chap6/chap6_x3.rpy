@@ -98,6 +98,7 @@ label chap6_x3:
 
     scene bg_meiliv with pixellate
     show xiangimg o at char_right with moveinright
+    # nit: add an image
     xiang_speaking "搞定！看看怎么样？"
     show meiimg shirt at char_left with moveinleft
     mei_speaking "……"
@@ -127,7 +128,7 @@ label chap6_x3:
     na "“唔嗯~”"
     hide meiimg
     show meiimg shirt eye_wacky o at char_left
-    $ renpy.music.play(music.xiang_bath, channel="music", loop=True, fadein=0.5)
+    $ renpy.music.play(music.xiang_bath, channel="music", loop=True)
     mei_speaking "……哈？"
     mei "没说出口的话被别的声音打了岔，但那莫名奇妙的甜美声音明显不来自于旁边的人。"
     na "“啊啊……嗯，唔……”"

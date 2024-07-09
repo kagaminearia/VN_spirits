@@ -236,7 +236,7 @@ label chap3_2:
 
     $ renpy.music.set_pause(True, channel="sound")
     $ renpy.music.set_pause(True, channel="nature")
-    $ renpy.music.play(music.peng_horror_story, channel="music", loop=False, fadein=1.0)
+    $ renpy.music.play(music.peng_horror_story, channel="music", loop=False)
     peng_speaking "有一个少女醒来，发现自己被困在不认识的走廊。\n身后和两边都是墙，只有一条又长又直的路。"
     peng_speaking "她只能前进，每走一步，脚下的地板都在剧烈摇晃，所以她只能加快速度，越来越快。"
     peng_speaking "但是，她走快之后，她发现两边的墙壁也动了起来。\n而且它们是向内收缩的，也就是说……她要被压住了。"

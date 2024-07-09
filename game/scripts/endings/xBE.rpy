@@ -1,7 +1,7 @@
 label xBE:
     scene bg_black with dissolve
     show movie_side
-    show bg_sunse1 behind movie_side with dissolve
+    show bg_sunset1 behind movie_side with dissolve
     mei_speaking "嗯？不要。"
     mei_speaking "既然讨厌我，没必要这样做吧。"
     xiang_speaking "……"

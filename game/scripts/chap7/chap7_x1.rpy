@@ -58,7 +58,7 @@ label chap7_x1:
     mei "平时，叶成华晚上是不住在这里的，所以我今天也不想麻烦她。"
     mei "她很担心我，但在我再三强调没事之后还是回镇上那边了。"
     mei "然后，经过了将近二十四小时整，直到我这意外的微小感冒已经痊愈，我才在客厅听到角落的房间开门声音。"
-    $ renpy.sound.play(sound.door_open, channel="sound", loop=False, fadein=0.5)
+    $ renpy.sound.play(sound.door_open, channel="sound", loop=False, relative_volume=0.6)
 
     scene bg_meiliv with fade
     show xiangimg fist eye_still at char_right with easeinright

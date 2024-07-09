@@ -1,4 +1,6 @@
 label chap1_1:
+    stop music
+    stop sound
     $ renpy.music.set_volume(1.0, 0, channel="music")
     scene bg_meiliv with pixellate
     mei "吃过药后，我犹豫万分，还是到楼下打通了那个电话号码。"
