@@ -144,15 +144,12 @@ label chapter4:
     call chap4_3
     return
 
-# [TESTING] DELETE THE LINE BELOW
-define route = "p"
-
 label chapter5:
     call chap5_0
-    # if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
-    #     $ route = "x"
-    # elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
-    #     $ route = "p"
+    if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
+        $ route = "x"
+    elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
+        $ route = "p"
     
     # ?: Very easy to fall into NE
     if route == "n":
