@@ -144,7 +144,9 @@ label chapter4:
     call chap4_3
     return
 
-define route = "x"
+# [TESTING] DELETE THE LINE BELOW
+define route = "p"
+
 label chapter5:
     call chap5_0
     # if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
