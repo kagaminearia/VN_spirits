@@ -275,6 +275,7 @@ label chapter9x:
     call chap9_x2
     return
 
+# ?: jump didn't return to the main page, instead continued to chapter 10
 label chapter9p:
     call chap9_p1
     menu:
