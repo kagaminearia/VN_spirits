@@ -144,13 +144,12 @@ label chapter4:
     call chap4_3
     return
 
-define route = "x"
 label chapter5:
     call chap5_0
-    # if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
-    #     $ route = "x"
-    # elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
-    #     $ route = "p"
+    if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
+        $ route = "x"
+    elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
+        $ route = "p"
     
     # ?: Very easy to fall into NE
     if route == "n":
@@ -273,6 +272,7 @@ label chapter9x:
     call chap9_x2
     return
 
+# ?: jump didn't return to the main page, instead continued to chapter 10
 label chapter9p:
     call chap9_p1
     menu:

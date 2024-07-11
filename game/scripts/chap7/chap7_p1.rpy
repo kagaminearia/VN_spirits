@@ -177,7 +177,7 @@ label chap7_p1:
     hide meiimg
     show meiimg eye_still o shell at char_left
     mei_speaking "什么？不是这样的。"
-    $ renpy.sound.set_pause(True, channel="music")
+    $ renpy.music.set_pause(True, channel="music")
     hide pengimg
     show pengimg shirt eye_still at char_right
     peng_speaking "……"
@@ -185,7 +185,7 @@ label chap7_p1:
     show meiimg eye_still shell at char_left
     mei_speaking "……"
     hide meiimg
-    $ renpy.sound.set_pause(False, channel="music")
+    $ renpy.music.set_pause(False, channel="music")
     show meiimg eye_still o shell at char_left
     mei_speaking "昨天，我是想着，能够早点见到你，看看你在上学的地方，也不错。"
     hide meiimg

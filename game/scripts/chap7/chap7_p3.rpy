@@ -32,6 +32,7 @@ label chap7_p3:
     stop sound
 
     scene bg_meiroom with pixellate
+    # ?: peng shirt changed
     show meiimg eye_still o shell at char_left with dissolve
     mei_speaking "对不起，不过你别担心，我什么都没看到……"
     mei "实话说，那胶带缠得一层一层，还变色，我都差点看不出那里面贴的是一张纸。"
@@ -273,7 +274,7 @@ label chap7_p3:
     stop nature
     stop extra_1
 
-    $ renpy.sound.play(sound.penciL_breaking, channel="sound", loop=False)
+    $ renpy.sound.play(sound.pencil_breaking, channel="sound", loop=False)
     show glitches with dissolve
     young_peng "我，我才不会哭呢，那样太丢脸了！"
     young_peng "但是但是，阿雨你哭的话就没关系，我会帮你打掩护的！"
