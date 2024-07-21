@@ -55,6 +55,7 @@ label NE:
     #?: Ending here?
     show screen endings_screen(endings,"NE") with Pixellate(3,25)
     pause
+    $ renpy.hide_screen("endings_screen")
     scene bg_station with Fade(0.5,1.5,0.5)
     show movie_side with moveinleft
     lu_speaking "行了，车都走远了，还有啥好看的？"

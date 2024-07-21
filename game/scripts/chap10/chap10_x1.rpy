@@ -54,8 +54,7 @@ label chap10_x1:
     mei "……当然，我是不会唱歌的，哼哼也不会。"
     stop music
     stop sound
-    # nit: change the scene here?
-    scene halfblack with Fade(0.3,0.5,0.3)
+    show halfblack with Fade(0.3,0.5,0.3)
     mei "人群逐渐密集，直到我看不到边沿。周围的人双手相交，盯着远处空旷的天际。\n被这样的气氛带动，我也不自觉地合起了双手。"
     mei "终于，那橘黄色的耀眼光芒只剩一缕，马上就要彻底消失。不知道谁起了头，所有人呢喃起我不知名字的歌。"
     $ renpy.music.play(music.worship, channel="music", loop=True, fadein=0.5)

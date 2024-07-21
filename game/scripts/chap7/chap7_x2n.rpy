@@ -1,5 +1,4 @@
 label chap7_x2n:
-    # ?: Change the scene here
     xiang_speaking "所以，我绕了一大个弯，就是想跟你说，那天我不是故意的，我只是……很怕会爆炸的火。怕得要死，哈哈。"
     mei_speaking "……我，知道。"
     $ renpy.music.play(music.xiang_rainy_talk, channel="music", loop=True, fadein=1.0)

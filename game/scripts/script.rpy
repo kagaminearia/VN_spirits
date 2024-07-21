@@ -67,6 +67,9 @@ label start:
     
     call chapter5
 
+    if end: 
+        return
+
     $ chap_index = 6
     window hide
     show bg_black with dissolve
@@ -76,6 +79,9 @@ label start:
     window auto
     
     call chapter6 
+
+    if end: 
+        return
 
     $ chap_index = 7
     window hide
@@ -87,6 +93,9 @@ label start:
 
     call chapter7
 
+    if end: 
+        return
+
     $ chap_index = 8
     window hide
     show bg_black with dissolve
@@ -96,6 +105,9 @@ label start:
     window auto
 
     call chapter8
+
+    if end: 
+        return
 
     $ chap_index = 9
     window hide
@@ -107,6 +119,9 @@ label start:
 
     call chapter9
 
+    if end: 
+        return
+
     $ chap_index = 10
     window hide
     show bg_black with dissolve
@@ -116,6 +131,9 @@ label start:
     window auto
     
     call chapter10
+
+    if end:
+        return
     
     return
 

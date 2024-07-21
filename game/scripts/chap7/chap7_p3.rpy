@@ -32,7 +32,6 @@ label chap7_p3:
     stop sound
 
     scene bg_meiroom with pixellate
-    # ?: peng shirt changed
     show meiimg eye_still o shell at char_left with dissolve
     mei_speaking "对不起，不过你别担心，我什么都没看到……"
     mei "实话说，那胶带缠得一层一层，还变色，我都差点看不出那里面贴的是一张纸。"
