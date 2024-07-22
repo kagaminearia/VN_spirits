@@ -144,6 +144,8 @@ label chapter4:
     call chap4_3
     return
 
+define route = "n"
+define end = False
 label chapter5:
     call chap5_0
     if c4_x1 == 1 and c0_x1 == 1 and x_point > p_point:
@@ -151,36 +153,16 @@ label chapter5:
     elif c4_p1 == 1 and c0_p1 == 1 and x_point < p_point:
         $ route = "p"
     
-    # ?: Very easy to fall into NE
     if route == "n":
+        $ end = True
         jump NE
-        return
-    call chap5_1
-    if route == "x":
-        call chap5_x1
     else:
-        call chap5_p1
-    call chap5_2
-    return
-
-# Test sub chapters inside chapter 5
-label chapter5_x:
-    call chap5_0
-    call chap5_1
-    call chap5_x1
-    call chap5_2
-    return
-
-label chapter5_p:
-    call chap5_0
-    call chap5_1
-    call chap5_p1
-    call chap5_2
-    return
-
-label chapter5_ne:
-    call chap5_0
-    jump NE
+        call chap5_1
+        if route == "x":
+            call chap5_x1
+        else:
+            call chap5_p1
+        call chap5_2
     return
     
 label chapter6:
@@ -190,7 +172,6 @@ label chapter6:
     else:
         call chapter6p
     return
-
 
 label chapter6x:
     call chap6_1
@@ -207,7 +188,6 @@ label chapter6p:
     call chap6_p3
     return
 
-
 define x_end = "n"
 label chapter7:
     if route == "x":
@@ -215,7 +195,6 @@ label chapter7:
     else:
         call chapter7_p
     return
-
 
 label chapter7_x:
     call chap7_x1
@@ -229,7 +208,7 @@ label chapter7_x:
     call chap7_x2
     if x_end == "n":
         call chap7_x2n
-        # ?: jump was called but game didn't end here
+        $ end = True
         jump xNE
     else:
         call chap7_x2h
@@ -272,7 +251,6 @@ label chapter9x:
     call chap9_x2
     return
 
-# ?: jump didn't return to the main page, instead continued to chapter 10
 label chapter9p:
     call chap9_p1
     menu:
@@ -281,10 +259,12 @@ label chapter9p:
             call chap9_p2
             menu:
                 "停下来":
+                    $ end = True
                     jump pBE
                 "追上去":
                     call chap9_p3
         "搪塞过去":
+            $ end = True
             jump pNE
     return
 
@@ -307,8 +287,4 @@ label chapter10x:
 label chapter10p:
     call chap10_p1
     jump pHE
-    return
-
-label test:
-    call chap10_x1
     return

@@ -55,30 +55,26 @@ style main_navigation_button_text:
 
 style main_navigation_button is gui_button
 
-screen testchapter():
-    tag menu
-    key "mouseup_3" action Return()
-    add "#ffffffff"
-    add "gui/border.png"
-    vbox:
-        xalign 0.25
-        yalign 0.25
-        spacing 10
-        # textbutton ("prolo") action Start("prologue")
-        # textbutton ("chap1") action Start("chapter1")
-        # textbutton ("chap2") action Start("chapter2")
-        # textbutton ("chap3") action Start("chapter3")
-        # textbutton ("chap4") action Start("chapter4")
-        # textbutton ("chap6") action Start("chapter6")
-        # textbutton ('chap6_x') action Start("chapter6x")
-        # textbutton ('chap6_p') action Start("chapter6p")
-        # textbutton ('chap5_ne') action Start("chapter5_ne")\
-        # textbutton ('chap7_x') action Start("chapter7_x")
-        # textbutton ('chap7_p') action Start("chapter7_p")
-        # textbutton ('chap8_x') action Start("chapter8x")
-        # textbutton ('chap8_p') action Start("chapter8p")
-        # textbutton ('chap9_x') action Start("chapter9x")
-        # textbutton ('chap9_p') action Start("chapter9p")
-        # textbutton ('xHE') action Start("xHE")
-        # textbutton ("ad") action Start("ad")
-        textbutton ("test") action Start("test")
+# screen testchapter():
+#     tag menu
+#     key "mouseup_3" action Return()
+#     add "#ffffffff"
+#     add "gui/border.png"
+#     vbox:
+#         xalign 0.25
+#         yalign 0.25
+#         spacing 10
+#         textbutton ("prolo") action Start("prologue")
+#         textbutton ("chap1") action Start("chapter1")
+#         textbutton ("chap2") action Start("chapter2")
+#         textbutton ("chap3") action Start("chapter3")
+#         textbutton ("chap4") action Start("chapter4")
+#         textbutton ("chap6") action Start("chapter6")
+#         textbutton ('chap6_x') action Start("chapter6x")
+#         textbutton ('chap6_p') action Start("chapter6p")
+#         textbutton ('chap7_x') action Start("chapter7_x")
+#         textbutton ('chap7_p') action Start("chapter7_p")
+#         textbutton ('chap8_x') action Start("chapter8x")
+#         textbutton ('chap8_p') action Start("chapter8p")
+#         textbutton ('chap9_x') action Start("chapter9x")
+#         textbutton ('chap9_p') action Start("chapter9p")
