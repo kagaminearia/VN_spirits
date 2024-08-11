@@ -278,9 +278,9 @@ label chapter10:
 label chapter10x:
     call chap10_x1
     menu:
-        "答应":
+        "接过衣服":
             jump xHE
-        "拒绝":
+        "无动于衷":
             jump xBE
     return
 

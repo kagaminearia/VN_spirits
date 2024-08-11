@@ -20,7 +20,7 @@ define config.name = _("交织的印记")
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = ""
+define build.name = "交织的印记"
 
 ## Save directory ##############################################################
 ##

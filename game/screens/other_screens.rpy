@@ -19,8 +19,8 @@ screen about():
     use game_menu(_("About"))
     style_prefix 'about'
     vbox:
-        xalign 0.25
-        yalign 0.25
+        xalign 0.3
+        yalign 0.3
         spacing 45
         vbox:
             spacing 18
@@ -30,12 +30,12 @@ screen about():
             vbox:
                 text _("音乐·音效") size 35
                 text _("akagi · 可食用蓝墨水") 
-            # vbox:
-            #     text _("测试") size 40
-            #     text _("akagi · HydrogenRb · 可食用蓝墨水 · makimeo") 
-            # vbox:
-            #     text _("特别感谢") size 35
-            #     text _("{font=fonts/Aboreto-Regular.ttf}akagi{/font}") 
+            vbox:
+                text _("测试") size 35
+                text _("akagi · 可食用蓝墨水 · yy") 
+            vbox:
+                text _("特别感谢") size 35
+                text _("HRb · makimeo") 
 
         vbox:
             spacing 13
@@ -50,7 +50,7 @@ screen about():
 {a=https://www.freepik.com/}Freepik{/a}，\
 {a=https://www.youtube.com/@melvinmellow}melvinmellow{/a}") 
             text _("设计素材：{a=https://siyokoy.itch.io/astrology-renpy-gui-kit}Astrology Ren'Py GUI by Siyokoy{/a}")
-            text _("代码：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader by Wattson{/a}，\
+            text _("代码参考：{a=https://wattson.itch.io/renpy-wave-shader}Ren'py Wave Shader by Wattson{/a}，\
 {a=https://wattson.itch.io/renpy-auto-highlight}Renpy Auto Highlight by Wattson{/a}，\
 {a=https://feniksdev.itch.io/easy-renpy-gui}Easy Ren'Py GUI by Feniks{/a}")
             text _("字体：Aboreto，鸿雷板书简体，仓耳舒圆体，霞鹜文楷等宽")

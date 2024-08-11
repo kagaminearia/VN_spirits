@@ -16,33 +16,19 @@ default persistent.sp = 0
 image ink = "gui/ink.png"
 
 label splashscreen():
-    # if persistent.sp == 0:
-    #     $ persistent.sp = 1
-    #     scene bg_grey
-    #     show ink at cg_0 with dissolve
-    #     pause 1.5
-    #     hide ink with dissolve
-    #     show text _p("""
-    #                     本故事纯属虚构\n
-    #                     与真实世界的一切无关
-    #                     """) with dissolve
-    #     pause 2
-    #     hide text with dissolve
-    # else:
-    #     return
 
-    # scene bg_grey
-    # show ink at cg_0 with dissolve
-    # pause 0.5
-    # hide ink with dissolve
-    # show screen sp_screen("本故事纯属虚构") with dissolve
-    # pause 0.5
-    # hide screen sp_screen with dissolve
+    scene bg_grey
+    show ink at cg_0 with dissolve
+    pause 0.5
+    hide ink with dissolve
+    show screen sp_screen("本故事纯属虚构") with dissolve
+    pause 0.5
+    hide screen sp_screen with dissolve
 
-    # show screen sp_screen("与真实世界的一切无关") with dissolve
-    # pause 0.5
-    # hide screen sp_screen with dissolve
-    # pause 0.5
+    show screen sp_screen("与真实世界的一切无关") with dissolve
+    pause 0.5
+    hide screen sp_screen with dissolve
+    pause 0.5
 
     return
 
