@@ -33,7 +33,7 @@ screen main_menu():
             textbutton _("CONTINUE") action Continue()
             textbutton _("LOAD") action ShowMenu("load")
             textbutton _("CONFIG") action ShowMenu("preferences")
-            textbutton _("TEST") action ShowMenu("testchapter")
+            # textbutton _("TEST") action ShowMenu("testchapter")
 
         vbox:
             xalign 0

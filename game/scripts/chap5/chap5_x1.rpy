@@ -99,7 +99,7 @@ label chap5_x1:
     mei "黏糊的感觉让我不太舒服，但还挺新鲜——平时我很少出门，也不做任何额外的活动，这里面自然也包括会让人出汗的事。"
     mei "直到风吹过，比以往更加凉爽。{p}我愣愣地伸出手，想要抓住风中飘摇的发丝，那深黑色和橙棕色交缠的几缕。"
 
-    scene bg_vill6 with fade
+    scene bg_vil6 with fade
     show meiimg shirt at char_left with dissolve
     mei_speaking "……啊。"
     hide meiimg
