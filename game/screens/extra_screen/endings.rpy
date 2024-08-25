@@ -77,7 +77,7 @@ screen ending_menu:
                 imagebutton:
                     idle "gui/extra/img_xHE.jpg"
                     hover "gui/extra/img_xHE.jpg"
-                    action Replay("xNE")
+                    action Replay("xHE")
                     tooltip "回放"
             else:
                 add "gui/extra/img_edlock.jpg"

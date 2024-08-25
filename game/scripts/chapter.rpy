@@ -144,7 +144,7 @@ label chapter4:
     call chap4_3
     return
 
-define route = "n"
+define route = "x"
 define end = False
 label chapter5:
     call chap5_0
@@ -166,7 +166,6 @@ label chapter5:
     return
     
 label chapter6:
-    call chap6_1
     if route == "x":
         call chapter6x
     else:
