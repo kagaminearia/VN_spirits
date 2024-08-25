@@ -166,7 +166,6 @@ label chapter5:
     return
     
 label chapter6:
-    call chap6_1
     if route == "x":
         call chapter6x
     else:
