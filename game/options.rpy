@@ -42,7 +42,7 @@ define config.save_directory = None
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "3.0"
 
 
 ## Sounds and music ############################################################

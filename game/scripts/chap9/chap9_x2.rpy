@@ -1,5 +1,5 @@
 label chap9_x2:
-    scene bg_meiroom with Fade(color="#fff")
+    scene bg_meiroom with Fade(0.5, 0.5, 0.5, color="#fff")
     $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei_speaking "啊——"
     $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True, fadein=0.5)
@@ -343,11 +343,11 @@ label chap9_x2:
     scene bg_black with vpunchm
     mei "？！"
     stop music
-    show cg_x111 at cg_s with dissolve
+    show cg_x111 at cg_0 with dissolve
     mei "那句话结尾的“尝”字只说到一半，柔软的指尖毫无预兆地落在我的唇边。"
     mei "瞬间，细腻绵密的口感蔓延至整个口腔，带着温热的，淡淡的甜。"
     mei "的确，味道很好……\n但是，但是……"
-    show cg_x112 at cg_s with dissolve
+    show cg_x112 at cg_0 with dissolve
     hide cg_x111
     mei "不仅是口腔，我的整个脑袋好像都热了起来。而向夏则是……\n她的脸泛起潮红，动作僵在原地，好像自己也没反应过来发生了什么。"
     xiang_speaking "……"
@@ -406,20 +406,20 @@ label chap9_x2:
     mei "……我不想管那么多。"
     mei "在我继续思考之前，我已经将她逼到墙角。"
 
-    show cg_x121 at cg_s with dissolve
+    show cg_x121 at cg_0 with dissolve
     mei_speaking "我记得你之前说，我可以提一个不过分的要求。"
     xiang_speaking "……你不是说你不需要的嘛。"
     mei "向夏的嘴角稍稍撇了撇，声音也变得很可怜的样子。说实话……有点可爱。"
     mei "不，我怎么还在想这个……"
     mei_speaking "我现在反悔了。"
-    show cg_x122 at cg_s with dissolve
+    show cg_x122 at cg_0 with dissolve
     hide cg_x121
     xiang_speaking "……"
     mei_speaking "我只是想知道，为什么……要做这些事？"
     xiang_speaking "没有，就是……我不小心做错了，之后不会了，对不起。"
     mei_speaking "……喂，那你——"
     xiang_speaking "都说了我做错了，所以，我也不是想刻意跟你拉进关系。所以别问了，我……"
-    show cg_x123 at cg_s with dissolve
+    show cg_x123 at cg_0 with dissolve
     stop music
     xiang_speaking "我很讨厌你。"
     stop music
