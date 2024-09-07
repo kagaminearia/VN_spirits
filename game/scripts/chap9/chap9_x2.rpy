@@ -1,5 +1,5 @@
 label chap9_x2:
-    scene bg_meiroom with fade(color="#fff")
+    scene bg_meiroom with Fade(color="#fff")
     $ renpy.music.play(music.calming_piano, channel="music", loop=True, fadein=0.5)
     mei_speaking "啊——"
     $ renpy.sound.play(sound.bird_chirping_1, channel="sound", loop=True, fadein=0.5)
